@@ -61,7 +61,7 @@ public static class CustomCauldronEffects
 
     /// <summary>The set of tiles that ALWAYS have waterfall effects. Used to generate a set of effects whenever a new save is loaded.</summary>
     /// <remarks>Duplicate tiles are supported and will multiply the number of effects on the tile.</remarks>
-    private static Dictionary<string, List<Vector2>> WaterfallTiles { get; } = new Dictionary<string, List<Vector2>>
+    private static Dictionary<string, List<Vector2>> WaterfallTiles { get; } = new()
     {
         ["Custom_GrandpasGrove"] = [
             // small waterfall
@@ -431,7 +431,7 @@ public static class CustomCauldronEffects
     }
 
     /// <summary>A list of cauldron effects at the player's current location. In splitscreen mode, this contains a separate list for each player.</summary>
-    private static PerScreen<List<CauldronEffect>> CauldronEffects { get; set; } = new PerScreen<List<CauldronEffect>>(() => []);
+    private static PerScreen<List<CauldronEffect>> CauldronEffects { get; set; } = new(() => []);
 
     /// <summary>A set of information used to define repeating cauldron-style sprite effects.</summary>
     private class CauldronEffect
@@ -456,7 +456,7 @@ public static class CustomCauldronEffects
         public string TextureName { get; set; } = "LooseSprites\\Cursors";
 
         /// <summary>The spritesheet X, Y, Width, and Height values for this effect. Defaults to the cauldron effect from "LooseSprites\\Cursors".</summary>
-        public Rectangle SourceRect { get; set; } = new Rectangle(372, 1956, 10, 10);
+        public Rectangle SourceRect { get; set; } = new(372, 1956, 10, 10);
 
         /// <summary>True if this effect's sprite should be flipped horizontally.</summary>
         public bool Flipped { get; set; } = false;
@@ -465,7 +465,7 @@ public static class CustomCauldronEffects
         public float AlphaFade { get; set; } = 0.0009f;
 
         /// <summary>The color used to tint this effect's sprite. Defaults to a light blue "waterfall" color. Use <see cref="Color.White"/> for no tint.</summary>
-        public Color TintColor { get; set; } = new Color(240, 248, 255);
+        public Color TintColor { get; set; } = new(240, 248, 255);
 
         /// <summary>True if this effect should appear above all map layers. Defaults to false.</summary>
         public bool DrawAboveAlwaysFront { get; set; } = false;
@@ -474,7 +474,7 @@ public static class CustomCauldronEffects
         public float Alpha { get; set; } = 0.45f;
 
         /// <summary>The number of pixels down (X) and right (Y) the effect moves each tick. Negative values are allowed.</summary>
-        public Vector2 Motion { get; set; } = new Vector2(0f, -0.35f);
+        public Vector2 Motion { get; set; } = new(0f, -0.35f);
 
         /// <summary>X and Y values added to <see cref="Motion"/> each tick. Negative values are allowed.</summary>
         public Vector2 Acceleration { get; set; } = Vector2.Zero;

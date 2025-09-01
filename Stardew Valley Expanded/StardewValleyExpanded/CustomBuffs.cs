@@ -52,7 +52,7 @@ public static class CustomBuffs
     private const int millisecondsBuffDuration = 720000;
 
     /// <summary>How long the current player has been swimming at locations that give buffs.</summary>
-    private static PerScreen<int> secondsSpentSwimming = new PerScreen<int>(() => 0); // set each player's value to 0
+    private static PerScreen<int> secondsSpentSwimming = new(() => 0); // set each player's value to 0
 
     /// <summary>Manage the buffs applied when swimming at certain locations.</summary>
     private static void GameLoop_OneSecondUpdateTicking(object sender, OneSecondUpdateTickingEventArgs e)

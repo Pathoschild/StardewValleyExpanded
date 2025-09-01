@@ -46,8 +46,8 @@ internal class InstallationChecker
 {
     IModHelper helper;
 
-    static string BOLDLINE = new string('#', 75);
-    static string THINLINE = new string('-', 75);
+    static string BOLDLINE = new('#', 75);
+    static string THINLINE = new('-', 75);
     static string BULLET = "\t \x1A ";
     static string INDENT = "\t" + new string(' ', 5);
 

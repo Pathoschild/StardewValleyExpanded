@@ -60,7 +60,7 @@ public static class HarmonyPatch_CustomGrangeJudging
     public static string AdvancedMove2 { get; set; } = "advancedMove Marnie False 0 1 4 1000";
 
     /// <summary>A set of all dialogue added to NPCs during Lewis' grange display judging. Each key is an NPC name. Each value is the target asset with that NPC's dialogue.</summary>
-    public static Dictionary<string, string> DialogueWhileJudging { get; set; } = new Dictionary<string, string>
+    public static Dictionary<string, string> DialogueWhileJudging { get; set; } = new()
     {
         // base game dialogue
         /*
@@ -80,7 +80,7 @@ public static class HarmonyPatch_CustomGrangeJudging
     /// Unlike <see cref="DialogueWhileJudging"/>, this does NOT need to include dialogue for contestants from the base game.
     /// It can replace their dialogue if necessary, though.
     /// </remarks>
-    public static Dictionary<string, string> DialogueAfterJudging { get; set; } = new Dictionary<string, string>
+    public static Dictionary<string, string> DialogueAfterJudging { get; set; } = new()
     {
         ["Sophia"] = "Strings\\StringsFromCSFiles:SVE_AfterJudging_Sophia",
         ["Andy"] = "Strings\\StringsFromCSFiles:SVE_AfterJudging_Andy",

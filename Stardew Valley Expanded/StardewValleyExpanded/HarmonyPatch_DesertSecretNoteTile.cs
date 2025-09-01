@@ -48,7 +48,7 @@ public static class HarmonyPatch_DesertSecretNoteTile
 
     /// <summary>The new tile to check for Secret Note #18's buried treasure in the desert.</summary>
     /// <remarks>Format: new Vector2(x, y);</remarks>
-    public static Vector2 NewSecretNoteTile = new Vector2(9, 43);
+    public static Vector2 NewSecretNoteTile = new(9, 43);
 
 
     /*****************/

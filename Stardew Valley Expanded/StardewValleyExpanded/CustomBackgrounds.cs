@@ -52,8 +52,8 @@ public static class CustomBackgrounds
     /***** Mod Settings *****/
     /*****              *****/
 
-    private static Rectangle highlandsCloudZone = new Rectangle(58, 0, 151, 8); // tiles where clouds can spawn: min X, min Y, max X, max Y
-    private static Random r = new Random();
+    private static Rectangle highlandsCloudZone = new(58, 0, 151, 8); // tiles where clouds can spawn: min X, min Y, max X, max Y
+    private static Random r = new();
 
     /// <summary>Adds or updates the set of currently active backgrounds.</summary>
     /// <remarks>
@@ -211,7 +211,7 @@ public static class CustomBackgrounds
         public Vector2 Position = Vector2.Zero;
 
         /// <summary>The per-pixel scale at which this background should be drawn. Defaults to (4,4), which matches the majority of in-game sprites.</summary>
-        public Vector2 Scale = new Vector2(4, 4);
+        public Vector2 Scale = new(4, 4);
 
         /// <summary>The number of pixels this sprite should move each tick (~60 times per second).</summary>
         public Vector2 Movement = Vector2.Zero;

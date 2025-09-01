@@ -44,103 +44,103 @@ public static class AddSpecialOrdersAfterEvents
     /// <remarks>Orders will be automatically added if the conditions are all met, and automatically removed if they are unmet.</remarks>
     public static List<SpecialOrderConditions> SpecialOrders =
     [
-        new SpecialOrderConditions
+        new()
         {
             OrderKey = "Clint2",
             HasSeenEvents = "8050108",
             HasNotSeenEvents = "8050109"
         },
-        new SpecialOrderConditions
+        new()
         {
             OrderKey = "Clint3",
             HasSeenEvents = "2551994",
             HasNotSeenEvents = "2554911"
         },
-        new SpecialOrderConditions
+        new()
         {
             OrderKey = "Lewis2",
             HasSeenEvents = "8033859",
             HasNotSeenEvents = "8033861"
         },
-        new SpecialOrderConditions
+        new()
         {
             OrderKey = "Morris",
             HasSeenEvents = "9033859",
             HasNotSeenEvents = "8033861"
         },
-        new SpecialOrderConditions
+        new()
         {
             OrderKey = "Robin3",
             HasSeenEvents = "2554903",
             HasNotSeenEvents = "2554907"
         },
-        new SpecialOrderConditions
+        new()
         {
             OrderKey = "Robin4",
             HasSeenEvents = "2554928",
             HasNotSeenEvents = "2554909"
         },
-        new SpecialOrderConditions
+        new()
         {
             OrderKey = "Apples",
             HasSeenEvents = "7775926",
             HasNotSeenEvents = "7775927"
         },
-        new SpecialOrderConditions
+        new()
         {
             OrderKey = "MarlonFay2",
             HasSeenEvents = "65360183",
             HasNotSeenEvents = "65360184"
         },
-        new SpecialOrderConditions
+        new()
         {
             OrderKey = "MorrisTod2",
             HasSeenEvents = "6663407",
             HasNotSeenEvents = "6663408"
         },
-        new SpecialOrderConditions
+        new()
         {
             OrderKey = "MorrisTod3",
             HasSeenEvents = "746153083",
             HasNotSeenEvents = "746153084"
         },
-        new SpecialOrderConditions
+        new()
         {
             OrderKey = "Lance",
             HasSeenEvents = "65360186",
             HasNotSeenEvents = "65360187"
         },
-        new SpecialOrderConditions
+        new()
         {
             OrderKey = "Krobus",
             HasSeenEvents = "1090506",
             HasNotSeenEvents = "1090507"
         },
-        new SpecialOrderConditions
+        new()
         {
             OrderKey = "CamillaBridge",
             HasSeenEvents = "1337426",
             HasNotSeenEvents = "1337427"
         },
-        new SpecialOrderConditions
+        new()
         {
             OrderKey = "DwarfCaveShortcut",
             HasSeenEvents = "1337438",
             HasNotSeenEvents = "1337439"
         },
-        new SpecialOrderConditions
+        new()
         {
             OrderKey = "GilMinecarts",
             HasSeenEvents = "1337430",
             HasNotSeenEvents = "1337431"
         },
-        new SpecialOrderConditions
+        new()
         {
             OrderKey = "LegendaryTrio",
             HasSeenEvents = "1337930",
             HasNotSeenEvents = "1337931"
         },
-        new SpecialOrderConditions
+        new()
         {
             OrderKey = "HenchmanHouseRepaired",
             HasSeenEvents = "1337730",
