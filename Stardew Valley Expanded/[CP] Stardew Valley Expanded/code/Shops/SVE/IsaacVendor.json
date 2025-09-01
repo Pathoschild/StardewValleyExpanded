@@ -1,8 +1,8 @@
-{
-
+﻿{
     "Changes": [
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Isaac_Vendor",
             "FromFile": "assets/CharacterFiles/Shops/Adventurers/Isaac_Vendor.png"
         },
@@ -17,9 +17,9 @@
                             "Portrait": "Mods\\FlashShifter.StardewValleyExpandedCP\\Isaac_Vendor",
                             "Dialogues": [
                                 {
-                                "Id": "FlashShifter.StardewValleyExpandedCP_Default",
-                                "Dialogue": "{{i18n:ShopsDialogue.Isaac}}",
-                                },
+                                    "Id": "FlashShifter.StardewValleyExpandedCP_Default",
+                                    "Dialogue": "{{i18n:ShopsDialogue.Isaac}}"
+                                }
                             ]
                         }
                     ],
@@ -31,7 +31,7 @@
                             "Price": 600000,
                             "AvailableStock": 1,
                             "AvailableStockLimit": "Player"
-                        }, 
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Tempered_Galaxy_Hammer",
                             "ItemId": "FlashShifter.StardewValleyExpandedCP_Tempered_Galaxy_Hammer",
@@ -39,7 +39,7 @@
                             "AvailableStock": 1,
                             "AvailableStockLimit": "Player"
                         },
-						{
+                        {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Galdoran_Knight_Boots",
                             "ItemId": "FlashShifter.StardewValleyExpandedCP_Galdoran_Knight_Boots",
                             "Price": 150000,
@@ -53,13 +53,13 @@
                             "AvailableStock": 3,
                             "AvailableStockLimit": "Player"
                         },
-						{
+                        {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Bonefish",
                             "ItemId": "FlashShifter.StardewValleyExpandedCP_Bonefish",
                             "Price": 6000,
                             "AvailableStock": 1,
                             "AvailableStockLimit": "Player"
-                        },
+                        }
                     ]
                 }
             }

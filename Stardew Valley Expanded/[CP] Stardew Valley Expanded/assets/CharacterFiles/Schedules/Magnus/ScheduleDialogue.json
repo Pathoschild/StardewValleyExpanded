@@ -1,31 +1,30 @@
-{
-  "Changes": [
-    {
-      "Action": "EditData",
-      "Target": "Strings/schedules/Wizard",
-      "Entries": 
-      {
-  "marriage.000": "{{i18n:Magnus.Marriage.000}}",
-  "marriage.001": "{{i18n:Magnus.Marriage.001}}",
-  "marriage.002": "{{i18n:Magnus.Marriage.002}}",
-  "marriage.003": "{{i18n:Magnus.Marriage.003}}",
-  "marriage.004": "{{i18n:Magnus.Marriage.004}}",
-  "marriage.005": "{{i18n:Magnus.Marriage.005}}",
-  "marriage.006": "{{i18n:Magnus.Marriage.006}}",
-  "marriage.007": "{{i18n:Magnus.Marriage.007}}",
-  "marriage.008": "{{i18n:Magnus.Marriage.008}}",
-  "marriage.009": "{{i18n:Magnus.Marriage.009}}",
-  "marriage.010": "{{i18n:Magnus.Marriage.010}}",
-  "marriage.011": "{{i18n:Magnus.Marriage.011}}",
-  "marriage.012": "{{i18n:Magnus.Marriage.012}}",
-  "marriage.013": "{{i18n:Magnus.Marriage.013}}",
-  "marriage.014": "{{i18n:Magnus.Marriage.014}}",
-  "marriage.015": "{{i18n:Magnus.Marriage.015}}",
-  "marriage.016": "{{i18n:Magnus.Marriage.016}}",
-  "marriage.017": "{{i18n:Magnus.Marriage.017}}",
-  "marriage.018": "{{i18n:Magnus.Marriage.018}}",
-  "DesertFestival_Wizard_marriage": "{{i18n:DesertFestival_Wizard_marriage}}"
-},
-    },
-  ]
+﻿{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Wizard",
+            "Entries": {
+                "marriage.000": "{{i18n:Magnus.Marriage.000}}",
+                "marriage.001": "{{i18n:Magnus.Marriage.001}}",
+                "marriage.002": "{{i18n:Magnus.Marriage.002}}",
+                "marriage.003": "{{i18n:Magnus.Marriage.003}}",
+                "marriage.004": "{{i18n:Magnus.Marriage.004}}",
+                "marriage.005": "{{i18n:Magnus.Marriage.005}}",
+                "marriage.006": "{{i18n:Magnus.Marriage.006}}",
+                "marriage.007": "{{i18n:Magnus.Marriage.007}}",
+                "marriage.008": "{{i18n:Magnus.Marriage.008}}",
+                "marriage.009": "{{i18n:Magnus.Marriage.009}}",
+                "marriage.010": "{{i18n:Magnus.Marriage.010}}",
+                "marriage.011": "{{i18n:Magnus.Marriage.011}}",
+                "marriage.012": "{{i18n:Magnus.Marriage.012}}",
+                "marriage.013": "{{i18n:Magnus.Marriage.013}}",
+                "marriage.014": "{{i18n:Magnus.Marriage.014}}",
+                "marriage.015": "{{i18n:Magnus.Marriage.015}}",
+                "marriage.016": "{{i18n:Magnus.Marriage.016}}",
+                "marriage.017": "{{i18n:Magnus.Marriage.017}}",
+                "marriage.018": "{{i18n:Magnus.Marriage.018}}",
+                "DesertFestival_Wizard_marriage": "{{i18n:DesertFestival_Wizard_marriage}}"
+            }
+        }
+    ]
 }

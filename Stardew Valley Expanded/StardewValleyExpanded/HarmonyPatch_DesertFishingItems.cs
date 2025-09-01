@@ -1,10 +1,10 @@
-﻿using HarmonyLib;
+using System;
+using HarmonyLib;
 using Microsoft.Xna.Framework;
 using StardewModdingAPI;
 using StardewValley;
 using StardewValley.Locations;
 using StardewValley.Objects;
-using System;
 
 namespace StardewValleyExpanded
 {
@@ -13,6 +13,7 @@ namespace StardewValleyExpanded
     {
         /// <summary>True if this patch is currently applied.</summary>
         public static bool Applied { get; private set; } = false;
+
         /// <summary>The monitor instance to use for log messages. Null if not provided.</summary>
         private static IMonitor Monitor { get; set; } = null;
 
@@ -21,9 +22,9 @@ namespace StardewValleyExpanded
         /// <param name="monitor">The <see cref="IMonitor"/> provided to this mod by SMAPI. Used for log messages.</param>
         public static void ApplyPatch(Harmony harmony, IMonitor monitor)
         {
-            if (!Applied && monitor != null) //if NOT already applied
+            if (!Applied && monitor != null) // if NOT already applied
             {
-                Monitor = monitor; //store monitor
+                Monitor = monitor; // store monitor
 
                 Monitor.Log($"Applying Harmony patch \"{nameof(HarmonyPatch_DesertFishingItems)}\": postfixing SDV method \"Desert.getFish\".", LogLevel.Trace);
                 harmony.Patch(
@@ -44,13 +45,13 @@ namespace StardewValleyExpanded
         /// <returns>The object the player fishing should catch. If null, the original result will be used.</returns>
         private static StardewValley.Object OverrideDesertFishingResults(Vector2 tile)
         {
-            if (tile.X >= 26 && tile.X <= 33 && tile.Y >= 4 && tile.Y <= 9) //if this tile is between 26,4 and 33,9
+            if (tile.X >= 26 && tile.X <= 33 && tile.Y >= 4 && tile.Y <= 9) // if this tile is between 26,4 and 33,9
             {
-                if (Game1.random.NextDouble() < 0.1) //10% chance
-                    return new Furniture("2334", Vector2.Zero); //Pyramid Decal
+                if (Game1.random.NextDouble() < 0.1) // 10% chance
+                    return new Furniture("2334", Vector2.Zero); // Pyramid Decal
             }
 
-            return null; //if nothing else was chosen, use the normal result
+            return null; // if nothing else was chosen, use the normal result
         }
 
         /*****************/
@@ -70,8 +71,8 @@ namespace StardewValleyExpanded
                 return;
 
             try
-            {                
-                if (OverrideDesertFishingResults(bobberTile) is StardewValley.Object newResult) //if the result should be replaced with a new object
+            {
+                if (OverrideDesertFishingResults(bobberTile) is StardewValley.Object newResult) // if the result should be replaced with a new object
                 {
                     Monitor.VerboseLog($"Replacing Desert fishing result with new object: \"{newResult?.Name}\"");
                     __result = newResult;
@@ -80,7 +81,7 @@ namespace StardewValleyExpanded
             catch (Exception ex)
             {
                 Monitor.LogOnce($"Harmony patch \"{nameof(HarmonyPatch_DesertFishingItems)}\" has encountered an error. Special item(s) might not be catchable when fishing in the Desert. Full error message: \n{ex.ToString()}", LogLevel.Error);
-                return; //run the original method
+                return; // run the original method
             }
         }
     }

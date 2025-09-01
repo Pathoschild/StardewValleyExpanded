@@ -1,15 +1,14 @@
 ﻿{
-  "Changes": [
-    {
-      "Action": "EditData",
-      "Target": "Characters/Dialogue/**Martin**",
-      "Entries": 
-      {
-  "martin_event5": "{{i18n:TempMartin.CharacterDialogue.001}}", 
-  "martin_event6": "{{i18n:TempMartin.CharacterDialogue.002}}", 
-  "martin_event7": "{{i18n:TempMartin.CharacterDialogue.003}}", 
-  "martin_event8": "{{i18n:TempMartin.CharacterDialogue.004}}", 
-},
-    },
-  ]
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/**Martin**",
+            "Entries": {
+                "martin_event5": "{{i18n:TempMartin.CharacterDialogue.001}}",
+                "martin_event6": "{{i18n:TempMartin.CharacterDialogue.002}}",
+                "martin_event7": "{{i18n:TempMartin.CharacterDialogue.003}}",
+                "martin_event8": "{{i18n:TempMartin.CharacterDialogue.004}}"
+            }
+        }
+    ]
 }

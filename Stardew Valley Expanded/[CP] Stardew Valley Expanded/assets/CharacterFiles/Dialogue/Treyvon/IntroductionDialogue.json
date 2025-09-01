@@ -1,23 +1,21 @@
 ﻿{
     "Changes": [
-      {
-        "Action": "EditData",
-        "Target": "Characters/Dialogue/Treyvon",
-        "When": {
-          "HasSeenEvent |contains=3691373": false
-        },
-        "Entries": 
         {
-
-          "Mon": "{{i18n:Treyvon.IntroductionDialogue.001}}",
-          "Tue": "{{i18n:Treyvon.IntroductionDialogue.001}}",
-          "Wed": "{{i18n:Treyvon.IntroductionDialogue.001}}",
-          "Thu": "{{i18n:Treyvon.IntroductionDialogue.001}}",
-          "Fri": "{{i18n:Treyvon.IntroductionDialogue.001}}",
-          "Sat": "{{i18n:Treyvon.IntroductionDialogue.001}}",
-          "Sun": "{{i18n:Treyvon.IntroductionDialogue.001}}",
-		  "DumpsterDiveComment": "{{i18n:Treyvon.CharacterDialogue.029}}"
-        },
-      },
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Treyvon",
+            "When": {
+                "HasSeenEvent |contains=3691373": false
+            },
+            "Entries": {
+                "Mon": "{{i18n:Treyvon.IntroductionDialogue.001}}",
+                "Tue": "{{i18n:Treyvon.IntroductionDialogue.001}}",
+                "Wed": "{{i18n:Treyvon.IntroductionDialogue.001}}",
+                "Thu": "{{i18n:Treyvon.IntroductionDialogue.001}}",
+                "Fri": "{{i18n:Treyvon.IntroductionDialogue.001}}",
+                "Sat": "{{i18n:Treyvon.IntroductionDialogue.001}}",
+                "Sun": "{{i18n:Treyvon.IntroductionDialogue.001}}",
+                "DumpsterDiveComment": "{{i18n:Treyvon.CharacterDialogue.029}}"
+            }
+        }
     ]
 }

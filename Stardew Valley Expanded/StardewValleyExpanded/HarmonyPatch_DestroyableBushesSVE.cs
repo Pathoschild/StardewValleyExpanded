@@ -1,10 +1,10 @@
-﻿using HarmonyLib;
+using System;
+using System.Linq;
+using HarmonyLib;
 using Microsoft.Xna.Framework;
 using StardewModdingAPI;
 using StardewValley;
 using StardewValley.TerrainFeatures;
-using System;
-using System.Linq;
 
 namespace StardewValleyExpanded
 {
@@ -17,6 +17,7 @@ namespace StardewValleyExpanded
 
         /// <summary>True if this patch is currently applied.</summary>
         public static bool Applied { get; private set; } = false;
+
         /// <summary>The monitor instance to use for log messages. Null if not provided.</summary>
         private static IMonitor Monitor { get; set; } = null;
 
@@ -25,9 +26,9 @@ namespace StardewValleyExpanded
         /// <param name="monitor">The <see cref="IMonitor"/> provided to this mod by SMAPI. Used for log messages.</param>
         public static void ApplyPatch(Harmony harmony, IMonitor monitor)
         {
-            if (!Applied && monitor != null) //if NOT already applied
+            if (!Applied && monitor != null) // if NOT already applied
             {
-                Monitor = monitor; //store monitor
+                Monitor = monitor; // store monitor
 
                 Monitor.Log($"Applying Harmony patch \"{nameof(HarmonyPatch_DestroyableBushesSVE)}\": postfixing SDV method \"Bush.isDestroyable(GameLocation, Vector2)\".", LogLevel.Trace);
                 harmony.Patch(
@@ -57,13 +58,13 @@ namespace StardewValleyExpanded
         {
             if (location?.Name == "Custom_ForestWest")
             {
-                if (Game1.getAllFarmers().Any(farmer => farmer.eventsSeen.Contains("746153084")) == true) //if any player has seen this event
-                    return true; //bush is destroyable
+                if (Game1.getAllFarmers().Any(farmer => farmer.eventsSeen.Contains("746153084")) == true) // if any player has seen this event
+                    return true; // bush is destroyable
                 else
                     return false;
             }
 
-            return false; //default to false
+            return false; // default to false
         }
 
         /*****               *****/
@@ -81,18 +82,18 @@ namespace StardewValleyExpanded
             Vector2 tile = __instance.Tile;
             try
             {
-                if (__result) //if this bush is already destroyable
-                    return; //do nothing
+                if (__result) // if this bush is already destroyable
+                    return; // do nothing
 
-                if (__instance.size.Value is Bush.smallBush or Bush.mediumBush or Bush.largeBush) //if this bush is one of the target types (to avoid editing tea/walnut bushes or unknown types)
+                if (__instance.size.Value is Bush.smallBush or Bush.mediumBush or Bush.largeBush) // if this bush is one of the target types (to avoid editing tea/walnut bushes or unknown types)
                 {
-                    if (ShouldBeDestroyable(__instance, location, tile)) //if this bush matches custom conditions
+                    if (ShouldBeDestroyable(__instance, location, tile)) // if this bush matches custom conditions
                     {
                         if (Monitor?.IsVerbose == true)
                             Monitor.Log($"Allowing bush destruction. Tile: {tile}. Location: {location?.Name}.", LogLevel.Trace);
-                        __result = true; //treat this bush as destroyable
+                        __result = true; // treat this bush as destroyable
                     }
-                    else //if this bush does NOT match custom conditions
+                    else // if this bush does NOT match custom conditions
                     {
                         if (Monitor?.IsVerbose == true)
                             Monitor.Log($"NOT allowing bush destruction; custom conditions are unmet. Tile: {tile}. Location: {location?.Name}.", LogLevel.Trace);

@@ -1,24 +1,25 @@
-﻿using Microsoft.Xna.Framework.Audio;
+using System;
+using Microsoft.Xna.Framework.Audio;
 using StardewModdingAPI;
 using StardewValley;
 using StardewValley.BellsAndWhistles;
 using StardewValley.Locations;
-using System;
 
 namespace StardewValleyExpanded
 {
     /// <summary>Adjusts the volume of the ambient furnace noise outside Clint's blacksmith shop.</summary>
     public static class ClintVolumeControl
     {
-
         /*****            *****/
         /***** Setup Code *****/
         /*****            *****/
 
         /// <summary>True if this fix is currently enabled.</summary>
         private static bool Enabled { get; set; } = false;
+
         /// <summary>The SMAPI helper to use for events and other API access.</summary>
         private static IModHelper Helper { get; set; } = null;
+
         /// <summary>The monitor to use for log messages.</summary>
         private static IMonitor Monitor { get; set; } = null;
 
@@ -27,17 +28,17 @@ namespace StardewValleyExpanded
         /// <param name="monitor">The <see cref="IMonitor"/> provided by SMAPI. Used for log messages.</param>
         public static void Enable(IModHelper helper, IMonitor monitor)
         {
-            if (!Enabled) //if not already enabled
+            if (!Enabled) // if not already enabled
             {
-                //store SMAPI tools
+                // store SMAPI tools
                 Helper = helper;
                 Monitor = monitor;
 
-                //replace ambient engine sound with a custom wrapper
+                // replace ambient engine sound with a custom wrapper
                 Monitor.Log($"Replacing sound cue \"{nameof(AmbientLocationSounds)}.engine\" with a wrapper for volume control.", LogLevel.Trace);
-                var engineField = Helper.Reflection.GetField<ICue>(typeof(AmbientLocationSounds), "engine", true); //reflect the field
-                ICue engine = engineField.GetValue(); //get the cue
-                engineField.SetValue(new CueWrapper(engine)); //create a wrapper and replace the original with it
+                var engineField = Helper.Reflection.GetField<ICue>(typeof(AmbientLocationSounds), "engine", true); // reflect the field
+                ICue engine = engineField.GetValue(); // get the cue
+                engineField.SetValue(new CueWrapper(engine)); // create a wrapper and replace the original with it
 
                 Enabled = true;
             }
@@ -67,10 +68,10 @@ namespace StardewValleyExpanded
         {
             get
             {
-                if (shortestDistanceForCue == null) //if this field hasn't been reflected yet
-                    shortestDistanceForCue = Helper.Reflection.GetField<float[]>(typeof(AmbientLocationSounds), "shortestDistanceForCue", true); //reflect it
+                if (shortestDistanceForCue == null) // if this field hasn't been reflected yet
+                    shortestDistanceForCue = Helper.Reflection.GetField<float[]>(typeof(AmbientLocationSounds), "shortestDistanceForCue", true); // reflect it
 
-                return shortestDistanceForCue.GetValue()[AmbientLocationSounds.sound_engine]; //get the distance to the nearest engine sound
+                return shortestDistanceForCue.GetValue()[AmbientLocationSounds.sound_engine]; // get the distance to the nearest engine sound
             }
         }
 
@@ -89,9 +90,9 @@ namespace StardewValleyExpanded
 
             public void SetVariable(string var, int val)
             {
-                if (var.Equals("Volume", StringComparison.OrdinalIgnoreCase) && Game1.player?.currentLocation is Town) //if volume is being set AND the local player is in town
+                if (var.Equals("Volume", StringComparison.OrdinalIgnoreCase) && Game1.player?.currentLocation is Town) // if volume is being set AND the local player is in town
                 {
-                    val = Convert.ToInt32(Utility.Clamp(VolumeModifier(val), 0, 100)); //modify the volume, clamp it between 0 and 100, and convert it to the nearest integer
+                    val = Convert.ToInt32(Utility.Clamp(VolumeModifier(val), 0, 100)); // modify the volume, clamp it between 0 and 100, and convert it to the nearest integer
                 }
 
                 WrappedCue.SetVariable(var, val);
@@ -99,9 +100,9 @@ namespace StardewValleyExpanded
 
             public void SetVariable(string var, float val)
             {
-                if (var.Equals("Volume", StringComparison.OrdinalIgnoreCase) && Game1.player?.currentLocation is Town) //if volume is being set AND the local player is in town
+                if (var.Equals("Volume", StringComparison.OrdinalIgnoreCase) && Game1.player?.currentLocation is Town) // if volume is being set AND the local player is in town
                 {
-                    val = Utility.Clamp(VolumeModifier(val), 0, 100); //modify the volume and clamp it between 0 and 100
+                    val = Utility.Clamp(VolumeModifier(val), 0, 100); // modify the volume and clamp it between 0 and 100
                 }
 
                 WrappedCue.SetVariable(var, val);
@@ -142,7 +143,7 @@ namespace StardewValleyExpanded
             public void Stop(AudioStopOptions options)
             {
                 WrappedCue.Stop(options);
-            }           
+            }
 
             public float GetVariable(string var)
             {

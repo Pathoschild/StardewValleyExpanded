@@ -1,24 +1,24 @@
-{
+﻿{
     "Changes": [
         {
             "Action": "EditData",
             "Target": "Data/Shops",
             "Priority": "Early - 100",
-            "TargetField": [
-                "FishShop",
-                "Items"
-            ],
+            "TargetField": [ "FishShop", "Items" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Seaweed_Salad": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Seaweed_Salad",
                     "ItemId": "FlashShifter.StardewValleyExpandedCP_Seaweed_Salad",
                     "Price": "1250",
-                    "IsRecipe": "true",
-                },
+                    "IsRecipe": "true"
+                }
             },
-			"MoveEntries": [
-			    { "Id": "FlashShifter.StardewValleyExpandedCP_Seaweed_Salad", "BeforeId": "(O)219" },
-		    ]
-        },
+            "MoveEntries": [
+                {
+                    "Id": "FlashShifter.StardewValleyExpandedCP_Seaweed_Salad",
+                    "BeforeId": "(O)219"
+                }
+            ]
+        }
     ]
 }

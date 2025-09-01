@@ -1,18 +1,18 @@
-﻿/***
+/***
  *      Contents originally written by shekurika for Ridgeside Village (RSV).
  *      Later updates made by moe/cl4r3.
  *      Log utility format by moe/cl4r3.
  *      Modified by Esca for use with Stardew Valley Expanded (SVE).
- *      
+ *
  *      Original repo: https://github.com/Rafseazz/Ridgeside-Village-Mod
  *      Original file: https://github.com/Rafseazz/Ridgeside-Village-Mod/blob/4ef742e9e4b6a42438cc79bb11fd8505d1d39a9c/Ridgeside%20SMAPI%20Component%202.0/RidgesideVillage/InstallationChecker.cs
  ***/
 
+using System.Collections.Generic;
+using System.Linq;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewModdingAPI.Utilities;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace RidgesideVillage
 {
@@ -62,7 +62,7 @@ namespace RidgesideVillage
         {
             Monitor.Log(Helper.Translation.Get("installationchecker.start"), LogLevel.Info);
             Monitor.Log(Helper.Translation.Get("installationchecker.credits"), LogLevel.Info);
-            if (new RidgesideVillage.InstallationChecker().checkInstallation(Helper, Monitor)) //run a check; if it succeeds...
+            if (new RidgesideVillage.InstallationChecker().checkInstallation(Helper, Monitor)) // run a check; if it succeeds...
                 Monitor.Log(Helper.Translation.Get("installationchecker.success"), LogLevel.Info);
         }
 
@@ -126,7 +126,7 @@ namespace RidgesideVillage
             if (outdated_dependencies.Any() || missing_dependencies.Any())
                 hasAllDependencies = false;
 
-            if (missing_dependencies.Concat(outdated_dependencies).Any(dependency => dependency.component)) //if any component mod is missing or outdated
+            if (missing_dependencies.Concat(outdated_dependencies).Any(dependency => dependency.component)) // if any component mod is missing or outdated
                 isInstalledCorrectly = false;
 
             if (!isInstalledCorrectly || !hasAllDependencies)
@@ -138,13 +138,14 @@ namespace RidgesideVillage
         public bool TheseModsLoaded(string mods)
         {
             string[] reqs = mods.Split(",");
-            foreach(string req in reqs)
+            foreach (string req in reqs)
             {
                 if (missing_dependencies.FindAll(d => d.name == req.Trim()).Any() || outdated_dependencies.FindAll(d => d.name == req.Trim()).Any())
                 {
                     return false;
                 }
             }
+
             return true;
         }
 
@@ -152,7 +153,7 @@ namespace RidgesideVillage
         [EventPriority(EventPriority.Low)]
         private void OnGameLaunched(object sender, GameLaunchedEventArgs e)
         {
-            for(int i=0; i<3; i++)
+            for (int i = 0; i < 3; i++)
             {
                 Log.Error(BOLDLINE);
             }
@@ -184,7 +185,7 @@ namespace RidgesideVillage
                 Log.Error("");
                 foreach (var dependency in missing_dependencies)
                 {
-                    Log.Error(BULLET + helper.Translation.Get("installationchecker.mod.info", new { modName = dependency.name, author = dependency.author}));
+                    Log.Error(BULLET + helper.Translation.Get("installationchecker.mod.info", new { modName = dependency.name, author = dependency.author }));
                     Log.Error(INDENT + dependency.url);
                 }
             }
@@ -201,7 +202,7 @@ namespace RidgesideVillage
                     if (dependency.name == "SMAPI")
                         Log.Error(BULLET + helper.Translation.Get("installationchecker.smapi.outdated"));
                     else
-                        Log.Error(BULLET + helper.Translation.Get("installationchecker.mod.info", new { modName = dependency.name, author = dependency.author}));
+                        Log.Error(BULLET + helper.Translation.Get("installationchecker.mod.info", new { modName = dependency.name, author = dependency.author }));
                     Log.Error(INDENT + dependency.url);
                 }
             }
@@ -223,8 +224,5 @@ namespace RidgesideVillage
                 Log.Error(BOLDLINE);
             }
         }
-
-        
     }
-
 }

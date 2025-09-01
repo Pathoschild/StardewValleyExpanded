@@ -1,26 +1,9 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
+using HarmonyLib;
 using StardewModdingAPI;
 using StardewValley;
-using HarmonyLib;
-using System.Collections.Generic;
-using System.Linq;
 using StardewValley.TerrainFeatures;
-using Microsoft.Xna.Framework;
-using StardewModdingAPI.Events;
-using StardewValley.Locations;
-using StardewValley.Monsters;
-using System.Diagnostics;
-using StardewValley.Objects;
-using StardewValley.Menus;
-using Microsoft.Xna.Framework.Graphics;
-using StardewValley.Events;
-using StardewValley.Characters;
-using xTile.Dimensions;
-using Netcode;
-using StardewValley.Network;
-using System.Reflection.Emit;
-using System.Reflection;
-using xTile.ObjectModel;
 
 namespace StardewValleyExpanded
 {
@@ -29,6 +12,7 @@ namespace StardewValleyExpanded
     {
         /// <summary>True if this patch is currently applied.</summary>
         public static bool Applied { get; private set; } = false;
+
         /// <summary>The monitor instance to use for log messages. Null if not provided.</summary>
         private static IMonitor Monitor { get; set; } = null;
 
@@ -37,9 +21,9 @@ namespace StardewValleyExpanded
         /// <param name="monitor">The <see cref="IMonitor"/> provided to this mod by SMAPI. Used for log messages.</param>
         public static void ApplyPatch(Harmony harmony, IMonitor monitor)
         {
-            if (!Applied && monitor != null) //if NOT already applied
+            if (!Applied && monitor != null) // if NOT already applied
             {
-                Monitor = monitor; //store monitor
+                Monitor = monitor; // store monitor
 
                 Monitor.Log($"Applying Harmony patch \"{nameof(HarmonyPatch_FarmComputerLocations)}\": postfixing SDV method \"Farm.getTotalCrops()\".", LogLevel.Trace);
                 harmony.Patch(
@@ -83,10 +67,10 @@ namespace StardewValleyExpanded
         /// <remarks>
         /// As of SDV 1.5.4, the original code only checks the "Farm" location.
         /// Add any other farm location names to this list.
-        /// 
+        ///
         /// The Farm Computer does NOT normally count greenhouse locations in these numbers, so don't add those unless you want to change that behavior.
         /// </remarks>
-        public static List<string> FarmLocations = new List<string>()
+        public static List<string> FarmLocations = new List<string>
         {
             "Custom_TownEast", "Custom_Garden", "Custom_ForestWest"
         };
@@ -96,7 +80,7 @@ namespace StardewValleyExpanded
         /// As of SDV 1.5.4, the original code only checks the "Greenhouse" location.
         /// Add any other location names to this list.
         /// </remarks>
-        public static List<string> GreenhouseLocations = new List<string>()
+        public static List<string> GreenhouseLocations = new List<string>
         {
             "Custom_GrandpasShedGreenhouse"
         };
@@ -107,15 +91,15 @@ namespace StardewValleyExpanded
         {
             try
             {
-                foreach (string name in FarmLocations) //for each extra farm location
+                foreach (string name in FarmLocations) // for each extra farm location
                 {
-                    if (name.Equals("Farm", StringComparison.OrdinalIgnoreCase)) //if the extra location list included "Farm"
-                        continue; //skip it
+                    if (name.Equals("Farm", StringComparison.OrdinalIgnoreCase)) // if the extra location list included "Farm"
+                        continue; // skip it
 
-                    GameLocation loc = Game1.getLocationFromName(name); //get the the current location
-                    if (loc != null) //if the location exists
+                    GameLocation loc = Game1.getLocationFromName(name); // get the the current location
+                    if (loc != null) // if the location exists
                     {
-                        //imitate the original method's crop counting logic
+                        // imitate the original method's crop counting logic
                         int amount = 0;
                         foreach (TerrainFeature t in loc.terrainFeatures.Values)
                         {
@@ -124,14 +108,14 @@ namespace StardewValleyExpanded
                                 amount++;
                             }
                         }
-                        __result += amount; //add the amount to the original method's result
+                        __result += amount; // add the amount to the original method's result
                     }
                 }
             }
             catch (Exception ex)
             {
                 Monitor.LogOnce($"Harmony patch \"{nameof(HarmonyPatch_FarmComputerLocations)}\" has encountered an error. Postfix \"{nameof(Farm_getTotalCrops)}\" might malfunction or revert to default behavior. Full error message: \n{ex.ToString()}", LogLevel.Error);
-                return; //run the original method
+                return; // run the original method
             }
         }
 
@@ -141,15 +125,15 @@ namespace StardewValleyExpanded
         {
             try
             {
-                foreach (string name in FarmLocations) //for each extra farm location
+                foreach (string name in FarmLocations) // for each extra farm location
                 {
-                    if (name.Equals("Farm", StringComparison.OrdinalIgnoreCase)) //if the extra location list included "Farm"
-                        continue; //skip it
+                    if (name.Equals("Farm", StringComparison.OrdinalIgnoreCase)) // if the extra location list included "Farm"
+                        continue; // skip it
 
-                    GameLocation loc = Game1.getLocationFromName(name); //get the the current location
-                    if (loc != null) //if the location exists
+                    GameLocation loc = Game1.getLocationFromName(name); // get the the current location
+                    if (loc != null) // if the location exists
                     {
-                        //imitate the original method's crop counting logic
+                        // imitate the original method's crop counting logic
                         int amount = 0;
                         foreach (TerrainFeature t in loc.terrainFeatures.Values)
                         {
@@ -158,14 +142,14 @@ namespace StardewValleyExpanded
                                 amount++;
                             }
                         }
-                        __result += amount; //add the amount to the original method's result
+                        __result += amount; // add the amount to the original method's result
                     }
                 }
             }
             catch (Exception ex)
             {
                 Monitor.LogOnce($"Harmony patch \"{nameof(HarmonyPatch_FarmComputerLocations)}\" has encountered an error. Postfix \"{nameof(Farm_getTotalCropsReadyForHarvest)}\" might malfunction or revert to default behavior. Full error message: \n{ex.ToString()}", LogLevel.Error);
-                return; //run the original method
+                return; // run the original method
             }
         }
 
@@ -175,15 +159,15 @@ namespace StardewValleyExpanded
         {
             try
             {
-                foreach (string name in FarmLocations) //for each extra farm location
+                foreach (string name in FarmLocations) // for each extra farm location
                 {
-                    if (name.Equals("Farm", StringComparison.OrdinalIgnoreCase)) //if the extra location list included "Farm"
-                        continue; //skip it
+                    if (name.Equals("Farm", StringComparison.OrdinalIgnoreCase)) // if the extra location list included "Farm"
+                        continue; // skip it
 
-                    GameLocation loc = Game1.getLocationFromName(name); //get the the current location
-                    if (loc != null) //if the location exists
+                    GameLocation loc = Game1.getLocationFromName(name); // get the the current location
+                    if (loc != null) // if the location exists
                     {
-                        //imitate the original method's crop counting logic
+                        // imitate the original method's crop counting logic
                         int amount = 0;
                         foreach (TerrainFeature t in loc.terrainFeatures.Values)
                         {
@@ -192,14 +176,14 @@ namespace StardewValleyExpanded
                                 amount++;
                             }
                         }
-                        __result += amount; //add the amount to the original method's result
+                        __result += amount; // add the amount to the original method's result
                     }
                 }
             }
             catch (Exception ex)
             {
                 Monitor.LogOnce($"Harmony patch \"{nameof(HarmonyPatch_FarmComputerLocations)}\" has encountered an error. Postfix \"{nameof(Farm_getTotalUnwateredCrops)}\" might malfunction or revert to default behavior. Full error message: \n{ex.ToString()}", LogLevel.Error);
-                return; //run the original method
+                return; // run the original method
             }
         }
 
@@ -209,15 +193,15 @@ namespace StardewValleyExpanded
         {
             try
             {
-                foreach (string name in FarmLocations) //for each extra farm location
+                foreach (string name in FarmLocations) // for each extra farm location
                 {
-                    if (name.Equals("Farm", StringComparison.OrdinalIgnoreCase)) //if the extra location list included "Farm"
-                        continue; //skip it
+                    if (name.Equals("Farm", StringComparison.OrdinalIgnoreCase)) // if the extra location list included "Farm"
+                        continue; // skip it
 
-                    GameLocation loc = Game1.getLocationFromName(name); //get the the current location
-                    if (loc != null) //if the location exists
+                    GameLocation loc = Game1.getLocationFromName(name); // get the the current location
+                    if (loc != null) // if the location exists
                     {
-                        //imitate the original method's crop counting logic
+                        // imitate the original method's crop counting logic
                         int amount = 0;
                         foreach (TerrainFeature t in loc.terrainFeatures.Values)
                         {
@@ -226,14 +210,14 @@ namespace StardewValleyExpanded
                                 amount++;
                             }
                         }
-                        __result += amount; //add the amount to the original method's result
+                        __result += amount; // add the amount to the original method's result
                     }
                 }
             }
             catch (Exception ex)
             {
                 Monitor.LogOnce($"Harmony patch \"{nameof(HarmonyPatch_FarmComputerLocations)}\" has encountered an error. Postfix \"{nameof(Farm_getTotalOpenHoeDirt)}\" might malfunction or revert to default behavior. Full error message: \n{ex.ToString()}", LogLevel.Error);
-                return; //run the original method
+                return; // run the original method
             }
         }
 
@@ -243,15 +227,15 @@ namespace StardewValleyExpanded
         {
             try
             {
-                foreach (string name in GreenhouseLocations) //for each extra greenhouse location
+                foreach (string name in GreenhouseLocations) // for each extra greenhouse location
                 {
-                    if (name.Equals("Greenhouse", StringComparison.OrdinalIgnoreCase)) //if the extra location list included "Greenhouse"
-                        continue; //skip it
+                    if (name.Equals("Greenhouse", StringComparison.OrdinalIgnoreCase)) // if the extra location list included "Greenhouse"
+                        continue; // skip it
 
-                    GameLocation loc = Game1.getLocationFromName(name); //get the the current location
-                    if (loc != null) //if the location exists
+                    GameLocation loc = Game1.getLocationFromName(name); // get the the current location
+                    if (loc != null) // if the location exists
                     {
-                        //imitate the original method's crop counting logic
+                        // imitate the original method's crop counting logic
                         int amount = 0;
                         foreach (TerrainFeature t in loc.terrainFeatures.Values)
                         {
@@ -260,14 +244,14 @@ namespace StardewValleyExpanded
                                 amount++;
                             }
                         }
-                        __result += amount; //add the amount to the original method's result
+                        __result += amount; // add the amount to the original method's result
                     }
                 }
             }
             catch (Exception ex)
             {
                 Monitor.LogOnce($"Harmony patch \"{nameof(HarmonyPatch_FarmComputerLocations)}\" has encountered an error. Postfix \"{nameof(Farm_getTotalGreenhouseCropsReadyForHarvest)}\" might malfunction or revert to default behavior. Full error message: \n{ex.ToString()}", LogLevel.Error);
-                return; //run the original method
+                return; // run the original method
             }
         }
     }

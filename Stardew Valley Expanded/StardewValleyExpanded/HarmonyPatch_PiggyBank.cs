@@ -1,7 +1,7 @@
-﻿using HarmonyLib;
+using System;
+using HarmonyLib;
 using StardewModdingAPI;
 using StardewValley;
-using System;
 using SObject = StardewValley.Object;
 
 namespace StardewValleyExpanded
@@ -9,13 +9,13 @@ namespace StardewValleyExpanded
     /// <summary>Adds a player interaction with SVE's piggy bank object.</summary>
     public static class HarmonyPatch_PiggyBank
     {
-
         /*****            *****/
         /***** Setup Code *****/
         /*****            *****/
 
         /// <summary>True if this patch is currently applied.</summary>
         public static bool Applied { get; private set; } = false;
+
         /// <summary>The monitor instance to use for log messages. Null if not provided.</summary>
         private static IMonitor Monitor { get; set; } = null;
 
@@ -24,12 +24,12 @@ namespace StardewValleyExpanded
         /// <param name="monitor">The <see cref="IMonitor"/> provided to this mod by SMAPI. Used for log messages.</param>
         public static void ApplyPatch(Harmony harmony, IMonitor monitor)
         {
-            if (!Applied && monitor != null) //if NOT already applied
+            if (!Applied && monitor != null) // if NOT already applied
             {
-                //store utilities
+                // store utilities
                 Monitor = monitor;
 
-                //apply patches
+                // apply patches
                 Monitor.Log($"Applying Harmony patch \"{nameof(HarmonyPatch_PiggyBank)}\": postfixing SDV method \"Object_checkForAction(Farmer, bool)\".", LogLevel.Trace);
                 harmony.Patch(
                     original: AccessTools.Method(typeof(SObject), nameof(SObject.checkForAction), new[] { typeof(Farmer), typeof(bool) }),
@@ -59,11 +59,11 @@ namespace StardewValleyExpanded
         {
             try
             {
-                if (__result == false && __instance.bigCraftable.Value) //if this is a BC that did NOT successfully perform an action
+                if (__result == false && __instance.bigCraftable.Value) // if this is a BC that did NOT successfully perform an action
                 {
-                    if (__instance.Name == PiggyBankName) //if this item is SVE's piggy bank (TODO: if name conflicts arise, convert this check to use "QualifiedItemID" and/or JsonAssets' API)
+                    if (__instance.Name == PiggyBankName) // if this item is SVE's piggy bank (TODO: if name conflicts arise, convert this check to use "QualifiedItemID" and/or JsonAssets' API)
                     {
-                        __result = InteractWithPiggyBank(who, __instance, justCheckingForActivity); //try to perform the piggy bank action & override the original result
+                        __result = InteractWithPiggyBank(who, __instance, justCheckingForActivity); // try to perform the piggy bank action & override the original result
                         return;
                     }
                 }
@@ -81,15 +81,15 @@ namespace StardewValleyExpanded
         /// <returns>True if the interaction was successfully handled. False if this method could not handle the interaction.</returns>
         private static bool InteractWithPiggyBank(Farmer who, SObject piggy, bool justCheckingForActivity)
         {
-            if (who == null) //if the action wasn't initiated by a player (uncaught "probing" logic, etc)
-                return false; //handling failed
+            if (who == null) // if the action wasn't initiated by a player (uncaught "probing" logic, etc)
+                return false; // handling failed
 
-            if (who.ActiveObject != null) //if the player is holding an object (basically anything other than a tool)
-                return false; //handling failed
+            if (who.ActiveObject != null) // if the player is holding an object (basically anything other than a tool)
+                return false; // handling failed
 
             if (!justCheckingForActivity)
             {
-                if (who.Money > 0) //if this player at least 1 gold
+                if (who.Money > 0) // if this player at least 1 gold
                 {
                     who.Money--;
                     who.currentLocation.playSound("money");
@@ -101,7 +101,7 @@ namespace StardewValleyExpanded
                 }
             }
 
-            return true; //handling succeeded
+            return true; // handling succeeded
         }
     }
 }

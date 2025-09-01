@@ -1,4 +1,4 @@
-{
+﻿{
     "Changes": [
         {
             "Action": "EditData",
@@ -20,7 +20,7 @@
                     "HarvestItemId": "FlashShifter.StardewValleyExpandedCP_Ancient_Fiber",
                     "HarvestMinStack": 2,
                     "HarvestMaxStack": 4,
-                    "HarvestMaxIncreasePerFarmingLevel": .03,
+                    "HarvestMaxIncreasePerFarmingLevel": 0.03,
                     "ExtraHarvestChance": 0.05,
                     "HarvestMethod": "Grab",
                     "TintColors": [],
@@ -44,7 +44,7 @@
                     "HarvestItemId": "FlashShifter.StardewValleyExpandedCP_Monster_Mushroom",
                     "HarvestMinStack": 0,
                     "HarvestMaxStack": 0,
-                    "HarvestMaxIncreasePerFarmingLevel": .05,
+                    "HarvestMaxIncreasePerFarmingLevel": 0.05,
                     "ExtraHarvestChance": 0.0,
                     "HarvestMethod": "Grab",
                     "TintColors": [],
@@ -70,7 +70,7 @@
                     "HarvestItemId": "FlashShifter.StardewValleyExpandedCP_Joja_Berry",
                     "HarvestMinStack": 1,
                     "HarvestMaxStack": 1,
-                    "HarvestMaxIncreasePerFarmingLevel": .05,
+                    "HarvestMaxIncreasePerFarmingLevel": 0.05,
                     "ExtraHarvestChance": 0.15,
                     "HarvestMethod": "Grab",
                     "TintColors": [],
@@ -95,7 +95,7 @@
                     "HarvestItemId": "FlashShifter.StardewValleyExpandedCP_Joja_Veggie",
                     "HarvestMinStack": 1,
                     "HarvestMaxStack": 1,
-                    "HarvestMaxIncreasePerFarmingLevel": .02,
+                    "HarvestMaxIncreasePerFarmingLevel": 0.02,
                     "ExtraHarvestChance": 0.1,
                     "HarvestMethod": "Grab",
                     "TintColors": [],
@@ -119,7 +119,7 @@
                     "HarvestItemId": "FlashShifter.StardewValleyExpandedCP_Monster_Fruit",
                     "HarvestMinStack": 0,
                     "HarvestMaxStack": 0,
-                    "HarvestMaxIncreasePerFarmingLevel": .07,
+                    "HarvestMaxIncreasePerFarmingLevel": 0.07,
                     "ExtraHarvestChance": 0.0,
                     "HarvestMethod": "Grab",
                     "TintColors": [],
@@ -144,7 +144,7 @@
                     "HarvestItemId": "FlashShifter.StardewValleyExpandedCP_Salal_Berry",
                     "HarvestMinStack": 2,
                     "HarvestMaxStack": 4,
-                    "HarvestMaxIncreasePerFarmingLevel": .02,
+                    "HarvestMaxIncreasePerFarmingLevel": 0.02,
                     "ExtraHarvestChance": 0.03,
                     "HarvestMethod": "Grab",
                     "TintColors": [],
@@ -167,7 +167,7 @@
                     "HarvestItemId": "FlashShifter.StardewValleyExpandedCP_Void_Root",
                     "HarvestMinStack": 0,
                     "HarvestMaxStack": 0,
-                    "HarvestMaxIncreasePerFarmingLevel": .02,
+                    "HarvestMaxIncreasePerFarmingLevel": 0.02,
                     "ExtraHarvestChance": 0.0,
                     "HarvestMethod": "Grab",
                     "TintColors": [],
@@ -191,7 +191,7 @@
                     "HarvestItemId": "FlashShifter.StardewValleyExpandedCP_Slime_Berry",
                     "HarvestMinStack": 1,
                     "HarvestMaxStack": 3,
-                    "HarvestMaxIncreasePerFarmingLevel": .03,
+                    "HarvestMaxIncreasePerFarmingLevel": 0.03,
                     "ExtraHarvestChance": 0.1,
                     "HarvestMethod": "Grab",
                     "TintColors": [],
@@ -199,23 +199,23 @@
                     "SpriteIndex": 0,
                     "CustomFields": {}
                 },
-				"FlashShifter.StardewValleyExpandedCP_Cucumber_Seed": {
+                "FlashShifter.StardewValleyExpandedCP_Cucumber_Seed": {
                     "Seasons": [
                         "Spring"
                     ],
                     "DaysInPhase": [
                         1,
-						2,
-						3,
-						3,
-						3,
+                        2,
+                        3,
+                        3,
+                        3
                     ],
                     "RegrowDays": 2,
                     "IsRaised": false,
                     "HarvestItemId": "FlashShifter.StardewValleyExpandedCP_Cucumber",
                     "HarvestMinStack": 2,
                     "HarvestMaxStack": 3,
-                    "HarvestMaxIncreasePerFarmingLevel": .03,
+                    "HarvestMaxIncreasePerFarmingLevel": 0.03,
                     "ExtraHarvestChance": 0.2,
                     "HarvestMethod": "Grab",
                     "TintColors": [],
@@ -223,16 +223,16 @@
                     "SpriteIndex": 0,
                     "CustomFields": {}
                 },
-				"FlashShifter.StardewValleyExpandedCP_Butternut_Squash_Seed": {
+                "FlashShifter.StardewValleyExpandedCP_Butternut_Squash_Seed": {
                     "Seasons": [
                         "Summer"
                     ],
                     "DaysInPhase": [
                         1,
-						2,
-						3,
-						3,
-						3
+                        2,
+                        3,
+                        3,
+                        3
                     ],
                     "RegrowDays": -1,
                     "IsRaised": false,
@@ -247,16 +247,16 @@
                     "SpriteIndex": 0,
                     "CustomFields": {}
                 },
-				"FlashShifter.StardewValleyExpandedCP_Sweet_Potato_Seed": {
+                "FlashShifter.StardewValleyExpandedCP_Sweet_Potato_Seed": {
                     "Seasons": [
                         "Fall"
                     ],
                     "DaysInPhase": [
                         1,
-						2,
-						3,
-						3,
-						3
+                        2,
+                        3,
+                        3,
+                        3
                     ],
                     "RegrowDays": -1,
                     "IsRaised": false,
@@ -271,17 +271,17 @@
                     "SpriteIndex": 0,
                     "CustomFields": {}
                 },
-				"FlashShifter.StardewValleyExpandedCP_Gold_Carrot_Seed": {
+                "FlashShifter.StardewValleyExpandedCP_Gold_Carrot_Seed": {
                     "Seasons": [
                         "Spring",
-						"Summer",
-						"Fall"
+                        "Summer",
+                        "Fall"
                     ],
                     "DaysInPhase": [
                         1,
-						1,
-						2,
-						2
+                        1,
+                        2,
+                        2
                     ],
                     "RegrowDays": -1,
                     "IsRaised": false,
@@ -295,69 +295,80 @@
                     "Texture": "Mods\\FlashShifter.StardewValleyExpandedCP\\Gold Carrot Crop",
                     "SpriteIndex": 0,
                     "CustomFields": {}
-                },
-				
-            },
+                }
+            }
         },
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Ancient Ferns Crop",
-            "FromFile": "assets/Items/Crops/Ancient Ferns Crop.png",
+            "FromFile": "assets/Items/Crops/Ancient Ferns Crop.png"
         },
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Fungus Tree Crop",
-            "FromFile": "assets/Items/Crops/Fungus Tree Crop.png",
+            "FromFile": "assets/Items/Crops/Fungus Tree Crop.png"
         },
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Joja Berry Crop",
-            "FromFile": "assets/Items/Crops/Joja Berry Crop.png",
+            "FromFile": "assets/Items/Crops/Joja Berry Crop.png"
         },
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Joja Veggie Crop",
-            "FromFile": "assets/Items/Crops/Joja Veggie Crop.png",
+            "FromFile": "assets/Items/Crops/Joja Veggie Crop.png"
         },
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Monster Stalk Crop",
-            "FromFile": "assets/Items/Crops/Monster Stalk Crop.png",
+            "FromFile": "assets/Items/Crops/Monster Stalk Crop.png"
         },
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Salal Crop",
-            "FromFile": "assets/Items/Crops/Salal Crop.png",
+            "FromFile": "assets/Items/Crops/Salal Crop.png"
         },
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Shadow Crop",
-            "FromFile": "assets/Items/Crops/Shadow Crop.png",
+            "FromFile": "assets/Items/Crops/Shadow Crop.png"
         },
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Slime Bush Crop",
-            "FromFile": "assets/Items/Crops/Slime Bush Crop.png",
+            "FromFile": "assets/Items/Crops/Slime Bush Crop.png"
         },
-		{
-            "Action": "Load", "Priority": "Low",
+        {
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Cucumber Crop",
-            "FromFile": "assets/Items/Crops/Cucumber Crop.png",
+            "FromFile": "assets/Items/Crops/Cucumber Crop.png"
         },
-		{
-            "Action": "Load", "Priority": "Low",
+        {
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Butternut Squash Crop",
-            "FromFile": "assets/Items/Crops/Butternut Squash Crop.png",
+            "FromFile": "assets/Items/Crops/Butternut Squash Crop.png"
         },
-		{
-            "Action": "Load", "Priority": "Low",
+        {
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Sweet Potato Crop",
-            "FromFile": "assets/Items/Crops/Sweet Potato Crop.png",
+            "FromFile": "assets/Items/Crops/Sweet Potato Crop.png"
         },
-		{
-            "Action": "Load", "Priority": "Low",
+        {
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Gold Carrot Crop",
-            "FromFile": "assets/Items/Crops/Gold Carrot Crop.png",
-        },
+            "FromFile": "assets/Items/Crops/Gold Carrot Crop.png"
+        }
     ]
 }

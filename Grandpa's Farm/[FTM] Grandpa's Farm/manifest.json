@@ -1,13 +1,13 @@
-{
-  "Name": "Grandpa's Farm Forage Locations",
-  "Author": "FlashShifter",
-  "Version": "1.15.11",
-  "Description": "A farm map for Stardew Valley Expanded.",
-  "UniqueID": "FlashShifter.GrandpasFarmFTM",
-  "MinimumApiVersion": "4.0.7",
-  "UpdateKeys": [ "Nexus:???" ],
-  "ContentPackFor": {
-    "UniqueID": "Esca.FarmTypeManager",
-    "MinimumVersion": "1.19"
-   },
+﻿{
+    "Name": "Grandpa's Farm Forage Locations",
+    "Author": "FlashShifter",
+    "Version": "1.15.11",
+    "Description": "A farm map for Stardew Valley Expanded.",
+    "UniqueID": "FlashShifter.GrandpasFarmFTM",
+    "MinimumApiVersion": "4.0.7",
+    "UpdateKeys": [ "Nexus:???" ],
+    "ContentPackFor": {
+        "UniqueID": "Esca.FarmTypeManager",
+        "MinimumVersion": "1.19"
+    }
 }

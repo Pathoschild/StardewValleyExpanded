@@ -1,17 +1,10 @@
-﻿using HarmonyLib;
+using System;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using HarmonyLib;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using StardewValley;
-using StardewValley.Buildings;
-using StardewValley.Extensions;
-using StardewValley.TerrainFeatures;
-using StardewValley.Tools;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace StardewValleyExpanded
 {
@@ -64,8 +57,7 @@ namespace StardewValleyExpanded
     {
         public static void Prefix(GameLocation __instance)
         {
-            if (//__instance.Name!="FarmHouse" &&
-                __instance.Name != "Custom_JunimoWoods" && __instance.Name != "Custom_SpriteSpring2")
+            if (/* __instance.Name!="FarmHouse" && */__instance.Name != "Custom_JunimoWoods" && __instance.Name != "Custom_SpriteSpring2")
                 return;
             var data = __instance.GetExtData();
 
@@ -106,7 +98,7 @@ namespace StardewValleyExpanded
     {
         public static void Postfix(GameLocation __instance, GameTime time)
         {
-            if (//__instance.Name != "FarmHouse" &&
+            if (// __instance.Name != "FarmHouse" &&
                 __instance.Name != "Custom_JunimoWoods" && __instance.Name != "Custom_SpriteSpring2")
                 return;
             var data = __instance.GetExtData();
@@ -145,7 +137,7 @@ namespace StardewValleyExpanded
     {
         public static void Postfix(GameLocation __instance, SpriteBatch b)
         {
-            if (//__instance.Name != "FarmHouse" &&
+            if (// __instance.Name != "FarmHouse" &&
                 __instance.Name != "Custom_JunimoWoods" && __instance.Name != "Custom_SpriteSpring2")
                 return;
             var data = __instance.GetExtData();

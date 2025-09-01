@@ -1,8 +1,8 @@
-{
-
+﻿{
     "Changes": [
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Axel_Vendor",
             "FromFile": "assets/CharacterFiles/Shops/Joja/Axel_Vendor.png"
         },
@@ -17,9 +17,9 @@
                             "Portrait": "Mods\\FlashShifter.StardewValleyExpandedCP\\Axel_Vendor",
                             "Dialogues": [
                                 {
-                                "Id": "FlashShifter.StardewValleyExpandedCP_Default",
-                                "Dialogue": "{{i18n:ShopsDialogue.Axel1}}",
-                                },
+                                    "Id": "FlashShifter.StardewValleyExpandedCP_Default",
+                                    "Dialogue": "{{i18n:ShopsDialogue.Axel1}}"
+                                }
                             ]
                         }
                     ],
@@ -30,33 +30,31 @@
                             "ItemId": "928",
                             "Price": 1000000,
                             "AvailableStock": 1
-                        }, 
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Galaxy_Soul",
                             "ItemId": "896",
                             "Price": 140000,
                             "AvailableStock": 1
-                        }, 
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Pearl",
                             "ItemId": "797",
                             "Price": 20000,
                             "AvailableStock": 1
-                        }, 
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Radioactive_Bar",
                             "ItemId": "910",
                             "Price": 12000,
                             "AvailableStock": 1
-                        }, 
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Magic_Bait",
                             "ItemId": "908",
                             "Price": 1000,
                             "AvailableStock": 20
-                        }, 
-                        
-                        
+                        }
                     ]
                 }
             }

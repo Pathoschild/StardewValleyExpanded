@@ -1,25 +1,24 @@
-{
-  "Changes": [
-    {
-      "Action": "EditData",
-      "Target": "Strings/schedules/Claire",
-      "Entries": 
-      {
-  "JojaMart.000": "{{i18n:Claire.JojaMart.000}}",
-  "JojaMart.001": "{{i18n:Claire.JojaMart.001}}",
-  "JojaMart.002": "{{i18n:Claire.JojaMart.002}}",
-  "JojaMart.003": "{{i18n:Claire.JojaMart.003}}",
-  "AerobicsClass.000": "{{i18n:Claire.AerobicsClass.000}}",
-  "AerobicsClass.001": "{{i18n:Claire.AerobicsClass.001}}",
-  "AerobicsClass.002": "{{i18n:Claire.AerobicsClass.002}}",
-  "AerobicsClass.003": "{{i18n:Claire.AerobicsClass.003}}",
-  "NightMarket.000": "{{i18n:Claire.NightMarket.000}}",
-  "MovieTheater.000": "{{i18n:Claire.MovieTheater.000}}",
-  "MovieTheater.001": "{{i18n:Claire.MovieTheater.001}}",
-  "MovieTheater.002": "{{i18n:Claire.MovieTheater.002}}",
-  "MovieTheater.003": "{{i18n:Claire.MovieTheater.003}}",
-  "DesertFestival_Claire_marriage": "{{i18n:DesertFestival_Claire_marriage}}"
-},
-    },
-  ]
+﻿{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Claire",
+            "Entries": {
+                "JojaMart.000": "{{i18n:Claire.JojaMart.000}}",
+                "JojaMart.001": "{{i18n:Claire.JojaMart.001}}",
+                "JojaMart.002": "{{i18n:Claire.JojaMart.002}}",
+                "JojaMart.003": "{{i18n:Claire.JojaMart.003}}",
+                "AerobicsClass.000": "{{i18n:Claire.AerobicsClass.000}}",
+                "AerobicsClass.001": "{{i18n:Claire.AerobicsClass.001}}",
+                "AerobicsClass.002": "{{i18n:Claire.AerobicsClass.002}}",
+                "AerobicsClass.003": "{{i18n:Claire.AerobicsClass.003}}",
+                "NightMarket.000": "{{i18n:Claire.NightMarket.000}}",
+                "MovieTheater.000": "{{i18n:Claire.MovieTheater.000}}",
+                "MovieTheater.001": "{{i18n:Claire.MovieTheater.001}}",
+                "MovieTheater.002": "{{i18n:Claire.MovieTheater.002}}",
+                "MovieTheater.003": "{{i18n:Claire.MovieTheater.003}}",
+                "DesertFestival_Claire_marriage": "{{i18n:DesertFestival_Claire_marriage}}"
+            }
+        }
+    ]
 }

@@ -1,26 +1,9 @@
-﻿using System;
+using System;
+using HarmonyLib;
+using Microsoft.Xna.Framework;
 using StardewModdingAPI;
 using StardewValley;
-using HarmonyLib;
-using System.Collections.Generic;
-using System.Linq;
-using StardewValley.TerrainFeatures;
-using Microsoft.Xna.Framework;
-using StardewModdingAPI.Events;
 using StardewValley.Locations;
-using StardewValley.Monsters;
-using System.Diagnostics;
-using StardewValley.Objects;
-using StardewValley.Menus;
-using Microsoft.Xna.Framework.Graphics;
-using StardewValley.Events;
-using StardewValley.Characters;
-using xTile.Dimensions;
-using Netcode;
-using StardewValley.Network;
-using System.Reflection.Emit;
-using System.Reflection;
-using xTile.ObjectModel;
 
 namespace StardewValleyExpanded
 {
@@ -34,6 +17,7 @@ namespace StardewValleyExpanded
     {
         /// <summary>True if this patch is currently applied.</summary>
         public static bool Applied { get; private set; } = false;
+
         /// <summary>The monitor instance to use for log messages. Null if not provided.</summary>
         private static IMonitor Monitor { get; set; } = null;
 
@@ -42,9 +26,9 @@ namespace StardewValleyExpanded
         /// <param name="monitor">The <see cref="IMonitor"/> provided to this mod by SMAPI. Used for log messages.</param>
         public static void ApplyPatch(Harmony harmony, IMonitor monitor)
         {
-            if (!Applied && monitor != null) //if NOT already applied
+            if (!Applied && monitor != null) // if NOT already applied
             {
-                Monitor = monitor; //store monitor
+                Monitor = monitor; // store monitor
 
                 Monitor.Log($"Applying Harmony patch \"{nameof(HarmonyPatch_DesertSecretNoteTile)}\": prefixing SDV method \"Desert.checkForBuriedItem(int, int, bool, bool, Farmer)\".", LogLevel.Trace);
                 harmony.Patch(
@@ -83,20 +67,21 @@ namespace StardewValleyExpanded
         {
             try
             {
-                //imitate the original code in Desert.checkForBuriedItem, but check NewSecretNoteTile instead
+                // imitate the original code in Desert.checkForBuriedItem, but check NewSecretNoteTile instead
                 if (who.secretNotesSeen.Contains(18) && xLocation == NewSecretNoteTile.X && yLocation == NewSecretNoteTile.Y && !who.mailReceived.Contains("SecretNote18_done"))
                 {
                     who.mailReceived.Add("SecretNote18_done");
                     Game1.createObjectDebris("127", xLocation, yLocation, who.UniqueMultiplayerID, __instance);
                     __result = "";
-                    return false; //skip the original method
+                    return false; // skip the original method
                 }
-                else return true; //run the original method
+                else
+                    return true; // run the original method
             }
             catch (Exception ex)
             {
                 Monitor.LogOnce($"Harmony patch \"{nameof(HarmonyPatch_DesertSecretNoteTile)}\" has encountered an error. Prefix \"{nameof(Desert_checkForBuriedItem)}\" might malfunction or revert to default behavior. Full error message: \n{ex.ToString()}", LogLevel.Error);
-                return true; //run the original method
+                return true; // run the original method
             }
         }
     }

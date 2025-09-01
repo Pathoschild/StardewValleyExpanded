@@ -1,46 +1,46 @@
 ﻿{
-  "Changes": [
-    {
-      "Action": "EditData",
-      "Target": "Characters/Dialogue/HankSVE",
-      "When": {
-        "HasSeenEvent |contains=3691373": true
-      },
-      "Entries": {
-	    "spring_Thu": "$query PLAYER_HAS_MAIL Current SVE_ScarlettMarriageH#{{i18n:Hank.MarriedScarlett}}#$action RemoveMail Current SVE_ScarlettMarriageH|{{i18n:Hank.CharacterDialogue.004}}",
-        "spring_Fri": "$query PLAYER_HAS_MAIL Current SVE_ScarlettMarriageH#{{i18n:Hank.MarriedScarlett}}#$action RemoveMail Current SVE_ScarlettMarriageH|{{i18n:Hank.CharacterDialogue.005}}",
-	    "married_Scarlett": "{{i18n:Hank.MarriedScarlett}}",
-        "divorced_Scarlett": "{{i18n:Hank.DivorcedScarlett}}",
-        "spring_Mon": "{{i18n:Hank.CharacterDialogue.001}}",
-        "spring_Tue": "{{i18n:Hank.CharacterDialogue.002}}",
-        "spring_Wed": "{{i18n:Hank.CharacterDialogue.003}}",
-        "spring_Thu": "{{i18n:Hank.CharacterDialogue.004}}",
-        "spring_Fri": "{{i18n:Hank.CharacterDialogue.005}}",
-        "spring_Sat": "{{i18n:Hank.CharacterDialogue.006}}",
-        "spring_Sun": "{{i18n:Hank.CharacterDialogue.007}}",
-        "summer_Mon": "{{i18n:Hank.CharacterDialogue.008}}",
-        "summer_Tue": "{{i18n:Hank.CharacterDialogue.009}}",
-        "summer_Wed": "{{i18n:Hank.CharacterDialogue.010}}",
-        "summer_Thu": "{{i18n:Hank.CharacterDialogue.011}}",
-        "summer_Fri": "{{i18n:Hank.CharacterDialogue.012}}",
-        "summer_Sat": "{{i18n:Hank.CharacterDialogue.013}}",
-        "summer_Sun": "{{i18n:Hank.CharacterDialogue.014}}",
-        "fall_Mon": "{{i18n:Hank.CharacterDialogue.015}}",
-        "fall_Tue": "{{i18n:Hank.CharacterDialogue.016}}",
-        "fall_Wed": "{{i18n:Hank.CharacterDialogue.017}}",
-        "fall_Thu": "{{i18n:Hank.CharacterDialogue.018}}",
-        "fall_Fri": "{{i18n:Hank.CharacterDialogue.019}}",
-        "fall_Sat": "{{i18n:Hank.CharacterDialogue.020}}",
-        "fall_Sun": "{{i18n:Hank.CharacterDialogue.021}}",
-        "winter_Mon": "{{i18n:Hank.CharacterDialogue.022}}",
-        "winter_Tue": "{{i18n:Hank.CharacterDialogue.023}}",
-        "winter_Wed": "{{i18n:Hank.CharacterDialogue.024}}",
-        "winter_Thu": "{{i18n:Hank.CharacterDialogue.025}}",
-        "winter_Fri": "{{i18n:Hank.CharacterDialogue.026}}",
-        "winter_Sat": "{{i18n:Hank.CharacterDialogue.027}}",
-        "winter_Sun": "{{i18n:Hank.CharacterDialogue.028}}",
-		"DumpsterDiveComment": "{{i18n:Hank.CharacterDialogue.029}}"
-      },
-    },
-  ]
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/HankSVE",
+            "When": {
+                "HasSeenEvent |contains=3691373": true
+            },
+            "Entries": {
+                "spring_Thu": "$query PLAYER_HAS_MAIL Current SVE_ScarlettMarriageH#{{i18n:Hank.MarriedScarlett}}#$action RemoveMail Current SVE_ScarlettMarriageH|{{i18n:Hank.CharacterDialogue.004}}",
+                "spring_Fri": "$query PLAYER_HAS_MAIL Current SVE_ScarlettMarriageH#{{i18n:Hank.MarriedScarlett}}#$action RemoveMail Current SVE_ScarlettMarriageH|{{i18n:Hank.CharacterDialogue.005}}",
+                "married_Scarlett": "{{i18n:Hank.MarriedScarlett}}",
+                "divorced_Scarlett": "{{i18n:Hank.DivorcedScarlett}}",
+                "spring_Mon": "{{i18n:Hank.CharacterDialogue.001}}",
+                "spring_Tue": "{{i18n:Hank.CharacterDialogue.002}}",
+                "spring_Wed": "{{i18n:Hank.CharacterDialogue.003}}",
+                "spring_Thu": "{{i18n:Hank.CharacterDialogue.004}}",
+                "spring_Fri": "{{i18n:Hank.CharacterDialogue.005}}",
+                "spring_Sat": "{{i18n:Hank.CharacterDialogue.006}}",
+                "spring_Sun": "{{i18n:Hank.CharacterDialogue.007}}",
+                "summer_Mon": "{{i18n:Hank.CharacterDialogue.008}}",
+                "summer_Tue": "{{i18n:Hank.CharacterDialogue.009}}",
+                "summer_Wed": "{{i18n:Hank.CharacterDialogue.010}}",
+                "summer_Thu": "{{i18n:Hank.CharacterDialogue.011}}",
+                "summer_Fri": "{{i18n:Hank.CharacterDialogue.012}}",
+                "summer_Sat": "{{i18n:Hank.CharacterDialogue.013}}",
+                "summer_Sun": "{{i18n:Hank.CharacterDialogue.014}}",
+                "fall_Mon": "{{i18n:Hank.CharacterDialogue.015}}",
+                "fall_Tue": "{{i18n:Hank.CharacterDialogue.016}}",
+                "fall_Wed": "{{i18n:Hank.CharacterDialogue.017}}",
+                "fall_Thu": "{{i18n:Hank.CharacterDialogue.018}}",
+                "fall_Fri": "{{i18n:Hank.CharacterDialogue.019}}",
+                "fall_Sat": "{{i18n:Hank.CharacterDialogue.020}}",
+                "fall_Sun": "{{i18n:Hank.CharacterDialogue.021}}",
+                "winter_Mon": "{{i18n:Hank.CharacterDialogue.022}}",
+                "winter_Tue": "{{i18n:Hank.CharacterDialogue.023}}",
+                "winter_Wed": "{{i18n:Hank.CharacterDialogue.024}}",
+                "winter_Thu": "{{i18n:Hank.CharacterDialogue.025}}",
+                "winter_Fri": "{{i18n:Hank.CharacterDialogue.026}}",
+                "winter_Sat": "{{i18n:Hank.CharacterDialogue.027}}",
+                "winter_Sun": "{{i18n:Hank.CharacterDialogue.028}}",
+                "DumpsterDiveComment": "{{i18n:Hank.CharacterDialogue.029}}"
+            }
+        }
+    ]
 }

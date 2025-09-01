@@ -1,30 +1,27 @@
-{
+﻿{
     "Changes": [
         {
             "Action": "EditData",
             "Target": "Data/Shops",
             "Priority": "Early - 100",
-            "TargetField": [
-                "Festival_FlowerDance_Pierre",
-                "Items"
-            ],
+            "TargetField": [ "Festival_FlowerDance_Pierre", "Items" ],
             "Entries": {
-			    "FlashShifter.StardewValleyExpandedCP_Decorative_Tulips": {
+                "FlashShifter.StardewValleyExpandedCP_Decorative_Tulips": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Decorative_Tulips",
                     "ItemId": "FlashShifter.StardewValleyExpandedCP_Decorative_Tulips",
-                    "Price": "400",
+                    "Price": "400"
                 },
-				"FlashShifter.StardewValleyExpandedCP_Decorative_Sunflower": {
+                "FlashShifter.StardewValleyExpandedCP_Decorative_Sunflower": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Decorative_Sunflower",
                     "ItemId": "FlashShifter.StardewValleyExpandedCP_Decorative_Sunflower",
-                    "Price": "500",
+                    "Price": "500"
                 },
-			    "FlashShifter.StardewValleyExpandedCP_Decorative_Fairy_Rose": {
+                "FlashShifter.StardewValleyExpandedCP_Decorative_Fairy_Rose": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Decorative_Fairy_Rose",
                     "ItemId": "FlashShifter.StardewValleyExpandedCP_Decorative_Fairy_Rose",
-                    "Price": "600",
-                },			
-			},
-	    },
-	]
+                    "Price": "600"
+                }
+            }
+        }
+    ]
 }

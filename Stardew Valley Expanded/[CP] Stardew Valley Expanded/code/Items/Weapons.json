@@ -1,4 +1,4 @@
-{
+﻿{
     "Changes": [
         {
             "Action": "EditData",
@@ -88,7 +88,7 @@
                     "SpriteIndex": 0,
                     "CustomFields": {}
                 },
-				"FlashShifter.StardewValleyExpandedCP_Monster_Splitter": {
+                "FlashShifter.StardewValleyExpandedCP_Monster_Splitter": {
                     "Name": "Monster Splitter",
                     "DisplayName": "{{i18n:weapon.monster-splitter.name}}",
                     "Description": "{{i18n:weapon.monster-splitter.description}}",
@@ -109,7 +109,7 @@
                     "SpriteIndex": 0,
                     "CustomFields": {}
                 },
-				"FlashShifter.StardewValleyExpandedCP_Heavy_Shield": {
+                "FlashShifter.StardewValleyExpandedCP_Heavy_Shield": {
                     "Name": "Heavy Shield",
                     "DisplayName": "{{i18n:weapon.heavy-shield.name}}",
                     "Description": "{{i18n:weapon.heavy-shield.description}}",
@@ -130,39 +130,45 @@
                     "SpriteIndex": 0,
                     "CustomFields": {}
                 }
-            },
+            }
         },
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/DiamondWand",
-            "FromFile": "assets/Items/Weapons/DiamondWand.png",
+            "FromFile": "assets/Items/Weapons/DiamondWand.png"
         },
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Tempered Galaxy Dagger",
-            "FromFile": "assets/Items/Weapons/Tempered Galaxy Dagger.png",
+            "FromFile": "assets/Items/Weapons/Tempered Galaxy Dagger.png"
         },
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Tempered Galaxy Hammer",
-            "FromFile": "assets/Items/Weapons/Tempered Galaxy Hammer.png",
+            "FromFile": "assets/Items/Weapons/Tempered Galaxy Hammer.png"
         },
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Tempered Galaxy Sword",
-            "FromFile": "assets/Items/Weapons/Tempered Galaxy Sword.png",
+            "FromFile": "assets/Items/Weapons/Tempered Galaxy Sword.png"
         },
-		{
-            "Action": "Load", "Priority": "Low",
+        {
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Monster Splitter",
-            "FromFile": "assets/Items/Weapons/Monster Splitter.png",
+            "FromFile": "assets/Items/Weapons/Monster Splitter.png"
         },
-		{
-            "Action": "Load", "Priority": "Low",
+        {
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/Heavy Shield",
-            "FromFile": "assets/Items/Weapons/Heavy Shield.png",
+            "FromFile": "assets/Items/Weapons/Heavy Shield.png"
         },
-        { //WEAPON DATA	
+        { //WEAPON DATA
             "Action": "EditData",
             "Target": "Data/Weapons",
             "Fields": {
@@ -255,12 +261,12 @@
                 "54": {
                     "MinDamage": 75,
                     "MaxDamage": 100,
-                    "Defense": 7,
+                    "Defense": 7
                 },
                 "55": {
                     "MinDamage": 80,
                     "MaxDamage": 90,
-                    "Defense": 15,
+                    "Defense": 15
                 },
                 "56": {
                     "MinDamage": 36,
@@ -268,10 +274,12 @@
                     "Defense": 8,
                     "CritChance": 0.12
                 },
-                /*"61": {
+                /*
+                "61": {
                     "MinDamage": 40,
                     "MaxDamage": 70
-                },*/
+                },
+                */
                 "62": {
                     "MinDamage": 140,
                     "MaxDamage": 160,
@@ -288,7 +296,7 @@
                     "Defense": 15,
                     "CritChance": 0,
                     "CritMultiplier": 3
-                }, //INFINITY HAMMER: High damage and knockback, medium Defense. Low speed and no crit 
+                }, //INFINITY HAMMER: High damage and knockback, medium Defense. Low speed and no crit
                 "64": {
                     "MinDamage": 60,
                     "MaxDamage": 80,
@@ -298,6 +306,6 @@
                     "CritMultiplier": 3
                 } //INFINITY DAGGER: Very high damange, very high crit. Small range
             }
-        },
+        }
     ]
 }

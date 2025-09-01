@@ -1,5 +1,4 @@
-{
-
+﻿{
     "Changes": [
         {
             "Action": "EditData",
@@ -12,9 +11,9 @@
                             "Portrait": "Mods\\FlashShifter.StardewValleyExpandedCP\\Chloe_Vendor",
                             "Dialogues": [
                                 {
-                                "Id": "FlashShifter.StardewValleyExpandedCP_Default",
-                                "Dialogue": "{{i18n:ShopsDialogue.Chloe3}}",
-                                },
+                                    "Id": "FlashShifter.StardewValleyExpandedCP_Default",
+                                    "Dialogue": "{{i18n:ShopsDialogue.Chloe3}}"
+                                }
                             ]
                         }
                     ],
@@ -25,44 +24,43 @@
                             "ItemId": "265",
                             "Price": 7000,
                             "AvailableStock": 1
-                        }, 
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Lobster_Bisque",
                             "ItemId": "730",
                             "Price": 2500,
                             "AvailableStock": 1
-                        }, 
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Trout_Soup",
                             "ItemId": "219",
                             "Price": 500,
                             "AvailableStock": 3
-                        }, 
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Pumpkin_Soup",
                             "ItemId": "236",
                             "Price": 500,
                             "AvailableStock": 3
-                        }, 
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Parsnip_Soup",
                             "ItemId": "199",
                             "Price": 500,
                             "AvailableStock": 3
-                        }, 
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Tom_Kha_Soup",
                             "ItemId": "218",
                             "Price": 500,
                             "AvailableStock": 3
-                        }, 
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Algae_Soup",
                             "ItemId": "456",
                             "Price": 250,
                             "AvailableStock": 3
-                        }, 
-                        
+                        }
                     ]
                 }
             }

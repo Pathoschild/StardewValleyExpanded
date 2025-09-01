@@ -1,26 +1,10 @@
-﻿using System;
-using StardewModdingAPI;
-using StardewValley;
-using HarmonyLib;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using StardewValley.TerrainFeatures;
-using Microsoft.Xna.Framework;
+using HarmonyLib;
+using StardewModdingAPI;
 using StardewModdingAPI.Events;
-using StardewValley.Locations;
-using StardewValley.Monsters;
-using System.Diagnostics;
-using StardewValley.Objects;
-using StardewValley.Menus;
-using Microsoft.Xna.Framework.Graphics;
-using StardewValley.Events;
-using StardewValley.Characters;
-using xTile.Dimensions;
-using Netcode;
-using StardewValley.Network;
-using System.Reflection.Emit;
-using System.Reflection;
-using xTile.ObjectModel;
+using StardewValley;
 using StardewValley.SpecialOrders;
 
 namespace StardewValleyExpanded
@@ -30,8 +14,10 @@ namespace StardewValleyExpanded
     {
         /// <summary>True if this patch is currently applied.</summary>
         public static bool Applied { get; private set; } = false;
+
         /// <summary>The SMAPI helper instance to use for events and other API access.</summary>
         private static IModHelper Helper { get; set; } = null;
+
         /// <summary>The monitor instance to use for log messages. Null if not provided.</summary>
         private static IMonitor Monitor { get; set; } = null;
 
@@ -41,10 +27,10 @@ namespace StardewValleyExpanded
         /// <param name="monitor">The <see cref="IMonitor"/> provided to this mod by SMAPI. Used for log messages.</param>
         public static void ApplyPatch(Harmony harmony, IModHelper helper, IMonitor monitor)
         {
-            if (!Applied && helper != null && monitor != null) //if NOT already applied AND valid tools were provided
+            if (!Applied && helper != null && monitor != null) // if NOT already applied AND valid tools were provided
             {
-                Helper = helper; //store helper
-                Monitor = monitor; //store monitor
+                Helper = helper; // store helper
+                Monitor = monitor; // store monitor
 
                 Helper.Events.GameLoop.DayEnding += GameLoop_PreventSpecialOrderExpiration;
 
@@ -65,7 +51,7 @@ namespace StardewValleyExpanded
 
 
         /// <summary>A list of special order keys (a.k.a. IDs) to give unlimited durations.</summary>
-        public static List<string> SpecialOrderKeys = new List<string>()
+        public static List<string> SpecialOrderKeys = new List<string>
         {
             "Clint2",
             "Clint3",
@@ -83,7 +69,7 @@ namespace StardewValleyExpanded
             "DwarfCaveShortcut",
             "CamillaBridge",
             "LegendaryTrio",
-            "HenchmanHouseRepaired",
+            "HenchmanHouseRepaired"
         };
 
 
@@ -95,15 +81,15 @@ namespace StardewValleyExpanded
         /// <summary>Gives the listed special orders infinitely long durations.</summary>
         private static void GameLoop_PreventSpecialOrderExpiration(object sender, DayEndingEventArgs e)
         {
-            if (!Context.IsMainPlayer) //if this is NOT the main player
-                return; //do nothing
+            if (!Context.IsMainPlayer) // if this is NOT the main player
+                return; // do nothing
 
-            foreach (SpecialOrder order in Game1.player.team.specialOrders) //for each special order the players currently have
+            foreach (SpecialOrder order in Game1.player.team.specialOrders) // for each special order the players currently have
             {
-                string orderKey = order.questKey.Value; //get this order's key
-                if (SpecialOrderKeys.Contains(orderKey, StringComparer.OrdinalIgnoreCase)) //if the key is in this patch's list
+                string orderKey = order.questKey.Value; // get this order's key
+                if (SpecialOrderKeys.Contains(orderKey, StringComparer.OrdinalIgnoreCase)) // if the key is in this patch's list
                 {
-                    order.dueDate.Value = Game1.Date.TotalDays + 100000; //update the order's "due date" to prevent expiration and be visibly infinite (in case it gets displayed by unpatched logic)
+                    order.dueDate.Value = Game1.Date.TotalDays + 100000; // update the order's "due date" to prevent expiration and be visibly infinite (in case it gets displayed by unpatched logic)
                 }
             }
         }
@@ -115,17 +101,17 @@ namespace StardewValleyExpanded
         {
             try
             {
-                string orderKey = __instance.questKey.Value; //get this order's key
-                if (SpecialOrderKeys.Contains(orderKey, StringComparer.OrdinalIgnoreCase)) //if the key is in this patch's list
+                string orderKey = __instance.questKey.Value; // get this order's key
+                if (SpecialOrderKeys.Contains(orderKey, StringComparer.OrdinalIgnoreCase)) // if the key is in this patch's list
                 {
-                    __result = false; //return false
+                    __result = false; // return false
                     return;
                 }
             }
             catch (Exception ex)
             {
                 Monitor.LogOnce($"Harmony patch \"{nameof(HarmonyPatch_UntimedSpecialOrders)}\" has encountered an error. Postfix \"{nameof(SpecialOrders_IsTimedQuest)}\" might malfunction or revert to default behavior. Full error message: \n{ex.ToString()}", LogLevel.Error);
-                return; //do nothing
+                return; // do nothing
             }
         }
     }

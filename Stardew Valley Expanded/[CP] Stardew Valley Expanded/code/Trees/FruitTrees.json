@@ -1,23 +1,19 @@
-{
+﻿{
     "Changes": [
-        
         //Fruit Trees
         {
             "Action": "Load",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVEFruitTrees",
-            "FromFile": "Assets/Trees/SVE_Fruit_Trees.png",
+            "FromFile": "Assets/Trees/SVE_Fruit_Trees.png"
         },
         {
             "Action": "EditData",
             "Target": "Data/FruitTrees",
             "Entries": {
-			
-			    //Pear Tree
+                //Pear Tree
                 "FlashShifter.StardewValleyExpandedCP_Pear_Sapling": {
                     "DisplayName": "{{i18n:object.pear.name}}",
-                    "Seasons": [
-                        "Spring"
-                    ],
+                    "Seasons": [ "Spring" ],
                     "Fruit": [
                         {
                             "Season": null,
@@ -43,13 +39,11 @@
                     "TextureSpriteRow": 0,
                     "CustomFields": {}
                 },
-				
-				//Nectarine Tree
-				"FlashShifter.StardewValleyExpandedCP_Nectarine_Sapling": {
+
+                //Nectarine Tree
+                "FlashShifter.StardewValleyExpandedCP_Nectarine_Sapling": {
                     "DisplayName": "{{i18n:object.nectarine.name}}",
-                    "Seasons": [
-                        "Summer"
-                    ],
+                    "Seasons": [ "Summer" ],
                     "Fruit": [
                         {
                             "Season": null,
@@ -75,13 +69,11 @@
                     "TextureSpriteRow": 1,
                     "CustomFields": {}
                 },
-				
-				//Persimmon Tree
-				"FlashShifter.StardewValleyExpandedCP_Persimmon_Sapling": {
+
+                //Persimmon Tree
+                "FlashShifter.StardewValleyExpandedCP_Persimmon_Sapling": {
                     "DisplayName": "{{i18n:object.persimmon.name}}",
-                    "Seasons": [
-                        "Fall"
-                    ],
+                    "Seasons": [ "Fall" ],
                     "Fruit": [
                         {
                             "Season": null,
@@ -107,13 +99,11 @@
                     "TextureSpriteRow": 2,
                     "CustomFields": {}
                 },
-				
-				//Money Tree
-				"FlashShifter.StardewValleyExpandedCP_Tree_Coin": {
+
+                //Money Tree
+                "FlashShifter.StardewValleyExpandedCP_Tree_Coin": {
                     "DisplayName": "{{i18n:displayname.money-tree}}",
-                    "Seasons": [
-                        "Spring", "Summer", "Fall", "Winter"
-                    ],
+                    "Seasons": [ "Spring", "Summer", "Fall", "Winter" ],
                     "Fruit": [
                         {
                             "Season": null,
@@ -138,8 +128,8 @@
                     "Texture": "Mods\\FlashShifter.StardewValleyExpandedCP\\SVEFruitTrees",
                     "TextureSpriteRow": 3,
                     "CustomFields": {}
-                },
+                }
             }
-        },
+        }
     ]
 }

@@ -1,12 +1,11 @@
-{
-  "Changes": [
-    {
-      "Action": "EditData",
-      "Target": "Strings/schedules/Apples",
-      "Entries": 
-      {
-  "Roommate.001": "{{i18n:Apples.Roommate.001}}"
-},
-    },
-  ]
+﻿{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Apples",
+            "Entries": {
+                "Roommate.001": "{{i18n:Apples.Roommate.001}}"
+            }
+        }
+    ]
 }

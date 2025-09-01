@@ -1,11 +1,11 @@
-﻿using System;
-using StardewModdingAPI;
-using StardewValley;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.Xna.Framework;
+using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewModdingAPI.Utilities;
-using System.Linq;
+using StardewValley;
 
 namespace StardewValleyExpanded
 {
@@ -14,6 +14,7 @@ namespace StardewValleyExpanded
     {
         /// <summary>True if these cauldron effects are currently enabled.</summary>
         public static bool IsEnabled { get; private set; } = false;
+
         /// <summary>The SMAPI helper provided for use with these effects.</summary>
         private static IModHelper Helper { get; set; } = null;
 
@@ -27,9 +28,9 @@ namespace StardewValleyExpanded
         /// <param name="helper">The SMAPI helper to use for events and necessary checks.</param>
         public static void Enable(IModHelper helper)
         {
-            if (!IsEnabled && helper != null) //if disabled AND a helper was provided
+            if (!IsEnabled && helper != null) // if disabled AND a helper was provided
             {
-                //enable cauldron SMAPI events
+                // enable cauldron SMAPI events
                 IsEnabled = true;
                 Helper = helper;
                 Helper.Events.GameLoop.SaveLoaded += SaveLoaded_CreateEffects;
@@ -41,9 +42,9 @@ namespace StardewValleyExpanded
         /// <summary>Disables this class's predefined set of effects.</summary>
         public static void Disable()
         {
-            if (IsEnabled) //if enabled
+            if (IsEnabled) // if enabled
             {
-                //disable cauldron SMAPI events
+                // disable cauldron SMAPI events
                 IsEnabled = false;
                 Helper.Events.GameLoop.SaveLoaded -= SaveLoaded_CreateEffects;
                 Helper.Events.Player.Warped -= Warped_CreateEffects;
@@ -60,12 +61,12 @@ namespace StardewValleyExpanded
 
         /// <summary>The set of tiles that ALWAYS have waterfall effects. Used to generate a set of effects whenever a new save is loaded.</summary>
         /// <remarks>Duplicate tiles are supported and will multiply the number of effects on the tile.</remarks>
-        private static Dictionary<string, List<Vector2>> WaterfallTiles { get; } = new Dictionary<string, List<Vector2>>()
+        private static Dictionary<string, List<Vector2>> WaterfallTiles { get; } = new Dictionary<string, List<Vector2>>
         {
             {
-                "Custom_GrandpasGrove", new List<Vector2>()
+                "Custom_GrandpasGrove", new List<Vector2>
                 {
-                    //small waterfall
+                    // small waterfall
                     new Vector2(24, 23 ),
                     new Vector2(21, 25),
                     new Vector2(25, 25),
@@ -82,7 +83,7 @@ namespace StardewValleyExpanded
                 }
             },
             {
-                "Custom_FerngillRepublicFrontier_HotSpring", new List<Vector2>()
+                "Custom_FerngillRepublicFrontier_HotSpring", new List<Vector2>
                 {
                     new Vector2(7, 31),
                     new Vector2(10, 32),
@@ -138,13 +139,13 @@ namespace StardewValleyExpanded
                     new Vector2(29, 15),
                     new Vector2(28, 13),
                     new Vector2(25, 14),
-                    new Vector2(23, 15),
+                    new Vector2(23, 15)
                 }
             },
             {
-                "Custom_CrimsonBadlands", new List<Vector2>()
+                "Custom_CrimsonBadlands", new List<Vector2>
                 {
-                    //Sandstorm Effects
+                    // Sandstorm Effects
                     new Vector2(5, 0),
                     new Vector2(0, 12),
                     new Vector2(15, 16),
@@ -320,10 +321,9 @@ namespace StardewValleyExpanded
                     new Vector2(0, 84),
                     new Vector2(37, 105),
                     new Vector2(75, 155),
-                    new Vector2(46, 0),
-
+                    new Vector2(46, 0)
                 }
-            },
+            }
         };
 
 
@@ -334,9 +334,9 @@ namespace StardewValleyExpanded
         {
             if (locationName == "Farm")
             {
-                if (Game1.whichFarm == Farm.default_layout && Helper.ModRegistry.IsLoaded("flashshifter.immersivefarm2remastered")) //if the player is using IF2R
+                if (Game1.whichFarm == Farm.default_layout && Helper.ModRegistry.IsLoaded("flashshifter.immersivefarm2remastered")) // if the player is using IF2R
                 {
-                    return new List<Vector2>()
+                    return new List<Vector2>
                     {
                         new Vector2(14, 91),
                         new Vector2(11, 93),
@@ -358,7 +358,7 @@ namespace StardewValleyExpanded
                 }
             }
 
-            return new List<Vector2>(); //if no conditions matched, return a blank list
+            return new List<Vector2>(); // if no conditions matched, return a blank list
         }
 
         /// <summary>Applies conditional settings to each specific effect as it's generated. Used to apply changes based on location name, tile, etc.</summary>
@@ -370,7 +370,7 @@ namespace StardewValleyExpanded
         {
             if (locationName == "Farm")
             {
-                effect.DrawAboveAlwaysFront = false; //draw above all map layers (avoids issues with Grandpa's Farm layers, etc)
+                effect.DrawAboveAlwaysFront = false; // draw above all map layers (avoids issues with Grandpa's Farm layers, etc)
             }
 
             else if (locationName == "Custom_CrimsonBadlands")
@@ -381,7 +381,7 @@ namespace StardewValleyExpanded
                 effect.MaxTickRate = 70;
                 effect.Flipped = false;
                 effect.AlphaFade = 0.0012f;
-                //effect.TintColor = new Color(240, 248, 255);
+                // effect.TintColor = new Color(240, 248, 255);
                 effect.DrawAboveAlwaysFront = true;
                 effect.Alpha = 0.50f;
                 effect.Motion = new Vector2(3f, -0.05f);
@@ -412,30 +412,30 @@ namespace StardewValleyExpanded
         /// <summary>Populates the set of effects to use when the current player's location changes.</summary>
         private static void Warped_CreateEffects(object sender, WarpedEventArgs e)
         {
-            if (e.IsLocalPlayer) //if the current player is the one who warped
+            if (e.IsLocalPlayer) // if the current player is the one who warped
                 UpdateEffects();
         }
 
         /// <summary>Update the current player's list of effects for their location.</summary>
         private static void UpdateEffects()
         {
-            if (Context.IsWorldReady == false) //if a game is NOT currently loaded
-                return; //do nothing
+            if (Context.IsWorldReady == false) // if a game is NOT currently loaded
+                return; // do nothing
 
-            CauldronEffects.Value = new List<CauldronEffect>(); //clear the existing list
-            Vector2 offset = new Vector2(32, 32); //define the offset within each tile (e.g. 32,32 = effects appear at the center of a tile)
+            CauldronEffects.Value = new List<CauldronEffect>(); // clear the existing list
+            Vector2 offset = new Vector2(32, 32); // define the offset within each tile (e.g. 32,32 = effects appear at the center of a tile)
 
-            string locationName = Game1.player.currentLocation?.Name ?? ""; //get the local player's current location name (use "" if null)
-            WaterfallTiles.TryGetValue(locationName, out List<Vector2> staticTiles); //get static waterfall tiles for this location, if any
-            if (staticTiles == null) //if no static tiles exist
-                staticTiles = new List<Vector2>(); //use a blank list
+            string locationName = Game1.player.currentLocation?.Name ?? ""; // get the local player's current location name (use "" if null)
+            WaterfallTiles.TryGetValue(locationName, out List<Vector2> staticTiles); // get static waterfall tiles for this location, if any
+            if (staticTiles == null) // if no static tiles exist
+                staticTiles = new List<Vector2>(); // use a blank list
 
-            foreach (Vector2 tile in staticTiles.Concat(GetConditionalWaterfallTiles(locationName))) //for each waterfall tile in the static list AND conditional list
+            foreach (Vector2 tile in staticTiles.Concat(GetConditionalWaterfallTiles(locationName))) // for each waterfall tile in the static list AND conditional list
             {
-                Vector2 effectPosition = (tile * 64) + offset; //get the position of this tile's effect
-                CauldronEffect effect = new CauldronEffect(effectPosition); //create a new effect
-                effect = ApplyConditionalEffectSettings(effect, locationName, tile); //apply conditional changes
-                CauldronEffects.Value.Add(effect); //add the effect to the list
+                Vector2 effectPosition = (tile * 64) + offset; // get the position of this tile's effect
+                CauldronEffect effect = new CauldronEffect(effectPosition); // create a new effect
+                effect = ApplyConditionalEffectSettings(effect, locationName, tile); // apply conditional changes
+                CauldronEffects.Value.Add(effect); // add the effect to the list
             }
         }
 
@@ -447,11 +447,13 @@ namespace StardewValleyExpanded
         {
             /// <summary>The number of the next tick when this effect should "spawn" a new sprite.</summary>
             public uint NextTick { get; set; } = uint.MinValue;
-            /// <summary>The minimum random number of ticks between "spawned" sprites for this effect.</summary>
 
+            /// <summary>The minimum random number of ticks between "spawned" sprites for this effect.</summary>
             public int MinTickRate { get; set; } = 75;
+
             /// <summary>The maximum random number of ticks between "spawned" sprites for this effect.</summary>
             public int MaxTickRate { get; set; } = 125;
+
             /// <summary>The "base" pixel position of this effect (prior to per-sprite randomization and movement).</summary>
             public Vector2 Position { get; set; } = Vector2.Zero;
 
@@ -461,35 +463,48 @@ namespace StardewValleyExpanded
 
             /// <summary>The next of this effect's spritesheet. Defaults to "LooseSprites\\Cursors".</summary>
             public string TextureName { get; set; } = "LooseSprites\\Cursors";
+
             /// <summary>The spritesheet X, Y, Width, and Height values for this effect. Defaults to the cauldron effect from "LooseSprites\\Cursors".</summary>
             public Rectangle SourceRect { get; set; } = new Rectangle(372, 1956, 10, 10);
+
             /// <summary>True if this effect's sprite should be flipped horizontally.</summary>
             public bool Flipped { get; set; } = false;
+
             /// <summary>The amount of opacity removed from this effect each tick. Defaults to 0.002f, which is -12% opacity per second.</summary>
             public float AlphaFade { get; set; } = 0.0009f;
+
             /// <summary>The color used to tint this effect's sprite. Defaults to a light blue "waterfall" color. Use <see cref="Color.White"/> for no tint.</summary>
             public Color TintColor { get; set; } = new Color(240, 248, 255);
+
             /// <summary>True if this effect should appear above all map layers. Defaults to false.</summary>
             public bool DrawAboveAlwaysFront { get; set; } = false;
+
             /// <summary>The starting opacity of this effect. Defaults to 0.75f, which is 75% opaque.</summary>
             public float Alpha { get; set; } = 0.45f;
+
             /// <summary>The number of pixels down (X) and right (Y) the effect moves each tick. Negative values are allowed.</summary>
             public Vector2 Motion { get; set; } = new Vector2(0f, -0.35f);
+
             /// <summary>X and Y values added to <see cref="Motion"/> each tick. Negative values are allowed.</summary>
             public Vector2 Acceleration { get; set; } = Vector2.Zero;
+
             /// <summary>The sprite size multiplier applied to the effect. Defaults to 3f (300% size).</summary>
             public float Scale { get; set; } = 4f;
+
             /// <summary>A value added to <see cref="Scale"/> each tick. Defaults to 0.01f (+60% size per second).</summary>
             public float ScaleChange { get; set; } = 0.01f;
+
             /// <summary>The minimum random starting rotation speed of this effect. Defaults to 0.</summary>
             public int MinRotation { get; set; } = 0;
+
             /// <summary>The maximum random starting rotation speed of this effect. Defaults to 0.</summary>
             public int MaxRotation { get; set; } = 0;
+
             /// <summary>The minimum random acceleration applied to this effect's rotation each tick. Defaults to -5 (based on cauldron effect rotation).</summary>
             public int MinRotationChange { get; set; } = -5;
+
             /// <summary>The maximum random acceleration applied to this effect's rotation each tick. Defaults to 6 (based on cauldron effect rotation).</summary>
             public int MaxRotationChange { get; set; } = 6;
-
 
             public CauldronEffect(Vector2 position)
             {
@@ -499,23 +514,23 @@ namespace StardewValleyExpanded
 
         private static void UpdateTicking_ManageEffects(object sender, UpdateTickingEventArgs e)
         {
-            foreach (CauldronEffect effect in CauldronEffects.Value) //for each of the current player's existing effects
+            foreach (CauldronEffect effect in CauldronEffects.Value) // for each of the current player's existing effects
             {
-                if (!Context.IsWorldReady || !Game1.game1.IsActive) //if the game is currently paused or inactive
+                if (!Context.IsWorldReady || !Game1.game1.IsActive) // if the game is currently paused or inactive
                 {
-                    effect.NextTick++; //increment this effect's previous tick (effectively skipping this tick)
+                    effect.NextTick++; // increment this effect's previous tick (effectively skipping this tick)
                 }
-                else if (effect.NextTick <= e.Ticks) //if this effect should spawn during this tick
+                else if (effect.NextTick <= e.Ticks) // if this effect should spawn during this tick
                 {
-                    effect.NextTick = e.Ticks + (uint)Game1.random.Next(effect.MinTickRate, effect.MaxTickRate + 1); //randomly assign this effect's next spawn tick
+                    effect.NextTick = e.Ticks + (uint)Game1.random.Next(effect.MinTickRate, effect.MaxTickRate + 1); // randomly assign this effect's next spawn tick
 
-                    Game1.player.currentLocation?.temporarySprites.Add //create a sprite for this effect at the player's current location
+                    Game1.player.currentLocation?.temporarySprites.Add // create a sprite for this effect at the player's current location
                     (
                         new TemporaryAnimatedSprite
                         (
                             effect.TextureName,
                             effect.SourceRect,
-                            effect.Position + new Vector2(Game1.random.Next(-32, 33), Game1.random.Next(-16, 17)), //randomize the new sprite's position in a limited range
+                            effect.Position + new Vector2(Game1.random.Next(-32, 33), Game1.random.Next(-16, 17)), // randomize the new sprite's position in a limited range
                             effect.Flipped,
                             effect.AlphaFade,
                             effect.TintColor
@@ -524,12 +539,12 @@ namespace StardewValleyExpanded
                             alpha = effect.Alpha,
                             motion = effect.Motion,
                             acceleration = effect.Acceleration,
-                            interval = 99999f, //animation framerate? (currently not applicable to this class)
-                            layerDepth = 0.144f - (float)Game1.random.Next(100) / 10000f, //draw layer depth, a.k.a. Z-level (should only affect other effects, not map layers/etc)
+                            interval = 99999f, // animation framerate? (currently not applicable to this class)
+                            layerDepth = 0.144f - (float)Game1.random.Next(100) / 10000f, // draw layer depth, a.k.a. Z-level (should only affect other effects, not map layers/etc)
                             scale = effect.Scale,
                             scaleChange = effect.ScaleChange,
-                            rotation = Game1.random.Next(effect.MinRotation, effect.MaxRotation + 1) * (float)Math.PI / 256f, //randomize starting rotation speed (applying pi/256 to imitate SDV speeds)
-                            rotationChange = Game1.random.Next(effect.MinRotationChange, effect.MaxRotationChange + 1) * (float)Math.PI / 256f, //randomize rotation acceleration (applying pi/256 to imitate SDV speeds)
+                            rotation = Game1.random.Next(effect.MinRotation, effect.MaxRotation + 1) * (float)Math.PI / 256f, // randomize starting rotation speed (applying pi/256 to imitate SDV speeds)
+                            rotationChange = Game1.random.Next(effect.MinRotationChange, effect.MaxRotationChange + 1) * (float)Math.PI / 256f, // randomize rotation acceleration (applying pi/256 to imitate SDV speeds)
                             drawAboveAlwaysFront = effect.DrawAboveAlwaysFront
                         }
                     );

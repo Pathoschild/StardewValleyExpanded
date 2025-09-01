@@ -1,20 +1,17 @@
 ﻿{
     "Changes": [
-      {
-        "Action": "EditData",
-        "Target": "Characters/Dialogue/Edmund",
-        "Entries": 
         {
-
-"Mon": "{{i18n:Edmund.CharacterDialogue.001}}",
-"Tue": "{{i18n:Edmund.CharacterDialogue.002}}",
-"Wed": "{{i18n:Edmund.CharacterDialogue.003}}",
-"Thu": "{{i18n:Edmund.CharacterDialogue.004}}",
-"Fri": "{{i18n:Edmund.CharacterDialogue.005}}",
-"Sat": "{{i18n:Edmund.CharacterDialogue.006}}",
-"Sun": "{{i18n:Edmund.CharacterDialogue.007}}",
-
-},
-      },
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Edmund",
+            "Entries": {
+                "Mon": "{{i18n:Edmund.CharacterDialogue.001}}",
+                "Tue": "{{i18n:Edmund.CharacterDialogue.002}}",
+                "Wed": "{{i18n:Edmund.CharacterDialogue.003}}",
+                "Thu": "{{i18n:Edmund.CharacterDialogue.004}}",
+                "Fri": "{{i18n:Edmund.CharacterDialogue.005}}",
+                "Sat": "{{i18n:Edmund.CharacterDialogue.006}}",
+                "Sun": "{{i18n:Edmund.CharacterDialogue.007}}"
+            }
+        }
     ]
 }

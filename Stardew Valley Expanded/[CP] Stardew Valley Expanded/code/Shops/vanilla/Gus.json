@@ -1,13 +1,10 @@
-{
+﻿{
     "Changes": [
         {
             "Action": "EditData",
             "Target": "Data/Shops",
             "Priority": "Early - 100",
-            "TargetField": [
-                "Saloon",
-                "Items"
-            ],
+            "TargetField": [ "Saloon", "Items" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Grampleton_Orange_Chicken": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Grampleton_Orange_Chicken",
@@ -19,27 +16,27 @@
                     "Id": "FlashShifter.StardewValleyExpandedCP_Big_Bark_Burger",
                     "ItemId": "FlashShifter.StardewValleyExpandedCP_Big_Bark_Burger",
                     "Price": "3000",
-                    "IsRecipe": "true",
+                    "IsRecipe": "true"
                 },
                 "FlashShifter.StardewValleyExpandedCP_Mixed_Berry_Pie": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Mixed_Berry_Pie",
                     "ItemId": "FlashShifter.StardewValleyExpandedCP_Mixed_Berry_Pie",
                     "Price": "5000",
-                    "IsRecipe": "true",
+                    "IsRecipe": "true"
                 },
                 "FlashShifter.StardewValleyExpandedCP_Glazed_Butterfish": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Glazed_Butterfish",
                     "ItemId": "FlashShifter.StardewValleyExpandedCP_Glazed_Butterfish",
                     "Price": "6000",
-                    "IsRecipe": "true",
+                    "IsRecipe": "true"
                 },
-				"FlashShifter.StardewValleyExpandedCP_Candy": {
+                "FlashShifter.StardewValleyExpandedCP_Candy": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Candy",
                     "ItemId": "FlashShifter.StardewValleyExpandedCP_Candy",
                     "Price": "10000",
-                    "IsRecipe": "true",
-                },
-            },
-        },
+                    "IsRecipe": "true"
+                }
+            }
+        }
     ]
 }

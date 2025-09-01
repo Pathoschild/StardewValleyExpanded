@@ -1,5 +1,4 @@
-{
-
+﻿{
     //Configs
     "Config.MistEffects.name": "MistEffects",
     "Config.SandboxLayout.name": "SandboxLayout",
@@ -96,5 +95,5 @@
     "OpeningEvent.12": "Anyway... You must be tired from the long journey. You should get some rest.#$b#Tomorrow you ought to explore the town a bit and introduce yourself.#$b#The townspeople would appreciate that.",
     "OpeningEvent.13": "Oh, I almost forgot. If you have anything to sell, just place it in this box here. I'll come by during the night to collect it.#$b#Well... Good luck!",
     "Marnie.Event.01": "Hi @! Now that you own farm animals, I thought I'd let you in on a little secret.$0",
-    "Marnie.Event.02": "They won't wander out of the fenced areas on your farm, so you're free to leave them open!$1",
+    "Marnie.Event.02": "They won't wander out of the fenced areas on your farm, so you're free to leave them open!$1"
 }

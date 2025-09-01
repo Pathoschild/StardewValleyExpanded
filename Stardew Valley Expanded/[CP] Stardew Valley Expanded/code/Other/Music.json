@@ -1,4 +1,4 @@
-{
+﻿{
     "Changes": [
         {
             "Action": "EditData",
@@ -15,7 +15,7 @@
                     "StreamedVorbis": true,
                     "Looped": true
                 },
-                // Crimson Badlands Cave theme - Alesia&Isaac Event 
+                // Crimson Badlands Cave theme - Alesia&Isaac Event
                 "FlashShifter.StardewValleyExpandedCP_OminousCavern": {
                     "ID": "FlashShifter.StardewValleyExpandedCP_OminousCavern",
                     "Category": "Music",
@@ -55,7 +55,7 @@
                     "StreamedVorbis": true,
                     "Looped": true
                 },
-                
+
                 // Camilla's Tower - kittyfish scene, marlon's special order
                 "FlashShifter.StardewValleyExpandedCP_CamillasTower": {
                     "ID": "FlashShifter.StardewValleyExpandedCP_CamillasTower",
@@ -187,7 +187,7 @@
                     "StreamedVorbis": true,
                     "Looped": false
                 },
-                // Olivia 12-Heart Scene 
+                // Olivia 12-Heart Scene
                 "FlashShifter.StardewValleyExpandedCP_Aerobics_Looped": {
                     "ID": "FlashShifter.StardewValleyExpandedCP_Aerobics_Looped",
                     "Category": "Music",
@@ -247,7 +247,7 @@
                     "StreamedVorbis": true,
                     "Looped": true
                 },
-               // Highlands Cavern (Vanilla Theme) >>>>> (no longer used)
+                // Highlands Cavern (Vanilla Theme) >>>>> (no longer used)
                 "FlashShifter.StardewValleyExpandedCP_SDVMagicalShoes": {
                     "ID": "FlashShifter.StardewValleyExpandedCP_SDVMagicalShoes",
                     "Category": "Music",
@@ -307,10 +307,10 @@
                     "StreamedVorbis": true,
                     "Looped": true
                 },
-				
-				//SVE 1.15 soundtracks
-				
-				// Highlands
+
+                //SVE 1.15 soundtracks
+
+                // Highlands
                 "FlashShifter.StardewValleyExpandedCP_HighlandsTheme": {
                     "ID": "FlashShifter.StardewValleyExpandedCP_HighlandsTheme",
                     "Category": "Music",
@@ -320,7 +320,7 @@
                     "StreamedVorbis": true,
                     "Looped": true
                 },
-				// Highlands Rainy
+                // Highlands Rainy
                 "FlashShifter.StardewValleyExpandedCP_HighlandsTheme_Rain": {
                     "ID": "FlashShifter.StardewValleyExpandedCP_HighlandsTheme_Rain",
                     "Category": "Music",
@@ -330,7 +330,7 @@
                     "StreamedVorbis": true,
                     "Looped": true
                 },
-				// Highlands Cavern
+                // Highlands Cavern
                 "FlashShifter.StardewValleyExpandedCP_CrystalCavern": {
                     "ID": "FlashShifter.StardewValleyExpandedCP_CrystalCavern",
                     "Category": "Music",
@@ -340,7 +340,7 @@
                     "StreamedVorbis": true,
                     "Looped": true
                 },
-				// Forbidden Maze
+                // Forbidden Maze
                 "FlashShifter.StardewValleyExpandedCP_ForbiddenMaze": {
                     "ID": "FlashShifter.StardewValleyExpandedCP_ForbiddenMaze",
                     "Category": "Music",
@@ -350,7 +350,7 @@
                     "StreamedVorbis": true,
                     "Looped": true
                 },
-				// Lovely Day - Scarlett's Theme
+                // Lovely Day - Scarlett's Theme
                 "FlashShifter.StardewValleyExpandedCP_LovelyDay": {
                     "ID": "FlashShifter.StardewValleyExpandedCP_LovelyDay",
                     "Category": "Music",
@@ -360,7 +360,7 @@
                     "StreamedVorbis": true,
                     "Looped": true
                 },
-				// Forbidden Maze Ambient
+                // Forbidden Maze Ambient
                 "FlashShifter.StardewValleyExpandedCP_ForbiddenMaze_Ambient": {
                     "ID": "FlashShifter.StardewValleyExpandedCP_ForbiddenMaze_Ambient",
                     "Category": "Ambient",
@@ -370,7 +370,7 @@
                     "StreamedVorbis": true,
                     "Looped": true
                 },
-				// Lava Ambient
+                // Lava Ambient
                 "FlashShifter.StardewValleyExpandedCP_ChurningLava_Ambient": {
                     "ID": "FlashShifter.StardewValleyExpandedCP_ChurningLava_Ambient",
                     "Category": "Ambient",
@@ -379,8 +379,8 @@
                     ],
                     "StreamedVorbis": true,
                     "Looped": true
-                },
-            },
-        },
+                }
+            }
+        }
     ]
 }

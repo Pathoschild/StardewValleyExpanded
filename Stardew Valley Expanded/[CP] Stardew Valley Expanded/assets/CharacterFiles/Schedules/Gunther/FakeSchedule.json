@@ -1,4 +1,4 @@
-{
+﻿{
     "Changes": [
         {
             "Action": "EditData",
@@ -7,7 +7,7 @@
                 "GuntherUnlocked": "false"
             },
             "Entries": {
-                "spring": "0 ArchaeologyHouse 5 8 2/610 ArchaeologyHouse 5 8 2",
+                "spring": "0 ArchaeologyHouse 5 8 2/610 ArchaeologyHouse 5 8 2"
             }
         }
     ]

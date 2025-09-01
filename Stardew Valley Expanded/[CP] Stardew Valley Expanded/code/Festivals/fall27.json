@@ -1,14 +1,14 @@
-{
+﻿{
     "Changes": [
         /*
-If you're here as a modder working on compat, this is the festival that's changed the most.
-*
-EVEN SVE years map = EVEN VANILLA Years map
-ODD SVE years will rotate between the existing two SVE maps. 
-Formerlly ODD year = 1, 5, 9, 13, 17, 21, 25,  29, 33, 37, 41, 45, 49, 53, 56, 59, 63, 67, 71, 75, 79, 83, 87, 91, 95, 99
-Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 61, 65, 69, 73, 77, 81, 85, 89, 93, 97
-*/
-        //ANY YEAR 
+            If you're here as a modder working on compat, this is the festival that's changed the most.
+            *
+            EVEN SVE years map = EVEN VANILLA Years map
+            ODD SVE years will rotate between the existing two SVE maps.
+            Formerlly ODD year = 1, 5, 9, 13, 17, 21, 25,  29, 33, 37, 41, 45, 49, 53, 56, 59, 63, 67, 71, 75, 79, 83, 87, 91, 95, 99
+            Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 61, 65, 69, 73, 77, 81, 85, 89, 93, 97
+        */
+        //ANY YEAR
         { //Apples halloween festival data
             "Action": "EditData",
             "Target": "Data/Festivals/fall27",
@@ -19,22 +19,16 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Apples 47 88 up",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Apples 47 88 up",
                     "Delimiter": "/"
-                },
+                }
             ]
         },
         { //Patches Krobus at halloween festival after players meet them for the first time
@@ -42,7 +36,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "Target": "Maps/Town-Halloween",
             "FromFile": "Assets/Maps/MapPatches/KrobusPatched.tbin",
             "When": {
-                "HasSeenEvent: anyPlayer| contains=1090501": true,
+                "HasSeenEvent: anyPlayer| contains=1090501": true
             },
             "ToArea": {
                 "X": 36,
@@ -56,7 +50,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "Target": "Maps/Town-Halloween2",
             "FromFile": "Assets/Maps/MapPatches/KrobusPatched.tbin",
             "When": {
-                "HasSeenEvent: anyPlayer| contains=1090501": true,
+                "HasSeenEvent: anyPlayer| contains=1090501": true
             },
             "ToArea": {
                 "X": 36,
@@ -77,7 +71,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
                 "MorrisTod": "{{i18n:Morris.Spirit}}",
                 "Sandy": "{{i18n:Sandy.Spirit}}",
                 "Scarlett": "{{i18n:Scarlett.Spirit}}",
-                "Susan": "{{i18n:Susan.Spirit}}",
+                "Susan": "{{i18n:Susan.Spirit}}"
             }
         },
         {
@@ -87,14 +81,14 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
                 "ApplesHere": "true"
             },
             "Entries": {
-                "Apples": "{{i18n:Apples.Spirit}}",
+                "Apples": "{{i18n:Apples.Spirit}}"
             }
         },
         {
             "Action": "EditData",
             "Target": "data/festivals/fall27",
             "Entries": {
-                "Claire": "{{i18n:spirit.claire.2}}",
+                "Claire": "{{i18n:spirit.claire.2}}"
             },
             "When": {
                 "Spouse": "Claire"
@@ -104,7 +98,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "Action": "EditData",
             "Target": "data/festivals/fall27",
             "Entries": {
-                "Olivia": "{{i18n:spirit.Olivia.3}}",
+                "Olivia": "{{i18n:spirit.Olivia.3}}"
             },
             "When": {
                 "Spouse": "Olivia"
@@ -145,7 +139,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "Action": "EditData",
             "Target": "Data/Festivals/fall27",
             "When": {
-                "Year": "1, 5, 9, 13, 17, 21, 25,  29, 33, 37, 41, 45, 49, 53, 56, 59, 63, 67, 71, 75, 79, 83, 87, 91, 95, 99",
+                "Year": "1, 5, 9, 13, 17, 21, 25,  29, 33, 37, 41, 45, 49, 53, 56, 59, 63, 67, 71, 75, 79, 83, 87, 91, 95, 99"
             },
             "Entries": {
                 //"shop": "BO 113 0 1 BL 746 0 1 BO 47 0 4 F 2794 0 1",
@@ -176,58 +170,40 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 { //victor
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Victor 52 35 up",
                     "Delimiter": "/"
                 },
                 { //Olivia
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Olivia 30 68 up",
                     "Delimiter": "/"
                 },
                 { //Andy
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Andy 33 69 down",
                     "Delimiter": "/"
                 },
                 { //Susan
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Susan 40 60 right",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Sophia 25 68 down",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "MarlonFay 28 57 down",
                     "Delimiter": "/"
-                },
+                }
             ]
         },
         { //Morris halloween festival data
@@ -240,10 +216,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "MorrisTod 23 62 down",
                     "Delimiter": "/"
                 }
@@ -259,10 +232,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Claire 27 64 down",
                     "Delimiter": "/"
                 }
@@ -278,10 +248,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Martin 14 26 down",
                     "Delimiter": "/"
                 }
@@ -297,10 +264,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "GuntherSilvian 34 73 up",
                     "Delimiter": "/"
                 }
@@ -316,10 +280,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Scarlett 26 68 up",
                     "Delimiter": "/"
                 }
@@ -335,10 +296,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Morgan 38 58 down",
                     "Delimiter": "/"
                 }
@@ -354,10 +312,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Alesia 26 53 down",
                     "Delimiter": "/"
                 }
@@ -373,10 +328,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Isaac 48 62 down",
                     "Delimiter": "/"
                 }
@@ -392,10 +344,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Lance 23 57 up",
                     "Delimiter": "/"
                 }
@@ -406,22 +355,20 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "Target": "Data/Festivals/fall27",
             "When": {
                 "Year": "1, 5, 9, 13, 17, 21, 25,  29, 33, 37, 41, 45, 49, 53, 56, 59, 63, 67, 71, 75, 79, 83, 87, 91, 95, 99",
-                "Hearts:Sandy": "{{Range: 5, 14}}",
+                "Hearts:Sandy": "{{Range: 5, 14}}"
             },
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Sandy 23 67 right",
                     "Delimiter": "/"
                 }
             ]
         },
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Maps/Town-Halloween",
             "When": {
                 "Year": "1, 5, 9, 13, 17, 21, 25,  29, 33, 37, 41, 45, 49, 53, 56, 59, 63, 67, 71, 75, 79, 83, 87, 91, 95, 99",
@@ -430,7 +377,8 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "FromFile": "Assets/Maps/FestivalMaps/Town-SVE-Halloween.tmx"
         },
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Maps/Town-Halloween",
             "When": {
                 "Year": "1, 5, 9, 13, 17, 21, 25,  29, 33, 37, 41, 45, 49, 53, 56, 59, 63, 67, 71, 75, 79, 83, 87, 91, 95, 99",
@@ -451,8 +399,8 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
                 "MorrisTod_y2": "{{i18n:Morris.Spirit}}",
                 "Sandy_y2": "{{i18n:Sandy.Spirit}}",
                 "Scarlett_y2": "{{i18n:Scarlett.Spirit}}",
-                "Susan_y2": "{{i18n:Susan.Spirit}}",
-            },
+                "Susan_y2": "{{i18n:Susan.Spirit}}"
+            }
         },
         {
             "Action": "EditData",
@@ -461,14 +409,14 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
                 "ApplesHere": "true"
             },
             "Entries": {
-                "Apples_y2": "{{i18n:Apples.Spirit}}",
+                "Apples_y2": "{{i18n:Apples.Spirit}}"
             }
         },
         {
             "Action": "EditData",
             "Target": "data/festivals/fall27",
             "Entries": {
-                "Claire_y2": "{{i18n:spirit.claire.2}}",
+                "Claire_y2": "{{i18n:spirit.claire.2}}"
             },
             "When": {
                 "Spouse": "Claire"
@@ -478,7 +426,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "Action": "EditData",
             "Target": "data/festivals/fall27",
             "Entries": {
-                "Olivia_y2": "{{i18n:spirit.Olivia.3}}",
+                "Olivia_y2": "{{i18n:spirit.Olivia.3}}"
             },
             "When": {
                 "Spouse": "Olivia"
@@ -520,58 +468,40 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 { //victor
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Victor 4 60 right",
                     "Delimiter": "/"
                 },
                 { //Olivia
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Olivia 32 65 left",
                     "Delimiter": "/"
                 },
                 { //Andy
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Andy 36 71 left",
                     "Delimiter": "/"
                 },
                 { //Susan
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Susan 35 72 up",
                     "Delimiter": "/"
                 },
                 { //Sophia
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Sophia 26 21 up",
                     "Delimiter": "/"
                 },
                 { //Marlon
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "MarlonFay 22 62 down",
                     "Delimiter": "/"
-                },
+                }
             ]
         },
         { //Morris halloween festival data
@@ -583,10 +513,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "MorrisTod 27 53 down",
                     "Delimiter": "/"
                 }
@@ -601,10 +528,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Claire 28 66 up",
                     "Delimiter": "/"
                 }
@@ -619,10 +543,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Martin 27 65 right",
                     "Delimiter": "/"
                 }
@@ -637,10 +558,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "GuntherSilvian 26 53 down",
                     "Delimiter": "/"
                 }
@@ -655,10 +573,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Scarlett 43 30 right",
                     "Delimiter": "/"
                 }
@@ -673,10 +588,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Morgan 9 25 down",
                     "Delimiter": "/"
                 }
@@ -691,10 +603,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Alesia 24 62 down",
                     "Delimiter": "/"
                 }
@@ -709,10 +618,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Isaac 21 57 left",
                     "Delimiter": "/"
                 }
@@ -727,10 +633,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Lance 13 66 up",
                     "Delimiter": "/"
                 }
@@ -740,22 +643,20 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "Action": "EditData",
             "Target": "Data/Festivals/fall27",
             "When": {
-                "Hearts:Sandy": "{{Range: 5, 14}}",
+                "Hearts:Sandy": "{{Range: 5, 14}}"
             },
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Sandy 19 25 right",
                     "Delimiter": "/"
                 }
             ]
         },
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Maps/Town-Halloween2",
             "When": {
                 "HasSeenEvent |contains=5553210": false
@@ -763,7 +664,8 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "FromFile": "Assets/Maps/FestivalMaps/Town-SVE-Halloween2.tmx"
         },
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Maps/Town-Halloween2",
             "When": {
                 "HasSeenEvent": "5553210"
@@ -775,7 +677,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "Action": "EditData",
             "Target": "Data/Festivals/fall27",
             "When": {
-                "Year": "3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 61, 65, 69, 73, 77, 81, 85, 89, 93, 97",
+                "Year": "3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 61, 65, 69, 73, 77, 81, 85, 89, 93, 97"
             },
             "Entries": {
                 //"shop": "O 373 0 3 O 608 0 3 BO 113 0 1 BL 746 0 1 BO 47 0 4 F 2794 0 1",
@@ -806,70 +708,52 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
                 "Victor": "{{i18n:spirit.victor.3}}"
             }
         },
-        { //halloween festival data 
+        { //halloween festival data
             "Action": "EditData",
             "Target": "Data/Festivals/fall27",
             "When": {
-                "Year": "3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 61, 65, 69, 73, 77, 81, 85, 89, 93, 97",
+                "Year": "3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 61, 65, 69, 73, 77, 81, 85, 89, 93, 97"
             },
             "TextOperations": [
                 { //Victor
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Victor 29 67 down",
                     "Delimiter": "/"
                 },
                 { //Olivia
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Olivia 29 62 left",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Andy 47 60 down",
                     "Delimiter": "/"
                 },
                 { //Susan
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Susan 35 69 right",
                     "Delimiter": "/"
                 },
                 { //Sophia
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Sophia 27 20 down",
                     "Delimiter": "/"
                 },
                 { //Marlon
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "MarlonFay 23 63 down",
                     "Delimiter": "/"
                 }
             ]
         },
-        { //Morris halloween festival data 
+        { //Morris halloween festival data
             "Action": "EditData",
             "Target": "Data/Festivals/fall27",
             "When": {
@@ -879,16 +763,13 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "MorrisTod 29 57 down",
                     "Delimiter": "/"
                 }
             ]
         },
-        { //Claire halloween festival data 
+        { //Claire halloween festival data
             "Action": "EditData",
             "Target": "Data/Festivals/fall27",
             "When": {
@@ -898,16 +779,13 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Claire 40 57 down",
                     "Delimiter": "/"
                 }
             ]
         },
-        { //Martin halloween festival data 
+        { //Martin halloween festival data
             "Action": "EditData",
             "Target": "Data/Festivals/fall27",
             "When": {
@@ -917,16 +795,13 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Martin 33 67 down",
                     "Delimiter": "/"
                 }
             ]
         },
-        { //Gunther halloween festival data 
+        { //Gunther halloween festival data
             "Action": "EditData",
             "Target": "Data/Festivals/fall27",
             "When": {
@@ -936,16 +811,13 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "GuntherSilvian 27 58 down",
                     "Delimiter": "/"
                 }
             ]
         },
-        { //Scarlett halloween festival data 
+        { //Scarlett halloween festival data
             "Action": "EditData",
             "Target": "Data/Festivals/fall27",
             "When": {
@@ -955,16 +827,13 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Scarlett 30 18 down",
                     "Delimiter": "/"
                 }
             ]
         },
-        { //Morgan halloween festival data year 
+        { //Morgan halloween festival data year
             "Action": "EditData",
             "Target": "Data/Festivals/fall27",
             "When": {
@@ -974,16 +843,13 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Morgan 15 35 up",
                     "Delimiter": "/"
                 }
             ]
         },
-        { //Alesia halloween festival data year 
+        { //Alesia halloween festival data year
             "Action": "EditData",
             "Target": "Data/Festivals/fall27",
             "When": {
@@ -993,16 +859,13 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Alesia 24 63 down",
                     "Delimiter": "/"
                 }
             ]
         },
-        { //Isaac halloween festival data year 
+        { //Isaac halloween festival data year
             "Action": "EditData",
             "Target": "Data/Festivals/fall27",
             "When": {
@@ -1012,16 +875,13 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Isaac 22 65 right",
                     "Delimiter": "/"
                 }
             ]
         },
-        { //Lance halloween festival data year 
+        { //Lance halloween festival data year
             "Action": "EditData",
             "Target": "Data/Festivals/fall27",
             "When": {
@@ -1031,16 +891,13 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Lance 27 65 down",
                     "Delimiter": "/"
                 }
             ]
         },
-        { //Sandy halloween festival data year 
+        { //Sandy halloween festival data year
             "Action": "EditData",
             "Target": "Data/Festivals/fall27",
             "When": {
@@ -1050,10 +907,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Sandy 40 60 up",
                     "Delimiter": "/"
                 }
@@ -1061,7 +915,8 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
         },
         //Map Loads
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Maps/Town-Halloween",
             "When": {
                 "Year": "3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 61, 65, 69, 73, 77, 81, 85, 89, 93, 97",
@@ -1070,7 +925,8 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
             "FromFile": "Assets/Maps/FestivalMaps/Town-SVE-Halloween3.tmx"
         },
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Maps/Town-Halloween",
             "When": {
                 "Year": "3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 61, 65, 69, 73, 77, 81, 85, 89, 93, 97",
@@ -1096,7 +952,7 @@ Formerly EVEN year = 3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 6
                 "Martin_y2": "{{i18n:Martin.Halloween2}}",
                 "Sophia_y2": "{{i18n:Sophia.Halloween2}}",
                 "Sandy_y2": "{{i18n:Sandy.Halloween2}}",
-                "MorrisTod_y2": "{{i18n:Morris.Halloween2}}",
+                "MorrisTod_y2": "{{i18n:Morris.Halloween2}}"
             }
         }
     ]

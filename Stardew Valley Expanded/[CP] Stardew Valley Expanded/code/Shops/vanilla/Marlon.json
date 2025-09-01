@@ -1,45 +1,41 @@
-{
+﻿{
     "Changes": [
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/MarlonShop",
             "FromFile": "assets/CharacterFiles/Shops/Adventurers/Marlon_WinterVendor.png"
         },
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/GilShop",
             "FromFile": "assets/CharacterFiles/Portraits/Gil/Gil.png"
         },
         {
             "Action": "EditData",
             "Target": "Data/Shops",
-            "TargetField": [
-                "AdventureShop",
-                "Items"
-            ],
+            "TargetField": [ "AdventureShop", "Items" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Frog_Legs": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Frog_Legs",
                     "ItemId": "FlashShifter.StardewValleyExpandedCP_Frog_Legs",
                     "Price": "2000",
-                    "IsRecipe": "true",
+                    "IsRecipe": "true"
                 },
                 "FlashShifter.StardewValleyExpandedCP_Mushroom_Berry_Rice": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Mushroom_Berry_Rice",
                     "ItemId": "FlashShifter.StardewValleyExpandedCP_Mushroom_Berry_Rice",
                     "Price": "1500",
-                    "IsRecipe": "true",
-                },
-            },
+                    "IsRecipe": "true"
+                }
+            }
         },
         {
             "Action": "EditData",
             "Priority": "Early - 100",
             "Target": "Data/Shops",
-            "TargetField": [
-                "AdventureShop",
-                "Owners"
-            ],
+            "TargetField": [ "AdventureShop", "Owners" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_AdventureShopGil_Evening": {
                     "Condition": "TIME 2200 2600",
@@ -53,8 +49,8 @@
                         {
                             "Id": "Default",
                             "Dialogue": "{{i18n:Gil.ShopDialogue}}"
-                        },
-                    ],
+                        }
+                    ]
                 },
                 "FlashShifter.StardewValleyExpandedCP_AdventureShopGil_Morning": {
                     "Condition": "TIME 600 1200",
@@ -68,8 +64,8 @@
                         {
                             "Id": "Default",
                             "Dialogue": "{{i18n:Gil.ShopDialogue}}"
-                        },
-                    ],
+                        }
+                    ]
                 },
                 "FlashShifter.StardewValleyExpandedCP_AdventureShopMarlon_Winter": {
                     "Condition": "SEASON Winter, TIME 1200 2200",
@@ -88,10 +84,10 @@
                                 "[LocalizedText Strings\\StringsFromCSFiles:ShopMenu.cs.11518]",
                                 "[LocalizedText Strings\\StringsFromCSFiles:ShopMenu.cs.11519]",
                                 "[LocalizedText Strings\\StringsFromCSFiles:ShopMenu.cs.11520]"
-                              ]
-                        },
-                    ],
-                },
+                            ]
+                        }
+                    ]
+                }
             },
             "MoveEntries": [
                 {
@@ -105,17 +101,13 @@
                 {
                     "Id": "Gil Morning",
                     "ToPosition": "Top"
-                },
-
+                }
             ]
         },
         {
             "Action": "EditData",
             "Target": "Data/Shops",
-            "TargetField": [
-                "AdventureGuildRecovery",
-                "Owners"
-            ],
+            "TargetField": [ "AdventureGuildRecovery", "Owners" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_AdventureGuildRecoveryGil_Evening": {
                     "Condition": "TIME 2200 2600",
@@ -129,8 +121,8 @@
                         {
                             "Id": "Default",
                             "Dialogue": "{{i18n:Gil.ShopDialogue}}"
-                        },
-                    ],
+                        }
+                    ]
                 },
                 "FlashShifter.StardewValleyExpandedCP_AdventureGuildRecoveryGil_Morning": {
                     "Condition": "TIME 600 1200",
@@ -144,8 +136,8 @@
                         {
                             "Id": "Default",
                             "Dialogue": "{{i18n:Gil.ShopDialogue}}"
-                        },
-                    ],
+                        }
+                    ]
                 },
                 "FlashShifter.StardewValleyExpandedCP_AdventureGuildRecoveryMarlon_Winter": {
                     "Condition": "SEASON Winter, TIME 1200 2200",
@@ -158,10 +150,10 @@
                     "Dialogues": [
                         {
                             "Id": "Default",
-                            "Dialogue": "[LocalizedText Strings\\StringsFromCSFiles:ItemRecovery_Description]",
-                        },
-                    ],
-                },
+                            "Dialogue": "[LocalizedText Strings\\StringsFromCSFiles:ItemRecovery_Description]"
+                        }
+                    ]
+                }
             },
             "MoveEntries": [
                 {
@@ -175,8 +167,8 @@
                 {
                     "Id": "Gil Morning",
                     "ToPosition": "Top"
-                },
+                }
             ]
-        },
+        }
     ]
 }

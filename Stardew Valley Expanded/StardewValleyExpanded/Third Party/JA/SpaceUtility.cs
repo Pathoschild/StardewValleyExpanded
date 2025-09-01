@@ -76,7 +76,7 @@ namespace SpaceShared
                 {
                     list[i] = SpaceUtility._recursiveIterateItem(list[i], action);
                 }
-                //farmer.Items = list;
+                // farmer.Items = list;
                 farmer.shirtItem.Value = (Clothing)SpaceUtility._recursiveIterateItem(farmer.shirtItem.Value, action);
                 farmer.pantsItem.Value = (Clothing)SpaceUtility._recursiveIterateItem(farmer.pantsItem.Value, action);
                 farmer.boots.Value = (Boots)SpaceUtility._recursiveIterateItem(farmer.boots.Value, action);
@@ -90,7 +90,7 @@ namespace SpaceShared
                     if (list[i] == null)
                         list.RemoveAt(i);
                 }
-                //farmer.itemsLostLastDeath.CopyFrom( list );
+                // farmer.itemsLostLastDeath.CopyFrom( list );
             }
             IList<Item> list2 = Game1.player.team.returnedDonations;
             for (int i = list2.Count - 1; i >= 0; --i)
@@ -102,7 +102,7 @@ namespace SpaceShared
                         list2.RemoveAt(i);
                 }
             }
-            //Game1.player.team.returnedDonations.Set( list2 );
+            // Game1.player.team.returnedDonations.Set( list2 );
             IEnumerable<Inventory> list3 = Game1.player.team.globalInventories.Values;
             foreach (var inv in list3)
             {
@@ -116,7 +116,7 @@ namespace SpaceShared
                     }
                 }
             }
-            //Game1.player.team.junimoChest.CopyFrom( list2 );
+            // Game1.player.team.junimoChest.CopyFrom( list2 );
             foreach (SpecialOrder specialOrder in Game1.player.team.specialOrders)
             {
                 list2 = specialOrder.donatedItems;
@@ -129,7 +129,7 @@ namespace SpaceShared
                             list2.RemoveAt(i);
                     }
                 }
-                //specialOrder.donatedItems.CopyFrom( list2 );
+                // specialOrder.donatedItems.CopyFrom( list2 );
             }
         }
 
@@ -150,7 +150,6 @@ namespace SpaceShared
                     else
                         list[i] = v;
                 }
-
             }
             if (l is IslandFarmHouse)
             {

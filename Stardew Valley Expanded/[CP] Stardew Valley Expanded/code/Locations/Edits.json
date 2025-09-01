@@ -1,11 +1,9 @@
-{
+﻿{
     "Changes": [
         {
             "Action": "EditData",
             "Target": "Data/Weddings",
-            "TargetField": [
-                "Attendees"
-            ],
+            "TargetField": [ "Attendees" ],
             "Entries": {
                 "Sophia": {
                     "ID": "Sophia",
@@ -13,7 +11,7 @@
                 },
                 "Victor": {
                     "ID": "Victor",
-                    "Setup": "Victor 30 68 0",
+                    "Setup": "Victor 30 68 0"
                 },
                 "Olivia": {
                     "ID": "Olivia",
@@ -29,13 +27,11 @@
                 }
             }
         },
-		{   //Scarlett's dad's will attend wedding
+        { //Scarlett's dad's will attend wedding
             "Action": "EditData",
             "Target": "Data/Weddings",
-			"When": { "Relationship: Scarlett": "Engaged, Married" },
-            "TargetField": [
-                "Attendees"
-            ],
+            "When": { "Relationship: Scarlett": "Engaged, Married" },
+            "TargetField": [ "Attendees" ],
             "Entries": {
                 "Treyvon": {
                     "ID": "Treyvon",
@@ -43,7 +39,7 @@
                 },
                 "HankSVE": {
                     "ID": "HankSVE",
-                    "Setup": "HankSVE 30 62 2",
+                    "Setup": "HankSVE 30 62 2"
                 }
             }
         },
@@ -165,16 +161,15 @@
                 "Height": 43
             }
         },
-		
-		/*
-		
-		//Prevents Fir and Birch trees in Pelican Town from being chopped down by the player
-		{
+
+        /*
+        //Prevents Fir and Birch trees in Pelican Town from being chopped down by the player
+        {
             "Action": "EditMap",
             "Target": "Maps/Town",
             "FromFile": "Assets/Maps/MapPatches/Town_Prevent_Custom_Trees_From_Being_Cut_Down.tmx",
-			"PatchMode": "Overlay",
-			"Priority": "Late",
+            "PatchMode": "Overlay",
+            "Priority": "Late",
             "When": {
                 "HasSeenEvent: anyPlayer|contains=60367": true
             },
@@ -185,9 +180,8 @@
                 "Height": 116
             }
         },
-		
-		*/
-		
+        */
+
         //Highlands Patches and Content
         {
             "Action": "EditMap",
@@ -202,7 +196,7 @@
             "Update": "OnLocationChange",
             "When": {
                 "Season": "Winter"
-            },
+            }
         },
         {
             "Action": "EditMap",
@@ -220,8 +214,8 @@
                 "Height": 156
             }
         },
-		
-		//Edits projectile Graphics while at Highlands during a rainy day (makes projectile foggy)
+
+        //Edits projectile Graphics while at Highlands during a rainy day (makes projectile foggy)
         {
             "Action": "EditImage",
             "Target": "Tilesheets/Projectiles",
@@ -238,29 +232,29 @@
             },
             "Update": "OnLocationChange"
         },
-		
-		//Edits projectile Graphics while in Forbidden Maze
-		  {
+
+        //Edits projectile Graphics while in Forbidden Maze
+        {
             "Action": "EditImage",
             "Target": "Characters/Monsters/Fireball",
             "FromFile": "Assets/Tilesheets/Slimeball.png",
             "PatchMode": "Replace",
             "When": {
-                "LocationName": "Custom_ForbiddenMaze",
+                "LocationName": "Custom_ForbiddenMaze"
             },
             "Update": "OnLocationChange"
-          },
-		  {
+        },
+        {
             "Action": "EditImage",
             "Target": "Tilesheets/Fireball",
             "FromFile": "Assets/Tilesheets/Slimeball_Large.png",
             "PatchMode": "Replace",
             "When": {
-                "LocationName": "Custom_ForbiddenMaze",
+                "LocationName": "Custom_ForbiddenMaze"
             },
             "Update": "OnLocationChange"
-          },
-		  {
+        },
+        {
             "Action": "EditImage",
             "Target": "Tilesheets/Projectiles",
             "FromFile": "Assets/Tilesheets/GreenSlime_Projectile.png",
@@ -271,12 +265,12 @@
                 "Height": 16
             },
             "When": {
-                "LocationName": "Custom_ForbiddenMaze",
+                "LocationName": "Custom_ForbiddenMaze"
             },
             "Update": "OnLocationChange"
         },
-		  
-		//Highlands background changes
+
+        //Highlands background changes
         {
             "Action": "EditImage",
             "Target": "Maps/{{season}}_Highlands_Background_Day",
@@ -343,7 +337,7 @@
             },
             "Update": "OnLocationChange"
         },
-		
+
         //LOAD FENCES
         {
             //Basic Fences
@@ -384,7 +378,7 @@
                 "Y": 0,
                 "Width": 240,
                 "Height": 80
-            },
+            }
         },
         { //Oasis asset colors
             "Action": "EditImage",
@@ -404,7 +398,7 @@
                 "Y": 80,
                 "Width": 240,
                 "Height": 80
-            },
+            }
         },
         { //Oasis asset colors
             "Action": "EditImage",
@@ -424,7 +418,7 @@
                 "Y": 160,
                 "Width": 240,
                 "Height": 80
-            },
+            }
         },
         { //Oasis asset colors
             "Action": "EditImage",
@@ -444,7 +438,7 @@
                 "Y": 240,
                 "Width": 240,
                 "Height": 80
-            },
+            }
         },
         //SEASONAL EDITS
         {
@@ -464,7 +458,7 @@
             "FromFile": "assets/Tilesheets/z_NoLeaves.png",
             "When": {
                 "SeasonalEdits": false
-            },
+            }
         },
         {
             //Adds snow to buildings and objects during winter
@@ -636,7 +630,7 @@
                 "Y": 401,
                 "Width": 48,
                 "Height": 16
-            },
+            }
         },
         { //Edits summer summit bench sprite
             "Action": "EditImage",
@@ -656,7 +650,7 @@
                 "Y": 401,
                 "Width": 48,
                 "Height": 16
-            },
+            }
         },
         { //Edits fall summit bench sprite
             "Action": "EditImage",
@@ -676,7 +670,7 @@
                 "Y": 401,
                 "Width": 48,
                 "Height": 16
-            },
+            }
         },
         { //Edits winter summit bench sprite
             "Action": "EditImage",
@@ -696,7 +690,7 @@
                 "Y": 401,
                 "Width": 48,
                 "Height": 16
-            },
+            }
         },
         { //Removes trash near hat mouse once trash bear is completed
             "Action": "EditMap",
@@ -722,15 +716,15 @@
             }
         },
 
-		{ //Edits farmhouse kitchen textures 1
+        { //Edits farmhouse kitchen textures 1
             "Action": "EditImage",
             "Target": "Maps/farmhouse_tiles",
             "FromFile": "assets/Tilesheets/RedesignedKitchen_Tileset.png",
-			"Patchmode": "Replace",
+            "Patchmode": "Replace",
             "When": {
                 "RetexturedFarmhouseKitchen": "true"
             },
-			"ToArea": {
+            "ToArea": {
                 "X": 16,
                 "Y": 192,
                 "Width": 80,
@@ -741,18 +735,18 @@
                 "Y": 192,
                 "Width": 80,
                 "Height": 48
-            },
+            }
         },
-		
-		{ //Edits farmhouse kitchen textures 2
+
+        { //Edits farmhouse kitchen textures 2
             "Action": "EditImage",
             "Target": "Maps/farmhouse_tiles",
             "FromFile": "assets/Tilesheets/RedesignedKitchen_Tileset.png",
-			"Patchmode": "Replace",
+            "Patchmode": "Replace",
             "When": {
                 "RetexturedFarmhouseKitchen": "true"
             },
-			"ToArea": {
+            "ToArea": {
                 "X": 176,
                 "Y": 192,
                 "Width": 16,
@@ -763,18 +757,18 @@
                 "Y": 192,
                 "Width": 16,
                 "Height": 128
-            },
+            }
         },
-		
-		{ //Edits farmhouse kitchen textures 3
+
+        { //Edits farmhouse kitchen textures 3
             "Action": "EditImage",
             "Target": "Maps/farmhouse_tiles",
             "FromFile": "assets/Tilesheets/RedesignedKitchen_Tileset.png",
-			"Patchmode": "Replace",
+            "Patchmode": "Replace",
             "When": {
                 "RetexturedFarmhouseKitchen": "true"
             },
-			"ToArea": {
+            "ToArea": {
                 "X": 0,
                 "Y": 304,
                 "Width": 16,
@@ -785,51 +779,51 @@
                 "Y": 304,
                 "Width": 16,
                 "Height": 16
-            },
+            }
         },
-		
-		//Minecart Data
+
+        //Minecart Data
         {
-           "Action": "EditData",
-           "Target": "Data/Minecarts",
-           "Entries": {
-               "GrampletonSuburbs": {
-                   "Destinations": [
-                       {
-                           "ID": "FlashShifter.Pondwood",
-                           "DisplayName": "Pondwood",
-                           "TargetLocation": "Custom_GrampletonSuburbsTrainStation",
-						   "Price": 1000,
-                           "TargetTile": {
-                               "X": 35,
-                               "Y": 15
-                           },
-                           "TargetDirection": "down",
-                       },
-                   ]
-               },
-			   "Railroad": {
-                   "Destinations": [
-                       {
-                           "ID": "FlashShifter.Railroad",
-                           "DisplayName": "Stardew Valley",
-                           "TargetLocation": "Railroad",
-                           "TargetTile": {
-                               "X": 37,
-                               "Y": 40
-                           },
-                           "TargetDirection": "down",
-                       },
-                   ]
-               },
-               "When": {
-                   "UseCentralStation": false
-               }
-           }
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "Entries": {
+                "GrampletonSuburbs": {
+                    "Destinations": [
+                        {
+                            "ID": "FlashShifter.Pondwood",
+                            "DisplayName": "Pondwood",
+                            "TargetLocation": "Custom_GrampletonSuburbsTrainStation",
+                            "Price": 1000,
+                            "TargetTile": {
+                                "X": 35,
+                                "Y": 15
+                            },
+                            "TargetDirection": "down"
+                        }
+                    ]
+                },
+                "Railroad": {
+                    "Destinations": [
+                        {
+                            "ID": "FlashShifter.Railroad",
+                            "DisplayName": "Stardew Valley",
+                            "TargetLocation": "Railroad",
+                            "TargetTile": {
+                                "X": 37,
+                                "Y": 40
+                            },
+                            "TargetDirection": "down"
+                        }
+                    ]
+                },
+                "When": {
+                    "UseCentralStation": false
+                }
+            }
         },
-		
-		//Winery Config
-		{
+
+        //Winery Config
+        {
             "Action": "EditMap",
             "Target": "Maps/SVE_Winery",
             "FromFile": "Assets/Maps/Buildings/Winery_Cleared.tmx",
@@ -841,27 +835,25 @@
             },
             "When": {
                 "RemoveWineryDecorations": true
-            },
+            }
         },
-		
 
-        {   //River sound effects for pelican town festival maps
+
+        { //River sound effects for pelican town festival maps
             "Action": "EditMap",
             "Target": "Maps/Town-EggFestival, Maps/Town-EggFestival2, Maps/Town-Fair, Maps/Town-Fair2, Maps/Town-Halloween, Maps/Town-Halloween2, Maps/Town-Christmas, Maps/Town-Christmas2",
             "TextOperations": [
                 {
-                 "Operation": "Append",
-                 "Target": [
-                    "MapProperties",
-                    "BrookSounds"
-                ],
+                    "Operation": "Append",
+                    "Target": [ "MapProperties", "BrookSounds" ],
                     "Value": "5 101 0 30 109 0 44 107 0 65 105 0 90 110 0 79 102 0 74 84 0 76 60 0 72 45 0 83 39 0 91 29 0 93 18 0 97 9 0",
                     "Delimiter": " "
                 }
             ]
-        },
+        }
 
-        /*{
+        /*
+        {
             "Action": "EditImage",
             "Target": "Tilesheets/ChairTiles",
             "FromFile": "Assets/Tilesheets/RemoveBenchChairTiles.png",
@@ -875,10 +867,10 @@
                 "Y": 0,
                 "Width": 128,
                 "Height": 32
-            },
-        },*/
+            }
+        },
         //Garden and Town East patches
-        /*{ //Pelican Town
+        { //Pelican Town
             "Action": "EditMap",
             "Target": "Maps/Town",
             "FromFile": "assets/Maps/MapPatches/Garden_Town.tbin",
@@ -891,8 +883,8 @@
             "When": {
                 "HasSeenEvent |contains=1000024": false
             }
-        },*/
-        /*{ //Joja Pelican Town
+        },
+        { //Joja Pelican Town
             "Action": "EditMap",
             "Target": "Maps/Town",
             "FromFile": "assets/Maps/MapPatches/Garden_Town_Joja.tbin",
@@ -920,8 +912,8 @@
             "When": {
                 "HasSeenEvent": "5553210"
             }
-        },*/
-        /*{ //Shearwater Bridge
+        },
+        { //Shearwater Bridge
             "Action": "EditMap",
             "Target": "Maps/Custom_ShearwaterBridge",
             "FromFile": "assets/Maps/MapPatches/Garden_ShearwaterBridge.tbin",
@@ -934,6 +926,7 @@
             "When": {
                 "HasSeenEvent |contains=1000024": false
             }
-        },*/
+        },
+        */
     ]
 }

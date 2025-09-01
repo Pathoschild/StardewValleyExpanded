@@ -1,4 +1,4 @@
-{
+﻿{
     "Changes": [
         {
             "Action": "EditData",
@@ -6,100 +6,100 @@
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_CrimsonSands": {
                     "Name": "{{i18n:Music.CrimsonSands}}",
-                    "AlternativeTrackIds": ["CrimsonSands"]
+                    "AlternativeTrackIds": [ "CrimsonSands" ]
                 },
                 "FlashShifter.StardewValleyExpandedCP_OminousCavern": {
                     "Name": "{{i18n:Music.OminousCavern}}",
-                    "AlternativeTrackIds": ["OminousCavern"]
+                    "AlternativeTrackIds": [ "OminousCavern" ]
                 },
                 "FlashShifter.StardewValleyExpandedCP_EnchantedWaltz": {
                     "Name": "{{i18n:Music.EnchantedWaltz}}",
-                    "AlternativeTrackIds": ["EnchantedWaltz"]
+                    "AlternativeTrackIds": [ "EnchantedWaltz" ]
                 },
                 "FlashShifter.StardewValleyExpandedCP_CamillasTower": {
                     "Name": "{{i18n:Music.CamillasTower}}",
-                    "AlternativeTrackIds": ["CamillasTower"]
+                    "AlternativeTrackIds": [ "CamillasTower" ]
                 },
                 "FlashShifter.StardewValleyExpandedCP_Lament": {
                     "Name": "{{i18n:Music.Lament}}",
-                    "AlternativeTrackIds": ["Lament"]
+                    "AlternativeTrackIds": [ "Lament" ]
                 },
                 "FlashShifter.StardewValleyExpandedCP_HaruhiViolinSolo": {
                     "Name": "{{i18n:Music.HaruhViolinSolo}}",
-                    "AlternativeTrackIds": ["HaruhViolinSolo"]
+                    "AlternativeTrackIds": [ "HaruhViolinSolo" ]
                 },
                 "FlashShifter.StardewValleyExpandedCP_NewMagicLearned": {
                     "Name": "{{i18n:Music.NewMagicLearned}}",
-                    "AlternativeTrackIds": ["NewMagicLearned"]
+                    "AlternativeTrackIds": [ "NewMagicLearned" ]
                 },
                 "FlashShifter.StardewValleyExpandedCP_Nexus": {
                     "Name": "{{i18n:Music.Nexus}}",
-                    "AlternativeTrackIds": ["Nexus"]
+                    "AlternativeTrackIds": [ "Nexus" ]
                 },
                 "FlashShifter.StardewValleyExpandedCP_CastleVillageOutpostMusic": {
                     "Name": "{{i18n:Music.CastleVillageOutpostMusic}}",
-                    "AlternativeTrackIds": ["CastleVillageOutpostMusic"]
+                    "AlternativeTrackIds": [ "CastleVillageOutpostMusic" ]
                 },
                 "FlashShifter.StardewValleyExpandedCP_GrenvilleFalls": {
                     "Name": "{{i18n:Music.GrenvilleFalls}}",
-                    "AlternativeTrackIds": ["GrenvilleFalls"]
+                    "AlternativeTrackIds": [ "GrenvilleFalls" ]
                 },
                 "FlashShifter.StardewValleyExpandedCP_Atlantis": {
                     "Name": "{{i18n:Music.Atlantis}}",
-                    "AlternativeTrackIds": ["Atlantis"]
+                    "AlternativeTrackIds": [ "Atlantis" ]
                 },
                 "FlashShifter.StardewValleyExpandedCP_SDVMagicalShoes": {
                     "Name": "{{i18n:Music.MagiclaShoes}}",
-                    "AlternativeTrackIds": ["SDVMagicalShoes"]
+                    "AlternativeTrackIds": [ "SDVMagicalShoes" ]
                 },
                 "FlashShifter.StardewValleyExpandedCP_FirstSlashTheme": {
                     "Name": "{{i18n:Music.FirstSlashTheme}}",
-                    "AlternativeTrackIds": ["FirstSlashTheme"]
+                    "AlternativeTrackIds": [ "FirstSlashTheme" ]
                 },
                 "FlashShifter.StardewValleyExpandedCP_StardewValleyExpandedTrailer": {
                     "Name": "{{i18n:Music.SVETrailer}}",
-                    "AlternativeTrackIds": ["StardewValleyExpandedTrailer"]
+                    "AlternativeTrackIds": [ "StardewValleyExpandedTrailer" ]
                 },
                 "FlashShifter.StardewValleyExpandedCP_GrampletonCoastline": {
                     "Name": "{{i18n:Music.GrampletonCoastline}}",
-                    "AlternativeTrackIds": ["GrampletonCoastline"]
+                    "AlternativeTrackIds": [ "GrampletonCoastline" ]
                 },
-				"FlashShifter.StardewValleyExpandedCP_HighlandsTheme": {
+                "FlashShifter.StardewValleyExpandedCP_HighlandsTheme": {
                     "Name": "{{i18n:Music.Highlands}}",
-                    "AlternativeTrackIds": ["Highlands"]
+                    "AlternativeTrackIds": [ "Highlands" ]
                 },
-				"FlashShifter.StardewValleyExpandedCP_HighlandsTheme_Rain": {
+                "FlashShifter.StardewValleyExpandedCP_HighlandsTheme_Rain": {
                     "Name": "{{i18n:Music.Highlands_Rain}}",
-					"Available": false,
-                    "AlternativeTrackIds": ["Highlands_Rain"]
+                    "Available": false,
+                    "AlternativeTrackIds": [ "Highlands_Rain" ]
                 },
-				"FlashShifter.StardewValleyExpandedCP_CrystalCavern": {
+                "FlashShifter.StardewValleyExpandedCP_CrystalCavern": {
                     "Name": "{{i18n:Music.CrystalCavern}}",
-                    "AlternativeTrackIds": ["Crystal_Cavern"]
+                    "AlternativeTrackIds": [ "Crystal_Cavern" ]
                 },
-				"FlashShifter.StardewValleyExpandedCP_ForbiddenMaze": {
+                "FlashShifter.StardewValleyExpandedCP_ForbiddenMaze": {
                     "Name": "{{i18n:Music.ForbiddenMaze}}",
-                    "AlternativeTrackIds": ["ForbiddenMaze"]
+                    "AlternativeTrackIds": [ "ForbiddenMaze" ]
                 },
-				"FlashShifter.StardewValleyExpandedCP_LovelyDay": {
+                "FlashShifter.StardewValleyExpandedCP_LovelyDay": {
                     "Name": "{{i18n:Music.LovelyDay}}",
-                    "AlternativeTrackIds": ["LovelyDay"]
+                    "AlternativeTrackIds": [ "LovelyDay" ]
                 },
-				"FlashShifter.StardewValleyExpandedCP_SDV_FireplaceMusic": {
+                "FlashShifter.StardewValleyExpandedCP_SDV_FireplaceMusic": {
                     "Name": "{{i18n:Music.Fireplace}}",
-					"Available": false,
-                    "AlternativeTrackIds": ["Fireplace"]
+                    "Available": false,
+                    "AlternativeTrackIds": [ "Fireplace" ]
                 },
-				"FlashShifter.StardewValleyExpandedCP_SDV_FireplaceSound": {
+                "FlashShifter.StardewValleyExpandedCP_SDV_FireplaceSound": {
                     "Name": "{{i18n:Music.Fireplace}}",
-					"Available": false,
-                    "AlternativeTrackIds": ["Fireplace"]
+                    "Available": false,
+                    "AlternativeTrackIds": [ "Fireplace" ]
                 },
-				"FlashShifter.StardewValleyExpandedCP_ForbiddenMaze_Ambient": {
+                "FlashShifter.StardewValleyExpandedCP_ForbiddenMaze_Ambient": {
                     "Name": "ForbiddenMaze Ambient",
-					"Available": false,
-                    "AlternativeTrackIds": ["ForbiddenMaze Ambient"]
-                },
+                    "Available": false,
+                    "AlternativeTrackIds": [ "ForbiddenMaze Ambient" ]
+                }
             }
         }
     ]

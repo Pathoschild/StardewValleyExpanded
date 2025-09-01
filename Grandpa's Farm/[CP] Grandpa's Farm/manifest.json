@@ -1,30 +1,30 @@
-{
-  "Name": "Grandpa's Farm",
-  "Author": "FlashShifter",
-  "Version": "1.15.11",
-  "Description": "A medium sized farm map for Stardew Valley Expanded.",
-  "UniqueID": "flashshifter.GrandpasFarm",
-  "MinimumApiVersion": "4.1.7",
-  "UpdateKeys": [ "Nexus:3753@GF" ],
-  "ContentPackFor": {
-  "UniqueID": "Pathoschild.ContentPatcher",
-   },
-  "Dependencies": [
-   {
-      "UniqueID": "Pathoschild.ContentPatcher",
-      "IsRequired": true,
-   },
-   {
-      "UniqueID": "FlashShifter.GrandpasFarmFTM",
-      "IsRequired": true,
-   },
-  {
-      "UniqueID": "FlashShifter.StardewValleyExpandedCP",
-      "IsRequired": true,
-   },
-   {
-      "UniqueID": "flashshifter.immersivefarm2remastered",
-      "IsRequired": false,
-   },
-  ]
+﻿{
+    "Name": "Grandpa's Farm",
+    "Author": "FlashShifter",
+    "Version": "1.15.11",
+    "Description": "A medium sized farm map for Stardew Valley Expanded.",
+    "UniqueID": "flashshifter.GrandpasFarm",
+    "MinimumApiVersion": "4.1.7",
+    "UpdateKeys": [ "Nexus:3753@GF" ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "Pathoschild.ContentPatcher",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "FlashShifter.GrandpasFarmFTM",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "flashshifter.immersivefarm2remastered",
+            "IsRequired": false
+        }
+    ]
 }

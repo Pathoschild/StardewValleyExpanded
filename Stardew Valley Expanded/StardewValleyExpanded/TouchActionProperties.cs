@@ -1,9 +1,9 @@
-﻿using Microsoft.Xna.Framework;
+using System;
+using Microsoft.Xna.Framework;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewModdingAPI.Utilities;
 using StardewValley;
-using System;
 
 namespace StardewValleyExpanded
 {
@@ -22,8 +22,10 @@ namespace StardewValleyExpanded
 
         /// <summary>True if this fix is currently enabled.</summary>
         private static bool Enabled { get; set; } = false;
+
         /// <summary>The SMAPI helper instance to use for events and other API access.</summary>
         private static IModHelper Helper { get; set; } = null;
+
         /// <summary>The monitor instance to use for log messages. Null if not provided.</summary>
         private static IMonitor Monitor { get; set; } = null;
 
@@ -32,12 +34,12 @@ namespace StardewValleyExpanded
         /// <param name="monitor">The monitor instance to use for log messages.</param>
         public static void Enable(IModHelper helper, IMonitor monitor)
         {
-            if (!Enabled && helper != null && monitor != null) //if NOT already enabled
+            if (!Enabled && helper != null && monitor != null) // if NOT already enabled
             {
-                Helper = helper; //store helper
-                Monitor = monitor; //store monitor
+                Helper = helper; // store helper
+                Monitor = monitor; // store monitor
 
-                //enable SMAPI event(s)
+                // enable SMAPI event(s)
                 Helper.Events.Player.Warped += OnWarped;
                 Helper.Events.GameLoop.UpdateTicked += OnUpdateTicked;
 
@@ -56,44 +58,44 @@ namespace StardewValleyExpanded
         {
             try
             {
-                string action = Game1.currentLocation?.doesTileHaveProperty(x, y, "TouchAction", "Back"); //get the activated TouchAction's value
-                if (string.IsNullOrWhiteSpace(action)) //if the tile doesn't have a touch action or its value is blank
-                    return; //stop here
-                string[] fields = action.TrimStart().Split(' '); //split the value into multiple fields between each space character
+                string action = Game1.currentLocation?.doesTileHaveProperty(x, y, "TouchAction", "Back"); // get the activated TouchAction's value
+                if (string.IsNullOrWhiteSpace(action)) // if the tile doesn't have a touch action or its value is blank
+                    return; // stop here
+                string[] fields = action.TrimStart().Split(' '); // split the value into multiple fields between each space character
 
-                switch (fields[0].ToLower()) //check the TouchAction's name in lowercase
+                switch (fields[0].ToLower()) // check the TouchAction's name in lowercase
                 {
-                    /* 
+                    /*
                      * NOTE: Add a case for each custom TouchAction, do whatever it should do, and then "break" to finish.
-                     * 
+                     *
                      * Remember to use lowercase for each "case" action name here!
-                     * 
+                     *
                      * If an action has additional parameters, they'll be in the fields array as text strings.
                      * For example, if a tile's TouchAction property is set to "SVE_PlaySound dog_bark loud":
                      *      field[0] is "SVE_PlaySound", field[1] is "dog_bark", field[2] is "loud"
                      */
 
                     case "sve_playsound":
-                        if (fields.Length > 1) //if 1 parameter exists ("SVE_PlaySound <SoundName>")
+                        if (fields.Length > 1) // if 1 parameter exists ("SVE_PlaySound <SoundName>")
                         {
-                            try { Game1.soundBank.GetCue(fields[1]); } //check whether this sound exists (case-sensitive; throws an error if the sound doesn't exist)
+                            try { Game1.soundBank.GetCue(fields[1]); } // check whether this sound exists (case-sensitive; throws an error if the sound doesn't exist)
                             catch
                             {
                                 Monitor.LogOnce($"{nameof(TouchActionProperties)}: Tried to play a sound effect with an invalid name.\nSound name: \"{fields[1]}\". Tile: {x},{y}. Location: {Game1.player.currentLocation?.Name}.", LogLevel.Debug);
-                                break; //stop here
+                                break; // stop here
                             }
-                            Game1.playSound(fields[1]); //if the sound exists, play it
+                            Game1.playSound(fields[1]); // if the sound exists, play it
                         }
                         break;
 
-                    case "loadmap": //imitation of the TMXL feature; only active while that mod is not installed
-                        if (Context.CanPlayerMove && !Helper.ModRegistry.IsLoaded("Platonymous.TMXLoader")) //if the player can move AND TMXLoader is NOT available
+                    case "loadmap": // imitation of the TMXL feature; only active while that mod is not installed
+                        if (Context.CanPlayerMove && !Helper.ModRegistry.IsLoaded("Platonymous.TMXLoader")) // if the player can move AND TMXLoader is NOT available
                         {
-                            if (fields.Length > 3) //if 3 or more parameters exist ("LoadMap <location name> <x> <y> [facing direction]")
+                            if (fields.Length > 3) // if 3 or more parameters exist ("LoadMap <location name> <x> <y> [facing direction]")
                             {
-                                if (Game1.getLocationFromName(fields[1]) != null) //if the named location exists
+                                if (Game1.getLocationFromName(fields[1]) != null) // if the named location exists
                                 {
-                                    if (int.TryParse(fields[2], out int destinationX) && int.TryParse(fields[3], out int destinationY)) //if successfully parsed the X,Y fields
+                                    if (int.TryParse(fields[2], out int destinationX) && int.TryParse(fields[3], out int destinationY)) // if successfully parsed the X,Y fields
                                     {
                                         Game1.warpFarmer(fields[1], destinationX, destinationY, flip: false);
                                     }
@@ -115,7 +117,7 @@ namespace StardewValleyExpanded
                         break;
                 }
             }
-            catch (Exception ex) //if an unexpected error occurs
+            catch (Exception ex) // if an unexpected error occurs
             {
                 Monitor.LogOnce($"{nameof(TouchActionProperties)}: Error while running {nameof(CheckTouchAction)}. A custom TouchAction tile property failed to work at {Game1.player.currentLocation?.Name} (tile {x},{y}). Full error message: \n{ex.ToString()}", LogLevel.Error);
                 return;
@@ -127,8 +129,8 @@ namespace StardewValleyExpanded
 
         private static void OnWarped(object sender, WarpedEventArgs e)
         {
-            if (e.IsLocalPlayer) //if the local player just warped
-                LastPlayerTile.Value = new Vector2(-1); //reset their most recently touched tile
+            if (e.IsLocalPlayer) // if the local player just warped
+                LastPlayerTile.Value = new Vector2(-1); // reset their most recently touched tile
         }
 
         private static void OnUpdateTicked(object sender, UpdateTickedEventArgs e)
@@ -136,11 +138,11 @@ namespace StardewValleyExpanded
             if (!Context.IsWorldReady)
                 return;
 
-            Vector2 tile = Game1.player.Tile; //get the current local player's tile
-            if (tile != LastPlayerTile.Value) //if their tile has changed since the last check
+            Vector2 tile = Game1.player.Tile; // get the current local player's tile
+            if (tile != LastPlayerTile.Value) // if their tile has changed since the last check
             {
-                LastPlayerTile.Value = tile; //update their most recent tile
-                CheckTouchAction((int)tile.X, (int)tile.Y); //perform the new tile's touch action (if any)
+                LastPlayerTile.Value = tile; // update their most recent tile
+                CheckTouchAction((int)tile.X, (int)tile.Y); // perform the new tile's touch action (if any)
             }
         }
     }

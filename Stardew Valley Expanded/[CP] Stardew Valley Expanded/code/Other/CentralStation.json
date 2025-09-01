@@ -1,4 +1,4 @@
-{
+﻿{
     "Changes": [
         {
             "Action": "EditData",
@@ -8,7 +8,10 @@
                     "DisplayName": "Pondwood",
                     "ToLocation": "Custom_GrampletonSuburbsTrainStation",
                     "Network": "Train",
-                    "ToTile": { "X": 35, "Y": 15 },
+                    "ToTile": {
+                        "X": 35,
+                        "Y": 15
+                    },
                     "Cost": 1000,
                     "Condition": "PLAYER_HAS_SEEN_EVENT ANY 3691371"
                 }

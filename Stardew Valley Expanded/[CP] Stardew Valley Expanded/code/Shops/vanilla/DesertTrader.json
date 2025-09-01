@@ -1,22 +1,19 @@
-{
+﻿{
     "Changes": [
         {
             "Action": "EditData",
             "Target": "Data/Shops",
             "Priority": "Early - 100",
-            "TargetField": [
-                "DesertTrade",
-                "Items"
-            ],
+            "TargetField": [ "DesertTrade", "Items" ],
             "Entries": {
-			    "FlashShifter.StardewValleyExpandedCP_Gold_Carrot_Seed": {
+                "FlashShifter.StardewValleyExpandedCP_Gold_Carrot_Seed": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Gold_Carrot_Seed",
                     "ItemId": "FlashShifter.StardewValleyExpandedCP_Gold_Carrot_Seed",
                     "TradeItemId": "(O)336",
-					"TradeItemAmount": 3,
-				    "AvailableStock": 2,
-                },
-			},
-        },
+                    "TradeItemAmount": 3,
+                    "AvailableStock": 2
+                }
+            }
+        }
     ]
 }

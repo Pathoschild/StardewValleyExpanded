@@ -1,4 +1,4 @@
-{
+﻿{
     "Changes": [
         //Castle Village Outpost vendor patches (14 days out of a season)
         {
@@ -53,8 +53,8 @@
             "Patchmode": "Overlay"
         },
         //*** UI changes when player is in Galdora ***
-		
-		{ //Galdoran Theme 1.6 Update 1
+
+        { //Galdoran Theme 1.6 Update 1
             "Action": "EditImage",
             "Target": "LooseSprites/Cursors_1_6",
             "FromFile": "Assets/Tilesheets/Galdora_Interface.png",
@@ -75,10 +75,10 @@
                 "Y": 97,
                 "Width": 99,
                 "Height": 115
-            },
+            }
         },
-		
-		{ //Galdoran Theme 1.6 Update 2
+
+        { //Galdoran Theme 1.6 Update 2
             "Action": "EditImage",
             "Target": "LooseSprites/Cursors_1_6",
             "FromFile": "Assets/Tilesheets/Galdora_Interface.png",
@@ -99,10 +99,10 @@
                 "Y": 234,
                 "Width": 201,
                 "Height": 96
-            },
+            }
         },
-		
-		{ //Galdoran menu tiles 1
+
+        { //Galdoran menu tiles 1
             "Action": "EditImage",
             "Target": "Maps/MenuTiles",
             "FromFile": "Assets/Tilesheets/Galdora_Interface.png",
@@ -123,7 +123,7 @@
                 "Y": 12,
                 "Width": 244,
                 "Height": 232
-            },
+            }
         },
         { //Galdoran menu tiles 1
             "Action": "EditImage",
@@ -146,9 +146,9 @@
                 "Y": 256,
                 "Width": 124,
                 "Height": 124
-            },
+            }
         },
-		{
+        {
             //Galdoran SDV 1.6 Baby Chicken Icon
             "Action": "EditImage",
             "Target": "LooseSprites/Cursors_1_6",
@@ -170,9 +170,9 @@
                 "Y": 246,
                 "Width": 16,
                 "Height": 16
-            },
+            }
         },
-		{
+        {
             //Galdoran SDV 1.6 Purple Star Icon
             "Action": "EditImage",
             "Target": "LooseSprites/Cursors_1_6",
@@ -194,7 +194,7 @@
                 "Y": 494,
                 "Width": 16,
                 "Height": 16
-            },
+            }
         },
         {
             //Galdoran portrait background
@@ -218,7 +218,7 @@
                 "Y": 411,
                 "Width": 115,
                 "Height": 97
-            },
+            }
         },
         {
             //Galdoran dialogue box X icon
@@ -242,7 +242,7 @@
                 "Y": 342,
                 "Width": 119,
                 "Height": 12
-            },
+            }
         },
         {
             //Galdoran menu X icon
@@ -266,7 +266,7 @@
                 "Y": 494,
                 "Width": 12,
                 "Height": 12
-            },
+            }
         },
         {
             //Galdora dialogue box background
@@ -290,7 +290,7 @@
                 "Y": 320,
                 "Width": 16,
                 "Height": 16
-            },
+            }
         },
         {
             //Galdoran dialogue box border
@@ -314,7 +314,7 @@
                 "Y": 311,
                 "Width": 42,
                 "Height": 27
-            },
+            }
         },
         {
             //Galdoran dialogue box continue Icon
@@ -338,7 +338,7 @@
                 "Y": 346,
                 "Width": 53,
                 "Height": 10
-            },
+            }
         },
         { //Galdoran watch
             "Action": "EditImage",
@@ -361,7 +361,7 @@
                 "Y": 432,
                 "Width": 72,
                 "Height": 57
-            },
+            }
         },
         { //Galdoran watch hand
             "Action": "EditImage",
@@ -384,7 +384,7 @@
                 "Y": 477,
                 "Width": 7,
                 "Height": 19
-            },
+            }
         },
         { //Galdoran shop border
             "Action": "EditImage",
@@ -407,7 +407,7 @@
                 "Y": 373,
                 "Width": 18,
                 "Height": 18
-            },
+            }
         },
         { //Galdoran shop background
             "Action": "EditImage",
@@ -430,7 +430,7 @@
                 "Y": 396,
                 "Width": 15,
                 "Height": 15
-            },
+            }
         },
         { //Galdoran health and stamina bar
             "Action": "EditImage",
@@ -453,7 +453,7 @@
                 "Y": 408,
                 "Width": 24,
                 "Height": 56
-            },
+            }
         },
         { //Galdoran horizontal arrows and ! sign
             "Action": "EditImage",
@@ -476,7 +476,7 @@
                 "Y": 493,
                 "Width": 42,
                 "Height": 14
-            },
+            }
         },
         { //Galdoran vertical arrows, slider, and buttons
             "Action": "EditImage",
@@ -499,7 +499,7 @@
                 "Y": 439,
                 "Width": 27,
                 "Height": 45
-            },
+            }
         },
         { //Galdoran misc. 1
             "Action": "EditImage",
@@ -522,7 +522,7 @@
                 "Y": 373,
                 "Width": 9,
                 "Height": 16
-            },
+            }
         },
         { //Galdoran misc. 2
             "Action": "EditImage",
@@ -545,7 +545,7 @@
                 "Y": 420,
                 "Width": 14,
                 "Height": 5
-            },
+            }
         },
         { //Galdoran set button
             "Action": "EditImage",
@@ -568,7 +568,7 @@
                 "Y": 428,
                 "Width": 21,
                 "Height": 11
-            },
+            }
         },
         { //Galdoran picked up basic object icon
             "Action": "EditImage",
@@ -591,7 +591,7 @@
                 "Y": 360,
                 "Width": 36,
                 "Height": 24
-            },
+            }
         },
         { //Galdoran picked up rare object icon
             "Action": "EditImage",
@@ -614,7 +614,7 @@
                 "Y": 399,
                 "Width": 26,
                 "Height": 24
-            },
+            }
         },
         { //Galdoran pause menu section icons
             "Action": "EditImage",
@@ -637,7 +637,7 @@
                 "Y": 368,
                 "Width": 128,
                 "Height": 32
-            },
+            }
         },
         { //Galdoran + and - buttons
             "Action": "EditImage",
@@ -660,7 +660,7 @@
                 "Y": 345,
                 "Width": 14,
                 "Height": 8
-            },
+            }
         },
         { //Galdoran wallet icon
             "Action": "EditImage",
@@ -683,7 +683,7 @@
                 "Y": 267,
                 "Width": 13,
                 "Height": 16
-            },
+            }
         },
         { //Galdoran collection buttons
             "Action": "EditImage",
@@ -706,7 +706,7 @@
                 "Y": 64,
                 "Width": 64,
                 "Height": 32
-            },
+            }
         },
         { //Galdoran pointers
             "Action": "EditImage",
@@ -729,7 +729,7 @@
                 "Y": 0,
                 "Width": 126,
                 "Height": 27
-            },
+            }
         },
         { //Galdoran inventory sort button
             "Action": "EditImage",
@@ -751,7 +751,7 @@
                 "Y": 440,
                 "Width": 16,
                 "Height": 16
-            },
+            }
         },
         { //Galdoran exhausted icon and event skip button
             "Action": "EditImage",
@@ -774,7 +774,7 @@
                 "Y": 406,
                 "Width": 36,
                 "Height": 15
-            },
+            }
         },
         { //Galdoran OK button
             "Action": "EditImage",
@@ -797,7 +797,7 @@
                 "Y": 256,
                 "Width": 64,
                 "Height": 64
-            },
+            }
         },
         { //Galdoran cancel button
             "Action": "EditImage",
@@ -820,7 +820,7 @@
                 "Y": 256,
                 "Width": 64,
                 "Height": 64
-            },
+            }
         },
         { //Galdoran ? icon
             "Action": "EditImage",
@@ -843,7 +843,7 @@
                 "Y": 357,
                 "Width": 42,
                 "Height": 13
-            },
+            }
         },
         { //Galdoran camera button
             "Action": "EditImage",
@@ -866,7 +866,7 @@
                 "Y": 32,
                 "Width": 18,
                 "Height": 15
-            },
+            }
         },
         { //Galdoran season icons
             "Action": "EditImage",
@@ -889,7 +889,7 @@
                 "Y": 441,
                 "Width": 12,
                 "Height": 32
-            },
+            }
         },
         { //Galdoran weather/event icons
             "Action": "EditImage",
@@ -912,7 +912,7 @@
                 "Y": 421,
                 "Width": 96,
                 "Height": 8
-            },
+            }
         },
         { //Galdoran big right arrow
             "Action": "EditImage",
@@ -935,7 +935,7 @@
                 "Y": 204,
                 "Width": 44,
                 "Height": 40
-            },
+            }
         },
         { //Galdoran big left arrow
             "Action": "EditImage",
@@ -958,7 +958,7 @@
                 "Y": 268,
                 "Width": 44,
                 "Height": 40
-            },
+            }
         },
         { //Galdoran big down arrow
             "Action": "EditImage",
@@ -981,7 +981,7 @@
                 "Y": 76,
                 "Width": 40,
                 "Height": 44
-            },
+            }
         },
         { //Galdoran big up arrow
             "Action": "EditImage",
@@ -1004,7 +1004,7 @@
                 "Y": 72,
                 "Width": 40,
                 "Height": 44
-            },
+            }
         },
         { //Galdoran chest color picker
             "Action": "EditImage",
@@ -1027,7 +1027,7 @@
                 "Y": 469,
                 "Width": 16,
                 "Height": 16
-            },
+            }
         },
         { //Galdoran chest sort button
             "Action": "EditImage",
@@ -1050,7 +1050,7 @@
                 "Y": 469,
                 "Width": 16,
                 "Height": 16
-            },
+            }
         },
         { //Galdoran player graphic (day)
             "Action": "EditImage",
@@ -1073,7 +1073,7 @@
                 "Y": 0,
                 "Width": 128,
                 "Height": 192
-            },
+            }
         },
         { //Galdoran player graphic (night)
             "Action": "EditImage",
@@ -1096,7 +1096,7 @@
                 "Y": 0,
                 "Width": 128,
                 "Height": 192
-            },
+            }
         },
         { //Galdoran level up borders [1]
             "Action": "EditImage",
@@ -1119,7 +1119,7 @@
                 "Y": 704,
                 "Width": 256,
                 "Height": 64
-            },
+            }
         },
         { //Galdoran level up borders [2]
             "Action": "EditImage",
@@ -1142,7 +1142,7 @@
                 "Y": 576,
                 "Width": 64,
                 "Height": 44
-            },
+            }
         },
         { //Galdoran level up borders [3]
             "Action": "EditImage",
@@ -1165,7 +1165,7 @@
                 "Y": 960,
                 "Width": 128,
                 "Height": 54
-            },
+            }
         },
         { //Galdoran level up borders [4]
             "Action": "EditImage",
@@ -1188,7 +1188,7 @@
                 "Y": 916,
                 "Width": 64,
                 "Height": 108
-            },
+            }
         },
         { //Galdoran Relationship Icon [1]
             "Action": "EditImage",
@@ -1211,7 +1211,7 @@
                 "Y": 532,
                 "Width": 44,
                 "Height": 24
-            },
+            }
         },
         { //Galdoran Relationship Icon [2]
             "Action": "EditImage",
@@ -1234,7 +1234,7 @@
                 "Y": 554,
                 "Width": 44,
                 "Height": 24
-            },
+            }
         },
         { //Galdoran Relationship Icon [3]
             "Action": "EditImage",
@@ -1257,7 +1257,7 @@
                 "Y": 576,
                 "Width": 44,
                 "Height": 11
-            },
+            }
         },
         { //Galdoran Relationship Icon [4]
             "Action": "EditImage",
@@ -1280,7 +1280,7 @@
                 "Y": 495,
                 "Width": 11,
                 "Height": 11
-            },
+            }
         },
         //***Galdoran UI configuration**
         { //Galdoran menu tiles 1
@@ -1302,7 +1302,7 @@
                 "Y": 12,
                 "Width": 244,
                 "Height": 232
-            },
+            }
         },
         { //Galdoran menu tiles 1
             "Action": "EditImage",
@@ -1323,9 +1323,9 @@
                 "Y": 256,
                 "Width": 124,
                 "Height": 124
-            },
+            }
         },
-		{
+        {
             //Galdoran SDV 1.6 Baby Chicken Icon
             "Action": "EditImage",
             "Target": "LooseSprites/Cursors_1_6",
@@ -1346,9 +1346,9 @@
                 "Y": 246,
                 "Width": 16,
                 "Height": 16
-            },
+            }
         },
-		{
+        {
             //Galdoran SDV 1.6 Purple Star Icon
             "Action": "EditImage",
             "Target": "LooseSprites/Cursors_1_6",
@@ -1369,7 +1369,7 @@
                 "Y": 494,
                 "Width": 16,
                 "Height": 16
-            },
+            }
         },
         {
             //Galdoran portrait background
@@ -1391,7 +1391,7 @@
                 "Y": 411,
                 "Width": 115,
                 "Height": 97
-            },
+            }
         },
         {
             //Galdoran dialogue box X icon
@@ -1413,7 +1413,7 @@
                 "Y": 342,
                 "Width": 119,
                 "Height": 12
-            },
+            }
         },
         {
             //Galdoran menu X icon
@@ -1435,7 +1435,7 @@
                 "Y": 494,
                 "Width": 12,
                 "Height": 12
-            },
+            }
         },
         {
             //Galdora dialogue box background
@@ -1457,7 +1457,7 @@
                 "Y": 320,
                 "Width": 16,
                 "Height": 16
-            },
+            }
         },
         {
             //Galdoran dialogue box border
@@ -1479,7 +1479,7 @@
                 "Y": 311,
                 "Width": 42,
                 "Height": 27
-            },
+            }
         },
         {
             //Galdoran dialogue box continue Icon
@@ -1501,7 +1501,7 @@
                 "Y": 346,
                 "Width": 53,
                 "Height": 10
-            },
+            }
         },
         { //Galdoran watch
             "Action": "EditImage",
@@ -1522,7 +1522,7 @@
                 "Y": 432,
                 "Width": 72,
                 "Height": 57
-            },
+            }
         },
         { //Galdoran watch hand
             "Action": "EditImage",
@@ -1543,7 +1543,7 @@
                 "Y": 477,
                 "Width": 7,
                 "Height": 19
-            },
+            }
         },
         { //Galdoran shop border
             "Action": "EditImage",
@@ -1564,7 +1564,7 @@
                 "Y": 373,
                 "Width": 18,
                 "Height": 18
-            },
+            }
         },
         { //Galdoran shop background
             "Action": "EditImage",
@@ -1585,7 +1585,7 @@
                 "Y": 396,
                 "Width": 15,
                 "Height": 15
-            },
+            }
         },
         { //Galdoran health and stamina bar
             "Action": "EditImage",
@@ -1606,7 +1606,7 @@
                 "Y": 408,
                 "Width": 24,
                 "Height": 56
-            },
+            }
         },
         { //Galdoran horizontal arrows and ! sign
             "Action": "EditImage",
@@ -1627,7 +1627,7 @@
                 "Y": 493,
                 "Width": 42,
                 "Height": 14
-            },
+            }
         },
         { //Galdoran vertical arrows, slider, and buttons
             "Action": "EditImage",
@@ -1648,7 +1648,7 @@
                 "Y": 439,
                 "Width": 27,
                 "Height": 45
-            },
+            }
         },
         { //Galdoran misc. 1
             "Action": "EditImage",
@@ -1669,7 +1669,7 @@
                 "Y": 373,
                 "Width": 9,
                 "Height": 16
-            },
+            }
         },
         { //Galdoran misc. 2
             "Action": "EditImage",
@@ -1690,7 +1690,7 @@
                 "Y": 420,
                 "Width": 14,
                 "Height": 5
-            },
+            }
         },
         { //Galdoran set button
             "Action": "EditImage",
@@ -1711,7 +1711,7 @@
                 "Y": 428,
                 "Width": 21,
                 "Height": 11
-            },
+            }
         },
         { //Galdoran picked up basic object icon
             "Action": "EditImage",
@@ -1732,7 +1732,7 @@
                 "Y": 360,
                 "Width": 36,
                 "Height": 24
-            },
+            }
         },
         { //Galdoran picked up rare object icon
             "Action": "EditImage",
@@ -1753,7 +1753,7 @@
                 "Y": 399,
                 "Width": 26,
                 "Height": 24
-            },
+            }
         },
         { //Galdoran pause menu section icons
             "Action": "EditImage",
@@ -1774,7 +1774,7 @@
                 "Y": 368,
                 "Width": 128,
                 "Height": 32
-            },
+            }
         },
         { //Galdoran + and - buttons
             "Action": "EditImage",
@@ -1795,7 +1795,7 @@
                 "Y": 345,
                 "Width": 14,
                 "Height": 8
-            },
+            }
         },
         { //Galdoran wallet icon
             "Action": "EditImage",
@@ -1816,7 +1816,7 @@
                 "Y": 267,
                 "Width": 13,
                 "Height": 16
-            },
+            }
         },
         { //Galdoran collection buttons
             "Action": "EditImage",
@@ -1837,7 +1837,7 @@
                 "Y": 64,
                 "Width": 64,
                 "Height": 32
-            },
+            }
         },
         { //Galdoran pointers
             "Action": "EditImage",
@@ -1858,7 +1858,7 @@
                 "Y": 0,
                 "Width": 126,
                 "Height": 27
-            },
+            }
         },
         { //Galdoran inventory sort button
             "Action": "EditImage",
@@ -1879,7 +1879,7 @@
                 "Y": 440,
                 "Width": 16,
                 "Height": 16
-            },
+            }
         },
         { //Galdoran exhausted icon and event skip button
             "Action": "EditImage",
@@ -1900,7 +1900,7 @@
                 "Y": 406,
                 "Width": 36,
                 "Height": 15
-            },
+            }
         },
         { //Galdoran OK button
             "Action": "EditImage",
@@ -1921,7 +1921,7 @@
                 "Y": 256,
                 "Width": 64,
                 "Height": 64
-            },
+            }
         },
         { //Galdoran cancel button
             "Action": "EditImage",
@@ -1942,7 +1942,7 @@
                 "Y": 256,
                 "Width": 64,
                 "Height": 64
-            },
+            }
         },
         { //Galdoran ? icon
             "Action": "EditImage",
@@ -1963,7 +1963,7 @@
                 "Y": 357,
                 "Width": 42,
                 "Height": 13
-            },
+            }
         },
         { //Galdoran camera button
             "Action": "EditImage",
@@ -1984,7 +1984,7 @@
                 "Y": 32,
                 "Width": 18,
                 "Height": 15
-            },
+            }
         },
         { //Galdoran big right arrow
             "Action": "EditImage",
@@ -2005,7 +2005,7 @@
                 "Y": 204,
                 "Width": 44,
                 "Height": 40
-            },
+            }
         },
         { //Galdoran big left arrow
             "Action": "EditImage",
@@ -2026,7 +2026,7 @@
                 "Y": 268,
                 "Width": 44,
                 "Height": 40
-            },
+            }
         },
         { //Galdoran big down arrow
             "Action": "EditImage",
@@ -2047,7 +2047,7 @@
                 "Y": 76,
                 "Width": 40,
                 "Height": 44
-            },
+            }
         },
         { //Galdoran big up arrow
             "Action": "EditImage",
@@ -2068,7 +2068,7 @@
                 "Y": 72,
                 "Width": 40,
                 "Height": 44
-            },
+            }
         },
         { //Galdoran chest color picker button
             "Action": "EditImage",
@@ -2090,7 +2090,7 @@
                 "Y": 469,
                 "Width": 16,
                 "Height": 16
-            },
+            }
         },
         { //Galdoran chest sort button
             "Action": "EditImage",
@@ -2112,7 +2112,7 @@
                 "Y": 469,
                 "Width": 16,
                 "Height": 16
-            },
+            }
         },
         { //Galdoran level up borders [1]
             "Action": "EditImage",
@@ -2134,7 +2134,7 @@
                 "Y": 704,
                 "Width": 256,
                 "Height": 64
-            },
+            }
         },
         { //Galdoran level up borders [2]
             "Action": "EditImage",
@@ -2156,7 +2156,7 @@
                 "Y": 576,
                 "Width": 64,
                 "Height": 44
-            },
+            }
         },
         { //Galdoran level up borders [3]
             "Action": "EditImage",
@@ -2178,7 +2178,7 @@
                 "Y": 960,
                 "Width": 128,
                 "Height": 54
-            },
+            }
         },
         { //Galdoran level up borders [4]
             "Action": "EditImage",
@@ -2200,7 +2200,7 @@
                 "Y": 916,
                 "Width": 64,
                 "Height": 108
-            },
+            }
         },
         { //Galdoran Relationship Icon [1]
             "Action": "EditImage",
@@ -2222,7 +2222,7 @@
                 "Y": 532,
                 "Width": 44,
                 "Height": 24
-            },
+            }
         },
         { //Galdoran Relationship Icon [2]
             "Action": "EditImage",
@@ -2244,7 +2244,7 @@
                 "Y": 554,
                 "Width": 44,
                 "Height": 24
-            },
+            }
         },
         { //Galdoran Relationship Icon [3]
             "Action": "EditImage",
@@ -2266,7 +2266,7 @@
                 "Y": 576,
                 "Width": 44,
                 "Height": 11
-            },
+            }
         },
         { //Galdoran Relationship Icon [4]
             "Action": "EditImage",
@@ -2288,9 +2288,9 @@
                 "Y": 495,
                 "Width": 11,
                 "Height": 11
-            },
+            }
         },
-		{ //Galdoran Theme 1.6 Update 1
+        { //Galdoran Theme 1.6 Update 1
             "Action": "EditImage",
             "Target": "LooseSprites/Cursors_1_6",
             "FromFile": "Assets/Tilesheets/Galdora_Interface.png",
@@ -2310,9 +2310,9 @@
                 "Y": 97,
                 "Width": 99,
                 "Height": 115
-            },
+            }
         },
-		{ //Galdoran Theme 1.6 Update 2
+        { //Galdoran Theme 1.6 Update 2
             "Action": "EditImage",
             "Target": "LooseSprites/Cursors_1_6",
             "FromFile": "Assets/Tilesheets/Galdora_Interface.png",
@@ -2332,9 +2332,9 @@
                 "Y": 234,
                 "Width": 201,
                 "Height": 96
-            },
+            }
         },
-		{
+        {
             //Galdoran SDV 1.6 Baby Chicken Icon
             "Action": "EditImage",
             "Target": "LooseSprites/Cursors_1_6",
@@ -2355,9 +2355,9 @@
                 "Y": 246,
                 "Width": 16,
                 "Height": 16
-            },
+            }
         },
-		{
+        {
             //Galdoran SDV 1.6 Purple Star Icon
             "Action": "EditImage",
             "Target": "LooseSprites/Cursors_1_6",
@@ -2378,7 +2378,7 @@
                 "Y": 494,
                 "Width": 16,
                 "Height": 16
-            },
-        },
+            }
+        }
     ]
 }

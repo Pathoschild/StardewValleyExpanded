@@ -1,7 +1,8 @@
-{
+﻿{
     "Changes": [
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/JojaLedger",
             "FromFile": "assets/CharacterFiles/Shops/Ledgers/JojaLedger.png"
         },
@@ -15,10 +16,10 @@
                             "Name": "AnyOrNone",
                             "Dialogues": [
                                 {
-                                "Id": "FlashShifter.StardewValleyExpandedCP_Default",
-                                "Dialogue": "", 
-                                },
-							],
+                                    "Id": "FlashShifter.StardewValleyExpandedCP_Default",
+                                    "Dialogue": ""
+                                }
+                            ],
                             "Portrait": "Mods\\FlashShifter.StardewValleyExpandedCP\\JojaLedger"
                         }
                     ],

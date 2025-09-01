@@ -1,8 +1,8 @@
-{
-
+﻿{
     "Changes": [
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SophiaLedger",
             "FromFile": "assets/CharacterFiles/Shops/Ledgers/SophiaLedger.png"
         },
@@ -14,12 +14,12 @@
                     "Owners": [
                         {
                             "Name": "AnyOrNone",
-							"Dialogues": [
+                            "Dialogues": [
                                 {
-                                "Id": "FlashShifter.StardewValleyExpandedCP_Default",
-                                "Dialogue": "", 
-                                },
-							],
+                                    "Id": "FlashShifter.StardewValleyExpandedCP_Default",
+                                    "Dialogue": ""
+                                }
+                            ],
                             "Portrait": "Mods\\FlashShifter.StardewValleyExpandedCP\\SophiaLedger"
                         }
                     ],
@@ -29,40 +29,40 @@
                             "Id": "FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine",
                             "ItemId": "FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine",
                             "Price": 3000,
-                            "AvailableStock": 10,
-                        }, 
+                            "AvailableStock": 10
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine",
                             "ItemId": "FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine",
                             "Price": 28000,
-                            "AvailableStock": 1,
+                            "AvailableStock": 1
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Sprinkler",
                             "ItemId": "599",
                             "Price": 600,
-                            "AvailableStock": 5,
+                            "AvailableStock": 5
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Quality_Sprinkler",
                             "ItemId": "621",
                             "Price": 3500,
-                            "AvailableStock": 5,
+                            "AvailableStock": 5
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Iridium_Sprinkler",
                             "ItemId": "645",
                             "Condition": "PLAYER_HAS_MAIL Any SophiaFairyGarden",
                             "Price": 15000,
-                            "AvailableStock": 3,
+                            "AvailableStock": 3
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Pressure_Nozzle",
                             "ItemId": "915",
                             "Condition": "PLAYER_HAS_MAIL Any SophiaFairyGarden",
                             "Price": 40000,
-                            "AvailableStock": 3,
-                        },
+                            "AvailableStock": 3
+                        }
                     ]
                 }
             }

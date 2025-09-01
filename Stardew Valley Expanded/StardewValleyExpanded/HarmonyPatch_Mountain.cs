@@ -1,24 +1,19 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
-
+using HarmonyLib;
 using Microsoft.Xna.Framework;
-
+using StardewModdingAPI;
 using StardewValley.Events;
 using StardewValley.Locations;
-
-using HarmonyLib;
-using StardewModdingAPI;
-using StardewValley;
-using System.Reflection;
 
 namespace StardewValleyExpanded
 {
     /// <summary>
     /// Harmony Patch for the <see cref="Mountain"/> location within Stardew Valley. Adjusts entity
     /// locations and corresponding events.
-    /// 
+    ///
     /// Changes made when <see cref="Apply(Harmony, IMonitor)"/> is called:
     /// Corrects the positioning of the Glimmering Boulder and the Landslide entity.
     /// Corrects the viewport and actor locations for the World Changing Event: Glimmering Boulder.

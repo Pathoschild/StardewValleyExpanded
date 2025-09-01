@@ -1,12 +1,11 @@
-{
-  "Changes": [
-    {
-      "Action": "EditData",
-      "Target": "Strings/schedules/Morris",
-      "Entries": 
-      {
-  "JojaMart.Morris.000": "{{i18n:JojaMart.Morris.000}}",
-},
-    },
-  ]
+﻿{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Morris",
+            "Entries": {
+                "JojaMart.Morris.000": "{{i18n:JojaMart.Morris.000}}"
+            }
+        }
+    ]
 }

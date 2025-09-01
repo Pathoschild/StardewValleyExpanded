@@ -1,245 +1,248 @@
 ﻿{
-  "Format": "2.7.0",
-  "DynamicTokens": [
-    {
-      "Name": "MainModId",
-      "Value": "FlashShifter.StardewValleyExpandedCP"
-    }
-  ],
-
-  "Changes": [
-    // add map
-    {
-      "Action": "Load",
-      "Target": "Maps/Custom_GrampletonFields",
-      "FromFile": "assets/GrampletonFields.tmx",
-      "MigrateLegacyNames": [
-        "GrampletonFields"
-      ]
-    },
-
-    // add location
-    {
-      "Action": "EditData",
-      "Target": "Data/Locations",
-      "Entries": {
-        "Custom_GrampletonFields": {
-          "DisplayName": "{{i18n:Grampleton_Fields}}",
-          "DefaultArrivalTile": {
-            "X": 2,
-            "Y": 111,
-          },
-          "CreateOnLoad": {
-            "Type": "StardewValley.Locations.DecoratableLocation",
-            "AlwaysActive": true,
-            "MapPath": "Maps\\Custom_GrampletonFields"
-          },
-          "FormerLocationNames": [
-            "GrampletonFields"
-          ],
-          "CanPlantHere": true,
-          "ArtifactSpots": [
-            {
-              "Id": "{{MainModId}}_(O)109",
-              "ItemID": "(O)109",
-              "Chance": 0.21
-            },
-            {
-              "Id": "{{MainModId}}_(O)114",
-              "ItemID": "(O)114",
-              "Chance": 0.25
-            },
-            {
-              "Id": "{{MainModId}}_(O)115",
-              "ItemID": "(O)115",
-              "Chance": 0.32
-            },
-            {
-              "Id": "{{MainModId}}_(O)119",
-              "ItemID": "(O)119",
-              "Chance": 1
-            },
-            {
-              "Id": "{{MainModId}}_(O)120",
-              "ItemID": "(O)120",
-              "Chance": 0.4
-            },
-            {
-              "Id": "{{MainModId}}_(O)121",
-              "ItemID": "(O)121",
-              "Chance": 0.31
-            },
-          ]
-        },
-      }
-    },
-
-    // add tilesheets
-    {
-      "Action": "Load",
-      "Priority": "Low",
-      "Target": "Mods/{{MainModId}}/spring_GrampletonFields, Mods/{{MainModId}}/summer_GrampletonFields, Mods/{{MainModId}}/fall_GrampletonFields, Mods/{{MainModId}}/winter_GrampletonFields",
-      "FromFile": "assets/{{TargetWithoutPath}}.png"
-    },
-
-    // add world map
-    {
-      "Action": "EditData",
-      "Target": "Data/WorldMap",
-      "Entries": {
-        "Custom_GrampletonFields": {
-          "BaseTexture": [
-            {
-              "Id": "Custom_GrampletonFields",
-              "Texture": "Mods\\{{MainModId}}\\spring_GrampletonFields",
-              "SourceRect": {
-                "X": 0,
-                "Y": 0,
-                "Width": 300,
-                "Height": 180
-              },
-              "MapPixelArea": {
-                "X": 0,
-                "Y": 0,
-                "Width": 300,
-                "Height": 180
-              },
-              "Condition": "SEASON Spring"
-            },
-            {
-              "Id": "Custom_GrampletonFields",
-              "Texture": "Mods\\{{MainModId}}\\summer_GrampletonFields",
-              "SourceRect": {
-                "X": 0,
-                "Y": 0,
-                "Width": 300,
-                "Height": 180
-              },
-              "MapPixelArea": {
-                "X": 0,
-                "Y": 0,
-                "Width": 300,
-                "Height": 180
-              },
-              "Condition": "SEASON Summer"
-            },
-            {
-              "Id": "Custom_GrampletonFields",
-              "Texture": "Mods\\{{MainModId}}\\fall_GrampletonFields",
-              "SourceRect": {
-                "X": 0,
-                "Y": 0,
-                "Width": 300,
-                "Height": 180
-              },
-              "MapPixelArea": {
-                "X": 0,
-                "Y": 0,
-                "Width": 300,
-                "Height": 180
-              },
-              "Condition": "SEASON Fall"
-            },
-            {
-              "Id": "Custom_GrampletonFields",
-              "Texture": "Mods\\{{MainModId}}\\winter_GrampletonFields",
-              "SourceRect": {
-                "X": 0,
-                "Y": 0,
-                "Width": 300,
-                "Height": 180
-              },
-              "MapPixelArea": {
-                "X": 0,
-                "Y": 0,
-                "Width": 300,
-                "Height": 180
-              },
-              "Condition": "SEASON Winter"
-            },
-          ],
-          "MapAreas": [
-            {
-              "Id": "Custom_GrampletonFields",
-              "PixelArea": {
-                "X": 0,
-                "Y": 0,
-                "Width": 300,
-                "Height": 180
-              },
-              "ScrollText": "Grampleton Fields",
-              "Tooltips": [
-                {
-                  "Id": "Custom_GrampletonFieldsTrain",
-                  "Text": "Train Station",
-                  "PixelArea": {
-                    "X": 160,
-                    "Y": 15,
-                    "Width": 20,
-                    "Height": 7
-                  }
-                },
-                {
-                  "Id": "Custom_GrampletonFieldsAtlantes",
-                  "Text": "Atlantes' Tower",
-                  "PixelArea": {
-                    "X": 225,
-                    "Y": 30,
-                    "Width": 25,
-                    "Height": 25
-                  }
-                },
-                {
-                  "Id": "Custom_ShearwaterBridge",
-                  "Text": "Shearwater Bridge",
-                  "PixelArea": {
-                    "X": 10,
-                    "Y": 95,
-                    "Width": 20,
-                    "Height": 4
-                  }
-                },
-                {
-                  "Id": "Custom_Grampleton Dock",
-                  "Text": "Dock",
-                  "PixelArea": {
-                    "X": 233,
-                    "Y": 150,
-                    "Width": 7,
-                    "Height": 13
-                  }
-                },
-              ],
-              "WorldPositions": [
-                {
-                  "Id": "Custom_GrampletonFields",
-                  "LocationName": "Custom_GrampletonFields",
-                  "MapPixelArea": {
-                    "X": 70,
-                    "Y": 10,
-                    "Width": 200,
-                    "Height": 155
-                  },
-                }
-              ]
-            },
-          ],
-        },
-      },
-    },
-
-    // add to Central Station if it's installed
-    {
-      "Action": "EditData",
-      "Target": "Mods/Pathoschild.CentralStation/Stops",
-      "Entries": {
-        "{{MainModId}}_GrampletonFields": {
-          "DisplayName": "{{i18n: Grampleton_Fields}}",
-          "ToLocation": "Custom_GrampletonFields",
-          "Network": "Train",
-          "ToTile": { "X": 94, "Y": 9 }
+    "Format": "2.7.0",
+    "DynamicTokens": [
+        {
+            "Name": "MainModId",
+            "Value": "FlashShifter.StardewValleyExpandedCP"
         }
-      }
-    }
-  ]
+    ],
+
+    "Changes": [
+        // add map
+        {
+            "Action": "Load",
+            "Target": "Maps/Custom_GrampletonFields",
+            "FromFile": "assets/GrampletonFields.tmx",
+            "MigrateLegacyNames": [
+                "GrampletonFields"
+            ]
+        },
+
+        // add location
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Custom_GrampletonFields": {
+                    "DisplayName": "{{i18n:Grampleton_Fields}}",
+                    "DefaultArrivalTile": {
+                        "X": 2,
+                        "Y": 111
+                    },
+                    "CreateOnLoad": {
+                        "Type": "StardewValley.Locations.DecoratableLocation",
+                        "AlwaysActive": true,
+                        "MapPath": "Maps\\Custom_GrampletonFields"
+                    },
+                    "FormerLocationNames": [
+                        "GrampletonFields"
+                    ],
+                    "CanPlantHere": true,
+                    "ArtifactSpots": [
+                        {
+                            "Id": "{{MainModId}}_(O)109",
+                            "ItemID": "(O)109",
+                            "Chance": 0.21
+                        },
+                        {
+                            "Id": "{{MainModId}}_(O)114",
+                            "ItemID": "(O)114",
+                            "Chance": 0.25
+                        },
+                        {
+                            "Id": "{{MainModId}}_(O)115",
+                            "ItemID": "(O)115",
+                            "Chance": 0.32
+                        },
+                        {
+                            "Id": "{{MainModId}}_(O)119",
+                            "ItemID": "(O)119",
+                            "Chance": 1
+                        },
+                        {
+                            "Id": "{{MainModId}}_(O)120",
+                            "ItemID": "(O)120",
+                            "Chance": 0.4
+                        },
+                        {
+                            "Id": "{{MainModId}}_(O)121",
+                            "ItemID": "(O)121",
+                            "Chance": 0.31
+                        }
+                    ]
+                }
+            }
+        },
+
+        // add tilesheets
+        {
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Mods/{{MainModId}}/spring_GrampletonFields, Mods/{{MainModId}}/summer_GrampletonFields, Mods/{{MainModId}}/fall_GrampletonFields, Mods/{{MainModId}}/winter_GrampletonFields",
+            "FromFile": "assets/{{TargetWithoutPath}}.png"
+        },
+
+        // add world map
+        {
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "Entries": {
+                "Custom_GrampletonFields": {
+                    "BaseTexture": [
+                        {
+                            "Id": "Custom_GrampletonFields",
+                            "Texture": "Mods\\{{MainModId}}\\spring_GrampletonFields",
+                            "SourceRect": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 300,
+                                "Height": 180
+                            },
+                            "MapPixelArea": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 300,
+                                "Height": 180
+                            },
+                            "Condition": "SEASON Spring"
+                        },
+                        {
+                            "Id": "Custom_GrampletonFields",
+                            "Texture": "Mods\\{{MainModId}}\\summer_GrampletonFields",
+                            "SourceRect": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 300,
+                                "Height": 180
+                            },
+                            "MapPixelArea": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 300,
+                                "Height": 180
+                            },
+                            "Condition": "SEASON Summer"
+                        },
+                        {
+                            "Id": "Custom_GrampletonFields",
+                            "Texture": "Mods\\{{MainModId}}\\fall_GrampletonFields",
+                            "SourceRect": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 300,
+                                "Height": 180
+                            },
+                            "MapPixelArea": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 300,
+                                "Height": 180
+                            },
+                            "Condition": "SEASON Fall"
+                        },
+                        {
+                            "Id": "Custom_GrampletonFields",
+                            "Texture": "Mods\\{{MainModId}}\\winter_GrampletonFields",
+                            "SourceRect": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 300,
+                                "Height": 180
+                            },
+                            "MapPixelArea": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 300,
+                                "Height": 180
+                            },
+                            "Condition": "SEASON Winter"
+                        }
+                    ],
+                    "MapAreas": [
+                        {
+                            "Id": "Custom_GrampletonFields",
+                            "PixelArea": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 300,
+                                "Height": 180
+                            },
+                            "ScrollText": "Grampleton Fields",
+                            "Tooltips": [
+                                {
+                                    "Id": "Custom_GrampletonFieldsTrain",
+                                    "Text": "Train Station",
+                                    "PixelArea": {
+                                        "X": 160,
+                                        "Y": 15,
+                                        "Width": 20,
+                                        "Height": 7
+                                    }
+                                },
+                                {
+                                    "Id": "Custom_GrampletonFieldsAtlantes",
+                                    "Text": "Atlantes' Tower",
+                                    "PixelArea": {
+                                        "X": 225,
+                                        "Y": 30,
+                                        "Width": 25,
+                                        "Height": 25
+                                    }
+                                },
+                                {
+                                    "Id": "Custom_ShearwaterBridge",
+                                    "Text": "Shearwater Bridge",
+                                    "PixelArea": {
+                                        "X": 10,
+                                        "Y": 95,
+                                        "Width": 20,
+                                        "Height": 4
+                                    }
+                                },
+                                {
+                                    "Id": "Custom_Grampleton Dock",
+                                    "Text": "Dock",
+                                    "PixelArea": {
+                                        "X": 233,
+                                        "Y": 150,
+                                        "Width": 7,
+                                        "Height": 13
+                                    }
+                                }
+                            ],
+                            "WorldPositions": [
+                                {
+                                    "Id": "Custom_GrampletonFields",
+                                    "LocationName": "Custom_GrampletonFields",
+                                    "MapPixelArea": {
+                                        "X": 70,
+                                        "Y": 10,
+                                        "Width": 200,
+                                        "Height": 155
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+
+        // add to Central Station if it's installed
+        {
+            "Action": "EditData",
+            "Target": "Mods/Pathoschild.CentralStation/Stops",
+            "Entries": {
+                "{{MainModId}}_GrampletonFields": {
+                    "DisplayName": "{{i18n: Grampleton_Fields}}",
+                    "ToLocation": "Custom_GrampletonFields",
+                    "Network": "Train",
+                    "ToTile": {
+                        "X": 94,
+                        "Y": 9
+                    }
+                }
+            }
+        }
+    ]
 }

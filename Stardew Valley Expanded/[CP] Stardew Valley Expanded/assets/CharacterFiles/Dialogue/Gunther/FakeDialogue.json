@@ -1,27 +1,23 @@
-﻿
-{
-  "Changes": [
-    {
-      "Action": "EditData",
-      "Target": "Characters/Dialogue/GuntherSilvian",
-      "When": {
-        "GuntherUnlocked": "false"
-      },
-      "Entries": 
-      {
-  //SPECIAL DIALOGUE
-  "Introduction": "{{i18n:FakeGunther.CharacterDialogue.001}}",
+﻿{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/GuntherSilvian",
+            "When": {
+                "GuntherUnlocked": "false"
+            },
+            "Entries": {
+                //SPECIAL DIALOGUE
+                "Introduction": "{{i18n:FakeGunther.CharacterDialogue.001}}",
 
-  "Mon": "{{i18n:FakeGunther.CharacterDialogue.002}}",
-  "Tue": "{{i18n:FakeGunther.CharacterDialogue.003}}",
-  "Wed": "{{i18n:FakeGunther.CharacterDialogue.004}}",
-  "Thu": "{{i18n:FakeGunther.CharacterDialogue.005}}",
-  "Fri": "{{i18n:FakeGunther.CharacterDialogue.006}}",
-  "Sat": "{{i18n:FakeGunther.CharacterDialogue.007}}",
-  "Sun": "{{i18n:FakeGunther.CharacterDialogue.008}}",
-
-},
-    },
-  ]
+                "Mon": "{{i18n:FakeGunther.CharacterDialogue.002}}",
+                "Tue": "{{i18n:FakeGunther.CharacterDialogue.003}}",
+                "Wed": "{{i18n:FakeGunther.CharacterDialogue.004}}",
+                "Thu": "{{i18n:FakeGunther.CharacterDialogue.005}}",
+                "Fri": "{{i18n:FakeGunther.CharacterDialogue.006}}",
+                "Sat": "{{i18n:FakeGunther.CharacterDialogue.007}}",
+                "Sun": "{{i18n:FakeGunther.CharacterDialogue.008}}"
+            }
+        }
+    ]
 }
-

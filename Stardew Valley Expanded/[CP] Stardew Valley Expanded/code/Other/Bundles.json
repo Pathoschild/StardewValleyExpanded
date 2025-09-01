@@ -1,12 +1,12 @@
-{
+﻿{
     "Changes": [
         {
             "Action": "EditData",
             "Target": "Data/bundles",
-			"When": {
-			  "SVECommunityBundles": true,
-			  "HardSVECommunityBundles": false
-			},
+            "When": {
+                "SVECommunityBundles": true,
+                "HardSVECommunityBundles": false
+            },
             "Entries": {
                 "Pantry/0": "Spring Crops/O 465 20/24 1 0 188 1 0 190 1 0 192 1 0 FlashShifter.StardewValleyExpandedCP_Cucumber 1 0/0///{{i18n:spring.crops.bundle}}",
                 "Pantry/1": "Summer Crops/O 621 1/256 1 0 260 1 0 258 1 0 254 1 0 FlashShifter.StardewValleyExpandedCP_Butternut_Squash 1 0/3///{{i18n:summer.crops.bundle}}",
@@ -41,12 +41,12 @@
                 "Abandoned Joja Mart/36": "The Missing//348 1 1 807 1 0 74 1 0 454 5 2 795 1 2 445 1 0 FlashShifter.StardewValleyExpandedCP_Shark 1 0/1/6//{{i18n:the.missing.bundle}}"
             }
         },
-		{
+        {
             "Action": "EditData",
             "Target": "Data/bundles",
-			"When": {
-			  "HardSVECommunityBundles": true
-			},
+            "When": {
+                "HardSVECommunityBundles": true
+            },
             "Entries": {
                 "Pantry/0": "Spring Crops/O 465 40/24 5 0 188 5 0 190 5 0 192 5 0 FlashShifter.StardewValleyExpandedCP_Cucumber 5 0/0///{{i18n:spring.crops.bundle}}",
                 "Pantry/1": "Summer Crops/O 621 3/256 5 0 260 5 0 258 5 0 254 5 0 FlashShifter.StardewValleyExpandedCP_Butternut_Squash 5 0/3///{{i18n:summer.crops.bundle}}",
@@ -80,6 +80,6 @@
                 "Bulletin Board/35": "Fodder/BO 104 3/262 50 0 178 99 0 613 5 0 297 30 0/4///{{i18n:fodder.bundle}}",
                 "Abandoned Joja Mart/36": "The Missing//348 2 1 807 2 0 74 2 0 454 10 2 795 2 2 445 2 0 FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo 1 0/1/6//{{i18n:the.missing.bundle}}"
             }
-        },
+        }
     ]
 }

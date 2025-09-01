@@ -1,155 +1,159 @@
-{
-  "Changes": [
-    {
-      "Action": "EditData",
-      "Target": "Characters/Dialogue/MarriageDialogueClaire",
-      "Entries": {
-        //SPECIAL DIALOGUE
-        "patio_Claire": "{{i18n:Claire.MarriageDialogue.001}}",
-        "spouseRoom_Claire": "{{i18n:Claire.spouseRoom.{{Random:{{Range:0,5}}}}}}",
-        "funLeave_Claire": "
-        {{i18n:Claire.funLeave.{{Season}}_{{Day}}
-        |default={{i18n:Claire.funLeave.{{DayOfWeek}}.{{Random:{{Range:1,10}}}}
-        |default={{i18n:Claire.funLeave.{{DayOfWeek}}.{{HasSeenEvent|contains=4269704}}.{{Random:{{Range:1,10}}}}
-        |default={{i18n:Claire.funLeave.{{Season}}.{{Random:{{Range:1,15}}}}
-        |default={{i18n:Claire.funLeave.{{Random:{{Range:1,31}}}}}}}}}}}}}}",
-        "funReturn_Claire": "
-        {{i18n:Claire.funReturn.{{Season}}_{{Day}}
-        |default={{i18n:Claire.funReturn.{{DayOfWeek}}.{{Random:{{Range:1,10}}}}
-        |default={{i18n:Claire.funReturn.{{DayOfWeek}}.{{HasSeenEvent|contains=4269704}}.{{Random:{{Range:1,10}}}}
-        |default={{i18n:Claire.funReturn.{{Season}}.{{Random:{{Range:1,15}}}}
-        |default={{i18n:Claire.funReturn.{{Random:{{Range:1,26}}}}}}}}}}}}}}",
-        "OneKid_0": "{{i18n:Claire.MarriageDialogue.005}}",
-        "OneKid_1": "{{i18n:Claire.MarriageDialogue.006}}",
-        "OneKid_2": "{{i18n:Claire.MarriageDialogue.007}}",
-        "OneKid_3": "{{i18n:Claire.MarriageDialogue.008}}",
-        "TwoKids_0": "{{i18n:Claire.MarriageDialogue.009}}",
-        "TwoKids_1": "{{i18n:Claire.MarriageDialogue.010}}",
-        "TwoKids_2": "{{i18n:Claire.MarriageDialogue.011}}",
-        "TwoKids_3": "{{i18n:Claire.MarriageDialogue.012}}",
-        "Indoor_Day_Claire": "{{i18n:Claire.MarriageDialogue.031}}",
-        "Indoor_Night_Claire": "{{i18n:Claire.MarriageDialogue.047}}",
-        "Rainy_Day_Claire": "{{i18n:Claire.MarriageDialogue.042}}",
-        "Rainy_Night_Claire": "{{i18n:Claire.MarriageDialogue.052}}",
-        //SEASONAL DIALOGUE
-        "spring_Claire": "{{i18n:Claire.MarriageDialogue.013}}",
-        "spring_1": "{{i18n:Claire.MarriageDialogue.014}}",
-        "spring_7": "{{i18n:Claire.MarriageDialogue.015}}",
-        "spring_13": "{{i18n:Claire.MarriageDialogue.016}}",
-        "{{season}}_22": "$query IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay#{{i18n:Claire.MarriageDialogue.JojaDay}}|{{i18n:Claire.funLeave.{{Random:{{Range:1,21}}}}}}",
-        "spring_24": "{{i18n:Claire.MarriageDialogue.017}}",
-        "summer_Claire": "{{i18n:Claire.MarriageDialogue.018}}",
-        "summer_1": "{{i18n:Claire.MarriageDialogue.019}}",
-        "summer_11": "{{i18n:Claire.MarriageDialogue.020}}",
-        "summer_23": "$query WEATHER Target Rain Storm GreenRain#{{i18n:Claire.funReturn.Summer_23}}|{{i18n:Claire.MarriageDialogue.Summer_23}}",
-        "summer_28": "{{i18n:Claire.MarriageDialogue.021}}",
-        "fall_Claire": "{{i18n:Claire.MarriageDialogue.022}}",
-        "fall_1": "{{i18n:Claire.MarriageDialogue.023}}",
-        "fall_15": "{{i18n:Claire.MarriageDialogue.Fall_15}}",
-        "fall_16": "{{i18n:Claire.MarriageDialogue.024}}",
-        "fall_27": "{{i18n:Claire.MarriageDialogue.025}}",
-        "winter_Claire": "{{i18n:Claire.MarriageDialogue.026}}",
-        "winter_1": "{{i18n:Claire.MarriageDialogue.027}}",
-        "winter_8": "{{i18n:Claire.MarriageDialogue.028}}",
-        "winter_12": "{{i18n:Claire.MarriageDialogue.029}}",
-        "winter_25": "{{i18n:Claire.MarriageDialogue.030}}",
-        //DAY DIALOGUE
-        "Indoor_Day_0": "{{i18n:Claire.MarriageDialogue.031}}",
-        "Indoor_Day_1": "{{i18n:Claire.MarriageDialogue.032}}",
-        "Indoor_Day_2": "{{i18n:Claire.MarriageDialogue.033}}",
-        "Indoor_Day_3": "{{i18n:Claire.MarriageDialogue.034}}",
-        "Indoor_Day_4": "{{i18n:Claire.MarriageDialogue.035}}",
-        "Outdoor_Claire": "{{i18n:Claire.MarriageDialogue.036}}",
-        "Outdoor_0": "{{i18n:Claire.MarriageDialogue.037}}",
-        "Outdoor_1": "{{i18n:Claire.MarriageDialogue.038}}",
-        "Outdoor_2": "{{i18n:Claire.MarriageDialogue.039}}",
-        "Outdoor_3": "{{i18n:Claire.MarriageDialogue.040}}",
-        "Outdoor_4": "{{i18n:Claire.MarriageDialogue.041}}",
-        "Rainy_Day_0": "{{i18n:Claire.MarriageDialogue.042}}",
-        "Rainy_Day_1": "{{i18n:Claire.MarriageDialogue.043}}",
-        "Rainy_Day_2": "{{i18n:Claire.MarriageDialogue.044}}",
-        "Rainy_Day_3": "{{i18n:Claire.MarriageDialogue.045}}",
-        "Rainy_Day_4": "{{i18n:Claire.MarriageDialogue.046}}",
-        //NIGHT DIALOGUE
-        "Indoor_Night_0": "{{i18n:Claire.MarriageDialogue.047}}",
-        "Indoor_Night_1": "{{i18n:Claire.MarriageDialogue.048}}",
-        "Indoor_Night_2": "{{i18n:Claire.MarriageDialogue.049}}",
-        "Indoor_Night_3": "{{i18n:Claire.MarriageDialogue.050}}",
-        "Indoor_Night_4": "{{i18n:Claire.MarriageDialogue.051}}",
-        "Rainy_Night_0": "{{i18n:Claire.MarriageDialogue.052}}",
-        "Rainy_Night_1": "{{i18n:Claire.MarriageDialogue.053}}",
-        "Rainy_Night_2": "{{i18n:Claire.MarriageDialogue.054}}",
-        "Rainy_Night_3": "{{i18n:Claire.MarriageDialogue.055}}",
-        "Rainy_Night_4": "{{i18n:Claire.MarriageDialogue.056}}",
-        //AFFECTION DIALOGUE
-        "Good_0": "{{i18n:Claire.MarriageDialogue.057}}",
-        "Good_1": "{{i18n:Claire.MarriageDialogue.058}}",
-        "Good_2": "{{i18n:Claire.MarriageDialogue.059}}",
-        "Good_3": "{{i18n:Claire.MarriageDialogue.060}}",
-        "Good_4": "{{i18n:Claire.MarriageDialogue.061}}",
-        "Good_5": "{{i18n:Claire.MarriageDialogue.062}}",
-        "Good_6": "{{i18n:Claire.MarriageDialogue.063}}",
-        "Good_7": "{{i18n:Claire.MarriageDialogue.064}}",
-        "Good_8": "{{i18n:Claire.MarriageDialogue.065}}",
-        "Good_9": "{{i18n:Claire.MarriageDialogue.066}}",
-        "Neutral_0": "{{i18n:Claire.MarriageDialogue.067}}",
-        "Neutral_1": "{{i18n:Claire.MarriageDialogue.068}}",
-        "Neutral_2": "{{i18n:Claire.MarriageDialogue.069}}",
-        "Neutral_3": "{{i18n:Claire.MarriageDialogue.070}}",
-        "Neutral_4": "{{i18n:Claire.MarriageDialogue.071}}",
-        "Neutral_5": "{{i18n:Claire.MarriageDialogue.072}}",
-        "Neutral_6": "{{i18n:Claire.MarriageDialogue.073}}",
-        "Neutral_7": "{{i18n:Claire.MarriageDialogue.074}}",
-        "Neutral_8": "{{i18n:Claire.MarriageDialogue.075}}",
-        "Bad_0": "{{i18n:Claire.MarriageDialogue.076}}",
-        "Bad_1": "{{i18n:Claire.MarriageDialogue.077}}",
-        "Bad_2": "{{i18n:Claire.MarriageDialogue.078}}",
-        "Bad_3": "{{i18n:Claire.MarriageDialogue.079}}",
-        "Bad_4": "{{i18n:Claire.MarriageDialogue.080}}",
-        "Bad_5": "{{i18n:Claire.MarriageDialogue.081}}",
-        "Bad_6": "{{i18n:Claire.MarriageDialogue.082}}",
-        "Bad_7": "{{i18n:Claire.MarriageDialogue.083}}",
-        "Bad_8": "{{i18n:Claire.MarriageDialogue.084}}",
-        "Bad_9": "{{i18n:Claire.MarriageDialogue.085}}",
-      },
-    },
-    {
-      //Adds dialogue for Claire in the theater
-      "Action": "EditData",
-      "Target": "Strings/StringsFromMaps",
-      "Entries": {
-        "Claire_TheaterMessage_Monday": "{{i18n:Claire.TheaterMessage.Monday}}",
-        "Claire_TheaterMessage_Wednesday": "{{i18n:Claire.TheaterMessage.Wednesday}}",
-        "Claire_TheaterMessage_Thursday": "{{i18n:Claire.TheaterMessage.Thursday}}",
-        "Claire_TheaterMessage_Friday": "{{i18n:Claire.TheaterMessage.Friday}}",
-        "Claire_TheaterMessage_Sunday": "{{i18n:Claire.TheaterMessage.Sunday}}",
-      }
-    },
-    {
-      //Patches marriage dialogue for Claire in the theater - doesn't work Fridays
-      "Action": "EditData",
-      "Target": "Strings/StringsFromMaps",
-      "When": {
-        "Spouse": "Claire"
-      },
-      "Entries": {
-        "Claire_TheaterMessage_Monday": "{{i18n:Claire.MarriedTheater.Monday}}",
-        "Claire_TheaterMessage_Wednesday": "{{i18n:Claire.MarriedTheater.Wednesday}}",
-        "Claire_TheaterMessage_Thursday": "{{i18n:Claire.MarriedTheater.Thursday}}",
-        "Claire_TheaterMessage_Sunday": "{{i18n:Claire.MarriedTheater.Sunday}}",
-      }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Characters/Dialogue/MarriageDialogueClaire",
-      "When": {
-        "HasSeenEvent |contains=502261": false,
-        "Spouse": "Claire",
-        "DayofWeek": "Monday, Wednesday, Thursday, Sunday"
-      },
-      "Entries": {
-        "Reject_809": "{{i18n:Claire.RejectMovie}}"
-      }
-    },
-  ]
+﻿{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueClaire",
+            "Entries": {
+                //SPECIAL DIALOGUE
+                "patio_Claire": "{{i18n:Claire.MarriageDialogue.001}}",
+                "spouseRoom_Claire": "{{i18n:Claire.spouseRoom.{{Random:{{Range:0,5}}}}}}",
+                "funLeave_Claire": "
+                {{i18n:Claire.funLeave.{{Season}}_{{Day}}
+                |default={{i18n:Claire.funLeave.{{DayOfWeek}}.{{Random:{{Range:1,10}}}}
+                |default={{i18n:Claire.funLeave.{{DayOfWeek}}.{{HasSeenEvent|contains=4269704}}.{{Random:{{Range:1,10}}}}
+                |default={{i18n:Claire.funLeave.{{Season}}.{{Random:{{Range:1,15}}}}
+                |default={{i18n:Claire.funLeave.{{Random:{{Range:1,31}}}}}}}}}}}}}}",
+                "funReturn_Claire": "
+                {{i18n:Claire.funReturn.{{Season}}_{{Day}}
+                |default={{i18n:Claire.funReturn.{{DayOfWeek}}.{{Random:{{Range:1,10}}}}
+                |default={{i18n:Claire.funReturn.{{DayOfWeek}}.{{HasSeenEvent|contains=4269704}}.{{Random:{{Range:1,10}}}}
+                |default={{i18n:Claire.funReturn.{{Season}}.{{Random:{{Range:1,15}}}}
+                |default={{i18n:Claire.funReturn.{{Random:{{Range:1,26}}}}}}}}}}}}}}",
+                "OneKid_0": "{{i18n:Claire.MarriageDialogue.005}}",
+                "OneKid_1": "{{i18n:Claire.MarriageDialogue.006}}",
+                "OneKid_2": "{{i18n:Claire.MarriageDialogue.007}}",
+                "OneKid_3": "{{i18n:Claire.MarriageDialogue.008}}",
+                "TwoKids_0": "{{i18n:Claire.MarriageDialogue.009}}",
+                "TwoKids_1": "{{i18n:Claire.MarriageDialogue.010}}",
+                "TwoKids_2": "{{i18n:Claire.MarriageDialogue.011}}",
+                "TwoKids_3": "{{i18n:Claire.MarriageDialogue.012}}",
+                "Indoor_Day_Claire": "{{i18n:Claire.MarriageDialogue.031}}",
+                "Indoor_Night_Claire": "{{i18n:Claire.MarriageDialogue.047}}",
+                "Rainy_Day_Claire": "{{i18n:Claire.MarriageDialogue.042}}",
+                "Rainy_Night_Claire": "{{i18n:Claire.MarriageDialogue.052}}",
+
+                //SEASONAL DIALOGUE
+                "spring_Claire": "{{i18n:Claire.MarriageDialogue.013}}",
+                "spring_1": "{{i18n:Claire.MarriageDialogue.014}}",
+                "spring_7": "{{i18n:Claire.MarriageDialogue.015}}",
+                "spring_13": "{{i18n:Claire.MarriageDialogue.016}}",
+                "{{season}}_22": "$query IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay#{{i18n:Claire.MarriageDialogue.JojaDay}}|{{i18n:Claire.funLeave.{{Random:{{Range:1,21}}}}}}",
+                "spring_24": "{{i18n:Claire.MarriageDialogue.017}}",
+                "summer_Claire": "{{i18n:Claire.MarriageDialogue.018}}",
+                "summer_1": "{{i18n:Claire.MarriageDialogue.019}}",
+                "summer_11": "{{i18n:Claire.MarriageDialogue.020}}",
+                "summer_23": "$query WEATHER Target Rain Storm GreenRain#{{i18n:Claire.funReturn.Summer_23}}|{{i18n:Claire.MarriageDialogue.Summer_23}}",
+                "summer_28": "{{i18n:Claire.MarriageDialogue.021}}",
+                "fall_Claire": "{{i18n:Claire.MarriageDialogue.022}}",
+                "fall_1": "{{i18n:Claire.MarriageDialogue.023}}",
+                "fall_15": "{{i18n:Claire.MarriageDialogue.Fall_15}}",
+                "fall_16": "{{i18n:Claire.MarriageDialogue.024}}",
+                "fall_27": "{{i18n:Claire.MarriageDialogue.025}}",
+                "winter_Claire": "{{i18n:Claire.MarriageDialogue.026}}",
+                "winter_1": "{{i18n:Claire.MarriageDialogue.027}}",
+                "winter_8": "{{i18n:Claire.MarriageDialogue.028}}",
+                "winter_12": "{{i18n:Claire.MarriageDialogue.029}}",
+                "winter_25": "{{i18n:Claire.MarriageDialogue.030}}",
+
+                //DAY DIALOGUE
+                "Indoor_Day_0": "{{i18n:Claire.MarriageDialogue.031}}",
+                "Indoor_Day_1": "{{i18n:Claire.MarriageDialogue.032}}",
+                "Indoor_Day_2": "{{i18n:Claire.MarriageDialogue.033}}",
+                "Indoor_Day_3": "{{i18n:Claire.MarriageDialogue.034}}",
+                "Indoor_Day_4": "{{i18n:Claire.MarriageDialogue.035}}",
+                "Outdoor_Claire": "{{i18n:Claire.MarriageDialogue.036}}",
+                "Outdoor_0": "{{i18n:Claire.MarriageDialogue.037}}",
+                "Outdoor_1": "{{i18n:Claire.MarriageDialogue.038}}",
+                "Outdoor_2": "{{i18n:Claire.MarriageDialogue.039}}",
+                "Outdoor_3": "{{i18n:Claire.MarriageDialogue.040}}",
+                "Outdoor_4": "{{i18n:Claire.MarriageDialogue.041}}",
+                "Rainy_Day_0": "{{i18n:Claire.MarriageDialogue.042}}",
+                "Rainy_Day_1": "{{i18n:Claire.MarriageDialogue.043}}",
+                "Rainy_Day_2": "{{i18n:Claire.MarriageDialogue.044}}",
+                "Rainy_Day_3": "{{i18n:Claire.MarriageDialogue.045}}",
+                "Rainy_Day_4": "{{i18n:Claire.MarriageDialogue.046}}",
+
+                //NIGHT DIALOGUE
+                "Indoor_Night_0": "{{i18n:Claire.MarriageDialogue.047}}",
+                "Indoor_Night_1": "{{i18n:Claire.MarriageDialogue.048}}",
+                "Indoor_Night_2": "{{i18n:Claire.MarriageDialogue.049}}",
+                "Indoor_Night_3": "{{i18n:Claire.MarriageDialogue.050}}",
+                "Indoor_Night_4": "{{i18n:Claire.MarriageDialogue.051}}",
+                "Rainy_Night_0": "{{i18n:Claire.MarriageDialogue.052}}",
+                "Rainy_Night_1": "{{i18n:Claire.MarriageDialogue.053}}",
+                "Rainy_Night_2": "{{i18n:Claire.MarriageDialogue.054}}",
+                "Rainy_Night_3": "{{i18n:Claire.MarriageDialogue.055}}",
+                "Rainy_Night_4": "{{i18n:Claire.MarriageDialogue.056}}",
+
+                //AFFECTION DIALOGUE
+                "Good_0": "{{i18n:Claire.MarriageDialogue.057}}",
+                "Good_1": "{{i18n:Claire.MarriageDialogue.058}}",
+                "Good_2": "{{i18n:Claire.MarriageDialogue.059}}",
+                "Good_3": "{{i18n:Claire.MarriageDialogue.060}}",
+                "Good_4": "{{i18n:Claire.MarriageDialogue.061}}",
+                "Good_5": "{{i18n:Claire.MarriageDialogue.062}}",
+                "Good_6": "{{i18n:Claire.MarriageDialogue.063}}",
+                "Good_7": "{{i18n:Claire.MarriageDialogue.064}}",
+                "Good_8": "{{i18n:Claire.MarriageDialogue.065}}",
+                "Good_9": "{{i18n:Claire.MarriageDialogue.066}}",
+                "Neutral_0": "{{i18n:Claire.MarriageDialogue.067}}",
+                "Neutral_1": "{{i18n:Claire.MarriageDialogue.068}}",
+                "Neutral_2": "{{i18n:Claire.MarriageDialogue.069}}",
+                "Neutral_3": "{{i18n:Claire.MarriageDialogue.070}}",
+                "Neutral_4": "{{i18n:Claire.MarriageDialogue.071}}",
+                "Neutral_5": "{{i18n:Claire.MarriageDialogue.072}}",
+                "Neutral_6": "{{i18n:Claire.MarriageDialogue.073}}",
+                "Neutral_7": "{{i18n:Claire.MarriageDialogue.074}}",
+                "Neutral_8": "{{i18n:Claire.MarriageDialogue.075}}",
+                "Bad_0": "{{i18n:Claire.MarriageDialogue.076}}",
+                "Bad_1": "{{i18n:Claire.MarriageDialogue.077}}",
+                "Bad_2": "{{i18n:Claire.MarriageDialogue.078}}",
+                "Bad_3": "{{i18n:Claire.MarriageDialogue.079}}",
+                "Bad_4": "{{i18n:Claire.MarriageDialogue.080}}",
+                "Bad_5": "{{i18n:Claire.MarriageDialogue.081}}",
+                "Bad_6": "{{i18n:Claire.MarriageDialogue.082}}",
+                "Bad_7": "{{i18n:Claire.MarriageDialogue.083}}",
+                "Bad_8": "{{i18n:Claire.MarriageDialogue.084}}",
+                "Bad_9": "{{i18n:Claire.MarriageDialogue.085}}"
+            }
+        },
+        {
+            //Adds dialogue for Claire in the theater
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "Claire_TheaterMessage_Monday": "{{i18n:Claire.TheaterMessage.Monday}}",
+                "Claire_TheaterMessage_Wednesday": "{{i18n:Claire.TheaterMessage.Wednesday}}",
+                "Claire_TheaterMessage_Thursday": "{{i18n:Claire.TheaterMessage.Thursday}}",
+                "Claire_TheaterMessage_Friday": "{{i18n:Claire.TheaterMessage.Friday}}",
+                "Claire_TheaterMessage_Sunday": "{{i18n:Claire.TheaterMessage.Sunday}}"
+            }
+        },
+        {
+            //Patches marriage dialogue for Claire in the theater - doesn't work Fridays
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "When": {
+                "Spouse": "Claire"
+            },
+            "Entries": {
+                "Claire_TheaterMessage_Monday": "{{i18n:Claire.MarriedTheater.Monday}}",
+                "Claire_TheaterMessage_Wednesday": "{{i18n:Claire.MarriedTheater.Wednesday}}",
+                "Claire_TheaterMessage_Thursday": "{{i18n:Claire.MarriedTheater.Thursday}}",
+                "Claire_TheaterMessage_Sunday": "{{i18n:Claire.MarriedTheater.Sunday}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueClaire",
+            "When": {
+                "HasSeenEvent |contains=502261": false,
+                "Spouse": "Claire",
+                "DayofWeek": "Monday, Wednesday, Thursday, Sunday"
+            },
+            "Entries": {
+                "Reject_809": "{{i18n:Claire.RejectMovie}}"
+            }
+        }
+    ]
 }

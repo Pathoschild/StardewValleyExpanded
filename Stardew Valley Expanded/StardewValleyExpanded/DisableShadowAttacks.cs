@@ -1,12 +1,12 @@
-﻿using Microsoft.Xna.Framework;
-using StardewModdingAPI;
-using StardewValley;
-using StardewValley.Locations;
-using StardewValley.Monsters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using HarmonyLib;
+using Microsoft.Xna.Framework;
+using StardewModdingAPI;
+using StardewValley;
+using StardewValley.Locations;
+using StardewValley.Monsters;
 
 namespace StardewValleyExpanded
 {
@@ -19,8 +19,10 @@ namespace StardewValleyExpanded
 
         /// <summary>True if this patch is currently applied.</summary>
         public static bool Applied { get; private set; } = false;
+
         /// <summary>The SMAPI helper instance to use for events and other API access.</summary>
         private static IModHelper Helper { get; set; } = null;
+
         /// <summary>The monitor instance to use for log messages. Null if not provided.</summary>
         private static IMonitor Monitor { get; set; } = null;
 
@@ -30,18 +32,18 @@ namespace StardewValleyExpanded
         /// <param name="monitor">The monitor instance to use for log messages.</param>
         public static void ApplyPatch(Harmony harmony, IModHelper helper, IMonitor monitor)
         {
-            if (!Applied && helper != null && monitor != null) //if NOT already applied
+            if (!Applied && helper != null && monitor != null) // if NOT already applied
             {
-                Helper = helper; //store helper
-                Monitor = monitor; //store monitor
+                Helper = helper; // store helper
+                Monitor = monitor; // store monitor
 
-                //enable SMAPI events
+                // enable SMAPI events
                 Helper.Events.Multiplayer.ModMessageReceived += Multiplayer_ModMessageReceived;
                 Helper.Events.GameLoop.SaveLoaded += GameLoop_SaveLoaded;
                 Helper.Events.Player.Warped += Player_Warped;
                 Helper.Events.GameLoop.TimeChanged += GameLoop_TimeChanged;
 
-                //apply patch
+                // apply patch
                 Monitor.Log($"Applying Harmony patch \"{nameof(DisableShadowAttacks)}\": postfixing SDV method \"AdventureGuild.killListLine(string, int, int)\".", LogLevel.Trace);
                 harmony.Patch(
                     original: AccessTools.Method(typeof(AdventureGuild), "killListLine", new[] { typeof(string), typeof(int), typeof(int) }),
@@ -65,37 +67,34 @@ namespace StardewValleyExpanded
         /// Other locations that should disable shadows' attacks must be added here.
         /// If a location is added to both lists (e.g. by another C# mod), the blacklist will take priority (shadow attacks will be enabled).
         /// </remarks>
-        public static List<string> LocationWhitelist { get; set; } = new List<string>()
-        { 
+        public static List<string> LocationWhitelist { get; set; } = new List<string>
+        {
             "Custom_HighlandsCavern"
         };
 
         /// <summary>A list of locations where Shadow monsters should NOT have their attacks disabled.</summary>
         /// <remarks>This is mainly for use by other mods via reflection (direct C# access).</remarks>
-        public static List<string> LocationBlacklist { get; set; } = new List<string>()
-        {
-
-        };
+        public static List<string> LocationBlacklist { get; set; } = new List<string>();
 
         /// <summary>Indicates whether Shadow monsters' attacks should be disabled at a given location.</summary>
         /// <returns>True if Shadows' attacks should be disabled. False otherwise.</returns>
         public static bool ShouldDisableShadowsHere(GameLocation location)
         {
-            if (location == null //if the location doesn't exist
-                || Game1.getAllFarmers().Any(farmer => farmer.eventsSeen.Contains(DisableShadowsEventID.ToString())) == false //or if NO players have seen the event that disables shadow attacks
-                || LocationBlacklist.Contains(location.Name, StringComparer.OrdinalIgnoreCase)) //or if this location's name is in the blacklist
+            if (location == null // if the location doesn't exist
+                || Game1.getAllFarmers().Any(farmer => farmer.eventsSeen.Contains(DisableShadowsEventID.ToString())) == false // or if NO players have seen the event that disables shadow attacks
+                || LocationBlacklist.Contains(location.Name, StringComparer.OrdinalIgnoreCase)) // or if this location's name is in the blacklist
             {
-                return false; //allow shadow attacks
+                return false; // allow shadow attacks
             }
 
-            if (location.Name.StartsWith("UndergroundMine", StringComparison.Ordinal) //if this seems to be a normal mine level
-                || LocationWhitelist.Contains(location.Name, StringComparer.OrdinalIgnoreCase)) //or this location's name is in the whitelist
+            if (location.Name.StartsWith("UndergroundMine", StringComparison.Ordinal) // if this seems to be a normal mine level
+                || LocationWhitelist.Contains(location.Name, StringComparer.OrdinalIgnoreCase)) // or this location's name is in the whitelist
             {
-                return true; //disable shadow attacks
+                return true; // disable shadow attacks
             }
 
-            //if the "disable shadows" event has been seen, but this location does not match any known rules
-            return false; //default: allow shadow attacks
+            // if the "disable shadows" event has been seen, but this location does not match any known rules
+            return false; // default: allow shadow attacks
         }
 
         /*****               *****/
@@ -109,44 +108,46 @@ namespace StardewValleyExpanded
         {
             try
             {
-                if (monsterNamePlural == "VoidSpirits" //if this method is currently describing the shadow slayer quest (see "AdventureGuild.showMonsterKillList()")
-                    && Game1.getAllFarmers().Any(farmer => farmer.eventsSeen.Contains(DisableShadowsEventID.ToString()))) //and ANY player has seen the "disable shadows" event
+                if (
+                    monsterNamePlural == "VoidSpirits" // if this method is currently describing the shadow slayer quest (see "AdventureGuild.showMonsterKillList()")
+                    && Game1.getAllFarmers().Any(farmer => farmer.eventsSeen.Contains(DisableShadowsEventID.ToString())) // and ANY player has seen the "disable shadows" event
+                )
                 {
-                    __result = String.Empty; //return a blank string instead
+                    __result = String.Empty; // return a blank string instead
                 }
             }
             catch (Exception ex)
             {
                 Monitor.LogOnce($"Harmony patch \"{nameof(DisableShadowAttacks)}.{nameof(AdventureGuild_killListLine)}\" has encountered an error. This only affects a single line of text, but should be reported to Stardew Valley Expanded's developers if possible. Full error message: \n{ex.ToString()}", LogLevel.Error);
-                return; //run the original method
+                return; // run the original method
             }
         }
 
         private static void Multiplayer_ModMessageReceived(object sender, StardewModdingAPI.Events.ModMessageReceivedEventArgs e)
         {
-            if (!Context.IsWorldReady || !Context.IsMainPlayer) //if the local player is NOT hosting a game session
+            if (!Context.IsWorldReady || !Context.IsMainPlayer) // if the local player is NOT hosting a game session
                 return;
 
-            if (e.Type != nameof(DisableShadowAttacks)) //if this message is NOT for this specific class
+            if (e.Type != nameof(DisableShadowAttacks)) // if this message is NOT for this specific class
                 return;
 
-            if (Game1.getLocationFromName(e.ReadAs<string>() ?? "") is GameLocation location) //if the message contains a valid location name, get the location
+            if (Game1.getLocationFromName(e.ReadAs<string>() ?? "") is GameLocation location) // if the message contains a valid location name, get the location
             {
-                DisableShadowsHere(location); //disable shadow attacks at that location if necessary
+                DisableShadowsHere(location); // disable shadow attacks at that location if necessary
             }
         }
 
         private static void GameLoop_SaveLoaded(object sender, StardewModdingAPI.Events.SaveLoadedEventArgs e)
         {
-            DisableShadowsHere(Game1.player.currentLocation); //disable shadow attacks at the local player's location if necessary
+            DisableShadowsHere(Game1.player.currentLocation); // disable shadow attacks at the local player's location if necessary
         }
 
         private static void Player_Warped(object sender, StardewModdingAPI.Events.WarpedEventArgs e)
         {
-            if (!e.IsLocalPlayer) //if the player who warped is NOT the current local player
+            if (!e.IsLocalPlayer) // if the player who warped is NOT the current local player
                 return;
 
-            DisableShadowsHere(e.NewLocation); //disable shadow attacks at the new location if necessary
+            DisableShadowsHere(e.NewLocation); // disable shadow attacks at the new location if necessary
         }
 
         private static void GameLoop_TimeChanged(object sender, StardewModdingAPI.Events.TimeChangedEventArgs e)
@@ -159,16 +160,16 @@ namespace StardewValleyExpanded
             if (Game1.netWorldState.Value.hasWorldStateID("SVE_BetrayalShrineActivated"))
                 return;
 
-            FixMonsterSlayerQuest(); //if necessary, auto-complete and hide the local player's shadow slayer quest
+            FixMonsterSlayerQuest(); // if necessary, auto-complete and hide the local player's shadow slayer quest
 
-            if (!ShouldDisableShadowsHere(location)) //if shadows should NOT be disabled here
+            if (!ShouldDisableShadowsHere(location)) // if shadows should NOT be disabled here
                 return;
 
-            if (!Context.IsMainPlayer) //if the current local player is NOT the host
+            if (!Context.IsMainPlayer) // if the current local player is NOT the host
             {
                 try
                 {
-                    //tell the host player to disable shadow attacks at this location (NOTE: it's only partially effective when done by farmhands)
+                    // tell the host player to disable shadow attacks at this location (NOTE: it's only partially effective when done by farmhands)
                     Helper.Multiplayer.SendMessage(location.Name, nameof(DisableShadowAttacks), new[] { Helper.ModRegistry.ModID }, new[] { Game1.serverHost.Value.UniqueMultiplayerID });
                 }
                 catch (Exception ex)
@@ -177,35 +178,35 @@ namespace StardewValleyExpanded
                 }
             }
 
-            int shadows = 0; //count the number of shadows affected
-            foreach (NPC npc in location?.characters) //check each NPC at the new location
+            int shadows = 0; // count the number of shadows affected
+            foreach (NPC npc in location?.characters) // check each NPC at the new location
             {
-                switch (npc) //check the NPC's type
+                switch (npc) // check the NPC's type
                 {
                     case ShadowShaman shaman:
-                        Helper.Reflection.GetField<int>(shaman, "coolDown", false)?.SetValue(int.MaxValue); //set spell cooldown to max
-                        shaman.moveTowardPlayerThreshold.Value = 0; //prevent spotting the player (NOTE: seems to work even for shadows that spotted the player earlier, if they leave and return to the location)
-                        shaman.DamageToFarmer = 0; //disable contact damage
-                        shaman.MaxHealth = 999999; //resist most damage, including bombs
+                        Helper.Reflection.GetField<int>(shaman, "coolDown", false)?.SetValue(int.MaxValue); // set spell cooldown to max
+                        shaman.moveTowardPlayerThreshold.Value = 0; // prevent spotting the player (NOTE: seems to work even for shadows that spotted the player earlier, if they leave and return to the location)
+                        shaman.DamageToFarmer = 0; // disable contact damage
+                        shaman.MaxHealth = 999999; // resist most damage, including bombs
                         shaman.Health = 999999;
-                        shaman.missChance.Value = 99999; //dodge all attacks that check accuracy
+                        shaman.missChance.Value = 99999; // dodge all attacks that check accuracy
                         shadows++;
                         break;
                     case Shooter shooter:
-                        shooter.nextShot = float.MaxValue; //set shot cooldown to max
-                        shooter.moveTowardPlayerThreshold.Value = 0; //prevent spotting the player
-                        shooter.DamageToFarmer = 0; //disable contact damage
-                        shooter.MaxHealth = 999999; //resist most damage, including bombs
+                        shooter.nextShot = float.MaxValue; // set shot cooldown to max
+                        shooter.moveTowardPlayerThreshold.Value = 0; // prevent spotting the player
+                        shooter.DamageToFarmer = 0; // disable contact damage
+                        shooter.MaxHealth = 999999; // resist most damage, including bombs
                         shooter.Health = 999999;
-                        shooter.missChance.Value = 99999; //dodge all attacks that check accuracy
+                        shooter.missChance.Value = 99999; // dodge all attacks that check accuracy
                         shadows++;
                         break;
                     case ShadowBrute brute:
-                        brute.moveTowardPlayerThreshold.Value = 0; //prevent spotting the player
-                        brute.DamageToFarmer = 0; //disable contact damage
-                        brute.MaxHealth = 999999; //resist most damage, including bombs
+                        brute.moveTowardPlayerThreshold.Value = 0; // prevent spotting the player
+                        brute.DamageToFarmer = 0; // disable contact damage
+                        brute.MaxHealth = 999999; // resist most damage, including bombs
                         brute.Health = 999999;
-                        brute.missChance.Value = 99999; //dodge all attacks that check accuracy
+                        brute.missChance.Value = 99999; // dodge all attacks that check accuracy
                         shadows++;
                         break;
                 }
@@ -222,7 +223,7 @@ namespace StardewValleyExpanded
         {
             try
             {
-                //imitate MineShaft.EnemyCount but exclude shadows
+                // imitate MineShaft.EnemyCount but exclude shadows
                 int enemyCountWithoutShadows = mineLevel.characters.OfType<Monster>().Where(m => m is not ShadowShaman and not Shooter and not ShadowBrute).Count();
 
                 if (mineLevel.mustKillAllMonstersToAdvance() && enemyCountWithoutShadows <= 0)
@@ -250,31 +251,31 @@ namespace StardewValleyExpanded
         /// <summary>Silently auto-completes the "void spirits" monster slayer quest for the local player if necessary.</summary>
         private static void FixMonsterSlayerQuest()
         {
-            if (Game1.player.mailReceived.Contains("Gil_Savage Ring") || Game1.player.hasCompletedAllMonsterSlayerQuests.Value) //if the player has already retrieved the "void spirits" slayer reward OR has already completed all slayer quests
-                return; //do nothing
+            if (Game1.player.mailReceived.Contains("Gil_Savage Ring") || Game1.player.hasCompletedAllMonsterSlayerQuests.Value) // if the player has already retrieved the "void spirits" slayer reward OR has already completed all slayer quests
+                return; // do nothing
 
-            if (Game1.getAllFarmers().Any(farmer => farmer.eventsSeen.Contains(DisableShadowsEventID.ToString())) == false) //if NO players have seen the "disable shadows" event
-                return; //do nothing
+            if (Game1.getAllFarmers().Any(farmer => farmer.eventsSeen.Contains(DisableShadowsEventID.ToString())) == false) // if NO players have seen the "disable shadows" event
+                return; // do nothing
 
             bool increasedShadowGuyKills = true;
-            if (Game1.stats.specificMonstersKilled.ContainsKey("Shadow Guy")) //if the shadow guy kill entry already exists
+            if (Game1.stats.specificMonstersKilled.ContainsKey("Shadow Guy")) // if the shadow guy kill entry already exists
             {
-                if (Game1.stats.specificMonstersKilled["Shadow Guy"] < 100000) //if it's less than 100k
-                    Game1.stats.specificMonstersKilled["Shadow Guy"] += 100000; //increase it (100k + the actual number)
-                else //if the entry is already 100k+
+                if (Game1.stats.specificMonstersKilled["Shadow Guy"] < 100000) // if it's less than 100k
+                    Game1.stats.specificMonstersKilled["Shadow Guy"] += 100000; // increase it (100k + the actual number)
+                else // if the entry is already 100k+
                     increasedShadowGuyKills = false;
             }
-            else //if the shadow guy kill entry does NOT exist yet
+            else // if the shadow guy kill entry does NOT exist yet
             {
-                Game1.stats.specificMonstersKilled.Add("Shadow Guy", 100000); //add it and set it to 100k
+                Game1.stats.specificMonstersKilled.Add("Shadow Guy", 100000); // add it and set it to 100k
             }
 
-            if (increasedShadowGuyKills) //if the player's kill count was updated, perform update tasks (based on the method "Stats.monsterKilled")
+            if (increasedShadowGuyKills) // if the player's kill count was updated, perform update tasks (based on the method "Stats.monsterKilled")
             {
-                Game1.player.hasCompletedAllMonsterSlayerQuests.Value = AdventureGuild.areAllMonsterSlayerQuestsComplete(); //update the player's overall "slayer" progress
-                if (AdventureGuild.areAllMonsterSlayerQuestsComplete()) //if all slayer quests are complete now
+                Game1.player.hasCompletedAllMonsterSlayerQuests.Value = AdventureGuild.areAllMonsterSlayerQuestsComplete(); // update the player's overall "slayer" progress
+                if (AdventureGuild.areAllMonsterSlayerQuestsComplete()) // if all slayer quests are complete now
                 {
-                    Game1.getSteamAchievement("Achievement_KeeperOfTheMysticRings"); //activate the related achievement
+                    Game1.getSteamAchievement("Achievement_KeeperOfTheMysticRings"); // activate the related achievement
                 }
             }
         }

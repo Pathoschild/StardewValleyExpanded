@@ -1,8 +1,8 @@
-{
-
+﻿{
     "Changes": [
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/GreyJunimo",
             "FromFile": "assets/CharacterFiles/Shops/Junimos/blank.png"
         },
@@ -15,7 +15,6 @@
                 "Y": 0,
                 "Width": 64,
                 "Height": 64
-
             }
         },
         {
@@ -29,9 +28,9 @@
                             "Portrait": "Mods\\FlashShifter.StardewValleyExpandedCP\\GreyJunimo",
                             "Dialogues": [
                                 {
-                                "Id": "FlashShifter.StardewValleyExpandedCP_Default",
-                                "Dialogue": "{{i18n:ShopsDialogue.GreyJunimo}}", 
-                                },
+                                    "Id": "FlashShifter.StardewValleyExpandedCP_Default",
+                                    "Dialogue": "{{i18n:ShopsDialogue.GreyJunimo}}"
+                                }
                             ]
                         }
                     ],
@@ -41,69 +40,68 @@
                             "Id": "FlashShifter.StardewValleyExpandedCP_Prismatic_Shard",
                             "ItemId": "74",
                             "Price": 100000,
-                            "AvailableStock": 1,
-                        }, 
+                            "AvailableStock": 1
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Diamond",
                             "ItemId": "72",
                             "Price": 4000,
-                            "AvailableStock": 5,
-                        }, 
+                            "AvailableStock": 5
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Fairy_Stone",
                             "ItemId": "577",
                             "Price": 3000,
-                            "AvailableStock": 3,
-                        }, 
+                            "AvailableStock": 3
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Star_Shards",
                             "ItemId": "578",
                             "Price": 3000,
-                            "AvailableStock": 1,
-                        }, 
+                            "AvailableStock": 1
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Emerald",
                             "ItemId": "60",
                             "Price": 2000,
-                            "AvailableStock": 1,
-                        }, 
+                            "AvailableStock": 1
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Ruby",
                             "ItemId": "64",
                             "Price": 2000,
-                            "AvailableStock": 1,
-                        }, 
+                            "AvailableStock": 1
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Aquamarine",
                             "ItemId": "62",
                             "Price": 1500,
-                            "AvailableStock": 1,
-                        }, 
+                            "AvailableStock": 1
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Topaz",
                             "ItemId": "68",
                             "Price": 1500,
-                            "AvailableStock": 1,
-                        }, 
+                            "AvailableStock": 1
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Jade",
                             "ItemId": "70",
                             "Price": 1200,
-                            "AvailableStock": 1,
-                        }, 
+                            "AvailableStock": 1
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Amethyst",
                             "ItemId": "66",
                             "Price": 1000,
-                            "AvailableStock": 1,
-                        }, 
+                            "AvailableStock": 1
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Granite",
                             "ItemId": "569",
                             "Price": 800,
-                            "AvailableStock": 5,
-                        }, 
-                        
+                            "AvailableStock": 5
+                        }
                     ]
                 }
             }

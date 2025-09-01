@@ -1,8 +1,8 @@
-{
-
+﻿{
     "Changes": [
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/YellowJunimo",
             "FromFile": "assets/CharacterFiles/Shops/Junimos/blank.png"
         },
@@ -15,7 +15,6 @@
                 "Y": 65,
                 "Width": 64,
                 "Height": 64
-
             }
         },
         {
@@ -29,9 +28,9 @@
                             "Portrait": "Mods\\FlashShifter.StardewValleyExpandedCP\\YellowJunimo",
                             "Dialogues": [
                                 {
-                                "Id": "FlashShifter.StardewValleyExpandedCP_Default",
-                                "Dialogue": "{{i18n:ShopsDialogue.YellowJunimo}}", 
-                                },
+                                    "Id": "FlashShifter.StardewValleyExpandedCP_Default",
+                                    "Dialogue": "{{i18n:ShopsDialogue.YellowJunimo}}"
+                                }
                             ]
                         }
                     ],
@@ -46,39 +45,38 @@
                             "Id": "FlashShifter.StardewValleyExpandedCP_Ancient_Seeds",
                             "ItemId": "499",
                             "Price": 8000,
-                            "AvailableStock": 10,
-                        }, 
+                            "AvailableStock": 10
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Rare_Seed",
                             "ItemId": "347",
                             "Price": 1500,
-                            "AvailableStock": 5,
-                        }, 
+                            "AvailableStock": 5
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Spring_Seeds",
                             "ItemId": "495",
                             "Price": 65,
-                            "AvailableStock": 50,
-                        }, 
+                            "AvailableStock": 50
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Summer_Seeds",
                             "ItemId": "496",
                             "Price": 90,
-                            "AvailableStock": 50,
-                        }, 
+                            "AvailableStock": 50
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Fall_Seeds",
                             "ItemId": "497",
                             "Price": 100,
-                            "AvailableStock": 50,
-                        }, 
+                            "AvailableStock": 50
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Winter_Seeds",
                             "ItemId": "498",
                             "Price": 120,
-                            "AvailableStock": 50,
-                        }, 
-
+                            "AvailableStock": 50
+                        }
                     ]
                 }
             }

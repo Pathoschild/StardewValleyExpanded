@@ -1,4 +1,4 @@
-{
+﻿{
     "Changes": [
         // JADU
         {
@@ -45,33 +45,37 @@
                         "Y": 32
                     },
                     "CustomFields": {}
-                },
-            },
+                }
+            }
         },
         {
             //Jadu's portraits
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Portraits/Jadu",
             "FromFile": "Assets/CharacterFiles/Portraits/Jadu/Jadu.png"
         },
         {
             //Jadu's sprites
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Characters/Jadu",
             "FromFile": "Assets/CharacterFiles/OverworldSprites/Jadu/Jadu.png"
         },
-		{
-            "Action": "Load", "Priority": "Low",
+        {
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Strings/Schedules/Jadu",
             "FromFile": "Assets/Blank.json"
         },
         {
             //Jadu's schedule
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Characters/schedules/Jadu",
             "FromFile": "assets/CharacterFiles/Schedules/Jadu/Jadu.json"
         },
-		{
+        {
             "Action": "EditData",
             "Target": "Strings/Schedules/Jadu",
             "Entries": {
@@ -84,8 +88,8 @@
             "Target": "characters/schedules/Jadu",
             "Entries": {
                 "DesertFestival_1": "0 Desert 39 14 2 \"Strings\\schedules\\Jadu:DesertFestival_Jadu\"/610 Desert 39 14 2 \"Strings\\schedules\\Jadu:DesertFestival_Jadu\"",
-                "DesertFestival_3": "0 Desert 39 14 2 \"Strings\\schedules\\Jadu:DesertFestival_Jadu\"/610 Desert 39 14 2 \"Strings\\schedules\\Jadu:DesertFestival_Jadu\"",
+                "DesertFestival_3": "0 Desert 39 14 2 \"Strings\\schedules\\Jadu:DesertFestival_Jadu\"/610 Desert 39 14 2 \"Strings\\schedules\\Jadu:DesertFestival_Jadu\""
             }
-        },
+        }
     ]
 }

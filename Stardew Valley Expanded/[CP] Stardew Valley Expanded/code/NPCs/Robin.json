@@ -1,52 +1,40 @@
-{
+﻿{
     "Changes": [
         {
             "Action": "EditData",
             "Target": "Data/NPCGiftTastes",
             "LogName": "Gift tastes: Robin",
             "TextOperations": [
-              /*Love*/
-              {
-                "Operation": "Append",
-                "Target": [
-                  "Fields",
-                  "Robin",
-                  1
-                ],
-                "Value": "FlashShifter.StardewValleyExpandedCP_Golden_Goose_Egg FlashShifter.StardewValleyExpandedCP_Prismatic_Pop FlashShifter.StardewValleyExpandedCP_Baked_Berry_Oatmeal_Supreme",
-                "Delimiter": " "
-              }
-              /*Like*/,
-              {
-                "Operation": "Append",
-                "Target": [
-                  "Fields",
-                  "Robin",
-                  3
-                ],
-                "Value": "FlashShifter.StardewValleyExpandedCP_Gold_Carrot FlashShifter.StardewValleyExpandedCP_King_Salmon FlashShifter.StardewValleyExpandedCP_Butterfish",
-                "Delimiter": " "
-              }
-              /*Neutral*/,
-              {
-                "Operation": "Append",
-                "Target": [
-                  "Fields",
-                  "Robin",
-                  9
-                ],
-                "Value": "FlashShifter.StardewValleyExpandedCP_Stamina_Capsule FlashShifter.StardewValleyExpandedCP_Sports_Drink",
-                "Delimiter": " "
-              }
+                /*Love*/
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Robin", 1 ],
+                    "Value": "FlashShifter.StardewValleyExpandedCP_Golden_Goose_Egg FlashShifter.StardewValleyExpandedCP_Prismatic_Pop FlashShifter.StardewValleyExpandedCP_Baked_Berry_Oatmeal_Supreme",
+                    "Delimiter": " "
+                }
+                /*Like*/,
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Robin", 3 ],
+                    "Value": "FlashShifter.StardewValleyExpandedCP_Gold_Carrot FlashShifter.StardewValleyExpandedCP_King_Salmon FlashShifter.StardewValleyExpandedCP_Butterfish",
+                    "Delimiter": " "
+                }
+                /*Neutral*/,
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "Robin", 9 ],
+                    "Value": "FlashShifter.StardewValleyExpandedCP_Stamina_Capsule FlashShifter.StardewValleyExpandedCP_Sports_Drink",
+                    "Delimiter": " "
+                }
             ]
-          },
+        },
         { //ROBIN EVENT
             "Action": "EditData",
             "Target": "data/events/backwoods",
             "Entries": {
                 "1000029/w sunny/m 500000/t 600 1130/z winter/z fall/z spring": "summer_day_ambient/-500 -500/farmer 14 39 0 Robin 14 26 1/skippable/pause 500/viewport 19 28 true/pause 400/textAboveHead Robin \"{{i18n:Robin.Event.01}}\"/move farmer 0 -10 0/pause 650/move Robin 0 0 2/emote Robin 16/pause 150/speak Robin \"{{i18n:Robin.Event.02}}\"/pause 1250/speak Robin \"{{i18n:Robin.Event.03}}\"/pause 1100/speak Robin \"{{i18n:Robin.Event.04}}\"/pause 500/question fork0 \"{{i18n:Robin.Event.05}}\"/fork 1000029_WonderfulJob/pause 500/emote Robin 16/pause 350/emote Robin 28/pause 600/speak Robin \"{{i18n:Robin.Event.06}}\"/pause 500/move Robin 0 0 0/pause 1000/emote Robin 28/pause 500/speak Robin \"{{i18n:Robin.Event.07}}\"/pause 500/globalFade/viewport -1000 -1000/pause 700/friendship Robin -625/end dialogue Robin \"{{i18n:Robin.Event.08}}\"",
-                "1000029_WonderfulJob": "pause 600/speak Robin \"{{i18n:Robin.Event.1000029_WonderfulJob.01}}\"/pause 2000/speak Robin \"{{i18n:Robin.Event.1000029_WonderfulJob.02}}\"/pause 1500/speak Robin \"{{i18n:Robin.Event.1000029_WonderfulJob.03}}\"/pause 600/emote farmer 32/pause 200/emote Robin 32/pause 1250/speak Robin \"{{i18n:Robin.Event.1000029_WonderfulJob.04}}\"/pause 500/globalFade/viewport -1000 -1000/pause 700/end dialogue Robin \"{{i18n:Robin.Event.1000029_WonderfulJob.05}}\"",
-            },
+                "1000029_WonderfulJob": "pause 600/speak Robin \"{{i18n:Robin.Event.1000029_WonderfulJob.01}}\"/pause 2000/speak Robin \"{{i18n:Robin.Event.1000029_WonderfulJob.02}}\"/pause 1500/speak Robin \"{{i18n:Robin.Event.1000029_WonderfulJob.03}}\"/pause 600/emote farmer 32/pause 200/emote Robin 32/pause 1250/speak Robin \"{{i18n:Robin.Event.1000029_WonderfulJob.04}}\"/pause 500/globalFade/viewport -1000 -1000/pause 700/end dialogue Robin \"{{i18n:Robin.Event.1000029_WonderfulJob.05}}\""
+            }
         },
         { //Adjusts deluxe bed position
             "Action": "EditData",
@@ -56,9 +44,10 @@
             }
         },
         { //Allows precise positioning of Robin's deluxe bed
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Characters/Deluxebed",
             "FromFile": "Assets/CharacterFiles/OverworldSprites/Miscellaneous/DeluxeBed.png"
-        },
+        }
     ]
 }

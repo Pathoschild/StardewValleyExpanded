@@ -1,6 +1,6 @@
-{
+﻿{
     "Changes": [
-        {   
+        {
             //Marlon stuck inside until player is a member
             "Action": "EditData",
             "Target": "Characters/schedules/MarlonFay",

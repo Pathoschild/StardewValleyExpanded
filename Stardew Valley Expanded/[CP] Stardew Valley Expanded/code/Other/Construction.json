@@ -1,6 +1,6 @@
-{
+﻿{
     "Changes": [
-        { //HARDER BUILDING CONSTRUCTION		
+        { //HARDER BUILDING CONSTRUCTION
             "Action": "EditData",
             "Target": "Data/Buildings",
             "Fields": {
@@ -40,7 +40,7 @@
                             "Id": "(O)428",
                             "ItemId": "(O)428",
                             "Amount": 8
-                        },
+                        }
                     ],
                     "BuildCost": 8000
                 },
@@ -55,7 +55,7 @@
                             "Id": "(O)86",
                             "ItemId": "(O)86",
                             "Amount": 10
-                        },
+                        }
                     ],
                     "BuildCost": 1000000
                 },
@@ -75,7 +75,7 @@
                             "Id": "(O)393",
                             "ItemId": "(O)393",
                             "Amount": 10
-                        },
+                        }
                     ],
                     "BuildCost": 1000000
                 },
@@ -95,7 +95,7 @@
                             "Id": "(O)90",
                             "ItemId": "(O)90",
                             "Amount": 10
-                        },
+                        }
                     ],
                     "BuildCost": 1000000
                 },
@@ -115,7 +115,7 @@
                             "Id": "(O)771",
                             "ItemId": "(O)771",
                             "Amount": 100
-                        },
+                        }
                     ],
                     "BuildCost": 40000
                 },
@@ -133,7 +133,7 @@
                             "Id": "(O)335",
                             "ItemId": "(O)335",
                             "Amount": 10
-                        },
+                        }
                     ],
                     "BuildCost": 30000
                 },
@@ -143,7 +143,7 @@
                             "Id": "(O)390",
                             "ItemId": "(O)390",
                             "Amount": 150
-                        },
+                        }
                     ],
                     "BuildCost": 1000
                 },
@@ -153,7 +153,7 @@
                             "Id": "(O)388",
                             "ItemId": "(O)388",
                             "Amount": 150
-                        },
+                        }
                     ],
                     "BuildCost": 750
                 },
@@ -168,7 +168,7 @@
                             "Id": "(O)390",
                             "ItemId": "(O)390",
                             "Amount": 100
-                        },
+                        }
                     ],
                     "BuildCost": 5000
                 },
@@ -183,7 +183,7 @@
                             "Id": "(O)390",
                             "ItemId": "(O)390",
                             "Amount": 150
-                        },
+                        }
                     ],
                     "BuildCost": 12000
                 },
@@ -198,7 +198,7 @@
                             "Id": "(O)390",
                             "ItemId": "(O)390",
                             "Amount": 200
-                        },
+                        }
                     ],
                     "BuildCost": 25000
                 },
@@ -213,7 +213,7 @@
                             "Id": "(O)390",
                             "ItemId": "(O)390",
                             "Amount": 150
-                        },
+                        }
                     ],
                     "BuildCost": 8000
                 },
@@ -228,7 +228,7 @@
                             "Id": "(O)390",
                             "ItemId": "(O)390",
                             "Amount": 300
-                        },
+                        }
                     ],
                     "BuildCost": 16000
                 },
@@ -263,7 +263,7 @@
                             "Id": "(O)337",
                             "ItemId": "(O)337",
                             "Amount": 3
-                        },
+                        }
                     ],
                     "BuildCost": 30000
                 },
@@ -273,7 +273,7 @@
                             "Id": "(O)388",
                             "ItemId": "(O)388",
                             "Amount": 300
-                        },
+                        }
                     ],
                     "BuildCost": 15000
                 },
@@ -288,7 +288,7 @@
                             "Id": "(O)390",
                             "ItemId": "(O)390",
                             "Amount": 300
-                        },
+                        }
                     ],
                     "BuildCost": 40000
                 },
@@ -308,14 +308,14 @@
                             "Id": "(O)153",
                             "ItemId": "(O)153",
                             "Amount": 10
-                        },
+                        }
                     ],
                     "BuildCost": 15000
-                },
+                }
             },
             "When": {
                 "HarderBuildingConstruction": true
             }
-        },
+        }
     ]
 }

@@ -1,33 +1,11 @@
-﻿using System;
+using HarmonyLib;
 using StardewModdingAPI;
 using StardewValley;
-using HarmonyLib;
-using System.Collections.Generic;
-using System.Linq;
-using StardewValley.TerrainFeatures;
-using Microsoft.Xna.Framework;
-using StardewModdingAPI.Events;
-using StardewValley.Locations;
-using StardewValley.Monsters;
-using System.Diagnostics;
-using StardewValley.Objects;
-using StardewValley.Menus;
-using Microsoft.Xna.Framework.Graphics;
-using StardewValley.Events;
-using StardewValley.Characters;
-using xTile.Dimensions;
-using Netcode;
-using StardewValley.Network;
-using System.Reflection.Emit;
-using System.Reflection;
-using xTile.ObjectModel;
 using StardewValley.GameData;
 
 namespace StardewValleyExpanded
 {
-
     internal static class EndNexusMusic
-
     {
         private static IMonitor Monitor;
 
@@ -43,7 +21,6 @@ namespace StardewValleyExpanded
                 original: AccessTools.Method(typeof(GameLocation), nameof(GameLocation.cleanupBeforePlayerExit)),
                 prefix: new HarmonyMethod(typeof(EndNexusMusic), nameof(EndNexusMusic.After_CleanupBeforePlayerExit))
             );
-
         }
 
 
@@ -72,7 +49,5 @@ namespace StardewValleyExpanded
                 Game1.changeMusicTrack("none", music_context: MusicContext.Default);
             }
         }
-
-
     }
 }

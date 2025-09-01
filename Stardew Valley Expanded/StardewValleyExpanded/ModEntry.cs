@@ -1,26 +1,21 @@
-﻿using HarmonyLib;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using StardewModdingAPI;
-using StardewModdingAPI.Events;
-using StardewValley;
-using StardewValley.Locations;
-using StardewValley.TerrainFeatures;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Reflection.Emit;
-using RidgesideVillage;
-using StardewValley.Menus;
-using StardewValley.Objects;
-using Enumerable = System.Linq.Enumerable;
-using StardewValley.Tools;
+using HarmonyLib;
+using Microsoft.Xna.Framework;
+using StardewModdingAPI;
+using StardewModdingAPI.Events;
+using StardewValley;
 using StardewValley.Buildings;
-using StardewValley.GameData.LocationContexts;
-using StardewValley.TokenizableStrings;
 using StardewValley.GameData.Buildings;
+using StardewValley.GameData.LocationContexts;
+using StardewValley.Locations;
+using StardewValley.Objects;
+using StardewValley.TerrainFeatures;
+using StardewValley.Tools;
 
 namespace StardewValleyExpanded
 {
@@ -356,7 +351,7 @@ namespace StardewValleyExpanded
                     Game1.currentLightSources.Add(l.Id, l);
 
                     tileLoc = new(b.tileX.Value + 8, b.tileY.Value + 2);
-                    l = new LightSource($"SVE_PremiumBarnLight_{b.tileX.Value}_{b.tileY.Value}_2",4, tileLoc.ToVector2() * Game1.tileSize, 1f, Color.Black, LightSource.LightContext.None);
+                    l = new LightSource($"SVE_PremiumBarnLight_{b.tileX.Value}_{b.tileY.Value}_2", 4, tileLoc.ToVector2() * Game1.tileSize, 1f, Color.Black, LightSource.LightContext.None);
                     Game1.currentLightSources.Add(l.Id, l);
                 }
             }
@@ -415,7 +410,7 @@ namespace StardewValleyExpanded
 
         private void OnDayStarted(object sender, DayStartedEventArgs e)
         {
-            //Removes Morris from the game when community center completion = 'true'
+            // Removes Morris from the game when community center completion = 'true'
             if ((Game1.MasterPlayer.mailReceived.Contains("ccIsComplete") || Game1.MasterPlayer.eventsSeen.Contains("191393")) && !this.Helper.ModRegistry.IsLoaded("Yoshimax.MarryMorris"))
             {
                 var morris = Game1.getCharacterFromName("MorrisTod");
@@ -504,7 +499,6 @@ namespace StardewValleyExpanded
                     var f2 = __instance.furniture.FirstOrDefault(f => f.TileLocation == new Vector2(41, 85));
                     if (f2 != null)
                         f2.TileLocation = new Vector2(41, 86);
-
                 }
                 if (!Game1.IsWinter || Game1.dayOfMonth != 1)
                     return;
@@ -544,7 +538,6 @@ namespace StardewValleyExpanded
                         return;
                     removeObjectAtTileWithName(103, 34, "Rotten Plant");
                     removeObjectAtTileWithName(92, 20, "Rotten Plant");
-
                 }
                 else
                 if (__instance.NameOrUniqueName == "Custom_BlueMoonVineyard")
@@ -556,7 +549,6 @@ namespace StardewValleyExpanded
                     if (!Game1.IsWinter || Game1.dayOfMonth != 1)
                         return;
                     removeObjectAtTileWithName(26, 48, "Rotten Plant");
-
                 }
             }
         }
@@ -731,7 +723,7 @@ namespace StardewValleyExpanded
         [HarmonyPatch(typeof(StardewValley.Object), nameof(StardewValley.Object.OutputMachine))]
         public static class ObjectWineryFasterPatch
         {
-            public static void Postfix(StardewValley.Object __instance, GameLocation location, bool probe )
+            public static void Postfix(StardewValley.Object __instance, GameLocation location, bool probe)
             {
                 if (probe)
                     return;
@@ -740,7 +732,7 @@ namespace StardewValleyExpanded
                 if (location.Name != "FlashShifter.StardewValleyExpandedCP_Winery")
                     return;
 
-                //__instance.MinutesUntilReady = Math.Max( 1, (int)((__instance.MinutesUntilReady / 10) * 0.85f) ) * 10;
+                // __instance.MinutesUntilReady = Math.Max( 1, (int)((__instance.MinutesUntilReady / 10) * 0.85f) ) * 10;
                 if (__instance is Cask cask)
                     cask.agingRate.Value /= 0.85f;
             }
@@ -775,7 +767,6 @@ namespace StardewValleyExpanded
                         case "(O)FlashShifter.StardewValleyExpandedCP_Wind_Totem":
                             __result = weatherTotem(__instance, Game1.player, "Wind", I18n.WindTotemMessage());
                             break;
-
                     }
                     return false;
                 }
@@ -822,7 +813,7 @@ namespace StardewValleyExpanded
                     Game1.pauseThenMessage(2000, msg);
                 }
                 Game1.screenGlow = false;
-                //location.playSound("thunder");
+                // location.playSound("thunder");
                 who.canMove = false;
                 Game1.screenGlowOnce(Color.SlateBlue, hold: false);
                 Game1.player.faceDirection(2);

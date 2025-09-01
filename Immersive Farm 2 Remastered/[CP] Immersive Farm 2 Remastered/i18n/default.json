@@ -1,12 +1,11 @@
-{
+﻿{
+    // Note for Translators - 1.14.38 added "DeepCave" and Configs for .description (used in GMCM)
 
-    //Note for Translators - 1.14.38 added "DeepCave" and Configs for .description (used in GMCM)
-
-    //Farm String
+    // Farm String
     "IF2RFarmString": "Immersive Farm 2 Remastered_A huge plot of land with gated progression. Features tillable grass and secrets to discover.",
     "DeepCave": "Deep Cave",
-    
-    //Confgs
+
+    // Confgs
     "Config.Mist_Effects.name": "Mist_Effects",
     "Config.Farm_Sandbox_Layout.name": "Farm_Sandbox_Layout",
     "Config.Farm_Light_Debris.name": "Farm_Light_Debris",
@@ -26,7 +25,7 @@
     "Config.Remove_Objects_From_Greenhouse.name": "Remove_Objects_From_Greenhouse",
     "Config.Disable_IF2R_Greenhouse.name": "Disable_IF2R_Greenhouse",
     "Config.Disable_Farm_Cave.name": "Disable_Farm_Cave",
-    
+
     "Config.Mist_Effects.description": "Adds mist during rainy days to many maps. This does impact performance, so disable this if you're experiencing lag on rainy days.",
     "Config.Farm_Sandbox_Layout.description": "Transforms IF2R into a more standard farm map, excluding predetermined crop fields, shed building, and static fences. There's an image of this version in the IF2R section. The configuration file is located within the [CP] IF2R Folder. Players may set this configuration to /“true/” on existing SVE saves using IF2R.",
     "Config.Farm_Light_Debris.description": "Balances resource intake and makes the farmland more manageable. Must be toggled to true before save file creation to take effect.",
@@ -48,7 +47,7 @@
     "Config.Disable_Farm_Cave.description": "When set to true disables the IF2R farm cave. Useful for compatibility",
 
 
-    //Events
+    // Events
     "Opening.01": "You're finally here!",
     "Opening.02": "@! I'm happy to see you again! It's been a couple months.$4#$b#I can't believe it's move-in day for you! Everyone in town is excited you're officially a resident of Stardew Valley.$0",
     "Opening.03": "I finished repairing the bridge, restoring electricity to the cottage, restored most of the fences, and the other various tasks you assigned me to do!$0#$b#Let's head over to %farm Farm so I can show you. I also have a surprise as well!$1",
@@ -70,20 +69,19 @@
     "Opening.19": "Clint, the local blacksmith, made tools to help you get started on clearing away debris and trees.$0#$b#There's an axe, pickaxe, hoe, scythe, and watering can in your cottage!$1",
     "Opening.20": "It'll be a lot of work turning %farm Farm into what it once was, @. Your grandpa would be proud of you.#$b#Tomorrow, you should introduce yourself to the villagers. Everyone in the valley knows you just moved in.$1",
     "Opening.21": "Demetrius, my husband, is excited to meet you, @! Drop by our house in the mountains when you have a chance!$1",
-    "Opening.22":  "The other farmers are thrilled to have another cultivator in the valley.$1#$b#You should stop by their farms when you get a chance as well.$0",
-    "Opening.23":  "We're going to leave so you can get settled in.$0#$b#If you have any questions or concerns, you know where to find us.$1",
-    "Opening.24":  "If you get cold, you can use the fireplace. It works great now!$1",
-    "Opening.25":  "We will see you tomorrow. Get settled in!$1",
-    "Cave.01":"Hi @! I have some good news for you. A few days ago I made a breakthrough in my research on the local environment.$h#$b#I'll spare you the technical details and get to the point... You know that empty cave way over there, a little ways to the south east? Well, I have a way to turn it into something useful... for both of us.#$b#I'd like to set up the cave to attract some local species. That way I can observe them in a more controlled environment. And you can harvest whatever products they produce.#$b#I can either set up the cave to attract mushrooms or fruit bats. The bats will sometimes leave fruit for you to collect.",
+    "Opening.22": "The other farmers are thrilled to have another cultivator in the valley.$1#$b#You should stop by their farms when you get a chance as well.$0",
+    "Opening.23": "We're going to leave so you can get settled in.$0#$b#If you have any questions or concerns, you know where to find us.$1",
+    "Opening.24": "If you get cold, you can use the fireplace. It works great now!$1",
+    "Opening.25": "We will see you tomorrow. Get settled in!$1",
+    "Cave.01": "Hi @! I have some good news for you. A few days ago I made a breakthrough in my research on the local environment.$h#$b#I'll spare you the technical details and get to the point... You know that empty cave way over there, a little ways to the south east? Well, I have a way to turn it into something useful... for both of us.#$b#I'd like to set up the cave to attract some local species. That way I can observe them in a more controlled environment. And you can harvest whatever products they produce.#$b#I can either set up the cave to attract mushrooms or fruit bats. The bats will sometimes leave fruit for you to collect.",
     "Cave.02": "Alright! I'll go set it up for you right now! It shouldn't take any time at all.$h#$b#Thanks for letting me do this.",
-    "Cave.03":"I'm excited to see what happens with that cave. Aren't you?#$e#I hope you're pleased with the work I did.",
+    "Cave.03": "I'm excited to see what happens with that cave. Aren't you?#$e#I hope you're pleased with the work I did.",
     "MarnieEvent.01": "Hi @! Now that you own farm animals, I thought I'd let you in on a little secret.$0",
-    "MarnieEvent.02":"They won't wander out of the fenced areas on your farm, so you're free to leave them open!$1",
+    "MarnieEvent.02": "They won't wander out of the fenced areas on your farm, so you're free to leave them open!$1",
 
-    //Robin Dialogue Additions. 
+    // Robin Dialogue Additions.
     "Robin.01": "You're welcome, @!$1",
     "Robin.02": "Thank you, @!$1",
     "Robin.03": "Sorry it was so expensive, @...$2#$b#The bridge repairs alone came up to 45,000g. The stone slabs I purchased and equipment I rented wasn't cheap.$5",
-    "Robin.04": "Umm... yeah, no problem.$2",
-
+    "Robin.04": "Umm... yeah, no problem.$2"
 }

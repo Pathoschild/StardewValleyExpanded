@@ -1,21 +1,21 @@
 ﻿{
-  "Changes": [
-    {
-      "Action": "EditData",
-      "Target": "Characters/Dialogue/HankSVE",
-      "When": {
-        "HasSeenEvent |contains=3691373": false
-      },
-      "Entries": {
-        "Mon": "{{i18n:Hank.IntroductionDialogue.001}}",
-        "Tue": "{{i18n:Hank.IntroductionDialogue.001}}",
-        "Wed": "{{i18n:Hank.IntroductionDialogue.001}}",
-        "Thu": "{{i18n:Hank.IntroductionDialogue.001}}",
-        "Fri": "{{i18n:Hank.IntroductionDialogue.001}}",
-        "Sat": "{{i18n:Hank.IntroductionDialogue.001}}",
-        "Sun": "{{i18n:Hank.IntroductionDialogue.001}}",
-		"DumpsterDiveComment": "{{i18n:Hank.CharacterDialogue.029}}",
-      },
-    },
-  ]
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/HankSVE",
+            "When": {
+                "HasSeenEvent |contains=3691373": false
+            },
+            "Entries": {
+                "Mon": "{{i18n:Hank.IntroductionDialogue.001}}",
+                "Tue": "{{i18n:Hank.IntroductionDialogue.001}}",
+                "Wed": "{{i18n:Hank.IntroductionDialogue.001}}",
+                "Thu": "{{i18n:Hank.IntroductionDialogue.001}}",
+                "Fri": "{{i18n:Hank.IntroductionDialogue.001}}",
+                "Sat": "{{i18n:Hank.IntroductionDialogue.001}}",
+                "Sun": "{{i18n:Hank.IntroductionDialogue.001}}",
+                "DumpsterDiveComment": "{{i18n:Hank.CharacterDialogue.029}}"
+            }
+        }
+    ]
 }

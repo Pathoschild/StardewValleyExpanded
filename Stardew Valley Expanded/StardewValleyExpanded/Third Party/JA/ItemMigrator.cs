@@ -1,4 +1,7 @@
-﻿using Netcode;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using Netcode;
 using Newtonsoft.Json;
 using SpaceShared;
 using StardewModdingAPI;
@@ -8,12 +11,6 @@ using StardewValley.Network;
 using StardewValley.Objects;
 using StardewValley.TerrainFeatures;
 using StardewValley.Tools;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using SObject = StardewValley.Object;
 
 namespace JsonAssets
@@ -230,6 +227,7 @@ namespace JsonAssets
             item?.ResetParentSheetIndex();
             return item;
         }
+
         private void FixBuilding(Building building)
         {
             if (building is null)
@@ -268,7 +266,7 @@ namespace JsonAssets
                 crop.netSeedIndex.Value = this.OldObjectIds[crop.netSeedIndex.Value];
             if (crop.netSeedIndex.Value == null)
             {
-                foreach ( var data in Game1.cropData )
+                foreach (var data in Game1.cropData)
                 {
                     if (data.Value.HarvestItemId == crop.indexOfHarvest.Value)
                     {
@@ -287,6 +285,7 @@ namespace JsonAssets
                 }
             }
         }
+
         private TerrainFeature FixTerrainFeature(TerrainFeature feature)
         {
             switch (feature)
@@ -319,6 +318,7 @@ namespace JsonAssets
 
             return feature;
         }
+
         internal void FixItemList(IList<Item> items)
         {
             if (items is null)
@@ -352,7 +352,7 @@ namespace JsonAssets
                 if (dict.ContainsKey(entry.Key))
                 {
                     continue;
-                    //Log.Error("Dict already has value for " + entry.Key + "!");
+                    // Log.Error("Dict already has value for " + entry.Key + "!");
                 }
                 dict.Add(entry.Key, entry.Value);
             }

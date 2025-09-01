@@ -1,7 +1,8 @@
-{
+﻿{
     "Changes": [
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Maps/Desert-Festival",
             "FromFile": "Assets/Maps/FestivalMaps/Desert-Festival.tmx"
         }

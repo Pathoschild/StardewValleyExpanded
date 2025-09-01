@@ -1,10 +1,10 @@
-{
+﻿{
     "Changes": [
-        //Adds sleep tiles to spouse's houses 
+        //Adds sleep tiles to spouse's houses
         {
             "Action": "EditMap",
             "Target": "Maps/HaleyHouse",
-			"Priority": "Late",
+            "Priority": "Late",
             "FromFile": "Assets/Maps/MapPatches/SleepTile.tbin",
             "When": {
                 "Relationship:Haley": "Married, Engaged, Dating"
@@ -19,7 +19,7 @@
         {
             "Action": "EditMap",
             "Target": "Maps/HaleyHouse",
-			"Priority": "Late",
+            "Priority": "Late",
             "FromFile": "Assets/Maps/MapPatches/SleepTile.tbin",
             "When": {
                 "Relationship:Emily": "Married, Engaged, Dating"
@@ -34,7 +34,7 @@
         {
             "Action": "EditMap",
             "Target": "Maps/Seedshop",
-			"Priority": "Late",
+            "Priority": "Late",
             "FromFile": "Assets/Maps/MapPatches/SleepTile.tbin",
             "When": {
                 "Relationship:Abigail": "Married, Engaged, Dating"
@@ -49,7 +49,7 @@
         {
             "Action": "EditMap",
             "Target": "Maps/trailer_big",
-			"Priority": "Late",
+            "Priority": "Late",
             "FromFile": "Assets/Maps/MapPatches/SleepTile.tbin",
             "When": {
                 "Relationship:Penny": "Married, Engaged, Dating"
@@ -64,7 +64,7 @@
         {
             "Action": "EditMap",
             "Target": "Maps/trailer",
-			"Priority": "Late",
+            "Priority": "Late",
             "FromFile": "Assets/Maps/MapPatches/SleepTile.tbin",
             "When": {
                 "Relationship:Penny": "Married, Engaged, Dating"
@@ -79,7 +79,7 @@
         {
             "Action": "EditMap",
             "Target": "Maps/LeahHouse",
-			"Priority": "Late",
+            "Priority": "Late",
             "FromFile": "Assets/Maps/MapPatches/SleepTile.tbin",
             "When": {
                 "Relationship:Leah": "Married, Engaged, Dating"
@@ -94,7 +94,7 @@
         {
             "Action": "EditMap",
             "Target": "Maps/ScienceHouse",
-			"Priority": "Late",
+            "Priority": "Late",
             "FromFile": "Assets/Maps/MapPatches/SleepTile.tbin",
             "When": {
                 "Relationship:Maru": "Married, Engaged, Dating"
@@ -109,7 +109,7 @@
         {
             "Action": "EditMap",
             "Target": "Maps/Custom_SophiaHouse",
-			"Priority": "Late",
+            "Priority": "Late",
             "FromFile": "Assets/Maps/MapPatches/SleepTile.tbin",
             "When": {
                 "Relationship:Sophia": "Married, Engaged, Dating"
@@ -124,7 +124,7 @@
         {
             "Action": "EditMap",
             "Target": "Maps/Custom_JenkinsHouse",
-			"Priority": "Late",
+            "Priority": "Late",
             "FromFile": "Assets/Maps/MapPatches/SleepTile.tbin",
             "When": {
                 "Relationship:Olivia": "Married, Engaged, Dating"
@@ -139,7 +139,7 @@
         {
             "Action": "EditMap",
             "Target": "Maps/Custom_JenkinsHouse",
-			"Priority": "Late",
+            "Priority": "Late",
             "FromFile": "Assets/Maps/MapPatches/SleepTile.tbin",
             "When": {
                 "Relationship:Victor": "Married, Engaged, Dating"
@@ -154,7 +154,7 @@
         {
             "Action": "EditMap",
             "Target": "Maps/JoshHouse",
-			"Priority": "Late",
+            "Priority": "Late",
             "FromFile": "Assets/Maps/MapPatches/SleepTile.tbin",
             "When": {
                 "Relationship:Alex": "Married, Engaged, Dating"
@@ -169,7 +169,7 @@
         {
             "Action": "EditMap",
             "Target": "Maps/SamHouse",
-			"Priority": "Late",
+            "Priority": "Late",
             "FromFile": "Assets/Maps/MapPatches/SleepTile.tbin",
             "When": {
                 "Relationship:Sam": "Married, Engaged, Dating"
@@ -184,7 +184,7 @@
         {
             "Action": "EditMap",
             "Target": "Maps/HarveyRoom",
-			"Priority": "Late",
+            "Priority": "Late",
             "FromFile": "Assets/Maps/MapPatches/SleepTile.tbin",
             "When": {
                 "Relationship:Harvey": "Married, Engaged, Dating"
@@ -199,7 +199,7 @@
         {
             "Action": "EditMap",
             "Target": "Maps/AnimalShop",
-			"Priority": "Late",
+            "Priority": "Late",
             "FromFile": "Assets/Maps/MapPatches/SleepTile.tbin",
             "When": {
                 "Relationship:Shane": "Married, Engaged, Dating"
@@ -214,7 +214,7 @@
         {
             "Action": "EditMap",
             "Target": "Maps/SebastianRoom",
-			"Priority": "Late",
+            "Priority": "Late",
             "FromFile": "Assets/Maps/MapPatches/SleepTile.tbin",
             "When": {
                 "Relationship:Sebastian": "Married, Engaged, Dating"
@@ -229,7 +229,7 @@
         {
             "Action": "EditMap",
             "Target": "Maps/ElliottHouse",
-			"Priority": "Late",
+            "Priority": "Late",
             "FromFile": "Assets/Maps/MapPatches/SleepTile.tbin",
             "When": {
                 "Relationship:Elliott": "Married, Engaged, Dating"
@@ -244,7 +244,7 @@
         {
             "Action": "EditMap",
             "Target": "Maps/WizardHouse",
-			"Priority": "Late",
+            "Priority": "Late",
             "FromFile": "Assets/Maps/MapPatches/SleepTile.tbin",
             "When": {
                 "Relationship:Wizard": "Married, Engaged, Dating"
@@ -256,10 +256,10 @@
                 "Height": 1
             }
         },
-		{
+        {
             "Action": "EditMap",
             "Target": "Maps/Custom_ScarlettHouse",
-			"Priority": "Late",
+            "Priority": "Late",
             "FromFile": "Assets/Maps/MapPatches/SleepTile.tbin",
             "When": {
                 "Relationship:Scarlett": "Married, Engaged, Dating"
@@ -270,6 +270,6 @@
                 "Width": 2,
                 "Height": 1
             }
-        },
+        }
     ]
 }

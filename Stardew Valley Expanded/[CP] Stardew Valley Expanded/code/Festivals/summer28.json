@@ -1,4 +1,4 @@
-{
+﻿{
     "Changes": [
         { //moonlight jellies festival data
             "Action": "EditData",
@@ -14,7 +14,7 @@
                 "Morgan": "{{i18n:Morgan.Moonlight}}",
                 "MorrisTod": "{{i18n:Morris.Midnight}}",
                 "Olivia": "{{i18n:moonlight.olivia.1}}",
-				"Scarlett": "{{i18n:Scarlett.Jellyfish}}",
+                "Scarlett": "{{i18n:Scarlett.Jellyfish}}",
                 "Sandy": "{{i18n:Sandy.Moonlight}}",
                 "Sophia": "{{i18n:moonlight.Sophia.1}}",
                 "Susan": "{{i18n:Susan.Moonlight}}",
@@ -33,7 +33,7 @@
                 "Martin_y2": "{{i18n:Martin.Jellyfish2}}",
                 "Sophia_y2": "{{i18n:Sophia.Jellyfish2}}",
                 "Sandy_y2": "{{i18n:Sandy.Jellyfish2}}",
-                "MorrisTod_y2": "{{i18n:Morris.Jellyfish2}}",
+                "MorrisTod_y2": "{{i18n:Morris.Jellyfish2}}"
             }
         },
         {
@@ -43,14 +43,14 @@
                 "ApplesHere": "true"
             },
             "Entries": {
-                "Apples": "{{i18n:Apples.Moonlight}}",
+                "Apples": "{{i18n:Apples.Moonlight}}"
             }
         },
         {
             "Action": "EditData",
             "Target": "data/festivals/summer28",
             "Entries": {
-                "Claire": "{{i18n:moonlight.claire.2}}",
+                "Claire": "{{i18n:moonlight.claire.2}}"
             },
             "When": {
                 "Spouse": "Claire"
@@ -60,7 +60,7 @@
             "Action": "EditData",
             "Target": "data/festivals/summer28",
             "Entries": {
-                "Olivia": "{{i18n:moonlight.olivia.2}}",
+                "Olivia": "{{i18n:moonlight.olivia.2}}"
             },
             "When": {
                 "Spouse": "Olivia"
@@ -70,7 +70,7 @@
             "Action": "EditData",
             "Target": "data/festivals/summer28",
             "Entries": {
-                "Sophia": "{{i18n:moonlight.Sophia.2}}",
+                "Sophia": "{{i18n:moonlight.Sophia.2}}"
             },
             "When": {
                 "Spouse": "Sophia"
@@ -104,14 +104,14 @@
                 "ApplesHere": "true"
             },
             "Entries": {
-                "Apples_y2": "{{i18n:Apples.Moonlight}}",
+                "Apples_y2": "{{i18n:Apples.Moonlight}}"
             }
         },
         {
             "Action": "EditData",
             "Target": "data/festivals/summer28",
             "Entries": {
-                "Claire_y2": "{{i18n:moonlight.claire.2}}",
+                "Claire_y2": "{{i18n:moonlight.claire.2}}"
             },
             "When": {
                 "Spouse": "Claire"
@@ -121,7 +121,7 @@
             "Action": "EditData",
             "Target": "data/festivals/summer28",
             "Entries": {
-                "Olivia_y2": "{{i18n:moonlight.olivia.2}}",
+                "Olivia_y2": "{{i18n:moonlight.olivia.2}}"
             },
             "When": {
                 "Spouse": "Olivia"
@@ -131,7 +131,7 @@
             "Action": "EditData",
             "Target": "data/festivals/summer28",
             "Entries": {
-                "Sophia_y2": "{{i18n:moonlight.Sophia.2}}",
+                "Sophia_y2": "{{i18n:moonlight.Sophia.2}}"
             },
             "When": {
                 "Spouse": "Sophia"
@@ -163,128 +163,89 @@
             "TextOperations": [
                 { //Victor
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Victor 41 36 down",
                     "Delimiter": "/"
                 },
                 { //Victor
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters" ],
                     "Value": "Victor 34 36 down",
                     "Delimiter": "/"
                 },
                 { //Olivia
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Olivia 40 36 down",
                     "Delimiter": "/"
                 },
                 { //Olivia
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters" ],
                     "Value": "Olivia 35 36 down",
                     "Delimiter": "/"
                 },
 
                 { //Andy
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Andy 16 24 down",
                     "Delimiter": "/"
                 },
                 { //Andy
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters" ],
                     "Value": "Andy 22 24 down",
                     "Delimiter": "/"
                 },
                 { //Susan
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Susan 52 24 down",
                     "Delimiter": "/"
                 },
                 { //Susan
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters" ],
                     "Value": "Susan 20 20 down",
                     "Delimiter": "/"
                 },
                 { //Sophia
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Sophia 50 24 down",
                     "Delimiter": "/"
                 },
                 { //Sophia
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters" ],
                     "Value": "Sophia 43 36 down",
                     "Delimiter": "/"
                 },
                 { //Marlon
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "MarlonFay 70 5 down",
                     "Delimiter": "/"
-                },
+                }
             ]
         },
         { //Morris moonlight jellies data
             "Action": "EditData",
             "Target": "Data/Festivals/summer28",
             "When": {
-                "HasSeenEvent": "6665293",
+                "HasSeenEvent": "6665293"
             },
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "MorrisTod 29 34 down",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters" ],
                     "Value": "MorrisTod 29 34 down",
                     "Delimiter": "/"
                 }
@@ -294,51 +255,39 @@
             "Action": "EditData",
             "Target": "Data/Festivals/summer28",
             "When": {
-                "GuntherUnlocked": "true",
+                "GuntherUnlocked": "true"
             },
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "GuntherSilvian 80 25 down",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters" ],
                     "Value": "GuntherSilvian 40 34 down",
                     "Delimiter": "/"
-                },
+                }
             ]
         },
         { //Lance moonlight jellies data
             "Action": "EditData",
             "Target": "Data/Festivals/summer28",
             "When": {
-                "Spouse": "Lance",
+                "Spouse": "Lance"
             },
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Lance 72 6 down",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters" ],
                     "Value": "Lance 53 24 down",
                     "Delimiter": "/"
                 }
@@ -349,42 +298,33 @@
             "Target": "Data/Festivals/summer28",
             "When": {
                 "ApplesHere": "true",
-                "Roommate": "Apples",
+                "Roommate": "Apples"
             },
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Apples 80 5 down",
                     "Delimiter": "/"
-                },
+                }
             ]
         },
         { //Claire moonlight jellies data
             "Action": "EditData",
             "Target": "Data/Festivals/summer28",
             "When": {
-                "HasSeenEvent": "3219873",
+                "HasSeenEvent": "3219873"
             },
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Claire 24 28 left",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters" ],
                     "Value": "Claire 33 35 down",
                     "Delimiter": "/"
                 }
@@ -394,24 +334,18 @@
             "Action": "EditData",
             "Target": "Data/Festivals/summer28",
             "When": {
-                "Hearts:Sandy": "{{Range: 5, 14}}",
+                "Hearts:Sandy": "{{Range: 5, 14}}"
             },
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Sandy 35 36 down",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Mainevent_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Mainevent_additionalCharacters" ],
                     "Value": "Sandy 39 35 down",
                     "Delimiter": "/"
                 }
@@ -421,24 +355,18 @@
             "Action": "EditData",
             "Target": "Data/Festivals/summer28",
             "When": {
-                "HasSeenEvent": "5978924",
+                "HasSeenEvent": "5978924"
             },
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Morgan 87 5 left",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Mainevent_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Mainevent_additionalCharacters" ],
                     "Value": "Morgan 87 5 left",
                     "Delimiter": "/"
                 }
@@ -450,136 +378,94 @@
             "TextOperations": [
                 { //Victor
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Victor 31 36 down",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
                     "Value": "Victor 33 35 down",
                     "Delimiter": "/"
                 },
                 { //Olivia
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Olivia 32 36 down",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
                     "Value": "Olivia 34 35 down",
                     "Delimiter": "/"
                 },
                 { //Andy
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Andy 46 24 down",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
                     "Value": "Andy 52 24 down",
                     "Delimiter": "/"
                 },
                 { //Susan
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Susan 47 24 down",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
                     "Value": "Susan 53 24 down",
                     "Delimiter": "/"
                 },
                 { //Sophia
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Sophia 17 24 down",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
                     "Value": "Sophia 20 24 down",
                     "Delimiter": "/"
                 },
                 { //Marlon
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "MarlonFay 70 5 down",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
                     "Value": "MarlonFay 70 5 down",
                     "Delimiter": "/"
-                },
+                }
             ]
         },
         { //Morris moonlight jellies data
             "Action": "EditData",
             "Target": "Data/Festivals/summer28",
             "When": {
-                "HasSeenEvent": "6665293",
+                "HasSeenEvent": "6665293"
             },
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "MorrisTod 27 34 down",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
                     "Value": "MorrisTod 27 34 down",
                     "Delimiter": "/"
                 }
@@ -589,51 +475,39 @@
             "Action": "EditData",
             "Target": "Data/Festivals/summer28",
             "When": {
-                "GuntherUnlocked": "true",
+                "GuntherUnlocked": "true"
             },
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "GuntherSilvian 40 36 down",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
                     "Value": "GuntherSilvian 39 35 down",
                     "Delimiter": "/"
                 }
             ]
         },
-		{ //Scarlett moonlight jellies data
+        { //Scarlett moonlight jellies data
             "Action": "EditData",
             "Target": "Data/Festivals/summer28",
             "When": {
-                "HasSeenEvent": "3691371",
+                "HasSeenEvent": "3691371"
             },
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "Scarlett 49 24 down",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters" ],
                     "Value": "Scarlett 49 24 down",
                     "Delimiter": "/"
                 }
@@ -643,24 +517,18 @@
             "Action": "EditData",
             "Target": "Data/Festivals/summer28",
             "When": {
-                "HasSeenEvent": "3691371",
+                "HasSeenEvent": "3691371"
             },
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Scarlett 16 24 down",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
                     "Value": "Scarlett 19 24 down",
                     "Delimiter": "/"
                 }
@@ -670,24 +538,18 @@
             "Action": "EditData",
             "Target": "Data/Festivals/summer28",
             "When": {
-                "Spouse": "Lance",
+                "Spouse": "Lance"
             },
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Lance 68 5 down",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
                     "Value": "Lance 68 5 down",
                     "Delimiter": "/"
                 }
@@ -698,24 +560,18 @@
             "Target": "Data/Festivals/summer28",
             "When": {
                 "ApplesHere": "true",
-                "Roommate": "Apples",
+                "Roommate": "Apples"
             },
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Apples 76 17 down",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
                     "Value": "Apples 76 17 down",
                     "Delimiter": "/"
                 }
@@ -725,24 +581,18 @@
             "Action": "EditData",
             "Target": "Data/Festivals/summer28",
             "When": {
-                "HasSeenEvent": "3219873",
+                "HasSeenEvent": "3219873"
             },
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Claire 40 34 down",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
                     "Value": "Claire 39 32 right",
                     "Delimiter": "/"
                 }
@@ -752,24 +602,18 @@
             "Action": "EditData",
             "Target": "Data/Festivals/summer28",
             "When": {
-                "HasSeenEvent": "3219873",
+                "HasSeenEvent": "3219873"
             },
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Martin 39 34 down",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
                     "Value": "Martin 39 33 right",
                     "Delimiter": "/"
                 }
@@ -779,24 +623,18 @@
             "Action": "EditData",
             "Target": "Data/Festivals/summer28",
             "When": {
-                "Hearts:Sandy": "{{Range: 5, 14}}",
+                "Hearts:Sandy": "{{Range: 5, 14}}"
             },
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Sandy 24 27 left",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
                     "Value": "Sandy 24 27 left",
                     "Delimiter": "/"
                 }
@@ -806,24 +644,18 @@
             "Action": "EditData",
             "Target": "Data/Festivals/summer28",
             "When": {
-                "HasSeenEvent": "5978924",
+                "HasSeenEvent": "5978924"
             },
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "Set-Up_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
                     "Value": "Morgan 87 5 left",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
-                    "Target": [
-                        "Entries",
-                        "MainEvent_additionalCharacters_y2"
-                    ],
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
                     "Value": "Morgan 87 5 left",
                     "Delimiter": "/"
                 }
@@ -834,13 +666,13 @@
             "Action": "Load",
             "Priority": "Low",
             "Target": "Maps/Beach-Jellies",
-            "FromFile": "Assets/Maps/FestivalMaps/Beach-SVE-Jellies.tmx",
+            "FromFile": "Assets/Maps/FestivalMaps/Beach-SVE-Jellies.tmx"
         },
         {
             "Action": "Load",
             "Priority": "Low",
             "Target": "Maps/Beach-Jellies2",
-            "FromFile": "Assets/Maps/FestivalMaps/Beach-SVE-Jellies2.tmx",
-        },
+            "FromFile": "Assets/Maps/FestivalMaps/Beach-SVE-Jellies2.tmx"
+        }
     ]
 }

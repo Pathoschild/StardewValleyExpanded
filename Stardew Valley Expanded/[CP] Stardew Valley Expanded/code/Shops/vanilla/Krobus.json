@@ -1,19 +1,16 @@
-{
+﻿{
     "Changes": [
         {
             "Action": "EditData",
             "Target": "Data/Shops",
             "Priority": "Early - 100",
-            "TargetField": [
-                "ShadowShop",
-                "Items"
-            ],
+            "TargetField": [ "ShadowShop", "Items" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi",
                     "ItemId": "FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi",
                     "Price": "5000",
-                    "IsRecipe": "true",
+                    "IsRecipe": "true"
                 },
                 "FlashShifter.StardewValleyExpandedCP_Void_Delight": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Void_Delight",
@@ -21,8 +18,8 @@
                     "Price": "5000",
                     "IsRecipe": "true",
                     "Condition": "PLAYER_HEARTS Any Krobus 10"
-                },
-            },
-        },
+                }
+            }
+        }
     ]
 }

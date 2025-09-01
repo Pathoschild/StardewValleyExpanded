@@ -1,367 +1,367 @@
-{
+﻿{
     "Changes": [
         {
             "Action": "EditData",
             "Target": "Data/Locations",
             "Entries": {
                 //////////////
-                //These are creating on load for scheduling. 
+                //These are creating on load for scheduling.
                 "Custom_DayEnd_WarpRoom": {
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_DayEnd_WarpRoom"
                     }
                 },
-                //These are creating on load for music. 
+                //These are creating on load for music.
                 "Custom_Atlantis": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_Atlantis"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_Atlantis"
-                    },
+                    }
                 },
                 "Custom_DesertRailway": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_OminousCavern"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_DesertRailway"
-                    },
+                    }
                 },
                 "Custom_EnchantedGrove": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_Nexus"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_EnchantedGrove"
-                    },
+                    }
                 },
                 "Custom_FirstSlashGuestRoom": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_FirstSlashTheme"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_FirstSlashGuestRoom"
-                    },
+                    }
                 },
                 "Custom_GrampletonCoast": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_GrampletonCoastline"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_GrampletonCoast"
-                    },
+                    }
                 },
                 "Custom_GrampletonTrainStation": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_GrampletonTrainStationAmbience"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_GrampletonTrainStation"
-                    },
+                    }
                 },
                 "Custom_GrenvilleFalls": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_GrenvilleFalls"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_GrenvilleFalls"
-                    },
+                    }
                 },
                 "Custom_HighlandsCavernPrison": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "Upper_Ambient"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_HighlandsCavernPrison"
-                    },
+                    }
                 },
                 "Custom_HighlandsCavernPrisonEvent": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "Upper_Ambient"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_HighlandsCavernPrisonEvent"
-                    },
+                    }
                 },
                 "Custom_IridiumQuarry": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_CrimsonSands"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_IridiumQuarry"
-                    },
+                    }
                 },
                 "Custom_JojaPetStore": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "Hospital_Ambient"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_JojaPetStore"
-                    },
+                    }
                 },
                 "Custom_SakuraVineyard": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "kindadumbautumn"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_SakuraVineyard"
-                    },
+                    }
                 },
                 "Custom_SakuraVineyardCellar": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "kindadumbautumn"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_SakuraVineyardCellar"
-                    },
+                    }
                 },
                 "Custom_SakuraVineyardCottage": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "spring_day_ambient"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_SakuraVineyardCottage"
-                    },
+                    }
                 },
                 "Custom_SakuraVineyardDiningRoom": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "kindadumbautumn"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_SakuraVineyardDiningRoom"
-                    },
+                    }
                 },
                 "Custom_SpriteSpringCave": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "Upper_Ambient"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_SpriteSpringCave"
-                    },
+                    }
                 },
                 "Custom_TreasureCave": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_OminousCavern"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_TreasureCave"
-                    },
+                    }
                 },
                 "Custom_Void": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "Upper_Ambient"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_Void"
-                    },
+                    }
                 },
                 "Custom_ZCCC_Entrance": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_ZuzuCity_Ambience"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_ZCCC_Entrance"
-                    },
+                    }
                 },
                 "Custom_ZCCC_FoodCourt": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_ZuzuCity_Crowd_Ambience"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_ZCCC_FoodCourt"
-                    },
+                    }
                 },
                 "Custom_ZCCC_MainHall": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_ZuzuCity_Crowd_Ambience"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_ZCCC_MainHall"
-                    },
+                    }
                 },
                 "Custom_ZCCC_Stage": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_ZuzuCity_Crowd_Ambience"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_ZCCC_Stage"
-                    },
+                    }
                 },
                 "Custom_ZCCC_VendorFloor": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_ZuzuCity_Crowd_Ambience"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_ZCCC_VendorFloor"
-                    },
+                    }
                 },
                 "Custom_ZuzuCityStreet": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_ZuzuCity_Ambience"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_ZuzuCityStreet"
-                    },
+                    }
                 },
                 /////////////////// These are actually supposed to have CreateOnLoad
                 "Custom_HighlandsOutpost": {
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_HighlandsOutpost"
-                    },
+                    }
                 },
                 "Custom_CastleVillageOutpost": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_CastleVillageOutpostAmbience"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_CastleVillageOutpost"
-                    },
+                    }
                 },
                 "Custom_FirstSlashGuild": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_FirstSlashTheme"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_FirstSlashGuild"
-                    },
+                    }
                 },
                 "Custom_FirstSlashHallway": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_FirstSlashTheme"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_FirstSlashHallway"
-                    },
+                    }
                 },
                 "Custom_WizardBasement": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "WizardSong"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_WizardBasement"
-                    },
+                    }
                 },
                 "Custom_ZCCC_Courtyard": {
                     "Music": [
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "spring_day_ambient"
-                        },
+                        }
                     ],
                     "CreateOnLoad": {
                         "AlwaysActive": false,
@@ -373,7 +373,7 @@
                     "DisplayName": "{{i18n:LocationData.Summit}}",
                     "DefaultArrivalTile": {
                         "X": 32,
-                        "Y": 32,
+                        "Y": 32
                     },
                     "CreateOnLoad": {
                         "AlwaysActive": false,
@@ -424,14 +424,14 @@
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)583",
                             "ItemID": "(O)583",
                             "Chance": 0.3
-                        },
+                        }
                     ]
                 },
                 "Custom_AdventurerSummit": {
                     "DisplayName": "{{i18n:LocationData.Adventurer_Summit}}",
                     "DefaultArrivalTile": {
                         "X": 32,
-                        "Y": 32,
+                        "Y": 32
                     },
                     "CreateOnLoad": {
                         "AlwaysActive": false,
@@ -445,12 +445,12 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Bull_Trout",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Bull_Trout",
-                            "Condition": "LOCATION_Season Here Fall Winter",
+                            "Condition": "LOCATION_Season Here Fall Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Minnow",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Minnow",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer"
                         },
                         //Vanilla Fish
                         {
@@ -461,58 +461,58 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)136",
                             "ItemId": "(O)136",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)138",
                             "ItemId": "(O)138",
-                            "Condition": "LOCATION_Season Here Summer",
+                            "Condition": "LOCATION_Season Here Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)140",
                             "ItemId": "(O)140",
-                            "Condition": "LOCATION_Season Here Fall Winter",
+                            "Condition": "LOCATION_Season Here Fall Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)141",
                             "ItemId": "(O)141",
-                            "Condition": "LOCATION_Season Here Winter",
+                            "Condition": "LOCATION_Season Here Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)142",
                             "ItemId": "(O)142",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)153",
                             "ItemId": "(O)153",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)269",
                             "ItemId": "(O)269",
-                            "Condition": "LOCATION_Season Here Fall Winter",
+                            "Condition": "LOCATION_Season Here Fall Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)698",
                             "ItemId": "(O)698",
-                            "Condition": "LOCATION_Season Here Winter",
+                            "Condition": "LOCATION_Season Here Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)700",
                             "ItemId": "(O)700",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)702",
                             "ItemId": "(O)702",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)707",
                             "ItemId": "(O)707",
-                            "Condition": "LOCATION_Season Here Winter",
-                        },
+                            "Condition": "LOCATION_Season Here Winter"
+                        }
                     ],
                     "ArtifactSpots": [
                         {
@@ -544,14 +544,14 @@
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)581",
                             "ItemID": "(O)581",
                             "Chance": 0.1
-                        },
+                        }
                     ]
                 },
                 "Custom_BlueMoonVineyard": {
                     "DisplayName": "{{i18n:LocationData.Blue_Moon_Vineyard}}",
                     "DefaultArrivalTile": {
                         "X": 52,
-                        "Y": 49,
+                        "Y": 49
                     },
                     "CreateOnLoad": {
                         "AlwaysActive": false,
@@ -568,7 +568,7 @@
                             },
                             "CrabPotFishTypes": [
                                 "ocean"
-                            ],
+                            ]
                         },
                         "River": {
                             "DisplayName": null,
@@ -577,8 +577,8 @@
                                 "Y": 0,
                                 "Width": 56,
                                 "Height": 27
-                            },
-                        },
+                            }
+                        }
                     },
                     "Fish": [
                         //SVE Fish
@@ -586,26 +586,26 @@
                             "Id": "FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed",
                             "FishAreaID": "Ocean",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
-						{
-                           "Id": "FlashShifter.StardewValleyExpandedCP_Starfish",
-                           "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Starfish",
-						   "FishAreaID": "Ocean",
-                           "Condition": "LOCATION_Season Here Spring Summer Winter",
+                        {
+                            "Id": "FlashShifter.StardewValleyExpandedCP_Starfish",
+                            "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Starfish",
+                            "FishAreaID": "Ocean",
+                            "Condition": "LOCATION_Season Here Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Minnow",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Minnow",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         //Vanilla Fish
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)128",
                             "FishAreaID": "Ocean",
                             "ItemId": "(O)128",
-                            "Condition": "LOCATION_Season Here Summer",
+                            "Condition": "LOCATION_Season Here Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_RiverJelly",
@@ -623,175 +623,175 @@
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)129",
                             "ItemId": "(O)129",
                             "FishAreaID": "Ocean",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)130",
                             "ItemId": "(O)130",
                             "FishAreaID": "Ocean",
-                            "Condition": "LOCATION_Season Here Summer Winter",
+                            "Condition": "LOCATION_Season Here Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)131",
                             "ItemId": "(O)131",
                             "FishAreaID": "Ocean",
-                            "Condition": "LOCATION_Season Here Fall Spring Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)132",
                             "ItemId": "(O)132",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)137",
                             "ItemId": "(O)137",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Fall Spring",
+                            "Condition": "LOCATION_Season Here Fall Spring"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)138",
                             "ItemId": "(O)138",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Summer",
+                            "Condition": "LOCATION_Season Here Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)139",
                             "ItemId": "(O)139",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Fall",
+                            "Condition": "LOCATION_Season Here Fall"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)140",
                             "ItemId": "(O)140",
-                            "Condition": "LOCATION_Season Here Fall",
+                            "Condition": "LOCATION_Season Here Fall"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)141",
                             "ItemId": "(O)141",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Winter",
+                            "Condition": "LOCATION_Season Here Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)143",
                             "ItemId": "(O)143",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Fall Spring",
+                            "Condition": "LOCATION_Season Here Fall Spring"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)144",
                             "ItemId": "(O)144",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Summer Winter",
+                            "Condition": "LOCATION_Season Here Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)145",
                             "ItemId": "(O)145",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Spring Summer",
+                            "Condition": "LOCATION_Season Here Spring Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)146",
                             "ItemId": "(O)146",
                             "FishAreaID": "Ocean",
-                            "Condition": "LOCATION_Season Here Summer Winter",
+                            "Condition": "LOCATION_Season Here Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)147",
                             "ItemId": "(O)147",
                             "FishAreaID": "Ocean",
-                            "Condition": "LOCATION_Season Here Spring Winter",
+                            "Condition": "LOCATION_Season Here Spring Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)148",
                             "ItemId": "(O)148",
                             "FishAreaID": "Ocean",
-                            "Condition": "LOCATION_Season Here Fall Spring",
+                            "Condition": "LOCATION_Season Here Fall Spring"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)149",
                             "ItemId": "(O)149",
                             "FishAreaID": "Ocean",
-                            "Condition": "LOCATION_Season Here Summer",
+                            "Condition": "LOCATION_Season Here Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)150",
                             "ItemId": "(O)150",
                             "FishAreaID": "Ocean",
-                            "Condition": "LOCATION_Season Here Fall Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)151",
                             "ItemId": "(O)151",
                             "FishAreaID": "Ocean",
-                            "Condition": "LOCATION_Season Here Winter",
+                            "Condition": "LOCATION_Season Here Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)152",
                             "ItemId": "(O)152",
                             "FishAreaID": "Ocean",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)153",
                             "ItemId": "(O)153",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)154",
                             "ItemId": "(O)154",
                             "FishAreaID": "Ocean",
-                            "Condition": "LOCATION_Season Here Fall Winter",
+                            "Condition": "LOCATION_Season Here Fall Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)155",
                             "ItemId": "(O)155",
                             "FishAreaID": "Ocean",
-                            "Condition": "LOCATION_Season Here Fall Summer",
+                            "Condition": "LOCATION_Season Here Fall Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)267",
                             "ItemId": "(O)267",
                             "FishAreaID": "Ocean",
-                            "Condition": "LOCATION_Season Here Spring Summer",
+                            "Condition": "LOCATION_Season Here Spring Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)699",
                             "ItemId": "(O)699",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Fall Winter",
+                            "Condition": "LOCATION_Season Here Fall Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)701",
                             "ItemId": "(O)701",
                             "FishAreaID": "Ocean",
-                            "Condition": "LOCATION_Season Here Fall Summer",
+                            "Condition": "LOCATION_Season Here Fall Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)705",
                             "ItemId": "(O)705",
                             "FishAreaID": "Ocean",
-                            "Condition": "LOCATION_Season Here Fall Winter",
+                            "Condition": "LOCATION_Season Here Fall Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)706",
                             "ItemId": "(O)706",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)707",
                             "ItemId": "(O)707",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Winter",
+                            "Condition": "LOCATION_Season Here Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)708",
                             "ItemId": "(O)708",
                             "FishAreaID": "Ocean",
-                            "Condition": "LOCATION_Season Here",
-                        },
+                            "Condition": "LOCATION_Season Here"
+                        }
                     ],
                     "ArtifactSpots": [
                         {
@@ -823,14 +823,14 @@
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)583",
                             "ItemID": "(O)583",
                             "Chance": 0.1
-                        },
+                        }
                     ]
                 },
-				"Custom_ForbiddenMaze": {
+                "Custom_ForbiddenMaze": {
                     "DisplayName": "{{i18n:LocationData.ForbiddenMaze}}",
                     "DefaultArrivalTile": {
                         "X": 39,
-                        "Y": 146,
+                        "Y": 146
                     },
                     "CreateOnLoad": {
                         "AlwaysActive": false,
@@ -840,43 +840,43 @@
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_ForbiddenMaze"
-                        },
+                        }
                     ],
-				    //"CanHaveGreenRainSpawns": false,
+                    //"CanHaveGreenRainSpawns": false,
                     "Fish": [
                         //SVE Fish
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Alligator",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Alligator",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Swamp_Crab",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Swamp_Crab",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
-						{
+                        {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)795",
                             "ItemId": "(O)795",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer"
                         },
-						{
+                        {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)153",
                             "ItemId": "(O)153",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer"
                         },
-						{
+                        {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)157",
                             "ItemId": "(O)157",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer",
-                        },
-                    ],
+                            "Condition": "LOCATION_Season Here Fall Spring Summer"
+                        }
+                    ]
                 },
-				"Custom_HenchmanBackyard": {
+                "Custom_HenchmanBackyard": {
                     "DisplayName": "{{i18n:LocationData.ForbiddenMaze}}",
                     "DefaultArrivalTile": {
                         "X": 31,
-                        "Y": 39,
+                        "Y": 39
                     },
                     "CreateOnLoad": {
                         "AlwaysActive": false,
@@ -886,61 +886,61 @@
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_ForbiddenMaze"
-                        },
+                        }
                     ],
-				    "CanHaveGreenRainSpawns": false,
+                    "CanHaveGreenRainSpawns": false,
                     "Fish": [
                         //SVE Fish
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Alligator",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Alligator",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Swamp_Crab",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Swamp_Crab",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
-						{
+                        {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)795",
                             "ItemId": "(O)795",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer"
                         },
-						{
+                        {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)153",
                             "ItemId": "(O)153",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer"
                         },
-						{
+                        {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)157",
                             "ItemId": "(O)157",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer",
-                        },
-                    ],
+                            "Condition": "LOCATION_Season Here Fall Spring Summer"
+                        }
+                    ]
                 },
-				"Custom_HenchmanHouse": {
+                "Custom_HenchmanHouse": {
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_HenchmanHouse"
-                    },
+                    }
                 },
-				"Custom_DinoIsland_South": {
+                "Custom_DinoIsland_South": {
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_DinoIsland_South"
-                    },
+                    }
                 },
-				"Custom_DinoIsland_North": {
+                "Custom_DinoIsland_North": {
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_DinoIsland_North"
-                    },
+                    }
                 },
                 "Custom_CrimsonBadlands": {
                     "DisplayName": "{{i18n:LocationData.Crimson_Badlands}}",
                     "DefaultArrivalTile": {
                         "X": 216,
-                        "Y": 81,
+                        "Y": 81
                     },
                     "CreateOnLoad": {
                         "AlwaysActive": false,
@@ -953,28 +953,28 @@
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_CrimsonSands"
-                        },
+                        }
                     ],
-					//"CanHaveGreenRainSpawns": false,
+                    //"CanHaveGreenRainSpawns": false,
                     "Fish": [
                         //SVE Fish
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Bonefish",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Bonefish",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Undeadfish",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Undeadfish",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
-                        },
-                    ],
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
+                        }
+                    ]
                 },
                 "Custom_FableReef": {
                     "DisplayName": "{{i18n:LocationData.Fable_Reef}}",
                     "DefaultArrivalTile": {
                         "X": 31,
-                        "Y": 42,
+                        "Y": 42
                     },
                     "CreateOnLoad": {
                         "AlwaysActive": false,
@@ -984,88 +984,88 @@
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "tropical_island_day_ambient"
-                        },
+                        }
                     ],
                     "Fish": [
                         //SVE Fish
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Torpedo_Trout",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Torpedo_Trout",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Lunaloo",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Lunaloo",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Sea_Sponge",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Sea_Sponge",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Seahorse",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Seahorse",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
-						{
+                        {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Ocean_Sunfish",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Ocean_Sunfish",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
-						{
+                        {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Shark",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Shark",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
-						{
+                        {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Arrowhead_Shark",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Arrowhead_Shark",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
-						{
+                        {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Barred_Knifejaw",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Barred_Knifejaw",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
-						{
+                        {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Viper_Eel",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Viper_Eel",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
-						{
+                        {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Daggerfish",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Daggerfish",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
-						{
+                        {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Blue_Tang",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Blue_Tang",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
-						{
+                        {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Turretfish",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Turretfish",
                             "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
-							"IsBossFish": true,
-							"CatchLimit": 1
+                            "IsBossFish": true,
+                            "CatchLimit": 1
                         },
-						
+
                         //Vanilla Fish
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_SeaJelly",
@@ -1075,43 +1075,43 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)128",
                             "ItemId": "(O)128",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)130",
                             "ItemId": "(O)130",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)148",
                             "ItemId": "(O)148",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)149",
                             "ItemId": "(O)149",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)155",
                             "ItemId": "(O)155",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)267",
                             "ItemId": "(O)267",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)836",
                             "ItemId": "(O)836",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)837",
                             "ItemId": "(O)837",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
-                        },
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
+                        }
                     ],
                     "ArtifactSpots": [
                         {
@@ -1133,7 +1133,7 @@
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)791",
                             "ItemID": "(O)791",
                             "Chance": 0.05
-                        },
+                        }
                     ]
                 },
                 "Custom_GrandpasShedGreenhouse": {
@@ -1146,13 +1146,13 @@
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_GrandpasShedGreenhouse"
                     },
-                    "CanPlantHere": true,
+                    "CanPlantHere": true
                 },
                 "Custom_ForestWest": {
                     "DisplayName": "{{i18n:LocationData.Forest_West}}",
                     "DefaultArrivalTile": {
                         "X": 155,
-                        "Y": 21,
+                        "Y": 21
                     },
                     "CreateOnLoad": {
                         "AlwaysActive": false,
@@ -1167,27 +1167,27 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Bull_Trout",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Bull_Trout",
-                            "Condition": "LOCATION_Season Here Summer Winter",
+                            "Condition": "LOCATION_Season Here Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Butterfish",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Butterfish",
-                            "Condition": "LOCATION_Season Here Summer",
+                            "Condition": "LOCATION_Season Here Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_King_Salmon",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_King_Salmon",
-                            "Condition": "LOCATION_Season Here Spring Summer",
+                            "Condition": "LOCATION_Season Here Spring Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Puppyfish",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Puppyfish",
-                            "Condition": "LOCATION_Season Here Summer",
+                            "Condition": "LOCATION_Season Here Summer"
                         },
-						{
+                        {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Gar",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Gar",
-                            "Condition": "LOCATION_Season Here Summer Fall",
+                            "Condition": "LOCATION_Season Here Summer Fall"
                         },
                         //Vanilla Fish
                         {
@@ -1198,58 +1198,58 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)132",
                             "ItemId": "(O)132",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)136",
                             "ItemId": "(O)136",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)138",
                             "ItemId": "(O)138",
-                            "Condition": "LOCATION_Season Here Summer",
+                            "Condition": "LOCATION_Season Here Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)139",
                             "ItemId": "(O)139",
-                            "Condition": "LOCATION_Season Here Fall",
+                            "Condition": "LOCATION_Season Here Fall"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)140",
                             "ItemId": "(O)140",
-                            "Condition": "LOCATION_Season Here Fall",
+                            "Condition": "LOCATION_Season Here Fall"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)143",
                             "ItemId": "(O)143",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)144",
                             "ItemId": "(O)144",
-                            "Condition": "LOCATION_Season Here Spring Winter",
+                            "Condition": "LOCATION_Season Here Spring Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)145",
                             "ItemId": "(O)145",
-                            "Condition": "LOCATION_Season Here Spring",
+                            "Condition": "LOCATION_Season Here Spring"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)699",
                             "ItemId": "(O)699",
-                            "Condition": "LOCATION_Season Here Fall",
+                            "Condition": "LOCATION_Season Here Fall"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)704",
                             "ItemId": "(O)704",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)707",
                             "ItemId": "(O)707",
-                            "Condition": "LOCATION_Season Here Winter",
-                        },
+                            "Condition": "LOCATION_Season Here Winter"
+                        }
                     ],
                     "ArtifactSpots": [
                         {
@@ -1296,14 +1296,14 @@
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)583",
                             "ItemID": "(O)583",
                             "Chance": 0.3
-                        },
+                        }
                     ]
                 },
                 "Custom_Garden": {
                     "DisplayName": "{{i18n:Garden}}",
                     "DefaultArrivalTile": {
                         "X": 2,
-                        "Y": 29,
+                        "Y": 29
                     },
                     "CreateOnLoad": {
                         "MapPath": "Maps\\Custom_Garden"
@@ -1344,14 +1344,14 @@
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)114",
                             "ItemID": "(O)114",
                             "Chance": 0.21
-                        },
+                        }
                     ]
                 },
                 "Custom_GrampletonSuburbs": {
                     "DisplayName": "{{i18n:LocationData.Grampleton_Suburbs}}",
                     "DefaultArrivalTile": {
                         "X": 37,
-                        "Y": 35,
+                        "Y": 35
                     },
                     "CreateOnLoad": {
                         "AlwaysActive": false,
@@ -1367,68 +1367,68 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)132",
                             "ItemId": "(O)132",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)137",
                             "ItemId": "(O)137",
-                            "Condition": "LOCATION_Season Here Fall Spring",
+                            "Condition": "LOCATION_Season Here Fall Spring"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)138",
                             "ItemId": "(O)138",
-                            "Condition": "LOCATION_Season Here Summer",
+                            "Condition": "LOCATION_Season Here Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)139",
                             "ItemId": "(O)139",
-                            "Condition": "LOCATION_Season Here Fall",
+                            "Condition": "LOCATION_Season Here Fall"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)140",
                             "ItemId": "(O)140",
-                            "Condition": "LOCATION_Season Here Fall Winter",
+                            "Condition": "LOCATION_Season Here Fall Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)141",
                             "ItemId": "(O)141",
-                            "Condition": "LOCATION_Season Here Winter",
+                            "Condition": "LOCATION_Season Here Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)143",
                             "ItemId": "(O)143",
-                            "Condition": "LOCATION_Season Here Fall Spring Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)144",
                             "ItemId": "(O)144",
-                            "Condition": "LOCATION_Season Here Summer Winter",
+                            "Condition": "LOCATION_Season Here Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)145",
                             "ItemId": "(O)145",
-                            "Condition": "LOCATION_Season Here Spring Summer",
+                            "Condition": "LOCATION_Season Here Spring Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)153",
                             "ItemId": "(O)153",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)699",
                             "ItemId": "(O)699",
-                            "Condition": "LOCATION_Season Here Fall Winter",
+                            "Condition": "LOCATION_Season Here Fall Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)706",
                             "ItemId": "(O)706",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)707",
                             "ItemId": "(O)707",
-                            "Condition": "LOCATION_Season Here Winter",
-                        },
+                            "Condition": "LOCATION_Season Here Winter"
+                        }
                     ],
                     "ArtifactSpots": [
                         {
@@ -1460,52 +1460,52 @@
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)583",
                             "ItemID": "(O)583",
                             "Chance": 0.1
-                        },
+                        }
                     ],
                     "Forage": [
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)18",
                             "ItemID": "(O)18",
                             "Chance": 0.9,
-                            "Condition": "Location_Season Here Spring",
+                            "Condition": "Location_Season Here Spring"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)402",
                             "ItemID": "(O)402",
                             "Chance": 0.9,
-                            "Condition": "Location_Season Here Summer",
+                            "Condition": "Location_Season Here Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)410",
                             "ItemID": "(O)410",
                             "Chance": 0.6,
-                            "Condition": "Location_Season Here Fall",
+                            "Condition": "Location_Season Here Fall"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)418",
                             "ItemID": "(O)418",
                             "Chance": 0.7,
-                            "Condition": "Location_Season Here Winter",
+                            "Condition": "Location_Season Here Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)414",
                             "ItemID": "(O)414",
                             "Chance": 0.1,
-                            "Condition": "Location_Season Here Winter",
+                            "Condition": "Location_Season Here Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)283",
                             "ItemID": "(O)283",
                             "Chance": 0.5,
-                            "Condition": "Location_Season Here Winter",
-                        },
+                            "Condition": "Location_Season Here Winter"
+                        }
                     ]
                 },
                 "Custom_GrampletonSuburbsTrainStation": {
                     "DisplayName": "{{i18n:LocationData.Grampleton_Train}}",
                     "DefaultArrivalTile": {
                         "X": 30,
-                        "Y": 15,
+                        "Y": 15
                     },
                     "CreateOnLoad": {
                         "AlwaysActive": false,
@@ -1521,68 +1521,68 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)132",
                             "ItemId": "(O)132",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)137",
                             "ItemId": "(O)137",
-                            "Condition": "LOCATION_Season Here Fall Spring",
+                            "Condition": "LOCATION_Season Here Fall Spring"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)138",
                             "ItemId": "(O)138",
-                            "Condition": "LOCATION_Season Here Summer",
+                            "Condition": "LOCATION_Season Here Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)139",
                             "ItemId": "(O)139",
-                            "Condition": "LOCATION_Season Here Fall",
+                            "Condition": "LOCATION_Season Here Fall"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)140",
                             "ItemId": "(O)140",
-                            "Condition": "LOCATION_Season Here Fall Winter",
+                            "Condition": "LOCATION_Season Here Fall Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)141",
                             "ItemId": "(O)141",
-                            "Condition": "LOCATION_Season Here Winter",
+                            "Condition": "LOCATION_Season Here Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)143",
                             "ItemId": "(O)143",
-                            "Condition": "LOCATION_Season Here Fall Spring Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)144",
                             "ItemId": "(O)144",
-                            "Condition": "LOCATION_Season Here Summer Winter",
+                            "Condition": "LOCATION_Season Here Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)145",
                             "ItemId": "(O)145",
-                            "Condition": "LOCATION_Season Here Spring Summer",
+                            "Condition": "LOCATION_Season Here Spring Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)153",
                             "ItemId": "(O)153",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)699",
                             "ItemId": "(O)699",
-                            "Condition": "LOCATION_Season Here Fall Winter",
+                            "Condition": "LOCATION_Season Here Fall Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)706",
                             "ItemId": "(O)706",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)707",
                             "ItemId": "(O)707",
-                            "Condition": "LOCATION_Season Here Winter",
-                        },
+                            "Condition": "LOCATION_Season Here Winter"
+                        }
                     ],
                     "ArtifactSpots": [
                         {
@@ -1614,85 +1614,85 @@
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)583",
                             "ItemID": "(O)583",
                             "Chance": 0.1
-                        },
+                        }
                     ],
                     "Forage": [
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)18",
                             "ItemID": "(O)18",
                             "Chance": 0.9,
-                            "Condition": "Location_Season Here Spring",
+                            "Condition": "Location_Season Here Spring"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)402",
                             "ItemID": "(O)402",
                             "Chance": 0.9,
-                            "Condition": "Location_Season Here Summer",
+                            "Condition": "Location_Season Here Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)410",
                             "ItemID": "(O)410",
                             "Chance": 0.6,
-                            "Condition": "Location_Season Here Fall",
+                            "Condition": "Location_Season Here Fall"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)418",
                             "ItemID": "(O)418",
                             "Chance": 0.7,
-                            "Condition": "Location_Season Here Winter",
+                            "Condition": "Location_Season Here Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)414",
                             "ItemID": "(O)414",
                             "Chance": 0.1,
-                            "Condition": "Location_Season Here Winter",
+                            "Condition": "Location_Season Here Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)283",
                             "ItemID": "(O)283",
                             "Chance": 0.5,
-                            "Condition": "Location_Season Here Winter",
-                        },
+                            "Condition": "Location_Season Here Winter"
+                        }
                     ]
                 },
-				"Custom_GrampletonSuburbsOutskirts": {
+                "Custom_GrampletonSuburbsOutskirts": {
                     "DisplayName": "{{i18n:LocationData.Grampleton_Outskirts}}",
                     "DefaultArrivalTile": {
                         "X": 18,
-                        "Y": 154,
+                        "Y": 154
                     },
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_GrampletonSuburbsOutskirts"
-                    },
-				},
-				"Custom_GoGoatRanch": {
+                    }
+                },
+                "Custom_GoGoatRanch": {
                     "DisplayName": "Go Goat Ranch",
                     "DefaultArrivalTile": {
                         "X": 32,
-                        "Y": 30,
+                        "Y": 30
                     },
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_GoGoatRanch"
-                    },
-				},
-				"Custom_GoGoatRanch_Interior": {
+                    }
+                },
+                "Custom_GoGoatRanch_Interior": {
                     "DisplayName": "Go Goat Ranch Interior",
                     "DefaultArrivalTile": {
                         "X": 10,
-                        "Y": 5,
+                        "Y": 5
                     },
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_GoGoatRanch_Interior"
-                    },
-				},
+                    }
+                },
                 "Custom_GrandpasShedOutside": {
                     "DisplayName": "{{i18n:LocationData.Grandpas_Shed_Outside}}",
                     "DefaultArrivalTile": {
                         "X": 5,
-                        "Y": 2,
+                        "Y": 2
                     },
                     "CreateOnLoad": {
                         "AlwaysActive": false,
@@ -1736,14 +1736,14 @@
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)114",
                             "ItemID": "(O)114",
                             "Chance": 0.21
-                        },
+                        }
                     ]
                 },
                 "Custom_Highlands": {
                     "DisplayName": "{{i18n:DisplayName.Highlands}}",
                     "DefaultArrivalTile": {
                         "X": 129,
-                        "Y": 142,
+                        "Y": 142
                     },
                     "CreateOnLoad": {
                         "AlwaysActive": false,
@@ -1756,12 +1756,12 @@
                                 "X": 121,
                                 "Y": 0,
                                 "Width": 255,
-                                "Height": 75,
-                            },
+                                "Height": 75
+                            }
                         },
                         "River": {
-                            "DisplayName": null,
-                        },
+                            "DisplayName": null
+                        }
                     },
                     "Fish": [
                         //SVE Fish
@@ -1769,19 +1769,19 @@
                             "Id": "FlashShifter.StardewValleyExpandedCP_Bull_Trout",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Bull_Trout",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Fall Winter",
+                            "Condition": "LOCATION_Season Here Fall Winter"
                         },
-						{
+                        {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Highlands_Bass",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Highlands_Bass",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Fiber_Goby",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Fiber_Goby",
                             "FishAreaID": "Pond",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         //Vanilla Fish
                         {
@@ -1793,68 +1793,68 @@
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)136",
                             "ItemId": "(O)136",
                             "FishAreaID": "Pond",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)138",
                             "ItemId": "(O)138",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Summer",
+                            "Condition": "LOCATION_Season Here Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)140",
                             "ItemId": "(O)140",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Fall Winter",
+                            "Condition": "LOCATION_Season Here Fall Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)141",
                             "ItemId": "(O)141",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Winter",
+                            "Condition": "LOCATION_Season Here Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)142",
                             "ItemId": "(O)142",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Fall Spring Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)153",
                             "ItemId": "(O)153",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)269",
                             "ItemId": "(O)269",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Fall Winter",
+                            "Condition": "LOCATION_Season Here Fall Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)698",
                             "ItemId": "(O)698",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Summer Winter",
+                            "Condition": "LOCATION_Season Here Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)700",
                             "ItemId": "(O)700",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)702",
                             "ItemId": "(O)702",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)707",
                             "ItemId": "(O)707",
                             "FishAreaID": "River",
-                            "Condition": "LOCATION_Season Here Winter",
-                        },
+                            "Condition": "LOCATION_Season Here Winter"
+                        }
                     ],
                     "ArtifactSpots": [
                         {
@@ -1886,14 +1886,14 @@
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)581",
                             "ItemID": "(O)581",
                             "Chance": 0.1
-                        },
+                        }
                     ]
                 },
                 "Custom_HighlandsCavern": {
                     "DisplayName": "{{i18n:LocationData.Highlands_Cavern}}",
                     "DefaultArrivalTile": {
                         "X": 120,
-                        "Y": 145,
+                        "Y": 145
                     },
                     "CreateOnLoad": {
                         "AlwaysActive": false,
@@ -1904,7 +1904,7 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Gemfish",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Gemfish",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         //Vanilla Fish
                         {
@@ -1915,27 +1915,27 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)158",
                             "ItemId": "(O)158",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)156",
                             "ItemId": "(O)158",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
-                        },
-                    ],
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
+                        }
+                    ]
                 },
-				"Custom_DiamondCavern": {
+                "Custom_DiamondCavern": {
                     "DisplayName": "{{i18n:DisplayName.DiamondCavern}}",
                     "DefaultArrivalTile": {
                         "X": 17,
-                        "Y": 38,
+                        "Y": 38
                     },
                     "CreateOnLoad": {
                         "AlwaysActive": false,
                         "MapPath": "Maps\\Custom_DiamondCavern"
                     },
                     "Fish": [
-					    //SVE Fish
+                        //SVE Fish
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Diamond_Carp",
                             "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Diamond_Carp",
@@ -1951,22 +1951,21 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)156", //ghostfish
                             "ItemId": "(O)156",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
-                            
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)161", //ice pip
                             "ItemId": "(O)161",
                             "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
                             "Chance": 0.6
-                        },
-                    ],
+                        }
+                    ]
                 },
                 "Custom_JunimoWoods": {
                     "DisplayName": "{{i18n:LocationData.Junimo_Woods}}",
                     "DefaultArrivalTile": {
                         "X": 35,
-                        "Y": 91,
+                        "Y": 91
                     },
                     "CreateOnLoad": {
                         "AlwaysActive": false,
@@ -1979,19 +1978,19 @@
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "woodsTheme"
-                        },
+                        }
                     ],
                     "Fish": [
                         //SVE Fish
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Goldenfish",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Goldenfish",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Meteor_Carp",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Meteor_Carp",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         //Vanilla Fish
                         {
@@ -2002,18 +2001,18 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)136",
                             "ItemId": "(O)136",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Fall",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Fall"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)143",
                             "ItemId": "(O)143",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Fall",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Fall"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)734",
                             "ItemId": "(O)734",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Fall",
-                        },
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Fall"
+                        }
                     ],
                     "ArtifactSpots": [
                         {
@@ -2060,14 +2059,14 @@
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)583",
                             "ItemID": "(O)583",
                             "Chance": 0.3
-                        },
+                        }
                     ]
                 },
                 "Custom_MorrisProperty": {
                     "DisplayName": "{{i18n:LocationData.Morris_Property}}",
                     "DefaultArrivalTile": {
                         "X": 1,
-                        "Y": 28,
+                        "Y": 28
                     },
                     "CreateOnLoad": {
                         "AlwaysActive": false,
@@ -2078,17 +2077,17 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Butterfish",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Butterfish",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Minnow",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Minnow",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Puppyfish",
                             "ItemId": "(O)Puppyfish",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer"
                         },
                         //Vanilla Fish
                         {
@@ -2099,63 +2098,63 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)132",
                             "ItemId": "(O)132",
-                            "Condition": "LOCATION_Season Here Winter",
+                            "Condition": "LOCATION_Season Here Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)138",
                             "ItemId": "(O)138",
-                            "Condition": "LOCATION_Season Here Summer",
+                            "Condition": "LOCATION_Season Here Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)139",
                             "ItemId": "(O)139",
-                            "Condition": "LOCATION_Season Here Fall",
+                            "Condition": "LOCATION_Season Here Fall"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)140",
                             "ItemId": "(O)140",
-                            "Condition": "LOCATION_Season Here Fall",
+                            "Condition": "LOCATION_Season Here Fall"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)141",
                             "ItemId": "(O)141",
-                            "Condition": "LOCATION_Season Here Winter",
+                            "Condition": "LOCATION_Season Here Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)143",
                             "ItemId": "(O)143",
-                            "Condition": "LOCATION_Season Here Fall Spring",
+                            "Condition": "LOCATION_Season Here Fall Spring"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)144",
                             "ItemId": "(O)144",
-                            "Condition": "LOCATION_Season Here Summer Winter",
+                            "Condition": "LOCATION_Season Here Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)153",
                             "ItemId": "(O)153",
-                            "Condition": "LOCATION_Season Here Winter",
+                            "Condition": "LOCATION_Season Here Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)269",
                             "ItemId": "(O)269",
-                            "Condition": "LOCATION_Season Here Fall Winter",
+                            "Condition": "LOCATION_Season Here Fall Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)699",
                             "ItemId": "(O)699",
-                            "Condition": "LOCATION_Season Here Fall Winter",
+                            "Condition": "LOCATION_Season Here Fall Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)706",
                             "ItemId": "(O)706",
-                            "Condition": "LOCATION_Season Here Spring Fall Summer",
+                            "Condition": "LOCATION_Season Here Spring Fall Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)707",
                             "ItemId": "(O)707",
-                            "Condition": "LOCATION_Season Here Winter",
-                        },
+                            "Condition": "LOCATION_Season Here Winter"
+                        }
                     ],
                     "ArtifactSpots": [
                         {
@@ -2192,14 +2191,14 @@
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)114",
                             "ItemID": "(O)114",
                             "Chance": 0.1
-                        },
+                        }
                     ]
                 },
                 "Custom_ShearwaterBridge": {
                     "DisplayName": "{{i18n:LocationData.Shearwater_Bridge}}",
                     "DefaultArrivalTile": {
                         "X": 1,
-                        "Y": 20,
+                        "Y": 20
                     },
                     "CreateOnLoad": {
                         "AlwaysActive": false,
@@ -2213,24 +2212,24 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Butterfish",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Butterfish",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Minnow",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Minnow",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Puppyfish",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Puppyfish",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer"
                         },
-						{
+                        {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Wolf_Snapper",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Wolf_Snapper",
                             "Condition": "LOCATION_Season Here Fall Spring Summer",
-							"IsBossFish": true,
-							"CatchLimit": 1
+                            "IsBossFish": true,
+                            "CatchLimit": 1
                         },
                         //Vanilla Fish
                         {
@@ -2241,63 +2240,63 @@
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)132",
                             "ItemId": "(O)132",
-                            "Condition": "LOCATION_Season Here Winter",
+                            "Condition": "LOCATION_Season Here Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)138",
                             "ItemId": "(O)138",
-                            "Condition": "LOCATION_Season Here Summer",
+                            "Condition": "LOCATION_Season Here Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)139",
                             "ItemId": "(O)139",
-                            "Condition": "LOCATION_Season Here Fall",
+                            "Condition": "LOCATION_Season Here Fall"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)140",
                             "ItemId": "(O)140",
-                            "Condition": "LOCATION_Season Here Fall",
+                            "Condition": "LOCATION_Season Here Fall"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)141",
                             "ItemId": "(O)141",
-                            "Condition": "LOCATION_Season Here Winter",
+                            "Condition": "LOCATION_Season Here Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)143",
                             "ItemId": "(O)143",
-                            "Condition": "LOCATION_Season Here Fall Spring",
+                            "Condition": "LOCATION_Season Here Fall Spring"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)144",
                             "ItemId": "(O)144",
-                            "Condition": "LOCATION_Season Here Summer Winter",
+                            "Condition": "LOCATION_Season Here Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)153",
                             "ItemId": "(O)153",
-                            "Condition": "LOCATION_Season Here Winter",
+                            "Condition": "LOCATION_Season Here Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)269",
                             "ItemId": "(O)269",
-                            "Condition": "LOCATION_Season Here Fall Winter",
+                            "Condition": "LOCATION_Season Here Fall Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)699",
                             "ItemId": "(O)699",
-                            "Condition": "LOCATION_Season Here Fall Winter",
+                            "Condition": "LOCATION_Season Here Fall Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)706",
                             "ItemId": "(O)706",
-                            "Condition": "LOCATION_Season Here Spring Fall Summer",
+                            "Condition": "LOCATION_Season Here Spring Fall Summer"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)707",
                             "ItemId": "(O)707",
-                            "Condition": "LOCATION_Season Here Winter",
-                        },
+                            "Condition": "LOCATION_Season Here Winter"
+                        }
                     ],
                     "ArtifactSpots": [
                         {
@@ -2324,8 +2323,8 @@
                             "QualityModifierMode": "Stack",
                             "ModData": null,
                             "PerItemCondition": null
-                          },
-                          {
+                        },
+                        {
                             "Chance": 0.2,
                             "ApplyGenerousEnchantment": false,
                             "OneDebrisPerDrop": true,
@@ -2349,8 +2348,8 @@
                             "QualityModifierMode": "Stack",
                             "ModData": null,
                             "PerItemCondition": null
-                          },
-                          {
+                        },
+                        {
                             "Chance": 0.1,
                             "ApplyGenerousEnchantment": false,
                             "OneDebrisPerDrop": true,
@@ -2374,8 +2373,8 @@
                             "QualityModifierMode": "Stack",
                             "ModData": null,
                             "PerItemCondition": null
-                          },
-                          {
+                        },
+                        {
                             "Chance": 0.2,
                             "ApplyGenerousEnchantment": false,
                             "OneDebrisPerDrop": true,
@@ -2399,8 +2398,8 @@
                             "QualityModifierMode": "Stack",
                             "ModData": null,
                             "PerItemCondition": null
-                          },
-                          {
+                        },
+                        {
                             "Chance": 0.25,
                             "ApplyGenerousEnchantment": true,
                             "OneDebrisPerDrop": true,
@@ -2424,14 +2423,14 @@
                             "QualityModifierMode": "Stack",
                             "ModData": null,
                             "PerItemCondition": null
-                          }
+                        }
                     ]
                 },
                 "Custom_SpriteSpring2": {
                     "DisplayName": "{{i18n:LocationData.Sprite_Spring}}",
                     "DefaultArrivalTile": {
                         "X": 16,
-                        "Y": 22,
+                        "Y": 22
                     },
                     "CreateOnLoad": {
                         "AlwaysActive": false,
@@ -2441,25 +2440,25 @@
                         {
                             "ID": "FlashShifter.StardewValleyExpandedCP_MapMusic",
                             "Track": "FlashShifter.StardewValleyExpandedCP_GrenvilleFalls"
-                        },
+                        }
                     ],
                     "Fish": [
                         //SVE Fish
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Goldenfish",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Goldenfish",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Meteor_Carp",
                             "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Meteor_Carp",
-                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                            "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_RiverJelly",
                             "ItemId": "(O)RiverJelly",
                             "Chance": 0.06
-                        },
+                        }
                     ],
                     "ArtifactSpots": [
                         {
@@ -2491,19 +2490,16 @@
                             "Id": "FlashShifter.StardewValleyExpandedCP_(O)121",
                             "ItemID": "(O)121",
                             "Chance": 0.4
-                        },
+                        }
                     ]
-                },
-            },
+                }
+            }
         },
         //This will *edit* in, not load.
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Summit",
-                "ArtifactSpots"
-            ],
+            "TargetField": [ "Summit", "ArtifactSpots" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_109": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_(O)109",
@@ -2549,496 +2545,475 @@
                     "Id": "FlashShifter.StardewValleyExpandedCP_(O)583",
                     "ItemID": "(O)583",
                     "Chance": 0.3
-                },
+                }
             }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Farm_Standard",
-                "Fish",
-            ],
+            "TargetField": [ "Farm_Standard", "Fish" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Minnow": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Minnow",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Minnow",
-                    "Condition": "LOCATION_Season Here Spring Summer Fall",
+                    "Condition": "LOCATION_Season Here Spring Summer Fall"
                 },
                 "FlashShifter.StardewValleyExpandedCP_145": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_145",
                     "ItemId": "(O)145",
-                    "Condition": "LOCATION_Season Here Spring Summer ",
+                    "Condition": "LOCATION_Season Here Spring Summer "
                 },
                 "FlashShifter.StardewValleyExpandedCP_143": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_143",
                     "ItemId": "(O)143",
-                    "Condition": "LOCATION_Season Here Spring Fall ",
+                    "Condition": "LOCATION_Season Here Spring Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_153": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_153",
                     "ItemId": "(O)153",
-                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall ",
+                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_137": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_137",
                     "ItemId": "(O)137",
-                    "Condition": "LOCATION_Season Here Spring Fall ",
+                    "Condition": "LOCATION_Season Here Spring Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_706": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_706",
                     "ItemId": "(O)706",
-                    "Condition": "LOCATION_Season Here Spring Summer Fall ",
+                    "Condition": "LOCATION_Season Here Spring Summer Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_132": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_132",
                     "ItemId": "(O)132",
-                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall ",
+                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_138": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_138",
                     "ItemId": "(O)138",
-                    "Condition": "LOCATION_Season Here Summer",
+                    "Condition": "LOCATION_Season Here Summer"
                 },
                 "FlashShifter.StardewValleyExpandedCP_144": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_144",
                     "ItemId": "(O)144",
-                    "Condition": "LOCATION_Season Here Summer Winter",
+                    "Condition": "LOCATION_Season Here Summer Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_139": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_139",
                     "ItemId": "(O)139",
-                    "Condition": "LOCATION_Season Here Fall",
+                    "Condition": "LOCATION_Season Here Fall"
                 },
                 "FlashShifter.StardewValleyExpandedCP_699": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_699",
                     "ItemId": "(O)699",
-                    "Condition": "LOCATION_Season Here Fall Winter",
+                    "Condition": "LOCATION_Season Here Fall Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_140": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_140",
                     "ItemId": "(O)140",
-                    "Condition": "LOCATION_Season Here Fall",
+                    "Condition": "LOCATION_Season Here Fall"
                 },
                 "FlashShifter.StardewValleyExpandedCP_707": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_707",
                     "ItemId": "(O)707",
-                    "Condition": "LOCATION_Season Here Winter",
+                    "Condition": "LOCATION_Season Here Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_141": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_141",
                     "ItemId": "(O)141",
-                    "Condition": "LOCATION_Season Here Winter",
-                },
-            },
+                    "Condition": "LOCATION_Season Here Winter"
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Farm_Forest",
-                "Fish",
-            ],
+            "TargetField": [ "Farm_Forest", "Fish" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Minnow": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Minnow",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Minnow",
-                    "Condition": "LOCATION_Season Here Spring Summer Fall",
+                    "Condition": "LOCATION_Season Here Spring Summer Fall"
                 },
                 "FlashShifter.StardewValleyExpandedCP_145": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_145",
                     "ItemId": "(O)145",
-                    "Condition": "LOCATION_Season Here Spring Summer ",
+                    "Condition": "LOCATION_Season Here Spring Summer "
                 },
                 "FlashShifter.StardewValleyExpandedCP_143": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_143",
                     "ItemId": "(O)143",
-                    "Condition": "LOCATION_Season Here Spring Fall ",
+                    "Condition": "LOCATION_Season Here Spring Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_153": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_153",
                     "ItemId": "(O)153",
-                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall ",
+                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_137": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_137",
                     "ItemId": "(O)137",
-                    "Condition": "LOCATION_Season Here Spring Fall ",
+                    "Condition": "LOCATION_Season Here Spring Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_706": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_706",
                     "ItemId": "(O)706",
-                    "Condition": "LOCATION_Season Here Spring Summer Fall ",
+                    "Condition": "LOCATION_Season Here Spring Summer Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_132": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_132",
                     "ItemId": "(O)132",
-                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall ",
+                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_138": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_138",
                     "ItemId": "(O)138",
-                    "Condition": "LOCATION_Season Here Summer",
+                    "Condition": "LOCATION_Season Here Summer"
                 },
                 "FlashShifter.StardewValleyExpandedCP_144": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_144",
                     "ItemId": "(O)144",
-                    "Condition": "LOCATION_Season Here Summer Winter",
+                    "Condition": "LOCATION_Season Here Summer Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_139": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_139",
                     "ItemId": "(O)139",
-                    "Condition": "LOCATION_Season Here Fall",
+                    "Condition": "LOCATION_Season Here Fall"
                 },
                 "FlashShifter.StardewValleyExpandedCP_699": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_699",
                     "ItemId": "(O)699",
-                    "Condition": "LOCATION_Season Here Fall Winter",
+                    "Condition": "LOCATION_Season Here Fall Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_140": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_140",
                     "ItemId": "(O)140",
-                    "Condition": "LOCATION_Season Here Fall",
+                    "Condition": "LOCATION_Season Here Fall"
                 },
                 "FlashShifter.StardewValleyExpandedCP_707": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_707",
                     "ItemId": "(O)707",
-                    "Condition": "LOCATION_Season Here Winter",
+                    "Condition": "LOCATION_Season Here Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_141": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_141",
                     "ItemId": "(O)141",
-                    "Condition": "LOCATION_Season Here Winter",
-                },
-            },
+                    "Condition": "LOCATION_Season Here Winter"
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Farm_FourCorners",
-                "Fish",
-            ],
+            "TargetField": [ "Farm_FourCorners", "Fish" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Minnow": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Minnow",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Minnow",
-                    "Condition": "LOCATION_Season Here Spring Summer Fall",
+                    "Condition": "LOCATION_Season Here Spring Summer Fall"
                 },
                 "FlashShifter.StardewValleyExpandedCP_145": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_145",
                     "ItemId": "(O)145",
-                    "Condition": "LOCATION_Season Here Spring Summer ",
+                    "Condition": "LOCATION_Season Here Spring Summer "
                 },
                 "FlashShifter.StardewValleyExpandedCP_143": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_143",
                     "ItemId": "(O)143",
-                    "Condition": "LOCATION_Season Here Spring Fall ",
+                    "Condition": "LOCATION_Season Here Spring Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_153": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_153",
                     "ItemId": "(O)153",
-                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall ",
+                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_137": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_137",
                     "ItemId": "(O)137",
-                    "Condition": "LOCATION_Season Here Spring Fall ",
+                    "Condition": "LOCATION_Season Here Spring Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_706": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_706",
                     "ItemId": "(O)706",
-                    "Condition": "LOCATION_Season Here Spring Summer Fall ",
+                    "Condition": "LOCATION_Season Here Spring Summer Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_132": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_132",
                     "ItemId": "(O)132",
-                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall ",
+                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_138": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_138",
                     "ItemId": "(O)138",
-                    "Condition": "LOCATION_Season Here Summer",
+                    "Condition": "LOCATION_Season Here Summer"
                 },
                 "FlashShifter.StardewValleyExpandedCP_144": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_144",
                     "ItemId": "(O)144",
-                    "Condition": "LOCATION_Season Here Summer Winter",
+                    "Condition": "LOCATION_Season Here Summer Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_139": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_139",
                     "ItemId": "(O)139",
-                    "Condition": "LOCATION_Season Here Fall",
+                    "Condition": "LOCATION_Season Here Fall"
                 },
                 "FlashShifter.StardewValleyExpandedCP_699": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_699",
                     "ItemId": "(O)699",
-                    "Condition": "LOCATION_Season Here Fall Winter",
+                    "Condition": "LOCATION_Season Here Fall Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_140": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_140",
                     "ItemId": "(O)140",
-                    "Condition": "LOCATION_Season Here Fall",
+                    "Condition": "LOCATION_Season Here Fall"
                 },
                 "FlashShifter.StardewValleyExpandedCP_707": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_707",
                     "ItemId": "(O)707",
-                    "Condition": "LOCATION_Season Here Winter",
+                    "Condition": "LOCATION_Season Here Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_141": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_141",
                     "ItemId": "(O)141",
-                    "Condition": "LOCATION_Season Here Winter",
-                },
-            },
+                    "Condition": "LOCATION_Season Here Winter"
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Farm_Hilltop",
-                "Fish",
-            ],
+            "TargetField": [ "Farm_Hilltop", "Fish" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Minnow": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Minnow",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Minnow",
-                    "Condition": "LOCATION_Season Here Spring Summer Fall",
+                    "Condition": "LOCATION_Season Here Spring Summer Fall"
                 },
                 "FlashShifter.StardewValleyExpandedCP_145": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_145",
                     "ItemId": "(O)145",
-                    "Condition": "LOCATION_Season Here Spring Summer ",
+                    "Condition": "LOCATION_Season Here Spring Summer "
                 },
                 "FlashShifter.StardewValleyExpandedCP_143": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_143",
                     "ItemId": "(O)143",
-                    "Condition": "LOCATION_Season Here Spring Fall ",
+                    "Condition": "LOCATION_Season Here Spring Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_153": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_153",
                     "ItemId": "(O)153",
-                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall ",
+                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_137": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_137",
                     "ItemId": "(O)137",
-                    "Condition": "LOCATION_Season Here Spring Fall ",
+                    "Condition": "LOCATION_Season Here Spring Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_706": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_706",
                     "ItemId": "(O)706",
-                    "Condition": "LOCATION_Season Here Spring Summer Fall ",
+                    "Condition": "LOCATION_Season Here Spring Summer Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_132": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_132",
                     "ItemId": "(O)132",
-                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall ",
+                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_138": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_138",
                     "ItemId": "(O)138",
-                    "Condition": "LOCATION_Season Here Summer",
+                    "Condition": "LOCATION_Season Here Summer"
                 },
                 "FlashShifter.StardewValleyExpandedCP_144": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_144",
                     "ItemId": "(O)144",
-                    "Condition": "LOCATION_Season Here Summer Winter",
+                    "Condition": "LOCATION_Season Here Summer Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_139": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_139",
                     "ItemId": "(O)139",
-                    "Condition": "LOCATION_Season Here Fall",
+                    "Condition": "LOCATION_Season Here Fall"
                 },
                 "FlashShifter.StardewValleyExpandedCP_699": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_699",
                     "ItemId": "(O)699",
-                    "Condition": "LOCATION_Season Here Fall Winter",
+                    "Condition": "LOCATION_Season Here Fall Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_140": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_140",
                     "ItemId": "(O)140",
-                    "Condition": "LOCATION_Season Here Fall",
+                    "Condition": "LOCATION_Season Here Fall"
                 },
                 "FlashShifter.StardewValleyExpandedCP_707": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_707",
                     "ItemId": "(O)707",
-                    "Condition": "LOCATION_Season Here Winter",
+                    "Condition": "LOCATION_Season Here Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_141": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_141",
                     "ItemId": "(O)141",
-                    "Condition": "LOCATION_Season Here Winter",
-                },
-            },
+                    "Condition": "LOCATION_Season Here Winter"
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Farm_Riverland",
-                "Fish",
-            ],
+            "TargetField": [ "Farm_Riverland", "Fish" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Minnow": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Minnow",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Minnow",
-                    "Condition": "LOCATION_Season Here Spring Summer Fall",
+                    "Condition": "LOCATION_Season Here Spring Summer Fall"
                 },
                 "FlashShifter.StardewValleyExpandedCP_145": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_145",
                     "ItemId": "(O)145",
-                    "Condition": "LOCATION_Season Here Spring Summer ",
+                    "Condition": "LOCATION_Season Here Spring Summer "
                 },
                 "FlashShifter.StardewValleyExpandedCP_143": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_143",
                     "ItemId": "(O)143",
-                    "Condition": "LOCATION_Season Here Spring Fall ",
+                    "Condition": "LOCATION_Season Here Spring Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_153": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_153",
                     "ItemId": "(O)153",
-                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall ",
+                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_137": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_137",
                     "ItemId": "(O)137",
-                    "Condition": "LOCATION_Season Here Spring Fall ",
+                    "Condition": "LOCATION_Season Here Spring Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_706": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_706",
                     "ItemId": "(O)706",
-                    "Condition": "LOCATION_Season Here Spring Summer Fall ",
+                    "Condition": "LOCATION_Season Here Spring Summer Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_132": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_132",
                     "ItemId": "(O)132",
-                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall ",
+                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_138": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_138",
                     "ItemId": "(O)138",
-                    "Condition": "LOCATION_Season Here Summer",
+                    "Condition": "LOCATION_Season Here Summer"
                 },
                 "FlashShifter.StardewValleyExpandedCP_144": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_144",
                     "ItemId": "(O)144",
-                    "Condition": "LOCATION_Season Here Summer Winter",
+                    "Condition": "LOCATION_Season Here Summer Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_139": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_139",
                     "ItemId": "(O)139",
-                    "Condition": "LOCATION_Season Here Fall",
+                    "Condition": "LOCATION_Season Here Fall"
                 },
                 "FlashShifter.StardewValleyExpandedCP_699": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_699",
                     "ItemId": "(O)699",
-                    "Condition": "LOCATION_Season Here Fall Winter",
+                    "Condition": "LOCATION_Season Here Fall Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_140": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_140",
                     "ItemId": "(O)140",
-                    "Condition": "LOCATION_Season Here Fall",
+                    "Condition": "LOCATION_Season Here Fall"
                 },
                 "FlashShifter.StardewValleyExpandedCP_707": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_707",
                     "ItemId": "(O)707",
-                    "Condition": "LOCATION_Season Here Winter",
+                    "Condition": "LOCATION_Season Here Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_141": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_141",
                     "ItemId": "(O)141",
-                    "Condition": "LOCATION_Season Here Winter",
-                },
-            },
+                    "Condition": "LOCATION_Season Here Winter"
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Farm_Wilderness",
-                "Fish",
-            ],
+            "TargetField": [ "Farm_Wilderness", "Fish" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Minnow": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Minnow",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Minnow",
-                    "Condition": "LOCATION_Season Here Spring Summer Fall",
+                    "Condition": "LOCATION_Season Here Spring Summer Fall"
                 },
                 "FlashShifter.StardewValleyExpandedCP_145": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_145",
                     "ItemId": "(O)145",
-                    "Condition": "LOCATION_Season Here Spring Summer ",
+                    "Condition": "LOCATION_Season Here Spring Summer "
                 },
                 "FlashShifter.StardewValleyExpandedCP_143": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_143",
                     "ItemId": "(O)143",
-                    "Condition": "LOCATION_Season Here Spring Fall ",
+                    "Condition": "LOCATION_Season Here Spring Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_153": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_153",
                     "ItemId": "(O)153",
-                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall ",
+                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_137": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_137",
                     "ItemId": "(O)137",
-                    "Condition": "LOCATION_Season Here Spring Fall ",
+                    "Condition": "LOCATION_Season Here Spring Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_706": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_706",
                     "ItemId": "(O)706",
-                    "Condition": "LOCATION_Season Here Spring Summer Fall ",
+                    "Condition": "LOCATION_Season Here Spring Summer Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_132": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_132",
                     "ItemId": "(O)132",
-                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall ",
+                    "Condition": "LOCATION_Season Here Spring Summer Winter Fall "
                 },
                 "FlashShifter.StardewValleyExpandedCP_138": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_138",
                     "ItemId": "(O)138",
-                    "Condition": "LOCATION_Season Here Summer",
+                    "Condition": "LOCATION_Season Here Summer"
                 },
                 "FlashShifter.StardewValleyExpandedCP_144": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_144",
                     "ItemId": "(O)144",
-                    "Condition": "LOCATION_Season Here Summer Winter",
+                    "Condition": "LOCATION_Season Here Summer Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_139": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_139",
                     "ItemId": "(O)139",
-                    "Condition": "LOCATION_Season Here Fall",
+                    "Condition": "LOCATION_Season Here Fall"
                 },
                 "FlashShifter.StardewValleyExpandedCP_699": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_699",
                     "ItemId": "(O)699",
-                    "Condition": "LOCATION_Season Here Fall Winter",
+                    "Condition": "LOCATION_Season Here Fall Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_140": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_140",
                     "ItemId": "(O)140",
-                    "Condition": "LOCATION_Season Here Fall",
+                    "Condition": "LOCATION_Season Here Fall"
                 },
                 "FlashShifter.StardewValleyExpandedCP_707": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_707",
                     "ItemId": "(O)707",
-                    "Condition": "LOCATION_Season Here Winter",
+                    "Condition": "LOCATION_Season Here Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_141": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_141",
                     "ItemId": "(O)141",
-                    "Condition": "LOCATION_Season Here Winter",
-                },
-            },
+                    "Condition": "LOCATION_Season Here Winter"
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Farm_Standard",
-                "ArtifactSpots",
-            ],
+            "TargetField": [ "Farm_Standard", "ArtifactSpots" ],
             "Entries": {
                 "(O)330": {
                     "Id": "(O)330",
@@ -3059,16 +3034,13 @@
                     "Id": "(O)770",
                     "ItemID": "(O)770",
                     "Chance": 0.2
-                },
-            },
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Farm_Beach",
-                "ArtifactSpots",
-            ],
+            "TargetField": [ "Farm_Beach", "ArtifactSpots" ],
             "Entries": {
                 "(O)330": {
                     "Id": "(O)330",
@@ -3089,16 +3061,13 @@
                     "Id": "(O)770",
                     "ItemID": "(O)770",
                     "Chance": 0.2
-                },
-            },
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Farm_Forest",
-                "ArtifactSpots",
-            ],
+            "TargetField": [ "Farm_Forest", "ArtifactSpots" ],
             "Entries": {
                 "(O)330": {
                     "Id": "(O)330",
@@ -3119,16 +3088,13 @@
                     "Id": "(O)770",
                     "ItemID": "(O)770",
                     "Chance": 0.2
-                },
-            },
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Farm_FourCorners",
-                "ArtifactSpots",
-            ],
+            "TargetField": [ "Farm_FourCorners", "ArtifactSpots" ],
             "Entries": {
                 "(O)330": {
                     "Id": "(O)330",
@@ -3149,16 +3115,13 @@
                     "Id": "(O)770",
                     "ItemID": "(O)770",
                     "Chance": 0.2
-                },
-            },
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Farm_Hilltop",
-                "ArtifactSpots",
-            ],
+            "TargetField": [ "Farm_Hilltop", "ArtifactSpots" ],
             "Entries": {
                 "(O)330": {
                     "Id": "(O)330",
@@ -3179,16 +3142,13 @@
                     "Id": "(O)770",
                     "ItemID": "(O)770",
                     "Chance": 0.2
-                },
-            },
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Farm_Riverland",
-                "ArtifactSpots",
-            ],
+            "TargetField": [ "Farm_Riverland", "ArtifactSpots" ],
             "Entries": {
                 "(O)330": {
                     "Id": "(O)330",
@@ -3209,16 +3169,13 @@
                     "Id": "(O)770",
                     "ItemID": "(O)770",
                     "Chance": 0.2
-                },
-            },
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Farm_Wilderness",
-                "ArtifactSpots",
-            ],
+            "TargetField": [ "Farm_Wilderness", "ArtifactSpots" ],
             "Entries": {
                 "(O)330": {
                     "Id": "(O)330",
@@ -3239,250 +3196,219 @@
                     "Id": "(O)770",
                     "ItemID": "(O)770",
                     "Chance": 0.2
-                },
-            },
+                }
+            }
         },
         //Vanilla Locations
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Beach",
-                "Fish",
-            ],
+            "TargetField": [ "Beach", "Fish" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Dulse_Seaweed",
                     "Condition": "LOCATION_Season Here Spring Summer Fall Winter",
-					"CanUseTrainingRod": false,
+                    "CanUseTrainingRod": false
                 },
-				"FlashShifter.StardewValleyExpandedCP_Starfish": {
+                "FlashShifter.StardewValleyExpandedCP_Starfish": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Starfish",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Starfish",
-                    "Condition": "LOCATION_Season Here Spring Summer Winter",
+                    "Condition": "LOCATION_Season Here Spring Summer Winter"
                 }
-            },
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Forest",
-                "Fish",
-            ],
+            "TargetField": [ "Forest", "Fish" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Minnow": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Minnow",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Minnow",
-                    "Condition": "LOCATION_Season Here Spring Summer Fall Winter",
+                    "Condition": "LOCATION_Season Here Spring Summer Fall Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_Bull_Trout": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Bull_Trout",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Bull_Trout",
-                    "Condition": "LOCATION_Season Here Fall Winter",
+                    "Condition": "LOCATION_Season Here Fall Winter"
                 },
-				"FlashShifter.StardewValleyExpandedCP_Gar": {
+                "FlashShifter.StardewValleyExpandedCP_Gar": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Gar",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Gar",
-                    "Condition": "LOCATION_Season Here Summer Fall",
-                },
-            },
+                    "Condition": "LOCATION_Season Here Summer Fall"
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Woods",
-                "Fish",
-            ],
+            "TargetField": [ "Woods", "Fish" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Grass_Carp": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Grass_Carp",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Grass_Carp",
-                    "Condition": "LOCATION_Season Here Spring Summer",
-                },
-            },
+                    "Condition": "LOCATION_Season Here Spring Summer"
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Town",
-                "Fish",
-            ],
+            "TargetField": [ "Town", "Fish" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Minnow": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Minnow",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Minnow",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                 },
-				"FlashShifter.StardewValleyExpandedCP_Goldfish": {
+                "FlashShifter.StardewValleyExpandedCP_Goldfish": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Goldfish",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Goldfish",
-                    "Condition": "LOCATION_Season Here Spring",
-                },
-            },
+                    "Condition": "LOCATION_Season Here Spring"
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Mountain",
-                "Fish",
-            ],
+            "TargetField": [ "Mountain", "Fish" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Minnow": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Minnow",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Minnow",
-                    "Condition": "LOCATION_Season Here Spring Summer Fall Winter",
+                    "Condition": "LOCATION_Season Here Spring Summer Fall Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_Frog": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Frog",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Frog",
-                    "Condition": "LOCATION_Season Here Spring Summer",
+                    "Condition": "LOCATION_Season Here Spring Summer"
                 },
-				"FlashShifter.StardewValleyExpandedCP_Tadpole": {
+                "FlashShifter.StardewValleyExpandedCP_Tadpole": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Tadpole",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Tadpole",
-                    "Condition": "LOCATION_Season Here Spring Summer",
+                    "Condition": "LOCATION_Season Here Spring Summer"
                 },
                 "FlashShifter.StardewValleyExpandedCP_Bull_Trout": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Bull_Trout",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Bull_Trout",
-                    "Condition": "LOCATION_Season Here Fall Winter",
-                },
-            },
+                    "Condition": "LOCATION_Season Here Fall Winter"
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Sewer",
-                "Fish",
-            ],
+            "TargetField": [ "Sewer", "Fish" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Radioactive_Bass": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Radioactive_Bass",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Radioactive_Bass",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
-                },
-            },
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "WitchSwamp",
-                "Fish",
-            ],
+            "TargetField": [ "WitchSwamp", "Fish" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Void_Eel": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Void_Eel",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Void_Eel",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
-                },
-            },
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "BugLand",
-                "Fish",
-            ],
+            "TargetField": [ "BugLand", "Fish" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Water_Grub": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Water_Grub",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Water_Grub",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_Snatcher_Worm": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Snatcher_Worm",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Snatcher_Worm",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
-                },
-            },
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "IslandSouthEast",
-                "Fish",
-            ],
+            "TargetField": [ "IslandSouthEast", "Fish" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Lunaloo": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Lunaloo",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Lunaloo",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_Sea_Sponge": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Sea_Sponge",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Sea_Sponge",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_Seahorse": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Seahorse",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Seahorse",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                 },
-				"FlashShifter.StardewValleyExpandedCP_Starfish": {
+                "FlashShifter.StardewValleyExpandedCP_Starfish": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Starfish",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Starfish",
-                    "Condition": "LOCATION_Season Here Spring Summer Fall Winter",
+                    "Condition": "LOCATION_Season Here Spring Summer Fall Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_Clownfish": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Clownfish",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Clownfish",
-                    "Condition": "LOCATION_Season Here Spring Summer Fall Winter",
+                    "Condition": "LOCATION_Season Here Spring Summer Fall Winter"
                 },
-				"FlashShifter.StardewValleyExpandedCP_Shark": {
+                "FlashShifter.StardewValleyExpandedCP_Shark": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Shark",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Shark",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                 },
-				"FlashShifter.StardewValleyExpandedCP_Ocean_Sunfish": {
+                "FlashShifter.StardewValleyExpandedCP_Ocean_Sunfish": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Ocean_Sunfish",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Ocean_Sunfish",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                 },
-				"FlashShifter.StardewValleyExpandedCP_Barred_Knifejaw": {
+                "FlashShifter.StardewValleyExpandedCP_Barred_Knifejaw": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Barred_Knifejaw",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Barred_Knifejaw",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                 },
-				"FlashShifter.StardewValleyExpandedCP_Blue_Tang": {
+                "FlashShifter.StardewValleyExpandedCP_Blue_Tang": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Blue_Tang",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Blue_Tang",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
-                },
-            },
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "IslandWest",
-                "Fish",
-            ],
+            "TargetField": [ "IslandWest", "Fish" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Lunaloo": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Lunaloo",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Lunaloo",
                     "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
                     "FishAreaID": "Ocean"
-                    
                 },
                 "FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo",
@@ -3508,7 +3434,7 @@
                     "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
                     "FishAreaID": "Ocean"
                 },
-				"FlashShifter.StardewValleyExpandedCP_Starfish": {
+                "FlashShifter.StardewValleyExpandedCP_Starfish": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Starfish",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Starfish",
                     "Condition": "LOCATION_Season Here Spring Summer Fall Winter",
@@ -3520,232 +3446,222 @@
                     "Condition": "LOCATION_Season Here Spring Summer Fall Winter",
                     "FishAreaID": "Ocean"
                 },
-				"FlashShifter.StardewValleyExpandedCP_Shark": {
+                "FlashShifter.StardewValleyExpandedCP_Shark": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Shark",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Shark",
                     "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
                     "FishAreaID": "Ocean"
                 },
-				"FlashShifter.StardewValleyExpandedCP_Ocean_Sunfish": {
+                "FlashShifter.StardewValleyExpandedCP_Ocean_Sunfish": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Ocean_Sunfish",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Ocean_Sunfish",
                     "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
                     "FishAreaID": "Ocean"
                 },
-                
-				"FlashShifter.StardewValleyExpandedCP_Barred_Knifejaw": {
+
+                "FlashShifter.StardewValleyExpandedCP_Barred_Knifejaw": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Barred_Knifejaw",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Barred_Knifejaw",
                     "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
                     "FishAreaID": "Ocean"
                 },
-				"FlashShifter.StardewValleyExpandedCP_Blue_Tang": {
+                "FlashShifter.StardewValleyExpandedCP_Blue_Tang": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Blue_Tang",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Blue_Tang",
                     "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
                     "FishAreaID": "Ocean"
-                },
-            },
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "IslandSouth",
-                "Fish",
-            ],
+            "TargetField": [ "IslandSouth", "Fish" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Lunaloo": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Lunaloo",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Lunaloo",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Baby_Lunaloo",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Shiny_Lunaloo",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_Sea_Sponge": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Sea_Sponge",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Sea_Sponge",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_Seahorse": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Seahorse",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Seahorse",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                 },
-				"FlashShifter.StardewValleyExpandedCP_Starfish": {
+                "FlashShifter.StardewValleyExpandedCP_Starfish": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Starfish",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Starfish",
-                    "Condition": "LOCATION_Season Here Spring Summer Fall Winter",
+                    "Condition": "LOCATION_Season Here Spring Summer Fall Winter"
                 },
                 "FlashShifter.StardewValleyExpandedCP_Clownfish": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Clownfish",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Clownfish",
-                    "Condition": "LOCATION_Season Here Spring Summer Fall Winter",
+                    "Condition": "LOCATION_Season Here Spring Summer Fall Winter"
                 },
-				"FlashShifter.StardewValleyExpandedCP_Shark": {
+                "FlashShifter.StardewValleyExpandedCP_Shark": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Shark",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Shark",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                 },
-				"FlashShifter.StardewValleyExpandedCP_Ocean_Sunfish": {
+                "FlashShifter.StardewValleyExpandedCP_Ocean_Sunfish": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Ocean_Sunfish",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Ocean_Sunfish",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                 },
-				"FlashShifter.StardewValleyExpandedCP_Barred_Knifejaw": {
+                "FlashShifter.StardewValleyExpandedCP_Barred_Knifejaw": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Barred_Knifejaw",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Barred_Knifejaw",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
                 },
-				"FlashShifter.StardewValleyExpandedCP_Blue_Tang": {
+                "FlashShifter.StardewValleyExpandedCP_Blue_Tang": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Blue_Tang",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Blue_Tang",
-                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter",
-                },
-            },
+                    "Condition": "LOCATION_Season Here Fall Spring Summer Winter"
+                }
+            }
         },
-		
+
         //Patches Razor Trout (Joja Route)
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Town",
-                "Fish",
-            ],
+            "TargetField": [ "Town", "Fish" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Razor_Trout": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Razor_Trout",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Razor_Trout",
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 1056732",
-                },
-            },
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 1056732"
+                }
+            }
         },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Custom_BlueMoonVineyard",
-                "Fish",
-            ],
+            "TargetField": [ "Custom_BlueMoonVineyard", "Fish" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Razor_Trout": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Razor_Trout",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Razor_Trout",
-					"FishAreaID": "River",
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 1056732",
+                    "FishAreaID": "River",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 1056732"
                 },
-				"FlashShifter.StardewValleyExpandedCP_Goldfish": {
+                "FlashShifter.StardewValleyExpandedCP_Goldfish": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Goldfish",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Goldfish",
-					"FishAreaID": "River",
-                    "Condition": "LOCATION_Season Here Spring",
-                },
-            },
+                    "FishAreaID": "River",
+                    "Condition": "LOCATION_Season Here Spring"
+                }
+            }
         },
-		
-		//Patches Kittyfish (Camilla's bridge event)
+
+        //Patches Kittyfish (Camilla's bridge event)
         {
             "Action": "EditData",
             "Target": "Data/Locations",
-            "TargetField": [
-                "Custom_ShearwaterBridge",
-                "Fish",
-            ],
+            "TargetField": [ "Custom_ShearwaterBridge", "Fish" ],
             "Entries": {
                 "FlashShifter.StardewValleyExpandedCP_Kittyfish": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Kittyfish",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Kittyfish",
-                    "Condition": "LOCATION_Season Here Fall Winter, PLAYER_HAS_SEEN_EVENT Current 69069247",
-                },
+                    "Condition": "LOCATION_Season Here Fall Winter, PLAYER_HAS_SEEN_EVENT Current 69069247"
+                }
             },
-			"SetProperties": {
+            "SetProperties": {
                 "CurrentTime": "{{Time}}"
             },
-			"Update": "OnTimeChange"
+            "Update": "OnTimeChange"
         },
-		
-		{
+
+        {
             "Action": "EditData",
             "Target": "Data/LocationContexts",
             "Entries": {
-              "{{ModId}}_Highlands": {
-                "CopyWeatherFromLocation": "Default",
-                "RainTotemAffectsContext": "Default",
-                "ReviveLocations": [
-                  {
-                    "Location": "Custom_HighlandsOutpost",
-                    "Position": {
-                      "X": 6,
-                      "Y": 6
-                      }
-                  }
-               ]
-            },
-			  "{{ModId}}_CastleVillageOutpost": {
-                "CopyWeatherFromLocation": "Default",
-                "RainTotemAffectsContext": "Default",
-                "ReviveLocations": [
-                  {
-                    "Location": "Custom_CastleVillageOutpost",
-                    "Position": {
-                      "X": 31,
-                      "Y": 28
-                      }
-                  }
-               ]
-            },
-          }
+                "{{ModId}}_Highlands": {
+                    "CopyWeatherFromLocation": "Default",
+                    "RainTotemAffectsContext": "Default",
+                    "ReviveLocations": [
+                        {
+                            "Location": "Custom_HighlandsOutpost",
+                            "Position": {
+                                "X": 6,
+                                "Y": 6
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_CastleVillageOutpost": {
+                    "CopyWeatherFromLocation": "Default",
+                    "RainTotemAffectsContext": "Default",
+                    "ReviveLocations": [
+                        {
+                            "Location": "Custom_CastleVillageOutpost",
+                            "Position": {
+                                "X": 31,
+                                "Y": 28
+                            }
+                        }
+                    ]
+                }
+            }
         },
-		
-		{
-           "Action": "Load",
-           "Target": "Data/Events/Custom_HighlandsOutpost",
-           "FromFile": "assets/blank.json"
+
+        {
+            "Action": "Load",
+            "Target": "Data/Events/Custom_HighlandsOutpost",
+            "FromFile": "assets/blank.json"
         },
         {
-           "Action": "EditData",
-           "Target": "Data/Events/Custom_HighlandsOutpost",
-             "Entries": {
-               "PlayerKilled": "none/-100 -100/farmer 6 6 1 Lance 8 6 3/positionOffset farmer 20 0 true/positionOffset Lance -25 0 true/pause 500/message \"{{i18n:Lance.PlayerKilled.01}}\"/pause 900/playMusic FlashShifter.StardewValleyExpandedCP_SDV_FireplaceSound/pause 600/viewport 7 6 true/pause 1500/shake Lance 500/pause 250/speak Lance \"{{i18n:Lance.PlayerKilled.02}}\"/pause 1000/speak Lance \"{{i18n:Lance.PlayerKilled.03}}\"/pause 500/globalFade/viewport -1000 -1000/stopMusic/hospitaldeath/faceDirection farmer 2 true/end"
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_HighlandsOutpost",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 6 6 1 Lance 8 6 3/positionOffset farmer 20 0 true/positionOffset Lance -25 0 true/pause 500/message \"{{i18n:Lance.PlayerKilled.01}}\"/pause 900/playMusic FlashShifter.StardewValleyExpandedCP_SDV_FireplaceSound/pause 600/viewport 7 6 true/pause 1500/shake Lance 500/pause 250/speak Lance \"{{i18n:Lance.PlayerKilled.02}}\"/pause 1000/speak Lance \"{{i18n:Lance.PlayerKilled.03}}\"/pause 500/globalFade/viewport -1000 -1000/stopMusic/hospitaldeath/faceDirection farmer 2 true/end"
             }
         },
-		
-		{
-           "Action": "Load",
-           "Target": "Data/Events/Custom_CastleVillageOutpost",
-           "FromFile": "assets/blank.json"
+
+        {
+            "Action": "Load",
+            "Target": "Data/Events/Custom_CastleVillageOutpost",
+            "FromFile": "assets/blank.json"
         },
         {
-           "Action": "EditData",
-           "Target": "Data/Events/Custom_CastleVillageOutpost",
-             "Entries": {
-               "PlayerKilled": "none/-100 -100/farmer 24 19 0 Camilla 24 16 2/pause 500/message \"{{i18n:Camilla.PlayerKilled.01}}\"/pause 900/playMusic FlashShifter.StardewValleyExpandedCP_CastleVillageOutpostMusic/pause 600/viewport 24 18 true/pause 1500/shake Camilla 200/pause 200/showFrame Camilla 16 true/pause 450/speak Camilla \"{{i18n:Camilla.PlayerKilled.02}}\"/pause 300/showFrame Camilla 0 true/pause 650/speak Camilla \"{{i18n:Camilla.PlayerKilled.03}}\"/pause 800/move Camilla 0 1 2/pause 800/showFrame Camilla 1 true/pause 300/shake Camilla 700/pause 600/screenFlash 1/playSound wand/warp farmer -20 -20/pause 400/showFrame Camilla 0 true/pause 450/globalFade/viewport -1000 -1000/changeLocation Custom_CastleVillageOutpost/stopMusic/SVE_BadlandsDeath/faceDirection farmer 2 true/end"
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_CastleVillageOutpost",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 24 19 0 Camilla 24 16 2/pause 500/message \"{{i18n:Camilla.PlayerKilled.01}}\"/pause 900/playMusic FlashShifter.StardewValleyExpandedCP_CastleVillageOutpostMusic/pause 600/viewport 24 18 true/pause 1500/shake Camilla 200/pause 200/showFrame Camilla 16 true/pause 450/speak Camilla \"{{i18n:Camilla.PlayerKilled.02}}\"/pause 300/showFrame Camilla 0 true/pause 650/speak Camilla \"{{i18n:Camilla.PlayerKilled.03}}\"/pause 800/move Camilla 0 1 2/pause 800/showFrame Camilla 1 true/pause 300/shake Camilla 700/pause 600/screenFlash 1/playSound wand/warp farmer -20 -20/pause 400/showFrame Camilla 0 true/pause 450/globalFade/viewport -1000 -1000/changeLocation Custom_CastleVillageOutpost/stopMusic/SVE_BadlandsDeath/faceDirection farmer 2 true/end"
             }
         },
-		
-		{
-           "Action": "Load",
-           "Target": "Data/Events/Custom_ForbiddenMaze",
-           "FromFile": "assets/blank.json"
-        },
-        /*{
-           "Action": "EditData",
-           "Target": "Data/Events/Custom_ForbiddenMaze",
-		   "When": { 
-		     "HasFlag: anyPlayer|contains=HenchmanHouseRepaired": true
-		    },
-             "Entries": {
-               "PlayerKilled": "none/-1000 -1000/farmer 6 6 2 SVE_Henchman 24 16 2/changeLocation Custom_HenchmanHouse/pause 1500/speak SVE_Henchman \"{{i18n:Henchman.Event.Death}}\"/pause 1000/hospitaldeath/faceDirection farmer 2 true/end"
+
+        {
+            "Action": "Load",
+            "Target": "Data/Events/Custom_ForbiddenMaze",
+            "FromFile": "assets/blank.json"
+        }
+        /*
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_ForbiddenMaze",
+            "When": {
+                "HasFlag: anyPlayer|contains=HenchmanHouseRepaired": true
+            },
+            "Entries": {
+                "PlayerKilled": "none/-1000 -1000/farmer 6 6 2 SVE_Henchman 24 16 2/changeLocation Custom_HenchmanHouse/pause 1500/speak SVE_Henchman \"{{i18n:Henchman.Event.Death}}\"/pause 1000/hospitaldeath/faceDirection farmer 2 true/end"
             }
-        },*/
+        }
+        */
     ]
 }

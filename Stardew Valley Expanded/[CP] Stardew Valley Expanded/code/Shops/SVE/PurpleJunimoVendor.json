@@ -1,8 +1,8 @@
-{
-
+﻿{
     "Changes": [
         {
-            "Action": "Load", "Priority": "Low",
+            "Action": "Load",
+            "Priority": "Low",
             "Target": "Mods/FlashShifter.StardewValleyExpandedCP/PurpleJunimo",
             "FromFile": "assets/CharacterFiles/Shops/Junimos/blank.png"
         },
@@ -15,7 +15,6 @@
                 "Y": 129,
                 "Width": 64,
                 "Height": 64
-
             }
         },
         {
@@ -29,9 +28,9 @@
                             "Portrait": "Mods\\FlashShifter.StardewValleyExpandedCP\\PurpleJunimo",
                             "Dialogues": [
                                 {
-                                "Id": "FlashShifter.StardewValleyExpandedCP_Default",
-                                "Dialogue": "{{i18n:ShopsDialogue.PurpleJunimo}}", 
-                                },
+                                    "Id": "FlashShifter.StardewValleyExpandedCP_Default",
+                                    "Dialogue": "{{i18n:ShopsDialogue.PurpleJunimo}}"
+                                }
                             ]
                         }
                     ],
@@ -43,32 +42,31 @@
                             "Price": 80000,
                             "AvailableStock": 1,
                             "Condition": "PLAYER_HAS_SEEN_EVENT Any 7776009"
-                        }, 
+                        },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Magic_Bait",
                             "ItemId": "908",
                             "Price": 1000,
-                            "AvailableStock": 20,
+                            "AvailableStock": 20
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Deluxe_Fertilizer",
                             "ItemId": "919",
                             "Price": 4000,
-                            "AvailableStock": 10,
+                            "AvailableStock": 10
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Hyper_Speed-Gro",
                             "ItemId": "918",
                             "Price": 2500,
-                            "AvailableStock": 10,
+                            "AvailableStock": 10
                         },
                         {
                             "Id": "FlashShifter.StardewValleyExpandedCP_Deluxe_Retaining_Soil",
                             "ItemId": "920",
                             "Price": 2500,
-                            "AvailableStock": 10,
-                        },
-                            
+                            "AvailableStock": 10
+                        }
                     ]
                 }
             }

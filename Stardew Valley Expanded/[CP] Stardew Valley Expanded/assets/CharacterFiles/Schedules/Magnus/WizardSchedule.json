@@ -1,4 +1,4 @@
-{
+﻿{
     "Changes": [
         {
             //Wizard's Schedule
@@ -25,7 +25,7 @@
                 //Checks books in room, brews potions, meditates in basement, meditates upstairs
                 "rain": "610 WizardHouse 1 5 0/900 WizardHouse 3 19 2/950 WizardHouse 2 22 0/1030 WizardHouse 1 19 0/1100 WizardHouse 3 22 0/1130 WizardHouse 8 13 0/1200 Custom_WizardBasement 23 6 2 Wizard_Meditate/1630 WizardHouse 5 17 2/1800 WizardHouse 10 17 2 Wizard_Meditate/2000 WizardHouse 5 17 2/2300 WizardHouse 3 4 2 Wizard_Sleep",
                 //Desert Festival
-                "marriage_DesertFestival_1": "800 Desert 37 17 0 \"Strings\\schedules\\Wizard:DesertFestival_Wizard_marriage\"/2510 bed",
+                "marriage_DesertFestival_1": "800 Desert 37 17 0 \"Strings\\schedules\\Wizard:DesertFestival_Wizard_marriage\"/2510 bed"
             }
         }
     ]

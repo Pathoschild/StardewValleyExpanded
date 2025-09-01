@@ -1,20 +1,17 @@
 ﻿{
     "Changes": [
-      {
-        "Action": "EditData",
-        "Target": "Characters/Dialogue/Cordelia",
-        "Entries": 
         {
-
-"Mon": "{{i18n:Cordelia.CharacterDialogue.001}}",
-"Tue": "{{i18n:Cordelia.CharacterDialogue.001}}",
-"Wed": "{{i18n:Cordelia.CharacterDialogue.001}}",
-"Thu": "{{i18n:Cordelia.CharacterDialogue.001}}",
-"Fri": "{{i18n:Cordelia.CharacterDialogue.001}}",
-"Sat": "{{i18n:Cordelia.CharacterDialogue.001}}",
-"Sun": "{{i18n:Cordelia.CharacterDialogue.001}}",
-
-},
-      },
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Cordelia",
+            "Entries": {
+                "Mon": "{{i18n:Cordelia.CharacterDialogue.001}}",
+                "Tue": "{{i18n:Cordelia.CharacterDialogue.001}}",
+                "Wed": "{{i18n:Cordelia.CharacterDialogue.001}}",
+                "Thu": "{{i18n:Cordelia.CharacterDialogue.001}}",
+                "Fri": "{{i18n:Cordelia.CharacterDialogue.001}}",
+                "Sat": "{{i18n:Cordelia.CharacterDialogue.001}}",
+                "Sun": "{{i18n:Cordelia.CharacterDialogue.001}}"
+            }
+        }
     ]
 }

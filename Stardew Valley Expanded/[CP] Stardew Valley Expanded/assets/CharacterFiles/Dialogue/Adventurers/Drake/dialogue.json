@@ -1,22 +1,19 @@
 ﻿{
     "Changes": [
-      {
-        "Action": "EditData",
-        "Target": "Characters/Dialogue/Drake",
-        "Entries": 
         {
-
-"Mon": "{{i18n:Drake.CharacterDialogue.001}}",
-"Tue": "{{i18n:Drake.CharacterDialogue.002}}",
-"Wed": "{{i18n:Drake.CharacterDialogue.003}}",
-"Thu": "{{i18n:Drake.CharacterDialogue.004}}",
-"Fri": "{{i18n:Drake.CharacterDialogue.005}}",
-"Sat": "{{i18n:Drake.CharacterDialogue.006}}",
-"Sun": "{{i18n:Drake.CharacterDialogue.007}}",
-"25": "{{i18n:Drake.Patch.01}}",
-"25_2": "{{i18n:Drake.Patch.01}}"
-
-},
-      },
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Drake",
+            "Entries": {
+                "Mon": "{{i18n:Drake.CharacterDialogue.001}}",
+                "Tue": "{{i18n:Drake.CharacterDialogue.002}}",
+                "Wed": "{{i18n:Drake.CharacterDialogue.003}}",
+                "Thu": "{{i18n:Drake.CharacterDialogue.004}}",
+                "Fri": "{{i18n:Drake.CharacterDialogue.005}}",
+                "Sat": "{{i18n:Drake.CharacterDialogue.006}}",
+                "Sun": "{{i18n:Drake.CharacterDialogue.007}}",
+                "25": "{{i18n:Drake.Patch.01}}",
+                "25_2": "{{i18n:Drake.Patch.01}}"
+            }
+        }
     ]
 }

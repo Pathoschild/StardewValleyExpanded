@@ -1,12 +1,12 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
+using System.Reflection;
+using System.Reflection.Emit;
+using HarmonyLib;
+using Netcode;
 using StardewModdingAPI;
 using StardewValley;
-using HarmonyLib;
-using System.Collections.Generic;
 using StardewValley.Locations;
-using Netcode;
-using System.Reflection.Emit;
-using System.Reflection;
 
 namespace StardewValleyExpanded
 {
@@ -19,6 +19,7 @@ namespace StardewValleyExpanded
 
         /// <summary>The SMAPI helper instance to use for events and other API access.</summary>
         private static IModHelper Helper { get; set; } = null;
+
         /// <summary>The monitor instance to use for log messages. Null if not provided.</summary>
         private static IMonitor Monitor { get; set; } = null;
 
@@ -28,10 +29,10 @@ namespace StardewValleyExpanded
         /// <param name="monitor">The <see cref="IMonitor"/> provided to this mod by SMAPI. Used for log messages.</param>
         public static void ApplyPatch(Harmony harmony, IModHelper helper, IMonitor monitor)
         {
-            if (!Applied && helper != null && monitor != null) //if NOT already applied AND valid tools were provided
+            if (!Applied && helper != null && monitor != null) // if NOT already applied AND valid tools were provided
             {
-                Helper = helper; //store helper
-                Monitor = monitor; //store monitor
+                Helper = helper; // store helper
+                Monitor = monitor; // store monitor
 
                 Monitor.Log($"Applying Harmony patch \"{nameof(HarmonyPatch_FixCommunityShortcuts)}\": transpiling SDV method \"Forest.showCommunityUpgradeShortcuts()\".", LogLevel.Trace);
                 harmony.Patch(
@@ -70,28 +71,28 @@ namespace StardewValleyExpanded
         {
             try
             {
-                List<CodeInstruction> patched = new List<CodeInstruction>(instructions); //make a copy of the instructions to modify
+                List<CodeInstruction> patched = new List<CodeInstruction>(instructions); // make a copy of the instructions to modify
 
                 MethodInfo replacementMethod = AccessTools.Method(typeof(HarmonyPatch_FixCommunityShortcuts), nameof(HarmonyPatch_FixCommunityShortcuts.AddWarpAsTouchAction));
 
-                for (int x = patched.Count - 1; x >= 1; x--) //for each instruction (looping backward, skipping the first)
+                for (int x = patched.Count - 1; x >= 1; x--) // for each instruction (looping backward, skipping the first)
                 {
-                    if (patched[x-1].opcode == OpCodes.Newobj //if the previous instruction creates a new object
-                        && patched[x-1].operand is ConstructorInfo conInfo && conInfo.DeclaringType == typeof(Warp) //and the new object is a warp
-                        && patched[x].opcode == OpCodes.Callvirt //and the current instruction is a virtual method call
-                        && patched[x].operand is MethodInfo methodInfo && methodInfo.DeclaringType?.IsAssignableFrom(typeof(NetObjectList<Warp>)) == true && methodInfo.Name == "Add") //and the method seems to be GameLocation.warps.Add
+                    if (patched[x - 1].opcode == OpCodes.Newobj // if the previous instruction creates a new object
+                        && patched[x - 1].operand is ConstructorInfo conInfo && conInfo.DeclaringType == typeof(Warp) // and the new object is a warp
+                        && patched[x].opcode == OpCodes.Callvirt // and the current instruction is a virtual method call
+                        && patched[x].operand is MethodInfo methodInfo && methodInfo.DeclaringType?.IsAssignableFrom(typeof(NetObjectList<Warp>)) == true && methodInfo.Name == "Add") // and the method seems to be GameLocation.warps.Add
                     {
-                        patched[x] = new CodeInstruction(OpCodes.Call, replacementMethod); //replace the call with the modified version
-                        patched.Insert(x, new CodeInstruction(OpCodes.Ldarg_0, null)); //insert a "load this GameLocation instance" instruction before the call
+                        patched[x] = new CodeInstruction(OpCodes.Call, replacementMethod); // replace the call with the modified version
+                        patched.Insert(x, new CodeInstruction(OpCodes.Ldarg_0, null)); // insert a "load this GameLocation instance" instruction before the call
                     }
                 }
 
-                return patched; //return the patched instructions
+                return patched; // return the patched instructions
             }
             catch (Exception ex)
             {
                 Monitor.LogOnce($"Harmony patch \"{nameof(HarmonyPatch_FixCommunityShortcuts)}\" has encountered an error. Transpiler \"{nameof(ReplaceNewWarpsWithTouchActions)}\" will not be applied. Full error message:\n{ex.ToString()}", LogLevel.Error);
-                return instructions; //return the original instructions
+                return instructions; // return the original instructions
             }
         }
 
@@ -103,19 +104,19 @@ namespace StardewValleyExpanded
         {
             try
             {
-                if (RemoveWarpsWithoutReplacing) //if the warps should be removed completely
-                    return; //do nothing
+                if (RemoveWarpsWithoutReplacing) // if the warps should be removed completely
+                    return; // do nothing
 
-                if (warp != null && location != null) //if valid warp and locations were provided
+                if (warp != null && location != null) // if valid warp and locations were provided
                 {
-                    //adjust the warp tile to be within the back layer's boundaries
+                    // adjust the warp tile to be within the back layer's boundaries
                     var backLayer = location.Map.GetLayer("Back");
                     int x = Utility.Clamp(warp.X, 0, (backLayer.DisplayWidth / Game1.tileSize) - 1);
                     int y = Utility.Clamp(warp.Y, 0, (backLayer.DisplayHeight / Game1.tileSize) - 1);
 
-                    string warpType = Helper.ModRegistry.IsLoaded("Platonymous.TMXLoader") ? "LoadMap" : "MagicWarp"; //use LoadMap if TMXL exists to implement it; otherwise, use MagicWarp
-                    string warpString = $"{warpType} {warp.TargetName} {warp.TargetX} {warp.TargetY}"; //create the map property value
-                    location.setTileProperty(x, y, "Back", "TouchAction", warpString); //set the tile's TouchAction property
+                    string warpType = Helper.ModRegistry.IsLoaded("Platonymous.TMXLoader") ? "LoadMap" : "MagicWarp"; // use LoadMap if TMXL exists to implement it; otherwise, use MagicWarp
+                    string warpString = $"{warpType} {warp.TargetName} {warp.TargetX} {warp.TargetY}"; // create the map property value
+                    location.setTileProperty(x, y, "Back", "TouchAction", warpString); // set the tile's TouchAction property
 
                     Monitor.LogOnce($"Community shortcut NPC fix: Setting tile property at {location.Name} {x},{y} to \"TouchAction\", \"{warpString}\".", LogLevel.Trace);
                 }

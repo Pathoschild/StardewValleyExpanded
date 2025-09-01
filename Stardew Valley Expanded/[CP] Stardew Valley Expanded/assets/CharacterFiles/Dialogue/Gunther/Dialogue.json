@@ -1,74 +1,78 @@
 ﻿{
-  "Changes": [
-    {
-      "Action": "EditData",
-      "Target": "Characters/Dialogue/GuntherSilvian",
-      "When": {
-        "GuntherUnlocked": "true"
-      },
-      "Entries": {
-        //SPECIAL DIALOGUE
-        //"Introduction": "You must be Mr. @. Pleasure to meet you.$5^You must be Ms. @. Pleasure to meet you.$5",
-        "pamHouseUpgrade": "{{i18n:Gunther.CharacterDialogue.001}}",
-        "pamHouseUpgradeAnonymous": "{{i18n:Gunther.CharacterDialogue.002}}",
-        "Resort_Entering": "{{i18n:Gunther.CharacterDialogue.003}}",
-        "Resort_Leaving": "{{i18n:Gunther.CharacterDialogue.004}}",
-        "Resort_Shore": "{{i18n:Gunther.CharacterDialogue.005}}",
-        "Resort_Chair": "{{i18n:Gunther.CharacterDialogue.006}}",
-        "Resort_Bar": "{{i18n:Gunther.CharacterDialogue.007}}",
-        "Resort": "{{i18n:Gunther.CharacterDialogue.008}}",
-        "Reject_458": "{{i18n:Gunther.RejectBouquet}}",
-        "GreenRain": "{{i18n:Gunther.GreenRain}}",
-        "AcceptGift_(O)StardropTea": "{{i18n:Gunther.GiftStardropTea}}",
-        "AcceptBirthdayGift_Positive": "{{i18n:Gunther.GiftBDpos}}",
-        "AcceptBirthdayGift_Negative": "{{i18n:Gunther.GiftBDneg}}",
-        "AcceptGift_ancient_item": "{{i18n:Gunther.GiftAncient}}",
-        "DumpsterDiveComment": "{{i18n:Gunther.DumpsterDive}}",
-        "firstVisit_IslandNorth": "{{i18n:Gunther.VisitIslandNorth}}",
-        //SPRING AND GENERAL DIALOGUE
-        "spring_1": "{{i18n:Gunther.CharacterDialogue.009}}",
-        "spring_12": "{{i18n:Gunther.CharacterDialogue.010}}",
-        "spring_23": "{{i18n:Gunther.CharacterDialogue.011}}",
-        "Mon": "{{i18n:Gunther.CharacterDialogue.012}}",
-        "Mon2": "{{i18n:Gunther.CharacterDialogue.013}}",
-        "Mon10": "{{i18n:Gunther.CharacterDialogue.014}}",
-        "Tue": "{{i18n:Gunther.CharacterDialogue.015}}",
-        "Tue6": "{{i18n:Gunther.CharacterDialogue.016}}",
-        "Wed": "{{i18n:Gunther.CharacterDialogue.017}}",
-        "Wed8": "{{i18n:Gunther.CharacterDialogue.018}}",
-        "Thu": "{{i18n:Gunther.CharacterDialogue.019}}",
-        "Thu8": "{{i18n:Gunther.CharacterDialogue.020}}",
-        "Fri": "{{i18n:Gunther.CharacterDialogue.021}}",
-        "Fri6": "{{i18n:Gunther.CharacterDialogue.022}}",
-        "Sat": "{{i18n:Gunther.CharacterDialogue.023}}",
-        "Sat4": "{{i18n:Gunther.CharacterDialogue.024}}",
-        "Sun": "{{i18n:Gunther.CharacterDialogue.025}}",
-        //SUMMER DIALOGUE
-        "summer_1": "{{i18n:Gunther.CharacterDialogue.026}}",
-        "summer_10": "{{i18n:Gunther.CharacterDialogue.027}}",
-        "summer_28": "{{i18n:Gunther.CharacterDialogue.028}}",
-        "summer_Mon": "{{i18n:Gunther.CharacterDialogue.029}}",
-        "summer_Mon6": "{{i18n:Gunther.CharacterDialogue.030}}",
-        "summer_Sat": "{{i18n:Gunther.CharacterDialogue.031}}",
-        "summer_Sat6": "{{i18n:Gunther.CharacterDialogue.032}}",
-        //FALL DIALOGUE
-        "fall_1": "{{i18n:Gunther.CharacterDialogue.033}}",
-        "fall_5": "{{i18n:Gunther.CharacterDialogue.034}}",
-        "fall_15": "{{i18n:Gunther.CharacterDialogue.035}}",
-        "fall_Tue": "{{i18n:Gunther.CharacterDialogue.036}}",
-        "fall_Tue8": "{{i18n:Gunther.CharacterDialogue.037}}",
-        "fall_Fri": "{{i18n:Gunther.CharacterDialogue.038}}",
-        "fall_Fri8": "{{i18n:Gunther.CharacterDialogue.039}}",
-        //WINTER DIALOGUE
-        "winter_1": "{{i18n:Gunther.CharacterDialogue.040}}",
-        "winter_24": "{{i18n:Gunther.CharacterDialogue.041}}",
-        "winter_28": "{{i18n:Gunther.CharacterDialogue.042}}",
-        "winter_Tue": "{{i18n:Gunther.CharacterDialogue.043}}",
-        "winter_Tue8": "{{i18n:Gunther.CharacterDialogue.044}}",
-        "winter_Thu8": "{{i18n:Gunther.CharacterDialogue.045}}",
-        "winter_Sun": "{{i18n:Gunther.CharacterDialogue.046}}",
-        "winter_Sun6": "{{i18n:Gunther.CharacterDialogue.047}}",
-      },
-    },
-  ]
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/GuntherSilvian",
+            "When": {
+                "GuntherUnlocked": "true"
+            },
+            "Entries": {
+                //SPECIAL DIALOGUE
+                //"Introduction": "You must be Mr. @. Pleasure to meet you.$5^You must be Ms. @. Pleasure to meet you.$5",
+                "pamHouseUpgrade": "{{i18n:Gunther.CharacterDialogue.001}}",
+                "pamHouseUpgradeAnonymous": "{{i18n:Gunther.CharacterDialogue.002}}",
+                "Resort_Entering": "{{i18n:Gunther.CharacterDialogue.003}}",
+                "Resort_Leaving": "{{i18n:Gunther.CharacterDialogue.004}}",
+                "Resort_Shore": "{{i18n:Gunther.CharacterDialogue.005}}",
+                "Resort_Chair": "{{i18n:Gunther.CharacterDialogue.006}}",
+                "Resort_Bar": "{{i18n:Gunther.CharacterDialogue.007}}",
+                "Resort": "{{i18n:Gunther.CharacterDialogue.008}}",
+                "Reject_458": "{{i18n:Gunther.RejectBouquet}}",
+                "GreenRain": "{{i18n:Gunther.GreenRain}}",
+                "AcceptGift_(O)StardropTea": "{{i18n:Gunther.GiftStardropTea}}",
+                "AcceptBirthdayGift_Positive": "{{i18n:Gunther.GiftBDpos}}",
+                "AcceptBirthdayGift_Negative": "{{i18n:Gunther.GiftBDneg}}",
+                "AcceptGift_ancient_item": "{{i18n:Gunther.GiftAncient}}",
+                "DumpsterDiveComment": "{{i18n:Gunther.DumpsterDive}}",
+                "firstVisit_IslandNorth": "{{i18n:Gunther.VisitIslandNorth}}",
+
+                //SPRING AND GENERAL DIALOGUE
+                "spring_1": "{{i18n:Gunther.CharacterDialogue.009}}",
+                "spring_12": "{{i18n:Gunther.CharacterDialogue.010}}",
+                "spring_23": "{{i18n:Gunther.CharacterDialogue.011}}",
+                "Mon": "{{i18n:Gunther.CharacterDialogue.012}}",
+                "Mon2": "{{i18n:Gunther.CharacterDialogue.013}}",
+                "Mon10": "{{i18n:Gunther.CharacterDialogue.014}}",
+                "Tue": "{{i18n:Gunther.CharacterDialogue.015}}",
+                "Tue6": "{{i18n:Gunther.CharacterDialogue.016}}",
+                "Wed": "{{i18n:Gunther.CharacterDialogue.017}}",
+                "Wed8": "{{i18n:Gunther.CharacterDialogue.018}}",
+                "Thu": "{{i18n:Gunther.CharacterDialogue.019}}",
+                "Thu8": "{{i18n:Gunther.CharacterDialogue.020}}",
+                "Fri": "{{i18n:Gunther.CharacterDialogue.021}}",
+                "Fri6": "{{i18n:Gunther.CharacterDialogue.022}}",
+                "Sat": "{{i18n:Gunther.CharacterDialogue.023}}",
+                "Sat4": "{{i18n:Gunther.CharacterDialogue.024}}",
+                "Sun": "{{i18n:Gunther.CharacterDialogue.025}}",
+
+                //SUMMER DIALOGUE
+                "summer_1": "{{i18n:Gunther.CharacterDialogue.026}}",
+                "summer_10": "{{i18n:Gunther.CharacterDialogue.027}}",
+                "summer_28": "{{i18n:Gunther.CharacterDialogue.028}}",
+                "summer_Mon": "{{i18n:Gunther.CharacterDialogue.029}}",
+                "summer_Mon6": "{{i18n:Gunther.CharacterDialogue.030}}",
+                "summer_Sat": "{{i18n:Gunther.CharacterDialogue.031}}",
+                "summer_Sat6": "{{i18n:Gunther.CharacterDialogue.032}}",
+
+                //FALL DIALOGUE
+                "fall_1": "{{i18n:Gunther.CharacterDialogue.033}}",
+                "fall_5": "{{i18n:Gunther.CharacterDialogue.034}}",
+                "fall_15": "{{i18n:Gunther.CharacterDialogue.035}}",
+                "fall_Tue": "{{i18n:Gunther.CharacterDialogue.036}}",
+                "fall_Tue8": "{{i18n:Gunther.CharacterDialogue.037}}",
+                "fall_Fri": "{{i18n:Gunther.CharacterDialogue.038}}",
+                "fall_Fri8": "{{i18n:Gunther.CharacterDialogue.039}}",
+
+                //WINTER DIALOGUE
+                "winter_1": "{{i18n:Gunther.CharacterDialogue.040}}",
+                "winter_24": "{{i18n:Gunther.CharacterDialogue.041}}",
+                "winter_28": "{{i18n:Gunther.CharacterDialogue.042}}",
+                "winter_Tue": "{{i18n:Gunther.CharacterDialogue.043}}",
+                "winter_Tue8": "{{i18n:Gunther.CharacterDialogue.044}}",
+                "winter_Thu8": "{{i18n:Gunther.CharacterDialogue.045}}",
+                "winter_Sun": "{{i18n:Gunther.CharacterDialogue.046}}",
+                "winter_Sun6": "{{i18n:Gunther.CharacterDialogue.047}}"
+            }
+        }
+    ]
 }

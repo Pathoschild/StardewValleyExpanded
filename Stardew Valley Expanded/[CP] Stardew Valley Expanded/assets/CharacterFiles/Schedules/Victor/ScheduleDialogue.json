@@ -1,49 +1,47 @@
-{
-  "Changes": [
-    {
-      "Action": "EditData",
-      "Target": "Strings/schedules/Victor",
-      "Entries": 
-      {
-  "13.000": "{{i18n:Victor.13.000}}",
-  "Tue.001": "{{i18n:Victor.JunimoKart}}", 
-  "Fri.000": "{{i18n:Victor.JunimoKart}}",
-  "Fri.001": "{{i18n:Victor.Pumpkin}}",
- 
-  "spring_21_2.003": "{{i18n:Victor.Gazing}}",
-  "summmer_21.003": "{{i18n:Victor.Gazing}}",
-  "fall_21.003": "{{i18n:Victor.Gazing}}",
-  "winter_21.003": "{{i18n:Victor.Gazing}}",
-  
-  "7.000": "{{i18n:Victor.Battleships}}",
-  "Mon.000": "{{i18n:Victor.Lonk}}",
-  "Wed.000": "{{i18n:Victor.BlueAlive}}",
-  "winter_Thu.000": "{{i18n:Victor.SuperSmash}}",
-  "spring_4.000": "{{i18n:Victor.Personable}}",
-  "spring_21.000": "{{i18n:Victor.Lonk}}",
-  "summer_9.000": "{{i18n:Victor.BlueAlive}}",
-  "summer_21.000": "{{i18n:Victor.SuperSmash}}",
-  "fall_Thu.000": "{{i18n:Victor.Lonk}}",
-  "winter_9.000": "{{i18n:Victor.Lonk}}",
-  
-  "rain8.001": "{{i18n:Victor.JunimoKart}}",
-  
-  "marriage.000": "{{i18n:Victor.Marriage.000}}", 
-  "marriage.001": "{{i18n:Victor.Marriage.001}}", 
-  "marriage.002": "{{i18n:Victor.Marriage.002}}", 
-  "marriage.003": "{{i18n:Victor.Marriage.003}}", 
-  "marriage.004": "{{i18n:Victor.Marriage.004}}", 
-  "marriage.005": "{{i18n:Victor.Marriage.005}}", 
-  "marriage.006": "{{i18n:Victor.Marriage.006}}", 
-  "marriage.007": "{{i18n:Victor.Marriage.007}}", 
-  "NightMarket.001": "{{i18n:Victor.NightMarket.001}}", 
-  
-  "ShearwaterBridgeRenovation.001": "{{i18n:Victor.ShearwaterBridgeRenovation.001}}", 
+﻿{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Victor",
+            "Entries": {
+                "13.000": "{{i18n:Victor.13.000}}",
+                "Tue.001": "{{i18n:Victor.JunimoKart}}",
+                "Fri.000": "{{i18n:Victor.JunimoKart}}",
+                "Fri.001": "{{i18n:Victor.Pumpkin}}",
 
-  "DesertFestival_Victor": "{{i18n:DesertFestival_Victor}}",
-  "DesertFestival_Victor_marriage": "{{i18n:DesertFestival_Victor_marriage}}",
-  
-},
-    },
-  ]
+                "spring_21_2.003": "{{i18n:Victor.Gazing}}",
+                "summmer_21.003": "{{i18n:Victor.Gazing}}",
+                "fall_21.003": "{{i18n:Victor.Gazing}}",
+                "winter_21.003": "{{i18n:Victor.Gazing}}",
+
+                "7.000": "{{i18n:Victor.Battleships}}",
+                "Mon.000": "{{i18n:Victor.Lonk}}",
+                "Wed.000": "{{i18n:Victor.BlueAlive}}",
+                "winter_Thu.000": "{{i18n:Victor.SuperSmash}}",
+                "spring_4.000": "{{i18n:Victor.Personable}}",
+                "spring_21.000": "{{i18n:Victor.Lonk}}",
+                "summer_9.000": "{{i18n:Victor.BlueAlive}}",
+                "summer_21.000": "{{i18n:Victor.SuperSmash}}",
+                "fall_Thu.000": "{{i18n:Victor.Lonk}}",
+                "winter_9.000": "{{i18n:Victor.Lonk}}",
+
+                "rain8.001": "{{i18n:Victor.JunimoKart}}",
+
+                "marriage.000": "{{i18n:Victor.Marriage.000}}",
+                "marriage.001": "{{i18n:Victor.Marriage.001}}",
+                "marriage.002": "{{i18n:Victor.Marriage.002}}",
+                "marriage.003": "{{i18n:Victor.Marriage.003}}",
+                "marriage.004": "{{i18n:Victor.Marriage.004}}",
+                "marriage.005": "{{i18n:Victor.Marriage.005}}",
+                "marriage.006": "{{i18n:Victor.Marriage.006}}",
+                "marriage.007": "{{i18n:Victor.Marriage.007}}",
+                "NightMarket.001": "{{i18n:Victor.NightMarket.001}}",
+
+                "ShearwaterBridgeRenovation.001": "{{i18n:Victor.ShearwaterBridgeRenovation.001}}",
+
+                "DesertFestival_Victor": "{{i18n:DesertFestival_Victor}}",
+                "DesertFestival_Victor_marriage": "{{i18n:DesertFestival_Victor_marriage}}"
+            }
+        }
+    ]
 }

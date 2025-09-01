@@ -1,7 +1,7 @@
-{
+﻿{
     "Changes": [
         {
-            //Peaches' schedule 
+            //Peaches' schedule
             "Action": "EditData",
             "Target": "Characters/schedules/Peaches",
             "When": {
@@ -26,8 +26,8 @@
                 //Same as Mon schedule
                 "rain": "0 Custom_Peaches_WarpRoom 2 3 3/630 Custom_ApplesRoom 5 10 0/730 Custom_AuroraVineyard 9 7 2 Peaches_Dance2/1100 Custom_AuroraVineyard 19 7 2 Peaches_Dance1/1500 Custom_AuroraVineyard 14 17 3/2000 Custom_ApplesRoom 6 8 2 Peaches_Sleep",
                 //Aurora Vineyard
-                "spring": "0 Custom_Peaches_WarpRoom 2 3 3/630 Custom_ApplesRoom 5 10 0/730 Custom_AuroraVineyard 9 7 2 Peaches_Dance2/1100 Custom_AuroraVineyard 19 7 2 Peaches_Dance1/1500 Custom_AuroraVineyard 14 17 3/2000 Custom_ApplesRoom 6 8 2 Peaches_Sleep",
-            },
-        },
-    ],
+                "spring": "0 Custom_Peaches_WarpRoom 2 3 3/630 Custom_ApplesRoom 5 10 0/730 Custom_AuroraVineyard 9 7 2 Peaches_Dance2/1100 Custom_AuroraVineyard 19 7 2 Peaches_Dance1/1500 Custom_AuroraVineyard 14 17 3/2000 Custom_ApplesRoom 6 8 2 Peaches_Sleep"
+            }
+        }
+    ]
 }

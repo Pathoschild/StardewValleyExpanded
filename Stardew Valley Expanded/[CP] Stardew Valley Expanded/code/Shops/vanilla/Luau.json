@@ -1,21 +1,18 @@
-{
+﻿{
     "Changes": [
         {
             "Action": "EditData",
             "Target": "Data/Shops",
             "Priority": "Early - 100",
-            "TargetField": [
-                "Festival_Luau_Pierre",
-                "Items"
-            ],
+            "TargetField": [ "Festival_Luau_Pierre", "Items" ],
             "Entries": {
-			    "FlashShifter.StardewValleyExpandedCP_Ice_Cream_Sundae": {
+                "FlashShifter.StardewValleyExpandedCP_Ice_Cream_Sundae": {
                     "Id": "FlashShifter.StardewValleyExpandedCP_Ice_Cream_Sundae",
                     "ItemId": "FlashShifter.StardewValleyExpandedCP_Ice_Cream_Sundae",
                     "Price": "2000",
-					"IsRecipe": "true"
-                },
-			},
-        },
+                    "IsRecipe": "true"
+                }
+            }
+        }
     ]
 }
