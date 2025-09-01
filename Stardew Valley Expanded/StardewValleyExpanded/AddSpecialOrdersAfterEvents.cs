@@ -42,8 +42,8 @@ public static class AddSpecialOrdersAfterEvents
     /****************/
     /// <summary>A list of special orders and the conditions required for them to appear in the players' quest logs.</summary>
     /// <remarks>Orders will be automatically added if the conditions are all met, and automatically removed if they are unmet.</remarks>
-    public static List<SpecialOrderConditions> SpecialOrders = new List<SpecialOrderConditions>
-    {
+    public static List<SpecialOrderConditions> SpecialOrders =
+    [
         new SpecialOrderConditions
         {
             OrderKey = "Clint2",
@@ -140,14 +140,13 @@ public static class AddSpecialOrdersAfterEvents
             HasSeenEvents = "1337930",
             HasNotSeenEvents = "1337931"
         },
-
         new SpecialOrderConditions
         {
             OrderKey = "HenchmanHouseRepaired",
             HasSeenEvents = "1337730",
             HasNotSeenEvents = "1337731"
         }
-    };
+    ];
 
 
     /*****************/
@@ -166,7 +165,7 @@ public static class AddSpecialOrdersAfterEvents
     /// <returns>A list of integer event IDs.</returns>
     public static List<string> ParseEventsString(string eventsString)
     {
-        return eventsString.Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+        return eventsString.Split([' ', ','], StringSplitOptions.RemoveEmptyEntries).ToList();
     }
 
     /// <summary>The active event ID during the previous tick.</summary>

@@ -32,7 +32,7 @@ public static class HarmonyPatch_PiggyBank
             // apply patches
             Monitor.Log($"Applying Harmony patch \"{nameof(HarmonyPatch_PiggyBank)}\": postfixing SDV method \"Object_checkForAction(Farmer, bool)\".", LogLevel.Trace);
             harmony.Patch(
-                original: AccessTools.Method(typeof(SObject), nameof(SObject.checkForAction), new[] { typeof(Farmer), typeof(bool) }),
+                original: AccessTools.Method(typeof(SObject), nameof(SObject.checkForAction), [typeof(Farmer), typeof(bool)]),
                 postfix: new HarmonyMethod(typeof(HarmonyPatch_PiggyBank), nameof(Object_checkForAction))
             );
 

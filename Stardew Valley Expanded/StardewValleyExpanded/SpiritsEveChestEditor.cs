@@ -25,7 +25,7 @@ public static class SpiritsEveChestEditor
 
     private static List<Item> GetChestContents()
     {
-        List<Item> itemList = new List<Item>(); // create a blank list
+        List<Item> itemList = []; // create a blank list
 
         if (Game1.year % 4 == 1) // if this is an odd-numbered year
         {

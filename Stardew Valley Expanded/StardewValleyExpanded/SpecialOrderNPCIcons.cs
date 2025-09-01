@@ -44,10 +44,10 @@ public static class SpecialOrderNPCIcons
     /// Add each NPC's name here, in quotations and separated by commas. This is case-sensitive and based on their "internal" name, not their display name.
     /// Note that this class DOES NOT edit the emoji spritesheet. Do that with Content Patcher or a SMAPI asset editor.
     /// </remarks>
-    private static string[] CustomNPCsWithEmoji { get; set; } = new string[]
-    {
+    private static string[] CustomNPCsWithEmoji { get; set; } =
+    [
         "", "", "", "", "Sophia", "Olivia", "Andy", "Susan", "MarlonFay"
-    };
+    ];
 
 
     /*****************/

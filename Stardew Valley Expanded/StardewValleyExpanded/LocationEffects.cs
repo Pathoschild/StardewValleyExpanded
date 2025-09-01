@@ -69,7 +69,7 @@ public static class GameLocationWoodsEffectPatch1
 
         Random r = Utility.CreateDaySaveRandom();
         int numberOfBaubles = 25 + r.Next(0, 75);
-        data.baubles = new List<Vector2>();
+        data.baubles = [];
         for (int i = 0; i < numberOfBaubles; i++)
         {
             data.baubles.Add(new Vector2(Game1.random.Next(0, __instance.map.DisplayWidth), Game1.random.Next(0, __instance.map.DisplayHeight)));
@@ -78,7 +78,7 @@ public static class GameLocationWoodsEffectPatch1
         Season season = __instance.GetSeason();
         if (season != Season.Winter)
         {
-            data.weatherDebris = new List<WeatherDebris>();
+            data.weatherDebris = [];
             int spacing = 192;
             int leafType = 1;
             if (season == Season.Fall)

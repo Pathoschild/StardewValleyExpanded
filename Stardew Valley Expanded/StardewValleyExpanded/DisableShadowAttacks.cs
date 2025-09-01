@@ -46,7 +46,7 @@ public static class DisableShadowAttacks
             // apply patch
             Monitor.Log($"Applying Harmony patch \"{nameof(DisableShadowAttacks)}\": postfixing SDV method \"AdventureGuild.killListLine(string, int, int)\".", LogLevel.Trace);
             harmony.Patch(
-                original: AccessTools.Method(typeof(AdventureGuild), "killListLine", new[] { typeof(string), typeof(int), typeof(int) }),
+                original: AccessTools.Method(typeof(AdventureGuild), "killListLine", [typeof(string), typeof(int), typeof(int)]),
                 postfix: new HarmonyMethod(typeof(DisableShadowAttacks), nameof(AdventureGuild_killListLine))
             );
 
@@ -67,14 +67,14 @@ public static class DisableShadowAttacks
     /// Other locations that should disable shadows' attacks must be added here.
     /// If a location is added to both lists (e.g. by another C# mod), the blacklist will take priority (shadow attacks will be enabled).
     /// </remarks>
-    public static List<string> LocationWhitelist { get; set; } = new List<string>
-    {
+    public static List<string> LocationWhitelist { get; set; } =
+    [
         "Custom_HighlandsCavern"
-    };
+    ];
 
     /// <summary>A list of locations where Shadow monsters should NOT have their attacks disabled.</summary>
     /// <remarks>This is mainly for use by other mods via reflection (direct C# access).</remarks>
-    public static List<string> LocationBlacklist { get; set; } = new List<string>();
+    public static List<string> LocationBlacklist { get; set; } = [];
 
     /// <summary>Indicates whether Shadow monsters' attacks should be disabled at a given location.</summary>
     /// <returns>True if Shadows' attacks should be disabled. False otherwise.</returns>
@@ -170,7 +170,7 @@ public static class DisableShadowAttacks
             try
             {
                 // tell the host player to disable shadow attacks at this location (NOTE: it's only partially effective when done by farmhands)
-                Helper.Multiplayer.SendMessage(location.Name, nameof(DisableShadowAttacks), new[] { Helper.ModRegistry.ModID }, new[] { Game1.serverHost.Value.UniqueMultiplayerID });
+                Helper.Multiplayer.SendMessage(location.Name, nameof(DisableShadowAttacks), [Helper.ModRegistry.ModID], [Game1.serverHost.Value.UniqueMultiplayerID]);
             }
             catch (Exception ex)
             {

@@ -27,31 +27,31 @@ public static class HarmonyPatch_FarmComputerLocations
 
             Monitor.Log($"Applying Harmony patch \"{nameof(HarmonyPatch_FarmComputerLocations)}\": postfixing SDV method \"Farm.getTotalCrops()\".", LogLevel.Trace);
             harmony.Patch(
-                original: AccessTools.Method(typeof(GameLocation), nameof(GameLocation.getTotalCrops), new Type[0]),
+                original: AccessTools.Method(typeof(GameLocation), nameof(GameLocation.getTotalCrops), []),
                 postfix: new HarmonyMethod(typeof(HarmonyPatch_FarmComputerLocations), nameof(Farm_getTotalCrops))
             );
 
             Monitor.Log($"Applying Harmony patch \"{nameof(HarmonyPatch_FarmComputerLocations)}\": postfixing SDV method \"Farm.getTotalCropsReadyForHarvest()\".", LogLevel.Trace);
             harmony.Patch(
-                original: AccessTools.Method(typeof(GameLocation), nameof(GameLocation.getTotalCropsReadyForHarvest), new Type[0]),
+                original: AccessTools.Method(typeof(GameLocation), nameof(GameLocation.getTotalCropsReadyForHarvest), []),
                 postfix: new HarmonyMethod(typeof(HarmonyPatch_FarmComputerLocations), nameof(Farm_getTotalCropsReadyForHarvest))
             );
 
             Monitor.Log($"Applying Harmony patch \"{nameof(HarmonyPatch_FarmComputerLocations)}\": postfixing SDV method \"Farm.getTotalUnwateredCrops()\".", LogLevel.Trace);
             harmony.Patch(
-                original: AccessTools.Method(typeof(GameLocation), nameof(GameLocation.getTotalUnwateredCrops), new Type[0]),
+                original: AccessTools.Method(typeof(GameLocation), nameof(GameLocation.getTotalUnwateredCrops), []),
                 postfix: new HarmonyMethod(typeof(HarmonyPatch_FarmComputerLocations), nameof(Farm_getTotalUnwateredCrops))
             );
 
             Monitor.Log($"Applying Harmony patch \"{nameof(HarmonyPatch_FarmComputerLocations)}\": postfixing SDV method \"Farm.getTotalOpenHoeDirt()\".", LogLevel.Trace);
             harmony.Patch(
-                original: AccessTools.Method(typeof(GameLocation), nameof(GameLocation.getTotalOpenHoeDirt), new Type[0]),
+                original: AccessTools.Method(typeof(GameLocation), nameof(GameLocation.getTotalOpenHoeDirt), []),
                 postfix: new HarmonyMethod(typeof(HarmonyPatch_FarmComputerLocations), nameof(Farm_getTotalOpenHoeDirt))
             );
 
             Monitor.Log($"Applying Harmony patch \"{nameof(HarmonyPatch_FarmComputerLocations)}\": postfixing SDV method \"Farm.getTotalGreenhouseCropsReadyForHarvest()\".", LogLevel.Trace);
             harmony.Patch(
-                original: AccessTools.Method(typeof(GameLocation), nameof(GameLocation.getTotalGreenhouseCropsReadyForHarvest), new Type[0]),
+                original: AccessTools.Method(typeof(GameLocation), nameof(GameLocation.getTotalGreenhouseCropsReadyForHarvest), []),
                 postfix: new HarmonyMethod(typeof(HarmonyPatch_FarmComputerLocations), nameof(Farm_getTotalGreenhouseCropsReadyForHarvest))
             );
 
@@ -70,20 +70,14 @@ public static class HarmonyPatch_FarmComputerLocations
     ///
     /// The Farm Computer does NOT normally count greenhouse locations in these numbers, so don't add those unless you want to change that behavior.
     /// </remarks>
-    public static List<string> FarmLocations = new List<string>
-    {
-        "Custom_TownEast", "Custom_Garden", "Custom_ForestWest"
-    };
+    public static List<string> FarmLocations = ["Custom_TownEast", "Custom_Garden", "Custom_ForestWest"];
 
     /// <summary>A list of extra location names the Farm Computer should count for "Crops Ready In Greenhouse".</summary>
     /// <remarks>
     /// As of SDV 1.5.4, the original code only checks the "Greenhouse" location.
     /// Add any other location names to this list.
     /// </remarks>
-    public static List<string> GreenhouseLocations = new List<string>
-    {
-        "Custom_GrandpasShedGreenhouse"
-    };
+    public static List<string> GreenhouseLocations = ["Custom_GrandpasShedGreenhouse"];
 
     /// <summary>Adds any extra farm locations' crops to this method's total.</summary>
     /// <param name="__result">The result of the original method.</param>

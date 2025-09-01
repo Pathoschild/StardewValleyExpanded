@@ -35,13 +35,13 @@ public static class HarmonyPatch_MovieTheaterNPCs
 
             Monitor.Log($"Applying Harmony patch \"{nameof(HarmonyPatch_MovieTheaterNPCs)}\": postfixing SDV method \"MovieTheater.checkAction(Location, Rectangle, Farmer)\".", LogLevel.Trace);
             harmony.Patch(
-                original: AccessTools.Method(typeof(MovieTheater), nameof(MovieTheater.checkAction), new[] { typeof(Location), typeof(xTile.Dimensions.Rectangle), typeof(Farmer) }),
+                original: AccessTools.Method(typeof(MovieTheater), nameof(MovieTheater.checkAction), [typeof(Location), typeof(xTile.Dimensions.Rectangle), typeof(Farmer)]),
                 postfix: new HarmonyMethod(typeof(HarmonyPatch_MovieTheaterNPCs), nameof(MovieTheater_checkAction))
             );
 
             Monitor.Log($"Applying Harmony patch \"{nameof(HarmonyPatch_MovieTheaterNPCs)}\": transpiling SDV method \"Utility.CheckForCharacterAtTile(Vector2, Farmer)\".", LogLevel.Trace);
             harmony.Patch(
-                original: AccessTools.Method(typeof(Utility), nameof(Utility.checkForCharacterInteractionAtTile), new[] { typeof(Vector2), typeof(Farmer) }),
+                original: AccessTools.Method(typeof(Utility), nameof(Utility.checkForCharacterInteractionAtTile), [typeof(Vector2), typeof(Farmer)]),
                 transpiler: new HarmonyMethod(typeof(HarmonyPatch_MovieTheaterNPCs), nameof(Utility_CheckForCharacterAtTile))
             );
 
@@ -101,7 +101,7 @@ public static class HarmonyPatch_MovieTheaterNPCs
     {
         try
         {
-            List<CodeInstruction> patched = new List<CodeInstruction>(instructions); // make a copy of the instructions to modify
+            List<CodeInstruction> patched = [.. instructions]; // make a copy of the instructions to modify
 
             for (int x = patched.Count - 1; x >= 2; x--) // for each instruction (looping backward, stopping at 2)
             {

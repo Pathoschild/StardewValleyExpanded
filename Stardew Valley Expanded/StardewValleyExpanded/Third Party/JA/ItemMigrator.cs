@@ -62,21 +62,21 @@ public class ItemMigrator
             dict?.Add(toks[1], toks[2]);
         }
 
-        IDictionary<TKey, TValue> LoadDictionary<TKey, TValue>(string filename)
+        Dictionary<TKey, TValue> LoadDictionary<TKey, TValue>(string filename)
         {
             string path = Path.Combine(Constants.CurrentSavePath, "JsonAssets", filename);
             return File.Exists(path)
-                ? JsonConvert.DeserializeObject<Dictionary<TKey, TValue>>(File.ReadAllText(path))
-                : new Dictionary<TKey, TValue>();
+                ? JsonConvert.DeserializeObject<Dictionary<TKey, TValue>>(File.ReadAllText(path)) ?? []
+                : [];
         }
-        var oldObjectIds = (LoadDictionary<string, int>("ids-objects.json") ?? new Dictionary<string, int>());
-        var oldCropIds = (LoadDictionary<string, int>("ids-crops.json") ?? new Dictionary<string, int>());
-        var oldFruitTreeIds = (LoadDictionary<string, int>("ids-fruittrees.json") ?? new Dictionary<string, int>());
-        var oldBigCraftableIds = (LoadDictionary<string, int>("ids-big-craftables.json") ?? new Dictionary<string, int>());
-        var oldHatIds = (LoadDictionary<string, int>("ids-hats.json") ?? new Dictionary<string, int>());
-        var oldWeaponIds = (LoadDictionary<string, int>("ids-weapons.json") ?? new Dictionary<string, int>());
-        var oldClothingIds = (LoadDictionary<string, int>("ids-clothing.json") ?? new Dictionary<string, int>());
-        var oldBootsIds = (LoadDictionary<string, int>("ids-boots.json") ?? new Dictionary<string, int>());
+        var oldObjectIds = LoadDictionary<string, int>("ids-objects.json");
+        var oldCropIds = LoadDictionary<string, int>("ids-crops.json");
+        var oldFruitTreeIds = LoadDictionary<string, int>("ids-fruittrees.json");
+        var oldBigCraftableIds = LoadDictionary<string, int>("ids-big-craftables.json");
+        var oldHatIds = LoadDictionary<string, int>("ids-hats.json");
+        var oldWeaponIds = LoadDictionary<string, int>("ids-weapons.json");
+        var oldClothingIds = LoadDictionary<string, int>("ids-clothing.json");
+        var oldBootsIds = LoadDictionary<string, int>("ids-boots.json");
 
         foreach ((string jaName, string strId) in toNewObjects)
         {
@@ -335,8 +335,8 @@ public class ItemMigrator
 
     private void FixIdDict(NetStringDictionary<int, NetInt> dict, bool removeUnshippable = false)
     {
-        var toRemove = new List<string>();
-        var toAdd = new Dictionary<string, int>();
+        List<string> toRemove = [];
+        Dictionary<string, int> toAdd = [];
         foreach (string entry in dict.Keys)
         {
             if (this.OldObjectIds.ContainsKey(entry))
@@ -360,8 +360,8 @@ public class ItemMigrator
 
     private void FixIdDict2(NetStringIntArrayDictionary dict)
     {
-        var toRemove = new List<string>();
-        var toAdd = new Dictionary<string, int[]>();
+        List<string> toRemove = [];
+        Dictionary<string, int[]> toAdd = [];
         foreach (string entry in dict.Keys)
         {
             if (this.OldObjectIds.ContainsKey(entry))

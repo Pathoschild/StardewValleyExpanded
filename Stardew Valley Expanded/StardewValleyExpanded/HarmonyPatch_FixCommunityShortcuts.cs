@@ -71,7 +71,7 @@ public static class HarmonyPatch_FixCommunityShortcuts
     {
         try
         {
-            List<CodeInstruction> patched = new List<CodeInstruction>(instructions); // make a copy of the instructions to modify
+            List<CodeInstruction> patched = [.. instructions]; // make a copy of the instructions to modify
 
             MethodInfo replacementMethod = AccessTools.Method(typeof(HarmonyPatch_FixCommunityShortcuts), nameof(HarmonyPatch_FixCommunityShortcuts.AddWarpAsTouchAction));
 

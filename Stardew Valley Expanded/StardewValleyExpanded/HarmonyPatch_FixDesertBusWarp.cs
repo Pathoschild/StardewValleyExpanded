@@ -29,7 +29,7 @@ public static class HarmonyPatch_FixDesertBusWarp
 
             Monitor.Log($"Applying Harmony patch \"{nameof(HarmonyPatch_FixDesertBusWarp)}\": transpiling SDV method \"Desert.resetLocalState()\".", LogLevel.Trace);
             harmony.Patch(
-                original: AccessTools.Method(typeof(Desert), "resetLocalState", new Type[] { }),
+                original: AccessTools.Method(typeof(Desert), "resetLocalState", []),
                 transpiler: new HarmonyMethod(typeof(HarmonyPatch_FixDesertBusWarp), nameof(Desert_resetLocalState))
             );
 
@@ -60,7 +60,7 @@ public static class HarmonyPatch_FixDesertBusWarp
     {
         try
         {
-            List<CodeInstruction> patched = new List<CodeInstruction>(instructions); // make a copy of the instructions to modify
+            List<CodeInstruction> patched = [.. instructions]; // make a copy of the instructions to modify
 
             MethodInfo getTileY = AccessTools.Method(typeof(Character), nameof(Character.TilePoint)); // get info for the "Character.getTileY()" method
 

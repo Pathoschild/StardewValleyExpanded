@@ -88,7 +88,7 @@ public static class HarmonyPatch_Mountain
     {
         try
         {
-            var patched = new List<CodeInstruction>(instructions);
+            List<CodeInstruction> patched = [.. instructions];
 
             for (int i = 0; i < patched.Count; i++)
             {

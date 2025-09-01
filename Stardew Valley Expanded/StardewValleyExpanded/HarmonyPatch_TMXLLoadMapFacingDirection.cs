@@ -26,7 +26,7 @@ public static class HarmonyPatch_TMXLLoadMapFacingDirection
 
             Monitor.Log($"Applying Harmony patch \"{nameof(HarmonyPatch_TMXLLoadMapFacingDirection)}\": prefixing SDV method \"Game1.warpFarmer(LocationRequest, int, int, int)\".", LogLevel.Trace);
             harmony.Patch(
-                original: AccessTools.Method(typeof(Game1), nameof(Game1.warpFarmer), new[] { typeof(LocationRequest), typeof(int), typeof(int), typeof(int) }),
+                original: AccessTools.Method(typeof(Game1), nameof(Game1.warpFarmer), [typeof(LocationRequest), typeof(int), typeof(int), typeof(int)]),
                 prefix: new HarmonyMethod(typeof(HarmonyPatch_TMXLLoadMapFacingDirection), nameof(Game1_warpFarmer))
             );
 

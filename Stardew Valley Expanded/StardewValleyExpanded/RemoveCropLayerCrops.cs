@@ -52,12 +52,12 @@ public static class RemoveCropLayerCrops
     /// All crops will be removed from these locations the first time the host player starts/loads each save.
     /// WARNING: It may be unsafe to add farmable locations to this list; it will remove all crops from the location, not just those added by TMXL crop layers.
     /// </remarks>
-    public static List<string> LocationsToCheck { get; set; } = new List<string>
-    {
+    public static List<string> LocationsToCheck { get; set; } =
+    [
         "Custom_SpriteSpring2",
         "Custom_JunimoWoods",
         "Custom_SpriteSpringCave"
-    };
+    ];
 
     /*****               *****/
     /***** Internal Code *****/

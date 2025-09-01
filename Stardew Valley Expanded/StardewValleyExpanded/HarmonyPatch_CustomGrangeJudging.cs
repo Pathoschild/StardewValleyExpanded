@@ -35,13 +35,13 @@ public static class HarmonyPatch_CustomGrangeJudging
 
             Monitor.Log($"Applying Harmony patch \"{nameof(HarmonyPatch_CustomGrangeJudging)}\": prefixing SDV method \"Event.initiateGrangeJudging()\".", LogLevel.Trace);
             harmony.Patch(
-                original: AccessTools.Method(typeof(Event), "initiateGrangeJudging", new Type[0]),
+                original: AccessTools.Method(typeof(Event), "initiateGrangeJudging", []),
                 prefix: new HarmonyMethod(typeof(HarmonyPatch_CustomGrangeJudging), nameof(Event_initiateGrangeJudging))
             );
 
             Monitor.Log($"Applying Harmony patch \"{nameof(HarmonyPatch_CustomGrangeJudging)}\": postfixing SDV method \"Event.interpretGrangeResults()\".", LogLevel.Trace);
             harmony.Patch(
-                original: AccessTools.Method(typeof(Event), "interpretGrangeResults", new Type[0]),
+                original: AccessTools.Method(typeof(Event), "interpretGrangeResults", []),
                 postfix: new HarmonyMethod(typeof(HarmonyPatch_CustomGrangeJudging), nameof(Event_interpretGrangeResults))
             );
 
@@ -64,15 +64,15 @@ public static class HarmonyPatch_CustomGrangeJudging
     {
         // base game dialogue
         /*
-        { "Marnie", "Strings\\StringsFromCSFiles:Event.cs.1602" },
-        { "Pierre", "Strings\\StringsFromCSFiles:Event.cs.1604" },
-        { "Willy", "Strings\\StringsFromCSFiles:Event.cs.1606" },
+        ["Marnie"] = "Strings\\StringsFromCSFiles:Event.cs.1602",
+        ["Pierre"] = "Strings\\StringsFromCSFiles:Event.cs.1604",
+        ["Willy"] = "Strings\\StringsFromCSFiles:Event.cs.1606",
         */
 
         // SVE dialogue
-        { "Sophia", "Strings\\StringsFromCSFiles:SVE_GrangeJudging_Sophia" },
-        { "Andy", "Strings\\StringsFromCSFiles:SVE_GrangeJudging_Andy" },
-        { "Susan", "Strings\\StringsFromCSFiles:SVE_GrangeJudging_Susan" }
+        ["Sophia"] = "Strings\\StringsFromCSFiles:SVE_GrangeJudging_Sophia",
+        ["Andy"] = "Strings\\StringsFromCSFiles:SVE_GrangeJudging_Andy",
+        ["Susan"] = "Strings\\StringsFromCSFiles:SVE_GrangeJudging_Susan"
     };
 
     /// <summary>A set of extra dialogue added to NPCs after grange display judging is complete. Each key is an NPC name. Each value is the target asset with that NPC's dialogue.</summary>
@@ -82,9 +82,9 @@ public static class HarmonyPatch_CustomGrangeJudging
     /// </remarks>
     public static Dictionary<string, string> DialogueAfterJudging { get; set; } = new Dictionary<string, string>
     {
-        { "Sophia", "Strings\\StringsFromCSFiles:SVE_AfterJudging_Sophia" },
-        { "Andy", "Strings\\StringsFromCSFiles:SVE_AfterJudging_Andy" },
-        { "Susan", "Strings\\StringsFromCSFiles:SVE_AfterJudging_Susan" }
+        ["Sophia"] = "Strings\\StringsFromCSFiles:SVE_AfterJudging_Sophia",
+        ["Andy"] = "Strings\\StringsFromCSFiles:SVE_AfterJudging_Andy",
+        ["Susan"] = "Strings\\StringsFromCSFiles:SVE_AfterJudging_Susan"
     };
 
     /*****               *****/

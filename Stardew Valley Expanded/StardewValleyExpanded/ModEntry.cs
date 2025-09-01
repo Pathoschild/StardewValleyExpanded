@@ -98,11 +98,11 @@ public class ModEntry : Mod
                     loc.loadMap(loc.mapPath.Value, true);
 
                     (string id, Point pos)[] allshrines =
-                    {
+                    [
                         new("Betrayal", new(26, 23)),
                         new("Moss", new(36, 23)),
                         new("Invasion", new(31, 18))
-                    };
+                    ];
                     foreach (var shrine in allshrines)
                     {
                         if (shrine.id == id)
@@ -230,7 +230,7 @@ public class ModEntry : Mod
     private static IEnumerable<CodeInstruction> MoveBooksellerSign(
         IEnumerable<CodeInstruction> instructions)
     {
-        List<CodeInstruction> ret = new();
+        List<CodeInstruction> ret = [];
 
         bool foundBookseller = false;
         foreach (var insn in instructions)
@@ -259,11 +259,11 @@ public class ModEntry : Mod
         if (e.NewLocation.Name == "Custom_HenchmanBackyard")
         {
             (string id, Point pos)[] allshrines =
-            {
+            [
                 new("Betrayal", new(26, 23)),
                 new("Moss", new(36, 23)),
                 new("Invasion", new(31, 18))
-            };
+            ];
             foreach (var shrine in allshrines)
             {
                 if (Game1.netWorldState.Value.hasWorldStateID($"SVE_{shrine.id}ShrineActivated"))
@@ -817,10 +817,9 @@ public class ModEntry : Mod
             who.canMove = false;
             Game1.screenGlowOnce(Color.SlateBlue, hold: false);
             Game1.player.faceDirection(2);
-            Game1.player.FarmerSprite.animateOnce(new FarmerSprite.AnimationFrame[1]
-            {
+            Game1.player.FarmerSprite.animateOnce([
                 new FarmerSprite.AnimationFrame(57, 2000, secondaryArm: false, flip: false, Farmer.canMoveNow, behaviorAtEndOfFrame: true)
-            });
+            ]);
             /*
             for (int i = 0; i < 6; i++)
             {

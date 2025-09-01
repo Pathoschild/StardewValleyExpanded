@@ -258,7 +258,7 @@ public static class FireflySpawner
             this.bodyColor = bodyColor ?? Color.White; // set body color (default white if not provided)
         }
 
-        public static Dictionary<Vector2, int> TEST_tiles = new Dictionary<Vector2, int>();
+        public static Dictionary<Vector2, int> TEST_tiles = [];
 
         public override bool update(GameTime time, GameLocation environment)
         {

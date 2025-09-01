@@ -53,9 +53,9 @@ internal class InstallationChecker
 
     bool isInstalledCorrectly = true;
     bool hasAllDependencies = true;
-    List<Dependency> missing_dependencies = new List<Dependency>();
-    List<Dependency> outdated_dependencies = new List<Dependency>();
-    List<Dependency> missing_parents = new List<Dependency>();
+    List<Dependency> missing_dependencies = [];
+    List<Dependency> outdated_dependencies = [];
+    List<Dependency> missing_parents = [];
 
     /// <summary>Performs an installation check with no conditions while displaying SVE's added messages.</summary>
     public static void AutoCheck(IModHelper Helper, IMonitor Monitor)

@@ -41,7 +41,7 @@ internal class SpaceUtility
             }
         }
 
-        var toRemove = new List<Vector2>();
+        List<Vector2> toRemove = [];
         foreach (var key in l.terrainFeatures.Keys)
         {
             var ret = action(l.terrainFeatures[key]);
@@ -218,7 +218,7 @@ internal class SpaceUtility
                 }
             }
         }
-        var toRemove = new List<Vector2>();
+        List<Vector2> toRemove = [];
         foreach (var key in l.objects.Keys)
         {
             var ret = (StardewValley.Object)SpaceUtility._recursiveIterateItem(l.objects[key], action);
@@ -230,7 +230,7 @@ internal class SpaceUtility
         foreach (var r in toRemove)
             l.objects.Remove(r);
 
-        var toRemove2 = new List<Debris>();
+        List<Debris> toRemove2 = [];
         foreach (Debris d in l.debris)
         {
             if (d.item != null)

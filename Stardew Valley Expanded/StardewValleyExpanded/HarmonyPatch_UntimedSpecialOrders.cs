@@ -51,8 +51,8 @@ public static class HarmonyPatch_UntimedSpecialOrders
 
 
     /// <summary>A list of special order keys (a.k.a. IDs) to give unlimited durations.</summary>
-    public static List<string> SpecialOrderKeys = new List<string>
-    {
+    public static List<string> SpecialOrderKeys =
+    [
         "Clint2",
         "Clint3",
         "Lewis2",
@@ -70,7 +70,7 @@ public static class HarmonyPatch_UntimedSpecialOrders
         "CamillaBridge",
         "LegendaryTrio",
         "HenchmanHouseRepaired"
-    };
+    ];
 
 
     /*****************/

@@ -32,7 +32,7 @@ public static class HarmonyPatch_DesertSecretNoteTile
 
             Monitor.Log($"Applying Harmony patch \"{nameof(HarmonyPatch_DesertSecretNoteTile)}\": prefixing SDV method \"Desert.checkForBuriedItem(int, int, bool, bool, Farmer)\".", LogLevel.Trace);
             harmony.Patch(
-                original: AccessTools.Method(typeof(Desert), nameof(Desert.checkForBuriedItem), new[] { typeof(int), typeof(int), typeof(bool), typeof(bool), typeof(Farmer) }),
+                original: AccessTools.Method(typeof(Desert), nameof(Desert.checkForBuriedItem), [typeof(int), typeof(int), typeof(bool), typeof(bool), typeof(Farmer)]),
                 prefix: new HarmonyMethod(typeof(HarmonyPatch_DesertSecretNoteTile), nameof(Desert_checkForBuriedItem))
             );
 
